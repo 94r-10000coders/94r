@@ -1,0 +1,52 @@
+<!doctypehtml>
+<html>
+<head>
+<title> KUMAR RESUME</title>
+<hr>
+<body>
+<h2> personal details</h2>
+<p>
+    NAME     :kumar<br>
+    AGE      :21<br>
+    DOB      :19/03/2002<br>
+</p>
+<H2> EDUCATION</H2>
+<P>
+    SSC      :sairam<br>
+    PER      :9.2% <br>
+
+  
+    INTER    :sri ravi<br>
+    per      :5.5%<br>
+    
+    
+    DEGREE   : ravi<br>
+    PER      :6.5%<br>
+</p>
+<H2>HOBBIES</H2>
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+
+
+</html>
