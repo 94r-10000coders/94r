@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK-5</title>
+    <style>
+        table,th,tr,td
+        {
+            border:1px solid black;
+            border-collapse:collapse;
+        }
+    </style>
+</head>
+<body>
+    <h1>LOGIN FORM</h1>
+    <form action="./sucess_file.html">
+        <label for="username">USERNAME</label> <br>
+        <input type = "text" id="username" required name="username" placeholder="enter username" /> <br>
+        <label for="password">PASSWORD</label> <br>
+        <input type = "text" id="password" name="password" placeholder="enter password" required/> <br> 
+        <br> <input type="submit" />
+    </form>
+    <hr>
+    <h1>SIGNUP FORM</h1>
+    <form action="./sucess2.html">
+        <label>EMAIL</label> <br>
+        <input type="text" id="email" required name="email" placeholder="enter email" /> <br>
+        <label for="number">MOBILE NUMBER</label> <br>
+        <input type="number" id="number"  name="number" placeholder="enter phone" required /> <br>
+        <label for ="password">PASSWORD</label> <br>
+        <input type="text" id="password" required name="password" placeholder="enter password" /> <br>
+        <label>REPEAT PASSWORD</label> <br>
+        <input type="text" placeholder="enter password" required /> <br>
+        <label>DATE OF BIRTH</label> <br>
+        <input type="date" id="dateofbirth" /> <br>
+        <label for="gender">GENDER</label> <br>
+        <input type="radio" name="gender" id="male" required checked>male </input> <br>
+        <input type="radio" name="gender" id="female" required>female </input>
+        <br>
+        <label>ADDRESS</label> <br>
+        <textarea></textarea>  <br>
+        <label>AGE 18+ </label> <br>
+        <select>
+            <option>YES</option>
+            <option>NO</option>
+        </select>
+        <br> 
+        <label>UPLOAD IMAGE</label> <br>
+        <input type="file"/>
+        <br> <br>
+        <input type="submit"/>
+        <input type="reset" />
+    </form>
+    <hr>
+    <h1>TABLE WITH IMAGES</h1>
+    <table>
+        <tr>
+            <th>NAME</th>
+            <th>IMAGE</th>
+        </tr>
+        <tr>
+            <td>ROHIT SHARMA</td>
+            <td><img src="C:\Users\Maddala Yashwanth\Desktop\assgn pics\task2\2.jpg" width="100" height="100"/></td>
+        </tr>
+        <tr>
+            <td>VIRAT KHOLI</td>
+            <td><img src="C:\Users\Maddala Yashwanth\Desktop\assgn pics\task2\4.jpg" width="100" height="100" /></td>
+        </tr>
+    </table>
+    <hr>
+    <h1>TABLE WITH ROWSPAN AND COLSPAN</h1>
+    <table>
+        <caption>TABLE CAPTION:-</caption>
+        <tr>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>GRADUATED</th>
+            <th>PLACED</th>
+        </tr>
+        <tr>
+            <td>YASHWANTH</td>
+            <td>22</td>
+            <td>YES</td>
+            <td>NO</td>
+        </tr>
+        <tr>
+            <td>RAMESH</td>
+            <td rowspan="2">23</td>
+            <td>YES</td>
+            <td>NO</td>
+        </tr>
+        <tr>
+            <td>SURESH</td>
+            <td>YES</td>
+            <td>NO</td>
+        </tr>
+        <tr>
+            <td>NARESH</td>
+            <td>25</td>
+            <td>YES</td>
+            <td>NO</td>
+        </tr>
+        <tr>
+            <td>MAHESH</td>
+            <td>27</td>
+            <td colspan="2">YES</td>
+        </tr>
+    </table>
+</body>
+</html>
