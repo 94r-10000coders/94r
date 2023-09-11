@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rowcolspan</title>
+    <style>
+        table,
+        th,tr,td{
+            border: 1px solid black;
+        border-collapse: collapse;
+    }
+    </style>
+</head>
+<body>
+    <table>
+        <caption><center>World Cup</center></caption>
+    <tr>
+        <th>Date</th>
+        <th>Schedule</th>
+        <th>Team1</th>
+        <th>Team2</th>
+    </tr>
+    <tr>
+        <td>05-Oct</td>
+        <td>ENG vs NZ</td>
+        <td><img src="./England.png" width="50" height="50"></td>
+        <td><img src="./Nz.jpg" width="50" height="50"></td>
+    </tr>
+    <tr>
+        <td>06-Oct</td>
+        <td>PAK vs NED</td>
+        <td><img src="./Pakistan.jfif" width="50" height="50"></td>
+        <td><img src="./Netherlands.jfif" width="50" height="50"></td>
+    </tr>
+    <tr>
+        <td rowspan="2">07-Oct</td>
+        <td>AFG vs BAN</td>
+        <td><img src="./Afghanistan.jfif" width="50" height="50"></td>
+        <td><img src="./Bangladesh.jfif" width="50" height="50"></td>
+    </tr>
+    <tr>
+        <!-- <td>07-Oct</td> -->
+        <td>SA vs SL</td>
+        <td><img src="./South-African-Flag.jpg" width="50" height="50"></td>
+        <td><img src="./Srilanka.jfif" width="50" height="50"></td>
+    </tr>
+    <tr>
+        <td>08-Oct</td>
+        <td>AUS vs IND</td>
+        <td><img src="./Au.jfif" width="50" height="50"></td>
+        <td><img src="./India.jfif" width="50" height="50"></td>
+    </tr>
+    <tr>
+        <td>09-Oct</td>
+        <td>NZ vs NED</td>
+        <td><img src="./Nz.jpg" width="50" height="50"></td>
+        <td><img src="./Netherlands.jfif" width="50" height="50"></td>
+    </tr>
+    </table>
+    <fig>
+        <img src="./Keys.jpg" width="150"  height="150">
+        <figcaption>KEYS</figcaption>
+    </fig><br> <br><hr><hr>
+    <form action="../Loginform.html">
+        <label for="fname">Firstname:</label>
+        <input type="text" id="fname" name="Firstname" required placeholder="Enter your name" value="VK"/><br>
+       <br> <label for="sname"> Secondname:</label>
+        <input type="text" id="sname" name="secondname" placeholder="enter your second name"/><br>
+        <br>
+        <label>Mobile:</label>
+        <input type="tel" id="mbl" name="mobile" max="10"/><br><br>
+        <label for="gender">Gender:</label><br>
+         <input type="radio" id="male" name="gender" checked><label for="male">Male</label><br>
+         <input type="radio" id="female" name="gender"><label for="female">Female</label ><br><br>
+         <label>Skills:</label><br>
+         <input type="checkbox" id="html" name="skills">html </input><br>
+         <input type="checkbox" id="css" name="skills" checked>Cs </input><br>
+         <input type="checkbox" id="Java" name="skills">Java </input><br><br>
+         <input type="file"/><br><br>
+         <label>Date:</label>
+         <input type="date"/><br><br>
+         <label>Textarea:</label>
+         <textarea></textarea><br><br>
+         <label for="Options">Options:</label><br><br>
+         <select id="Options" name="Options">
+            <option id="op1" value="op1">Op1</option>
+            <option id="op2" value="op2">Op2</option>
+            <option id="Op3" value="Op3">Op3</option>
+         </select>
+<br><br>
+        <input type="submit"/> <input type="reset"/>
+        
+    </form><hr>
+    <br><br>
+    <table>
+        <tr>
+            <th>head1</th>
+            <th>head2</th>
+            <th>head3</th>
+           
+        </tr>
+        <tr>
+            <td>1</td>
+            <td rowspan="">2</td>
+            <td>3</td>
+           
+        </tr>
+        <tr>
+            <td>5</td>
+            <!-- <td>6</td> -->
+            <td>7<td>  
+            
+        </tr>
+        <tr>
+            <td>8</td>
+            <!-- <td>9</td> -->
+            <td>10</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
