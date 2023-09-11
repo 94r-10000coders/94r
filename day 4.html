@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 task</title>
+    <style>
+        table,th,tr,td{
+
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption><strong>INDIAN CRICKET PLAYERS</strong></caption>
+        <tr>
+            <th>S.NO</th>
+            <th>NAME</th>
+            <th>IMAGE</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><a href="https://en.wikipedia.org/wiki/Rohit_Sharma" target="_blank">Rohit sharma-wikipedia</a></td>
+            <td><img src ="./IMAGES/rohit-sharma.png" width="250" height="250"/></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a href="https://en.wikipedia.org/wiki/Virat_Kohli" target="_blank">Virat Kohli - Wikipedia</a></td>
+            <td><img src="./IMAGES/MV5BZjVlNWQ4YmItOGVkYi00MzM4LWFkZTUtYjA5OTVkNTNkMWRiL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_.jpg" width="250" height="300"/></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><a href="https://en.wikipedia.org/wiki/K._L._Rahul" target="_blank">K. L. Rahul - Wikipedia</a></td>
+            <td><img src="./IMAGES/KL-Rahul.jpg" width="250" height="300"/></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><a href="https://en.wikipedia.org/wiki/Ravindra_Jadeja" target="_blank">Ravindra Jadeja - Wikipedia</a></td>
+            <td><img src="./IMAGES/main-qimg-3e7a04082cbe1e927d138dce7ed1a550-lq.jpg" width="250" height="300"/></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><a href="https://en.wikipedia.org/wiki/Jasprit_Bumrah" target="_blank">Jasprit Bumrah - Wikipedia</a></td>
+            <td><img src="./IMAGES/images.jpg" width="250" height="300"/></td>
+        </tr>
+    </table>
+    <hr>
+    
+    <div>
+        <h1>Registration Form</h1>
+        <h3>Sign up</h3>
+        <form action="./submission.html">
+            <label for="fname">Full Name</label><br>
+            <input type="text" id="fname" name="full name" placeholder="Enter your name"/>
+            <br>
+            <label for="Uname">Username</label><br>
+            <input type=" text" id="Uname" name="Username" placeholder="Enter your name"/>
+            <br>
+            <labe for="email">Email</labe><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email"/><br>
+            <label for="phone">Phone Number</label><br>
+            <input type="tel" id="Phone" name="Phone" placeholder="123-45-678-09" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"/>
+            <br>
+            <labe for="pwd">Password</labe><br>
+            <input type="password" id="pwd" name="pwd" placeholder="Enter your password"/><br>
+            <labe for="confirm pwd">Confirm Password</labe><br>
+            <input type="password" id="confirm pwd" name="confirm pwd" placeholder="Confirm your password"/><br>
+            <label for="gender">Gender</label><br>
+            <input type="radio" id="male" name="Gender">Male</input><br>
+            <input type="radio" id="female" name="Gender">Female</input><br>
+            <br><br>
+            <input type="submit"/>
+            <input type="Reset"/><br>
+            <h3>Login</h3>
+            <label for="Uname">Username</label><br>
+            <input type="text" id="Uname" name="Username" placeholder="Enter you name" /><br>
+            <label for="Uname">Password</label><br>
+            <input type="password" id="pwd" name="pwd" placeholder="Enter you password" /><br><br>
+            <br><br>
+            <label for="developer">Choose a role:</label>
+            <select id="developer" name="developer">
+                <optgroup label="Front end developer">
+                    <option value="Html">Html</option>
+                    <option value="css">css</option>
+                    <option value="js">js</option>
+                </optgroup>
+                <optgroup label="Back end developer">
+                     <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="php">php</option>
+                <optgroup>
+                </optgroup>
+            </select><br><br>
+            <label for="skills">Skills:</label><br>
+            <input type="checkbox" id="html" name="skills"v>html</input><br>
+            <input type="checkbox" id="CSS" name="skills">CSS</input>
+            <br><br>
+            <input type="submit"/>
+            
+        </form>
+    </div>
+    <br>
+    <table>
+        <tr>
+            <th>s.no</th>
+            <th>date</th>
+            <th>time</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>16/11/23</td>
+            <td>7:00</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>17/11/23</td>
+            <td rowspan="2">8:00</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>18/11/23</td>
+            <!-- <td>8:00</td> -->
+        </tr>
+    </table>
+    <figure>
+        <img src="./IMAGES/BunnyLikesModi-Stylish-Star-Allu-Arjun-sparks-another-controversy_5b21ef48d333f.jpg" width="100" height="100" />
+        <figcaption>Allu arjun</figcaption>
+    </figure>
+    
+</body>
+</html>

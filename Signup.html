@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5 task</title>
+    <style>
+        table,th,tr,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend><h2><img src="./IMAGES/pngwing.com.png" width="150" height="100"/></h2></legend>
+        <form action="./homepage.html">
+            <label for="fname">First name:</label><br>
+            <input type ="text" id="fname" name="first name" placeholder="Enter your name"/><br><br>
+            <label for="Sname">Second name:</label><br>
+            <input type ="text" id="Sname" name="Second name" placeholder="Enter your name"/><br><br>
+            <label for="mail"> Email:</label><br>
+            <input type="email" id="mail" name="mail" placeholder="Enter your email"/><br><br>
+            <label for="mobile">Mobile number:</label><br>
+            <input type="tel" id="Mobile" name="mobile" placeholder=" Enter your number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"/>
+            <br><br>
+            <label for="pwd">New password:</label><br>
+            <input type="Password" id="pwd" name="new password" /><br><br>
+            <label for="dob">Date of birth:</label><br>
+            <input type="number" id="day" name="dob" min="1" max="31"/>
+            <input type="month" id="month" name="dob" min="January" max="december"/><br><br>
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" checked>Male</inpu><br>
+            <input type="radio" id="female" name="gender">Female</inpu><br><br>
+            <input type="submit" value="Sign Up"/><br><br>
+
+            <a href="./Login.html">Already have an account</a>
+            
+
+        </form>
+    </fieldset>
+</body>
+</html>
