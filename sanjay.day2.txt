@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> WORLD CUP</title>
+</head>
+<body>
+<h1> ICC WORLD CUP
+          INDIA </h1>
+</body>
+
+
+</html>
