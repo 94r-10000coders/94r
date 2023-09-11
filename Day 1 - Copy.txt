@@ -1,0 +1,35 @@
+<!doctypehtml>
+<html>
+
+<head>
+<title> KRISHNA RESUME</title>
+<hr>
+<body>
+<h2> personal details</h2>
+<p> name          : krishna<br>
+     AGE          : 23<br>
+     DOB          : 11/06/2000<br>
+     email        : nleelakrishnaprakash@gmail.com
+</p>
+<h2> Education </h2>
+<p>  ssc          : vidya jyothi<br>
+     percentage   : 8.5 cgpa<br>
+
+     inter        : vidya vikas junior collage<br>
+     percentage   :  88%<br>
+
+     B.tech       : Aditya institute of technology and management<br>
+     percentage   : 7.2 cgpa<br>
+</p>
+<abbr title=" hyper text markup language">html</abbr>
+ 
+</body>
+
+
+
+
+
+</head>
+
+
+</html>

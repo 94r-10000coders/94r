@@ -1,0 +1,17 @@
+<!doctype.html>
+<html>
+<head>
+<body>
+<h1> KUSHI<h1>
+<img src="https://www.pinkvilla.com/images/2023-05/1456908202_vijay-deverakonda-samantha-kushi-first-single.jpg"/>
+<h1> Discription</h1>
+<p>The charming leads are placed in a romance drama peppered with comedy and good music and the narrative packs in plenty of references to films of Mani Ratnam, and even Vijay and Samantha. Beneath that entertaining veneer is the conflict point of contrasting ideologies that can mar relationships. Shiva Nirvana takes a simplistic route to show that love can conquer differences. Some of the characters are strictly one note and the exploration of ideologies also remains at the surface level. </p>
+<h6> trailler : <a href="https://youtu.be/AsvGScyj4gw?feature=shared"> click here</a></h6>
+ <img scr="https://www.sportsadda.com/static-assets/waf-images/28/af/fc/16-9/nWA9qdC9pF.jpg?v=1.3&w=420%20420w" height="200" width="200"/>
+<abbr title=" hyper text markup language">html</abbr>
+</body>
+
+</head>
+
+
+</html>
