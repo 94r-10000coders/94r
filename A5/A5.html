@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <title>A5</title>
+    </head>
+    <body>
+        <h1>Tables with images</h1>
+        <style>table,td,th{
+            border: solid black;
+            border-collapse: collapse;
+        }
+        </style>
+        <table>
+            <tr>
+                <th>Name </th>
+                <th>Images</th>
+            </tr>
+            <tr>
+                <td>Rohit Sharma</td>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQea0R3UDi-hzHwfEk4CV2AkPEXbJAOSF9NQQ&usqp=CAU" height="100" width="100"></td>
+            </tr>
+            <tr>
+                <td>Virat Kohli</td>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQhoR9Qte1Jmo4TPeiHkWEOjuO5FqxpULHdA&usqp=CAU" height="100" width="100"></td>
+            </tr>
+            <tr>
+                <td>Shubma Gill</td>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRaqprsA8eCj3LHcoqHXIzmP3mXuRnfrY7Eg&usqp=CAU" height="100" width="100"></td>
+            </tr>
+            <tr>
+                <td>Shreyas Iyer</td>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6iuEX0WnBc_o6XK2XQsEtMPqMRKY0vSPv9A&usqp=CAU" height="100" width="100"></td>
+            </tr>
+            <tr>
+                <td>Ishan kishan</td>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-uiTAqgCJ90B3jFtL_94eTrpMsnLtZpYMtw&usqp=CAU" height="150" width="100"></td>
+            </tr>
+            <tr>
+                <td>K L Rahul</td>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxXNDZn5jE7N561fZbLRi7xemfNt4f_vhyfQ&usqp=CAU" height="100" width="100"></td>
+            </tr>
+            <tr>
+                <td>Ravindra Jadeja</td>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWgKKF3_hWk1bbuVC0JnBIuMJbP-G3xkCdhc2ukMSQjhzTucsekrJxpvJdfp4jV5vGueg&usqp=CAU" height="100" width="100"></td>
+            </tr>
+        </table>
+        
+<h1>ICC Men's World Cup Schedule</h1>
+<p>Rowspan and colspan</p>
+<style> table,tr,td,th{
+border: solid black;
+border-collapse: collapse;
+}
+</style>
+<table>
+<tr>
+<th>Date</th>
+<th>Day</th>
+<th>Matches</th>
+<th>venue</th>
+</tr>
+<tr>
+<td>08-Oct-2023</td>
+<td>Sunday</td>
+<td>India vs Autralia</td>
+<td>MA Chidambaram Stadium,Chennai</td>
+</tr>
+<tr>
+<td>11-Oct-2023</td>
+<td>Wednesday</td>
+<td>India vs Afghanistan</td>
+<td >Arun Jaitley Stadium,Delhi</td>
+</tr>
+<tr>
+<td>14-Oct-2023</td>
+<td>Saturday</td>
+<td>India vs Pakistan</td>
+<td>Narendra Modi Stadium,Ahmedabad</td>
+</tr>
+<tr>
+<td>19-Oct-2023</td>
+<td>Thursday</td>
+<td>India vs Bangladesh</td>
+<td>Maharashtra Cricket Association Stadium, Pune</td>
+</tr>
+<tr>
+<td>22-Oct-23</td>
+<td>Sunday</td>
+<!--<td>India vs New Zealand</td>-->
+<td colspan="2">Himachal Pradesh Cricket Association Stadium, Dharamsala</td>
+</tr>
+<tr>
+<td>29-Oct-23</td>
+<td>Sunday</td>
+<td>India vs England</td>
+<td>Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow</td>
+</tr>
+<tr>
+<td>02-Nov-23</td>
+<td>Thursday</td>
+<td>India vs Sri Lanka</td>
+<td>Wankhede Stadium, Mumbai</td>
+</tr>
+<tr>
+<td>05-Nov-23</td>
+<td>Sunday</td>
+<td>India vs South Africa</td>
+<td rowspan="2">Eden Gardens, Kolkata</td>
+</tr>
+<tr>
+<td>12-Nov-23</td>
+<td>Sunday</td>
+<td>India vs Netherlands</td>
+<!--<td>M Chinnaswamy Stadium, Bengaluru</td>-->
+</tr>
+</table>
+<form>
+    <h1>Login Form</h1>
+    <label for="fname">First Name: </label><br>
+    <input type="text" id="fname" name="Firstname" placeholder="Firstname"><br>
+    <label>PassWord:</label><br>
+    <input type="password" id="password" name="password" placeholder="Password" minlenght="8">
+    <input type="Submit">
+</form>
+<form>
+    <h1>Signup Form</h1>
+    <label for="Fname">First Name:</label><br>
+    <input type="text" id="Fname" name="Fname" Placeholder="First Name"><br>
+    <label for="Lname">Lastname</label><br>
+    <input type="text" id="Lname" name="Lname" Placeholder="Secound name"><br>
+    <label for="Gender">Gender</label><br>
+    <input type="radio" id="Gender" name="gender">
+    <label>Male</label><br>
+    <input type="radio" id="Gender" name="Gender">
+    <label>Female</label><br>
+    <label for="tel">Mobile number</label><br>
+    <input type="tel" pattern="[0-9]{5}-[0-9]{2}-[0-9]{3}" placeholder="Phone number"><br>
+    <label for="date">Date of Birth</label><br>
+    <input type="date"><br>
+    <input type="password" id="password" name="password" placeholder="Password" minlenght="8"><br>
+    <input type="Submit">
+
+
+    
+</form>
+</body>
+</html>
