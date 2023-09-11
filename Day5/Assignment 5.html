@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        table,
+        th,
+        tr,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login Form</h1>
+<form action="./Login.html">
+    <label for ="Lid">Login id</label> <br>
+    <input type="text" id="Lid" required name="Login id" placeholder="enter name">
+    <br>
+    <label for ="pword">Password</label> <br>
+    <input type="text" id="pword" required name="Password" placeholder="enter">
+    <input type="submit">
+</form>
+<br>
+    <hr>
+    <h1>Sign Up Form</h1>
+<form action="./signup.html">
+    <label for="fname">First name:</label>
+    <br>
+    <input type="text" id="fname" required name="First name" placeholder="enter first name">
+    <br>
+    <label for="sname">Second name:</label>
+    <br>
+    <input type="text" id="sname" name="second name" placeholder="enter second name">
+    <br> Date of Birth:<br>
+    <input type="date">
+    <br>
+    <label for="gender">Gender</label>
+    <br>
+    <input type="radio" id="male"  checked name="gender">male</input>
+    <br>
+    <input type="radio" id="female" name="gender">female</input>
+    <br>
+    Country:
+    <select>
+        <option>Afghanistan</option>
+        <option>Bangladesh</option>
+        <option>China</option>
+        <option>India</option>
+        <option>Myanmar</option>
+        <option>Nepal</option>
+        <option>Srilanka</option>
+    </select>
+    <br>Address :<br>
+    <textarea></textarea>
+    <br>
+    Upload image:<input type="file">
+    <br>
+    <label>Age:</label>
+    <br>
+    <input type="Checkbox" id="Under 15 years" name="Age">Below 15 years</input><br>
+    <input type="Checkbox" id="15-45years" name="Age">15-45 years</input><br>
+    <input type="Checkbox" id="Above  45 years" name="Age">Above 45 years</input><br>
+    <label for ="uname">Username</label> <br>
+    <input type="text" id="uname" required name="Username" placeholder="enter name">
+    <br>
+    <label for ="pword">New Password</label> <br>
+    <input type="text" id="pword" required name="New Password" placeholder="enter">
+    <br>
+    <label for ="rpword"> Re-Enter Password</label> <br>
+    <input type="text" id="rpword" required name=" Re-enter Password" placeholder="enter again">
+    <br><br>
+    <input type="Submit">
+    <input type="reset">
+</form>
+<hr>
+<h1> Table with rowspan, colspan and images</h1>
+<table>
+    <caption>ASIA Cup 2023 Schedule</caption>
+    <tr>
+        <th rowspan="8">Scedule</th>
+        <th colspan="3">ODI ASIA CUP 2023</th>
+    <tr>
+        <th>Date</th>
+        <th>Group Stage</th>
+        <th>Venue</th>
+    </tr>
+    <tr> 
+        <td>30-AUG-2023</td>
+        <td>Pakistan <img src="C:\Users\tharu\OneDrive\Desktop\pakistan.png" height="50" width="50">Vs Nepal<img src="C:\Users\tharu\OneDrive\Desktop\nepal.png" height="50" width="50"></td>
+        <td>Multan,Pakistan</td>
+    </tr>
+    <tr> 
+        <td>31-AUG-2023</td>
+        <td>Bangladesh <img src="C:\Users\tharu\OneDrive\Desktop\bangladesh.png" height="50" width="50">Vs Srilanka<img src="C:\Users\tharu\OneDrive\Desktop\sri lanka.jpeg"height="50" width="50"></td>
+        <td>Kandy,Srilanka</td>
+    </tr>
+    <tr> 
+        <td>02-SEP-2023</td>
+        <td>Pakistan <img src="C:\Users\tharu\OneDrive\Desktop\pakistan.png" height="50" width="50">Vs India<img src="C:\Users\tharu\OneDrive\Desktop\India.png" height="50" width="50"></td>
+        <td>Kandy,Srilanka</td>
+    </tr>
+    <tr> 
+        <td>03-SEP-2023</td>
+        <td>Bangladesh <img src="C:\Users\tharu\OneDrive\Desktop\bangladesh.png" height="50" width="50">Vs Afghanistan<img src="C:\Users\tharu\OneDrive\Desktop\afghan.png" height="50" width="50"></td>
+        <td>Lahore,Pakistan</td>
+    </tr>
+    <tr> 
+        <td>04-SEP-2023</td>
+        <td>India <img src="C:\Users\tharu\OneDrive\Desktop\India.png" height="50" width="50">Vs Nepal<img src="C:\Users\tharu\OneDrive\Desktop\nepal.png" height="50" width="50"></td>
+        <td>Kandy,Srilanka</td>
+    </tr>
+    <tr> 
+        <td>05-SEP-2023</td>
+        <td>Afghanistan <img src="C:\Users\tharu\OneDrive\Desktop\afghan.png" height="50" width="50">Vs Sri Lanka<img src="C:\Users\tharu\OneDrive\Desktop\sri lanka.jpeg" height="50" width="50"></td>
+        <td>Lahore,Pakistan</td>
+    </tr>
+</table>
+</body>
+</html>

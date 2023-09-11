@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Mobilephone</title>
+</head>
+<body>
+<h1> REDMI NOTE 7 S</h1>
+<h2>storage: 64 GB</h2>
+<h2>Ram: 4GB</h2>
+<h2>Camera: 48MP +13MP Rear Camera and 5MP Front Camera</h2>
+
+</body>
+</html>

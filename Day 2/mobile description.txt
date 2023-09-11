@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Mobilephone</title>
+</head>
+<body>
+<h1>RED MI</h1>
+<h1> Features </h1>
+<h2>Series: Note 7</h2>
+<h2>Storage : 64GB</h2>
+<h2>RAM : 4GB </h2>
+<h2>Camera : 48MP + 5MP back and 13MP front camera</h2>
+<h2> Battery : 4000 mah</h2>
+
+
+</body>
+</html>
