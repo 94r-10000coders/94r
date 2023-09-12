@@ -1,0 +1,42 @@
+Day 5
+
+1.signup page
+<form method="post"> is used for not appending our details in url.
+if we use "<form>" it will append our (signupdata) or any formdata in url.
+2.already have an account in signup form
+we have to use anchor tag to redirect to login page
+ex: <a href="login page file address" already have an account></a>(we have to create new login page file, in that we have create login form so the user can login if user already have an account.)
+3. forgot password same as (2.point)
+or we can use <form action="file address">
+code
+we can use anchor tag or form action for redirecting webpage.
+4.field set is used for keeping borders in form page
+ex:<field set>
+5. <legend> it is used for placing images in form border.
+ex: <legend><img src="image location"></legend>
+6.creating tables and placing images in the table.
+<table>
+<tr>
+<th>name</th>
+<th>icon</th>
+</tr>
+<tr>
+<td>fb</fb>
+<td><a href="file location or image link"></a>
+</tr>
+6.Audio controls
+ex:
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+7.Video Controls
+ex:
+<video controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+****Discussed about git control and git hub****
+
