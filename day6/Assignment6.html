@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        table,
+        th,
+        tr,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .list {
+            background-color: lightgrey;
+            display: inline-block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div style="background-color:rgb(66, 132, 132);">
+        <h1>Table styled with row and col span.</h1>
+    </div>
+    <table style="margin-left:auto;margin-right:auto;" width="800" height="500">
+        <tr>
+            <td style="background-color:royalblue">Toyota Camry</td>
+            <td colspan="2" style="background-color: rgb(247, 162, 88)">Ford Mustang</td>
+            <!-- <td style="background-color: lavender;">Honda Civic</td> -->
+            <td style="background-color: teal">BMW 3 Series</td>
+            <td style="background-color: rgb(197, 15, 15)">Tesla Model 3</td>
+            <td style="background-color: rgb(223, 186, 186)" rowspan="3">Chevrolet Silverado 1500</td>
+        </tr>
+        <tr>
+            <td style="background-color: rgb(131, 131, 226)" colspan="3">Mercedes-Benz E-Class</td>
+            <!-- <td>Audi Q5</td> -->
+            <!-- <td>Hyundai Sonata</td> -->
+            <td style="background-color:lightblue">Jeep Wrangler</td>
+            <td style="background-color: pink">Nissan Altima</td>
+            <!-- <td>Subaru Outback</td> -->
+        </tr>
+        <tr>
+            <td style="background-color: rgb(192, 192, 126)">Volvo XC60</td>
+            <td style="background-color: yellowgreen">Lexus ES</td>
+            <td style="background-color: forestgreen">Kia Sportage</td>
+            <td style="background-color: rgba(255, 166, 0, 0.51)">Mazda CX-5</td>
+            <td style="background-color: whitesmoke">Ford Escape</td>
+            <!-- <td>Chrysler Pacifica</td> -->
+        </tr>
+        <tr>
+            <td style="background-color:coral">Volkswagen Golf</td>
+            <td style="background-color: peachpuff" colspan="3" rowspan="2">Chevrolet Malibu</td>
+            <!-- <td>Jeep Grand Cherokee</td> -->
+            <!-- <td>Hyundai Tucson</td> -->
+            <td style="background-color: rgb(214, 163, 214)">Honda CR-V</td>
+            <td style="background-color: darkolivegreen">Subaru Forester</td>
+        </tr>
+        <tr>
+            <td style="background-color:lightgray">Toyota RAV4</td>
+            <!-- <td>Nissan Rogue</td> -->
+            <!-- <td>Mitsubishi Outlander</td> -->
+            <!-- <td>Jeep Cherokee</td> -->
+            <td style="background-color:skyblue" rowspan="2" colspan="2">Ford Explorer</td>
+            <!-- <td style="background-color:lightyellow">Hyundai Santa Fe</td> -->
+        </tr>
+        <tr>
+            <td style="background-color:steelblue" rowspan="3"> Subaru Crosstrek</td>
+            <td style="background-color:saddlebrown">Mercedes-Benz GLC</td>
+            <td style="background-color:cadetblue">Audi A4</td>
+            <td style="background-color:darkkhaki">Volvo S60</td>
+            <!-- <td>Toyota Corolla</td> -->
+            <!-- <td>Kia Forte</td> -->
+        </tr>
+        <tr>
+            <!-- <td>Honda Accord</td> -->
+            <td style="background-color:darkseagreen">Hyundai Elantra</td>
+            <td style="background-color: cornflowerblue">Nissan Sentra</td>
+            <td style="background-color:honeydew" colspan="3" rowspan="2">Ford Focus</td>
+            <!-- <td>BMW X5</td> -->
+            <!-- <td>Mercedes-Benz C-Class</td> -->
+        </tr>
+        <tr>
+            <!-- <td>Audi A6</td> -->
+            <td style="background-color:coral">Jeep Renegade</td>
+            <td style="background-color: teal">Subaru Legacy</td>
+            <!-- <td>Volkswagen Passat</td> -->
+            <!-- <td>Lexus RX</td> -->
+            <!-- <td>Toyota Highlander</td> -->
+        </tr>
+    </table>
+    <div class="list">
+        <h3>List of information about CSS</h3>
+        <ol>
+            <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+            <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+            <li>External stylesheets are stored in CSS files</li>
+        </ol>
+    </div><br>
+    <div style="display:block;background-color: blanchedalmond;width: 58.5%;float: right;">
+        <h4>Types of CSS</h4>
+        <ul>
+            <li>Inline</li>
+            <li>Internal</li>
+            <li>External</li>
+
+        </ul>
+    </div><br>
+    <div style="display: block;background-color:lightseagreen;width: 40%;">
+        <details>
+            <h3>Nothing to display,i just want you to click the above thing</h3>
+
+            <summary>Click Here</summary>
+        </details>
+    </div>
+</body>
+
+</html>
