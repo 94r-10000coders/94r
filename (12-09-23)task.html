@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,tr,td { padding: 20px;
+            border:1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption style="background-color: aquamarine;">Table with Rowspan and Colspan</caption>
+        <tr>
+            <th style="color: blue; background-color: beige;">Head 1</th>
+            <th style="color: brown; background-color: aqua;">Head 2</th>
+            <th style="color: blueviolet; background-color: orange;">Head 3</th>
+            <th style="color: whitesmoke; background-color: darkgoldenrod; ">Head 4</th>
+            <th style="color: aqua; background-color: darkkhaki;">Head 5</th>
+            <th style="color: green;background-color: lightskyblue;">Head 6</th>
+        </tr>
+        <tr>
+            <td rowspan="3" style="background-color: olivedrab;">D1</td>
+            <td style="background-color: blanchedalmond;">D2</td>
+            <td style="background-color: gray;">D3</td>
+            <td style="background-color: aquamarine;">D4</td>
+            <td style="background-color: antiquewhite;">D5</td>
+            <td style="background-color: blue;">D6</td>
+        </tr>
+        <tr>
+            <!-- <td>D7</td> -->
+            <td colspan="2" style="background-color: deepskyblue;">D8</td>
+            <!-- <td>D9</td> -->
+            <td rowspan="2" style="background-color: orangered;">D10</td>
+            <td style="background-color: bisque;">D11</td>
+            <td style="background-color: violet;">D12</td>
+        </tr>
+        <tr>
+            <!-- <td>D13</td> -->
+            <td style="background-color: blanchedalmond;">D14</td>
+            <td style="background-color: mediumseagreen;">D15</td>
+            <!-- <td>D16</td> -->
+            <td colspan="2" style="background-color: rgb(85, 85, 187);">D17</td>
+            <!-- <td>D18</td> -->
+        </tr>
+        <tr>
+            <td style="background-color: blueviolet;">D19</td>
+            <td style="background-color: chocolate;">D20</td>
+            <td style="background-color: darkred;">D21</td>
+            <td style="background-color: dimgrey;">D22</td>
+            <td style="background-color: lightcoral;">D23</td>
+            <td style="background-color: limegreen;">D24</td>
+        </tr>
+        <tr>
+            <td style="background-color: darkcyan;">D25</td>
+            <td style="background-color: gold;">D26</td>
+            <td style="background-color: silver;">D27</td>
+            <td style="background-color: yellowgreen;">D28</td>
+            <td style="background-color: mediumaquamarine;">D29</td>
+            <td style="background-color: khaki;">D30</td>
+        </tr>
+    </table><br><br>
+    <h1 style="background-color: skyblue; display: inline;"><u>List with back ground color:</u></h1>
+    <ol>
+        <li style="background-color: orange;">HTML stands for Hyper Text Markup Language.</li>
+        <li style="background-color: aqua;">HTML is the standard markup language for creating Web pages.</li>
+        <li style="background-color: lightgreen;">HTML describes the structure of a Web page.HTML consists of a series of elements.</li>
+    </ol>
+    <ul>
+        <li style="background-color: darkgoldenrod;">HTML describes the structure of a Web page
+        </li>
+    </ul>
+    <br><br>
+    <div style="background-color: skyblue;">
+        <h1 style="background-color: orangered; display: inline;"><u>Example with div and span tag:</u></h1>
+        <p style="background-color: khaki;" >
+           <span style="font-size: 25px; "> <span style="color: crimson;">NOTE:</span></span> Some HTML elements have no content (like the <br> element). These elements are called empty elements. Empty elements do not have an end tag!
+        </p>
+    </div>
+
+</body>
+</html>
