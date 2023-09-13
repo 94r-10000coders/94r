@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-9</title>
+    <style>
+      #test{
+    color: darkviolet;
+  }
+  .test2{
+    background-color: teal;
+    display: inline; background-color:dimgrey;
+  }
+
+    </style>
+
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <h1><u>SIGNUP FORM WITH CSS:(here used external css for styling)</u></h1>
+      <form>
+            <fieldset>
+              <LEGEND><img src="C:\Users\Maddala Yashwanth\Desktop\assgn pics\task6\signup.png" width="50" height="50" /></LEGEND>
+              <label for="fname" style="background-color: mediumblue;">First Name:(here used inline css for styling)</label> <br> 
+              <input type="text" placeholder="enter first name" id="fname" name="fname" /> <br><br>
+              <label for="sname" style="background-color: lightcyan;">Second Name:</label> <br>
+              <input type="text" placeholder="enter second name" id="sname" name="sname" /> <br> <br>
+              <label style="background-color: blueviolet;">Mobile number:</label> <br>
+              <input type="tel" placeholder="enter mobile number" pattern="[0-9]{10}" /> <br> <br>
+              <label for="email" style="background-color: darkorange;">Email:</label> <br>
+              <input type="email" placeholder="enter email address" id="mail" />  <br> <br>
+              <label for="dob" style="background-color: darkgrey;">DOB:</label> <br>
+              <input type="date" id="dob" name="dob"/>  <br> <br>
+              <label for="pass" style="background-color: darkcyan;">Create Password:</label> <br>
+              <input type="password" placeholder="enter password" id="pass" name="pass" />  <br> <br>
+              <label for="pass" style="background-color: mediumspringgreen;">Re-enter Password:</label> <br>
+              <input type="password" placeholder="enter password" id="pass" name="pass"/>  <br> <br>
+              <label for="gender" id="test">Gender:(here used internal css for styling)</label> <br>
+              <input type="radio"  id="male" name="gender" checked>MALE </input> <br>
+              <input type="radio"  id="male" name="gender">FEMALE </input> <br> <br>
+              <button formaction="./homepage.html">Sign up</button>
+    </fieldset>
+    </form>
+    <hr>
+    <h1><u>TABLE WITH CSS STYLING:(used external css)</u></h1>
+    <table>
+        <tr>
+            <th style="background-color: darkgray;">HEAD1</th>
+            <th style="background-color: blue;">HEAD2</th>
+            <th style="background-color: darkgreen;">HEAD3</th>
+            <th style="background-color: darkviolet;">HEAD4</th>
+            <th style="background-color: darkturquoise;">HEAD5</th>
+        </tr>
+        <tr style="text-align: center;">
+            <td>
+                <p style="display: inline; background-color: darkred;">D1</p>
+            </td>
+            <td>
+                <p style="display: inline; background-color:blueviolet;">D2</p>
+            </td>
+            <td>
+                <p style="display: inline; background-color:aquamarine;">D3</p>
+            </td>
+            <td>
+                <p style="display: inline; background-color:azure;">D4(used inline css)</p>
+            </td>
+            <td>
+                <p style="display: inline; background-color:chartreuse;">D5</p>
+            </td>
+        </tr>
+        <tr style="text-align: center;">
+            <td>
+                <p style="display: inline; background-color:rebeccapurple;">D1</p>
+            </td>
+            <td>
+                <p style="display: inline; background-color:yellow;">D2</p>
+            </td>
+            <td>
+                <p style="display: inline; background-color:violet;">D3</p>
+            </td>
+            <td>
+                <p style="display: inline; background-color:turquoise;">D4</p>
+            </td>
+            <td>
+                <p style="display: inline; background-color:tomato;">D5</p>
+            </td>
+        </tr>
+        <tr style="text-align: center;">
+            <td>
+                <p style="display: inline; background-color: darkred;">D1</p>
+            </td>
+            <td>
+                <p style="display: inline; background-color:yellowgreen;">D2</p>
+            </td>
+            <td>
+                <p style="display: inline; background-color:blueviolet;">D3(used inline,align and bg color)</p>
+            </td>
+            <td>
+                <p style="display: inline; background-color:chocolate;">D4</p>
+            </td>
+            <td>
+                <p style="display: inline; background-color:antiquewhite;">D5</p>
+            </td>
+        </tr>
+        <tr style="text-align: center;">
+            <td>
+                <p style="display: inline; background-color:navy;">D1</p>
+            </td>
+            <td>
+                <p style="display: inline; background-color:moccasin;">D2</p>
+            </td>
+            <td>
+                <p style="display: inline; background-color:olive;">D3</p>
+            </td>
+            <td>
+                <p style="display: inline; background-color:maroon;">D4</p>
+            </td>
+            <td>
+                <p style="display: inline; background-color:mediumorchid">D5</p>
+            </td>
+        </tr>
+        <tr style="text-align: center;">
+            <td>
+                <p style="display: inline; background-color:mediumblue">D1</p>
+            </td>
+            <td>
+                <p style="display: inline; background-color:green;">D2</p>
+            </td>
+            <td colspan="3">
+                <p class="test2">D3(used internal css)</p>
+            </td>
+            <!-- <td>
+                <p>D4</p>
+            </td>
+            <td>
+                <p>D5</p>
+            </td> -->
+        </tr>
+        
+    </table>
+</body>
+</html>

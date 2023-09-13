@@ -1,0 +1,13 @@
+
+  h1{
+    color: darkred;
+  }
+  table,th,tr,td{
+    border:1px solid black;
+    border-collapse:collapse;
+  }
+  .test3{
+    background-color: khaki;
+    height: auto;
+    width: fit-content;
+  }
