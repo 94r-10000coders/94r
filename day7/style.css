@@ -1,0 +1,13 @@
+.form-bg{
+    min-height: 500px;
+    width:275px;
+    background-color: rgba(0,0,0,.75);
+    padding: 60px 68px 40px;
+    
+    
+}
+
+.bgimg{
+    background-image:url(./background.jpg);
+    
+}
