@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="./styel.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 8 html</title>
+    <style>
+        table,th,tr,td {
+            border : 1px solid;
+            border-collapse:collapse
+        }
+        #a1{background-color: antiquewhite;}
+
+        .c1{background-color: burlywood;}
+
+        #p2{background-color: aquamarine;}
+    </style>
+</head>
+<body>
+    this is an example for the usage of internal css.<br>
+    for this use style tag inside the head tag of the doc.
+    <table>
+        <tr>
+            <th>head 1</th>
+            <th>head 2</th>
+            <th>head 3</th>
+        </tr>
+        <tr>
+            <td>data 1</td>
+            <td>data 2</td>
+            <td>data 3</td>
+        </tr>
+    </table>
+    <p style="color: aqua;">this is a line using inline css in a p tag.</p>
+
+    <label for="a1">usage of id selector </label>
+    <input type="text" id="a1" placeholder="use # to apply css in <style>" >
+
+        <h2 class="c1">this is a usage of class selector</h2>
+        - to apply css using class selector use (.)
+        <p id="p1"><b>for elements below external css is  used<b></b></p>
+
+        <label for="a2">usage of id selector using external css </label>
+    <input type="text" id="a2" placeholder="use # to apply css in <style>" >
+
+        <p id="p2" style="background-color: antiquewhite;">to check priority order</p>
+</body>
+</html>
