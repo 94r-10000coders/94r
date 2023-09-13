@@ -1,0 +1,28 @@
+table td{
+    border: 1px solid black;
+}
+
+.white{
+
+    height: 50px;
+    background-color: white;
+    width: 100px;
+}
+
+#green{
+ background-color: green;
+ height: 100px;
+}
+
+#orange{
+    height: 100px;
+    background-color: orange;
+}
+
+#chakra{
+   
+}
+
+caption{
+    background-color: rgba(218, 185, 237, 0.962);
+}
