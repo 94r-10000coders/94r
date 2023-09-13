@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        h1{
+            color:blue;
+        }
+
+    </style>
+    <style>
+        table,tr,th,td{
+            border:1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h1>FORMS</h1>
+    <fieldset>
+    <form>
+        <label for="fname"><span style="background-color:red ;"><span style="color:greenyellow">First name:</span></span></label>
+        <input type="text"id="fname"name="first name"placeholder="enter your name"/><br><br>
+        <label for="sname"><span style="background-color: blue;"><span style="color:yellow">Second name:</span></span></label>
+        <input type="text"id="sname"name="second name"placeholder="enter your name"/><br><br>
+        <label for="num"><span style="background-color: palevioletred"><span style="color:aqua">Number</span></label><br>
+        <input type="number"id="num"min="1"max="10"/><br><br>
+        <label for="mobile"><span style="background-color: orangered;"><span style="color: black">Mobile number:</span></span></label>
+        <input type="tel"id="mobile"pattern="[0-9]{10}"required/><br><br>
+        <label for="gender"><span style="background-color: blueviolet;">Gender</span></label><br><br>
+       <div style="color:red" ><input type="radio"id="male"name="gender"checked/>male</input><br>
+        <input type="radio"id="female"name="gender"checked/>female</input><br><br></div>
+        <label for="skills"><span style="background-color:blue;"><span style="color: orange;"">skills</span></label><br>
+        <input type="checkbox"id="Reading"name="skills"><span style="color:green;">Reading</span></input><br>
+        <input type="checkbox"id="playing"name="skills"><span style="color: violet;">writing</span></input><br>
+        <input type="checkbox"id="singing"name="skills"><span style="color: blue;">playing</span></input><br>
+        <input type="checkbox"id="Dancing"name="skills"><span style="color:brown;">Dancing</span></input><br>
+        <input type="checkbox"id="coocking"name="skills"><span style="color:azure;">Walking</span></input><br>
+        <input type="checkbox"id="Running"name="skills"><span style="color: antiquewhite;">Running</span></input><br><br>
+      <div style="background-color: yellow;display: inline;" > <label for="options">Options</label><br></div>
+      <select id="options"name="options">
+            <option id="A"value="option1">A</option>
+            <option id="B"value=option2">B</option>
+            <option id="C"value=option3">C</option>
+            <option id="D"value="option4">D</option>
+        </select></div>
+        <input type="submit"value="submit"/>
+        <input type="reset"value="Reset"/>
+        
+    </form>
+    </fieldset>
+    <fieldset>
+        <legend><i>FLOWERS</i></legend>
+    <table style="background-color:yellow">
+        <tr>
+            <th style="background-color:blue ;">S.no</th>
+            <th style="background-color: green;">Name</th>
+            <th style="bsackground-color:violet ;">Flowers images</th>
+        </tr>
+        <tr>
+            <td style="background-color: yellowgreen;">1</td>
+            <td style="background-color:yellow;">Rose</td>
+            <td><img src="../Rose.jfif"></td>
+        </tr>
+        <tr>
+            <td style="background-color:pink ;">2</td>
+            <td style="bsackground-color:orange ;">Jasmine</td>
+            <Td><img src="../jasmine.jfif"></Td>
+        </tr>
+        <tr>
+            <td style="background-color:violet ;">3</td>
+            <td style="background-color:azure ;">Lotus</td>
+            <td><img src="../Lotus.jfif"></td>
+        </tr>
+        <tr>
+            <td style="background-color:orange ;">4</td>
+            <td style="background-color:red ;>Hibiscus</td>
+            <td><img src="../Hibiscus.jfif"</td>
+        </tr>
+    </table>
+    </fieldset>
+</body>
+</html>
