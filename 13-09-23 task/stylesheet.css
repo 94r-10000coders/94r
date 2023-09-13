@@ -1,0 +1,14 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: azure;
+    text-align: center;
+}
+form{
+    background-color: wheat;
+    color: red;
+}
+h1{
+    color: green;
+}
