@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./external css.css">
+    <style>
+         table, th, td {
+        border:1px solid black;
+        border-collapse: collapse;
+        }
+    h1{
+    color:red;
+}
+</style>
+</head>
+<body>
+    <h1>Cascading style sheet</h1>
+    <fieldset style="background-color: aqua;">
+        <h1 style="text-align: center;"> Sign up</h1>
+<form style="text-align: center;">
+<label for="fname" style="color:blue;">First name:</label> 
+<br><input type="text" name="fname" id="first name" placeholder="enter your name" style="background-color:greenyellow;">   
+<br><br><label for="sname" style="color:blue;">Second name</label>
+<br><input type="text" name="sname" id="second name" placeholder="enter your name " style="background-color: greenyellow;">
+<br><br><label for="gender" style="color: blue;">Gender</label>
+<br><input type="radio" name="gender" id="male">Male
+<br><input type="radio" name="gender" id="female">Female
+<br><br><textarea style="background-color:yellowgreen;" name="Adress" id="adress" cols="10" rows="2">Adress</textarea>
+<br><br><label style="background-color:red;" for="dob">DOB</label>
+<br><input type="date" name="dob" id="DOB">
+<br><br><label for="mnumber" style="color:blue;">Mobile number </label>
+<br><input type="tel" pattern="0-9"{10} placeholder="mobile number" style="background-color: red;">
+<br><br><input type="submit" value="submit" style="color:green;">
+<input type="reset" value="reset" style="background-color: yellow;">
+<br>Alreadyhaveaccount</a>
+
+</form>
+</fieldset>
+<h1>Table with css styling :[these head using internal & external css]</h1>
+<table >
+    <tr>
+        <th style="background-color: antiquewhite;">Name 1</th>
+        <th style="background-color: rgb(79, 114, 145);">Name 2</th>
+        <th style="background-color: aquamarine;">Name 3</th>
+        <th style="background-color:rgb(21, 230, 230);">Name 4</th>
+        <th style="background-color: beige;">Name 5</th>
+        <th style="background-color: blue;">Name 6</th>
+    </tr>
+    <tr>
+        <td style="background-color:yellow;">sairam</td>
+        <td style="background-color: blue;">santhosh</td>
+        <td style="background-color: brown;">rammallu</td>
+        <td style="color: blue;">dhanamma</td>
+        <td style="background-color: green;">indhu</td>
+        <td style="background-color: rgb(231, 116, 135);">chintu</td>
+    </tr>
+    <tr style="background-color: violet;">
+        <td>sindhu</td>
+        <td>aadya</td>
+        <td style="background-color: orange;">virat</td>
+        <td>bannu</td>
+        <td>saikumar</td>
+        <td>ganesh</td>
+    </tr>
+    <tr>
+        <td rowspan="3" style="background-color: blue;">murgan</td>
+        <td style="background-color: blueviolet;">ammulu</td>
+        <td style="background-color: brown;">chandhu</td>  
+        <td style="background-color:palegreen;">akhil</td>
+        <td style="background-color: greenyellow;">rajesh</td>
+        <td style="background-color: red;">vinay</td>
+    </tr>
+    <tr>
+        <!-- <td>eshwar</td> -->
+        <td colspan="2" style="background-color: rgb(225, 46, 190);">prasanna</td>
+        <!-- <td>navya</td> -->
+        <td colspan="3" style="background-color: navy;">ramya</td>
+        <!-- <td>mounika</td> 
+        <td>sandhya</td> -->
+    </tr>
+    <tr>
+        <!-- <td>mummy</td> -->
+        <td colspan="5" style="background-color: rgb(4, 241, 56);">vyshu</td>
+        <!-- <td>latha</td>
+        <td>mercy</td> 
+        <td>jaya</td>
+        <td>seetha</td>  -->
+    </tr>
+    <tr>
+        <!-- <td>manoj</td>
+        <td>peter</td>
+        <td>shiva</td>
+        <td>nani</td>
+        <td>pawan</td> -->
+        <td colspan="6" style="background-color: rgb(90, 86, 93);">krishna</td>
+    </tr>
+</table>
+</body>
+</html>
