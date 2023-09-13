@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div style="background-color:blueviolet">
+    <h1>Course Registration Form</h1>
+    <form action="Registration.html">
+        <ol>
+        <li class="hello"><label for="Full name" >Full name:</label><br>
+        <input type="text" id="First Name" name="Full name" placeholder="First Name"/>
+        <input type="text" id="Last Name" name="Full name" placeholder="Last Name"/></li>
+        <br>
+        <li><label for="dob">Date of birth:</label><br>
+        <input type="date" id="dob" name="date of birth"/></li>
+        <br>
+        <li id="hi"><label for="mail">Email Address:</label><br>
+        <input type="email" id="mail" name="email address" placeholder="Enter your email"/></li>
+        <br>
+        <li>
+            <label for="Phone">Phone Number:</label><br>
+            <input type="tel" id="Phone" name="Phone" placeholder="Enter your number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"/><br>
+            <br>
+        </li>
+        <li>
+            <label>Could you tell us a little about what you do?</label><br>
+            <input type="text" id="tell us a about yourself" name="tell us a about yourself" placeholder="Text here"/>
+            <br><br>
+        </li>
+        <li>
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" Checked>Male</input>
+            <input type="radio" id="male" name="gender">Female</input>
+        </li>
+        <br>
+        </ol>
+        <input style="background-color:rgb(241, 191, 26);"type="submit" value="SUBMIT"/>
+    </form>
+    </div>
+    
+</body>
+</html>

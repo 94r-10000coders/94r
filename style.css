@@ -1,0 +1,25 @@
+h1{
+    background-color: rgb(0, 12, 8);
+    color:lightcyan;
+    font-size: 30px;
+    text-align:center;
+}
+body{
+    background-color: rgb(107, 43, 226);
+}
+form{
+    font-size: large;
+}
+ol{
+    font-family:Arial, Helvetica, sans-serif;
+    color:bisque;
+}
+.hello{
+    color: rgb(153, 240, 40);
+}
+#hi{
+    color:lightgreen;
+}
+input{
+    background-color: lightgrey;
+}
