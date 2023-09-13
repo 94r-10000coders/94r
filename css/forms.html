@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: pink;
+
+        }
+
+        legend {
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: green;
+            border: 1px solid yellow;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid skyblue;
+            border-radius: 4px;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="reset"],
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: sienna;
+            text-decoration: none;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="reset"]:hover,
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <legend>Sign up</legend>
+    <form action="">
+        <label for="fname">FullName:</label>
+        <input type="text" name="Full Name" id="fname" placeholder="enter your name" required/>
+        <br><br><label>Email:</label>
+        <input type="email" id="email" placeholder="enter your email" required/>
+        <br><br><label>Phone Number:</label>
+        <input type="tel" required />
+        <br><br><label>Interested in:</label><br>
+        <input type="checkbox" >Accessories</input><br>
+        <input type="checkbox">Grocery</input><br>
+        <input type="checkbox">Foot wear</input><br>
+        <input type="checkbox">Costumes</input>
+        <br><br><label>Gender:</label>
+        <input type="radio" id="gender">male</input>
+        <input type="radio" id="gender">female</input>
+        <br><br><label>Date of birth:</label>
+        <input type="date"/>
+        <br><br><label>Address:</label>
+        <input type="text" placeholder="enter address" required>
+        <br><br><a href=" ">Sign up</a>
+        <br><br><input type="reset" value="reset"/>   
+        </form>
+        
+</html>
