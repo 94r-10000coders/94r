@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+label{
+    color: blue;
+}
+h1{
+    color:goldenrod;
+}
+.Gender{
+background-color:chocolate;
+}
+#Ph{
+background-color:darkolivegreen;
+}
+    </style>
+</head>
+<link rel="stylesheet" href="./styling .css"/>
+<body>
+    <h1>SignUp Form Using  CSS:(internal CSS)</h1>
+    <form>
+        <fieldset>
+            <legend><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPCZwLPI1sBirqkUqk1CCK4ueZSgGdqzoFGA&usqp=CAU" height="50" width="100"></legend>
+        <label for="fname"  style="background-color: aquamarine;">First name:(element selector)</label>
+        <input type="text"  id="fname" name="Firstname" placeholder="enter First name">
+        <br><br>
+        <label for="sname" style="background-color:blueviolet"> Second name:</label>
+        <input type="text" id="sname" name="Firstname" placeholder="enter Second name">
+        <br><br>
+        <label for="DoB" style="background-color:brown;" >Date of Birth:</label>
+        <input type="Date" id="DoB" name="Date Of Birth">
+        <br><br>
+        <label for="gender" class="Gender" >Gender:(class selector)</label>
+        <br>
+        <input type="radio" id="male">Male</input><br>
+        <input type="radio" id="male">Female</input>
+        <br><br>
+        <label id="Ph">Mobile number:(id selector)</label>
+        <input type="tel" placeholder="enter mobile name" pattern="[0-9]{10}">
+        <br><br>
+        <label for="mail" style="background-color:darkgrey;">Email:</label>
+        <input type="email" id="mail" name="email" placeholder="enter mail">
+        <br><br>
+        <label for="pwd" style="background-color:gold;">Password:</label>
+        <input type="password" id="pwd" name="Password" placeholder="enter">
+        <br><br>
+        <label for="pwd" style="background-color:khaki;">Re-Enter Password:</label>
+        <input type="password" id="pwd" name="Re-Enter password" placeholder="enter again"><br><br>
+        <button formaction="./homepage(13 sep).html">Submit</button>
+    </fieldset>
+    </form>
+    <hr>
+    <table>
+        <caption style="color:red;">ASIA Cup 2023 Schedule</caption>
+        <tr>
+            <th rowspan="8">Schedule</th>
+            <th colspan="3">ODI ASIA CUP 2023</th>
+        <tr>
+            <th>Date</th>
+            <th>Group Stage</th>
+            <th>Venue</th>
+        </tr>
+        <tr> 
+            <td style="color: blueviolet;background-color: coral; ">30-AUG-2023</td>
+            <td> <span style="background-color: darkgreen;">Pakistan</span>&nbsp<img src="./Asia Cup Countries/Pak.png" height="50" width="50"> <span style="color:darkgoldenrod;background-color: blue;font-weight: 200;">Vs</span> <span style="background-color:indigo;">Nepal</span>&nbsp<img src="./Asia Cup Countries/nepal.png" height="50" width="50"></td>
+            <td style="background-color:forestgreen;color: aqua;">Multan,Pakistan</td>
+        </tr>
+        <tr> 
+            <td style=" color:gold;background-color: coral">31-AUG-2023</td>
+            <td><span style="background-color:crimson;">Bangladesh</span>&nbsp <img src="./Asia Cup Countries/bangladesh.png" height="50" width="50"> <span style="color:darkgoldenrod;background-color: blue;font-weight: 200;">Vs</span> <span style="background-color: darkblue;">SriLanka</span>&nbsp<img src="./Asia Cup Countries/sri lanka.jpeg" height="50" width="50"></td>
+            <td style="background-color:forestgreen;color: blueviolet;">Kandy,Srilanka</td>
+        </tr>
+        <tr> 
+            <td style="background-color: coral; color:chartreuse;">02-SEP-2023</td>
+            <td><span style="background-color: darkgreen;">Pakistan</span>&nbsp<img src="./Asia Cup Countries/Pak.png" height="50" width="50"> <span style="color:darkgoldenrod;background-color: blue;font-weight: 200;">Vs</span> <span style="background-color:dodgerblue;">India</span>&nbsp<img src="./Asia Cup Countries/India.png" height="50" width="50"></td>
+            <td style="background-color:forestgreen;color:darkblue;">Kandy,Srilanka</td>
+        </tr>
+        <tr> 
+            <td style=" color:maroon;background-color: coral">03-SEP-2023</td>
+            <td><span style="background-color:crimson;">Bangladesh</span>&nbsp<img src="./Asia Cup Countries/bangladesh.png" height="50" width="50">&nbsp<span style="color:darkgoldenrod;background-color: blue;font-weight: 200;">Vs</span>&nbsp<span style="background-color:cornflowerblue;"> Afghanistan</span>&nbsp<img src="./Asia Cup Countries/afghan.png" height="50" width="50"></td>
+            <td style="background-color:forestgreen;color:darkred;">Lahore,Pakistan</td>
+        </tr>
+        <tr> 
+            <td style=" color:darkgreen; background-color: coral;">04-SEP-2023</td>
+            <td><span style="background-color:dodgerblue;">India</span>&nbsp<img src="./Asia Cup Countries/India.png" height="50" width="50">&nbsp<span style="color:darkgoldenrod;background-color: blue;font-weight: 200;">Vs</span> <span style="background-color:indigo;">Nepal </span>&nbsp<img src="./Asia Cup Countries/nepal.png" height="50" width="50"></td>
+            <td style="background-color:forestgreen;color:cornsilk;">Kandy,Srilanka</td>
+        </tr>
+        <tr> 
+            <td style=" color:cyan;background-color: coral">05-SEP-2023</td>
+            <td><span style="background-color:cornflowerblue;">Afghanistan</span>&nbsp<img src="./Asia Cup Countries/afghan.png" height="50" width="50">&nbsp<span style="color:darkgoldenrod;background-color: blue;font-weight: 200;">Vs</span> <span style="background-color: darkblue;">SriLanka</span>&nbsp<img src="./Asia Cup Countries/sri lanka.jpeg" height="50" width="50"></td>
+            <td style="background-color:forestgreen;color:mediumvioletred">Lahore,Pakistan</td>
+        </tr>
+    </table>
+</body>
+</html>
