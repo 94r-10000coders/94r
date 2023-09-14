@@ -4,41 +4,117 @@
         <title>document day 4</title>
         <style>
             table,th,td{
-                border: 1px solid;
+                border: 1px solid black;
+                border-collapse: collapse;
             }
         </style>
     </HEAD>
     <body>
+        <form>
+            <h1>login form</h1>
+            <label for="fname">username:</label>
+            <input type="text" id="fname" name="username" placeholder="enter your username">
+             <br>
+             <label for="pname">password:</label>       
+             <input type="text" id="pname" name="password" placeholder="enter your password">
+             <br>
+             <input type="submit">
+        </form>
+        <form>
+            <h1>signup form</h1>
+            <label for="mname">username:</label>
+            <input type="text" id="mname" name="username" placeholder="enter your name">
+            <br>
+            <label for="mail">email</label><br>
+            <input type="text" id="mail" name="email" placeholder="enter your mail id">
+            <br>
+            <label for="number">mobile number</label><br>
+            <input type="number" id="number" min="12" max="91">
+            <input type="tel" pattern="[1-9]{4}-[0-8]{3}-[2-9]{2}" placeholder="enter your number">
+            <br>
+            <label for="password">new password</label>
+            <input type="text" id="password" name="password" placeholder="enter your new password">
+            <br>
+            <label for="password">re-enter password</label>
+            <input type="text" id="password" name="password" placeholder="re-enter your password">
+            <br>
+            <label>date of birth</label><br>
+            <input type="date">
+            <br>
+            <label for="gender">gender</label><br>
+            <input type="radio" id="male" checked name="gender">male</input>
+            <br>
+            <input type="radio" id="female" name="gender">female</input>
+            <br>
+            <label for="skills">skills</label> <br>
+            <input type="checkbox" id="html" name="skills">html<br> 
+            <input type="checkbox" id="css" checked name="skills">css <br>
+            <input type="checkbox" id="jsp" checked name="skills">jsp <br><br>
+            <label>are you 18+</label><br>
+            <input type="radio" id="yes" name="yes">yes<br>
+            <input type="radio" id="no" name="yes">no<br>
+            <label>upload photo</label>
+            <input type="file"><br><br>
+            <input type="submit">
+            <input type="reset">
+        </form>
+        <br>
+        <br>
         <table>
+            <h1>cricket time table</h1>
             <tr>
-                <th>one</th>
-                <th>two</th>
+                <th>date</th>
+                <th colspan="2">match between</th>
+                <!-- <th>one</th> -->
+                <th>timings</th>
             </tr>
             <tr>
-                <td rowspan="2">moon</td>
-                <td>sun</td>
+                <td>01/02/2023</td>
+                <td rowspan="2">india</td>
+                <td>pakistan</td>
+                <td>11.pm</td>
             </tr>
             <tr>
-                <!--<td>day</td>-->
-                <td>night</td>
+                <td>03/02/2023</td>
+                <!-- <td>night</td> -->
+                <td>england</td>
+                <td rowspan="3">2.pm</td>
+            </tr>
+            <tr>
+                <td>03/03/2023</td>
+                <td>bangladesh</td>
+                <td rowspan="2">srilanka</td>
+                <!-- <td>night</td> -->
+            </tr>
+            <tr>
+                <td>04/04/2023</td>
+                <td>india</td>
+                <!-- <td>day</td> -->
+                <!-- <td>night</td> -->
             </tr>
         </table>
-    <!--semantic adn non-semantic
-    elements which describes the meaning or purpose to the developer and browser are called semantic elements 
-    elements which dont have any meaning are said to be non-semantic  -->    
-    <!--
-        div and span tags are non semantic
-       <header
-       nav 
-       aside 
-       sections
-       footer> these are used to understand for user and developer
-
-       tables row span columnspan
-    -->
-    <section>
-        <h1>header</h1>
-    </section>
-       
+        <table>
+            <h1>table with photos</h1>
+            <tr>
+                <th> cricket star</th>
+                <th>picture</th>
+            </tr>
+            <tr>
+                <td>1.rohith sharma</td>
+                <td><img src="./rohit sharma.jpeg"></td>
+            </tr>
+            <tr>
+                <td>2.virat kohli</td>
+                <td><img src="./virat kohli.jpeg"></td>
+            </tr>
+            <tr>
+                <td>3.shubman gill</td>
+                <td><img src="./shubman gill - Copy.jpeg"></td>
+            </tr>
+            <tr>
+                <td>4.shreyash iyer</td>
+                <td><img src="./shreyash iyer.jpeg"></td>
+            </tr>
+        </table>
 </body>
 </html>
