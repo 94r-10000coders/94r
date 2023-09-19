@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container{
+        border:2px solid black;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: fit-content;
+    }
+    .head{
+        color: rgb(0, 255, 98);
+        border: 2px solid black;
+        margin: 20px;
+        text-align: center;
+        border-radius: 10px;
+        background-image: linear-gradient(to top red),rgb(21, 218, 21) ;
+    }
+    .calender{
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: -18px;
+        display: flex;
+        gap: 3px;
+    }
+    .one{
+        border:2px solid black;
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        border-radius: 10px;
+        background-image: linear-gradient(to top rgb(24, 206, 33),rgb(121, 240, 10));
+    }
+    .two{
+        border:2px solid black;
+        width: 400px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-radius: 10px;
+        background-image: linear-gradient(to bottom,rgb(14, 163, 212),rgb(69, 18, 128));
+        width: fit-content;
+    }
+    .two li{
+        border: 1px solid black;
+        width: 20px;
+        text-wrap: wrap;
+        height: 20px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 13px;
+        margin-right: 13px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+    }
+    .two .i{
+        border-radius: 5px;
+        width: fit-content;
+        margin: 7px;
+    }
+    .two .s{
+        color: rgb(17, 0, 255);
+        background-color: rgb(218, 162, 58);
+    }
+    .two .f{
+        color: rgb(255, 0, 0);
+        background-color: rgb(14, 219, 25);
+    }
+    .three{
+        border:2px solid black;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        border-radius: 10px;
+        background-image: linear-gradient(to top,rgba(255, 0, 0, 0.829),rgb(16, 20, 238));
+
+    }
+    .day .e,.day1 .e{
+        border: none;
+    }
+    .day1{
+        margin-left: 9px;
+    }
+    .day,.day1{
+        display: flex;
+        flex-direction: row;
+        width: 350px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="head">
+        <h1> Css Calender</h1>
+    </div>
+    <div class="calender">
+        <ul type="none" class="one">
+            <li style="color: red;">January</li>
+            <li>Febuary</li>
+            <li>March</li>
+            <li>April</li>
+            <li>May</li>
+            <li>June</li>
+            <li>July</li>
+            <li>August</li>
+            <li>September</li>
+            <li>October</li>
+            <li>November</li>
+            <li>December</li>
+        </ul>
+        <ul type="none" class="two">
+            <div class="day">
+                <li class="i">SUN</li>
+                <li class="i">MON</li>
+                <li class="i">TUE</li>
+                <li class="i">WED</li>
+                <li class="i">THU</li>
+                <li class="i">FRI</li>
+                <li class="i">SAT</li>
+            </div>
+            <div class="day1">
+                <li class="e"></li>
+                <li class="e"></li>
+                <li class="e"></li>
+                <li class="e"></li>
+                <li class="e"></li>
+                <li class="f">1</li>
+                <li class="s">2</li>
+            </div>
+            <div class="day"><li class="s">3</li>
+                <li>4</li>
+                <li>5</li>
+                <li >6</li>
+                <li>7</li>
+                <li>8</li>
+                <li class="s">9</li></div>
+                <div class="day"><li class="s">10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li class="f">15</li>
+                <li class="s">16</li></div>
+                <div class="day"><li class="s">17</li>
+                <li>18</li>
+                <li>19</li>
+                <li>20</li>
+                <li>21</li>
+                <li>22</li>
+                <li class="s">23</li></div>
+                <div class="day"><li class="s">24</li>
+                <li>25</li>
+                <li class="f">26</li>
+                <li>27</li>
+                <li>28</li>
+                <li>29</li>
+                <li class="s">30</li></div>
+                <div class="day">
+                <li class="s">31</li>
+                <li class="e"></li>
+                <li class="e"></li>
+                <li class="e"></li>
+                <li class="e"></li>
+                <li class="e"></li>
+                <li class="e"></li>
+            </div>
+              </ul>
+        <ul type="none" class="three">
+            <li>01-01-23 New Happy</li>
+            <li>15-01-23 Pongal</li>
+            <li>26-01-23  Republic Day</li>
+
+        </ul>
+    </div>
+
+</div>
+</body>
+</html>
+ 
