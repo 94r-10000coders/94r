@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .one{
+            width: 516px;
+            height: 308px;
+            border: 2px solid black;
+        }
+        .two{
+            width: 516px;
+            height: 300px;
+            border: 2px solid black;
+        }
+        .two .a,.b,.c{
+            display: flex;
+
+        }
+        .two .a,.c{
+            justify-content: space-between;
+        }
+        .two .b{
+            gap: 108px;
+            justify-content: center;
+        }
+        .three,.four,.five{
+            border: 2px solid black;
+            width: fit-content;
+            padding-left: 10px;
+            padding-right: 10px;
+            display: flex;
+            gap: 4px;
+        }
+        .three p,.four p,.five p{
+            border: 2px solid black;
+            text-align: center;
+        }
+        .six i{
+            font-size: 50px;
+            border: 2px solid black;
+            width: 55px;
+            height: 55px;
+            border-radius: 30px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class=".container">
+    <div style="position: sticky;top: 0px;background-color: aqua;width: 100vw;border: 2px solid black;z-index: 1;text-align: center;"><h1>20-09-23 Assignment</h1></div>
+    <h1>Using Absolute Position</h1>
+    <div class="one">
+        <div style="position: absolute;"><img src="./images/css background.jpeg" width="100px" height="100px">
+        </div>
+        <div style="position: absolute;left:218px;"><img src="./images/css background.jpeg" width="100px" height="100px">
+        </div>
+        <div style="position: absolute;top: 382px;"><img src="./images/css background.jpeg" width="100px" height="100px">
+        </div>
+        <div style="position: absolute;top: 382px;left: 218px;"><img src="./images/css background.jpeg" width="100px" height="100px">
+        </div>
+        <div style="position: absolute;top:277px;left: 113px;"><img src="./images/css background.jpeg" width="100px" height="100px">
+        </div>
+        <div style="position: absolute;left: 426px;"><img src="./images/css background.jpeg" width="100px" height="100px">
+        </div>
+        <div style="position: absolute;top:382px;left: 426px;"><img src="./images/css background.jpeg" width="100px" height="100px">
+        </div>
+        <div style="position: absolute;top:277px;left: 322px;"><img src="./images/css background.jpeg" width="100px" height="100px">
+        </div>
+    </div>
+    <h1>Using Relative Position</h1>
+    <div class="one">
+        <div style="position: relative;"><img src="./images/css background.jpeg" width="100px" height="100px">
+        </div>
+        <div style="position: relative;left: 208px;bottom: 104px;"><img src="./images/css background.jpeg" width="100px" height="100px">
+        </div>
+        <div style="position: relative;left: 104px;bottom: 104px;"><img src="./images/css background.jpeg" width="100px" height="100px">
+        </div>
+        <div style="position: relative;bottom: 104px;"><img src="./images/css background.jpeg" width="100px" height="100px">
+        </div>
+        <div style="position: relative;left: 208px;bottom: 208px;"><img src="./images/css background.jpeg" width="100px" height="100px">
+        </div>
+        <div style="position: relative;bottom: 520px;left: 416px;"><img src="./images/css background.jpeg" width="100px" height="100px">
+        </div>
+        <div style="position: relative;bottom: 416px;left: 416px;"><img src="./images/css background.jpeg" width="100px" height="100px">
+        </div>
+        <div style="position: relative;bottom: 624px;left: 312px;"><img src="./images/css background.jpeg" width="100px" height="100px">
+        </div>
+    </div>
+    <h1>Using Flex Property</h1>
+    <div class="two">
+        <div class="a">
+            <img src="./images/css background.jpeg" width="100px" height="100px">
+            <img src="./images/css background.jpeg" width="100px" height="100px">
+            <img src="./images/css background.jpeg" width="100px" height="100px">
+        </div>
+        <div class="b">
+            <img src="./images/css background.jpeg" width="100px" height="100px">
+            <img src="./images/css background.jpeg" width="100px" height="100px">
+        </div>
+        <div class="c">
+            <img src="./images/css background.jpeg" width="100px" height="100px">
+            <img src="./images/css background.jpeg" width="100px" height="100px">
+            <img src="./images/css background.jpeg" width="100px" height="100px">
+        </div>
+    </div>
+    <h1>4 Columns</h1>
+    <div class="three">
+        <p>A clean, pure comedy with beautiful love chemistry story in these recent times i have watched. I hope everyone will connect to those characters. Definitely a relaxing entertaining movie, one can watch with full family.
+
+            The feel of love, or the chemistry between Mr. Polishetty and Mrs Shetty is wonderful.
+            
+            The concept of trust and hope in love is beautifully portrayed by the director Mr. Mahesh.
+            
+        </p>  <p>HTML stands for Hyper Text Markup Language
+            HTML is the standard markup language for creating Web pages
+            HTML describes the structure of a Web page
+            HTML consists of a series of elements
+            HTML elements tell the browser how to display the content
+            HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc</p>
+        <p>Web pages can be created and modified by using professional HTML editors.
+
+            However, for learning HTML we recommend a simple text editor like Notepad (PC) or TextEdit (Mac).
+            
+            We believe that using a simple text editor is a good way to learn HTML.
+            
+            Follow the steps below to create your first web page with Notepad or TextEdit.</p>
+        <p>All HTML elements can have attributes
+            Attributes provide additional information about elements
+            Attributes are always specified in the start tag
+            Attributes usually come in name/value pairs like: name="value"
+            </p>
+    </div>
+    <h1>5 Columns</h1>
+    <div class="four">
+        <p>A clean, pure comedy with beautiful love chemistry story in these recent times i have watched. I hope everyone will connect to those characters. Definitely a relaxing entertaining movie, one can watch with full family.
+
+            The feel of love, or the chemistry between Mr. Polishetty and Mrs Shetty is wonderful.
+            
+            The concept of trust and hope in love is beautifully portrayed by the director Mr. Mahesh.
+            
+        </p>  <p>HTML stands for Hyper Text Markup Language
+            HTML is the standard markup language for creating Web pages
+            HTML describes the structure of a Web page
+            HTML consists of a series of elements
+            HTML elements tell the browser how to display the content
+            HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc</p>
+        <p>Web pages can be created and modified by using professional HTML editors.
+
+            However, for learning HTML we recommend a simple text editor like Notepad (PC) or TextEdit (Mac).
+            
+            We believe that using a simple text editor is a good way to learn HTML.
+            
+            Follow the steps below to create your first web page with Notepad or TextEdit.</p>
+        <p>All HTML elements can have attributes
+            Attributes provide additional information about elements
+            Attributes are always specified in the start tag
+            Attributes usually come in name/value pairs like: name="value"
+            </p>
+            <p>A clean, pure comedy with beautiful love chemistry story in these recent times i have watched. I hope everyone will connect to those characters. Definitely a relaxing entertaining movie, one can watch with full family.
+
+                The feel of love, or the chemistry between Mr. Polishetty and Mrs Shetty is wonderful.
+                
+                The concept of trust and hope in love is beautifully portrayed by the director Mr. Mahesh.
+                
+            </p> 
+    </div>
+    <h1>6 Columns</h1>
+    <div class="five">
+        <p>A clean, pure comedy with beautiful love chemistry story in these recent times i have watched. I hope everyone will connect to those characters. Definitely a relaxing entertaining movie, one can watch with full family.
+
+            The feel of love, or the chemistry between Mr. Polishetty and Mrs Shetty is wonderful.
+            
+            The concept of trust and hope in love is beautifully portrayed by the director Mr. Mahesh.
+            
+        </p>  <p>HTML stands for Hyper Text Markup Language
+            HTML is the standard markup language for creating Web pages
+            HTML describes the structure of a Web page
+            HTML consists of a series of elements
+            HTML elements tell the browser how to display the content
+            HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc</p>
+        <p>Web pages can be created and modified by using professional HTML editors.
+
+            However, for learning HTML we recommend a simple text editor like Notepad (PC) or TextEdit (Mac).
+            
+            We believe that using a simple text editor is a good way to learn HTML.
+            
+            Follow the steps below to create your first web page with Notepad or TextEdit.</p>
+        <p>All HTML elements can have attributes
+            Attributes provide additional information about elements
+            Attributes are always specified in the start tag
+            Attributes usually come in name/value pairs like: name="value"
+            </p>
+            <p>A clean, pure comedy with beautiful love chemistry story in these recent times i have watched. I hope everyone will connect to those characters. Definitely a relaxing entertaining movie, one can watch with full family.
+
+                The feel of love, or the chemistry between Mr. Polishetty and Mrs Shetty is wonderful.
+                
+                The concept of trust and hope in love is beautifully portrayed by the director Mr. Mahesh.
+                
+            </p>  <p>HTML stands for Hyper Text Markup Language
+                HTML is the standard markup language for creating Web pages
+                HTML describes the structure of a Web page
+                HTML consists of a series of elements
+                HTML elements tell the browser how to display the content
+                HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc</p>
+            
+    </div><br>
+</div>
+</body>
+</html>
