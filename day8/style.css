@@ -1,0 +1,115 @@
+.h1{
+   
+    color:rgb(242, 241, 241);
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 1px 5px 1px 5px;
+
+     background-repeat:round;
+    background-color:rgba(0, 0, 0, 0.827);
+   
+}
+.intro{
+    background-color:hsla(0, 0%, 100%, 0.734);
+
+    margin: auto;
+    width: 65%;
+    height: auto;
+    padding: 10px;
+    font-family:Montserrat;
+
+ 
+    
+}
+.form{
+    
+    height: 220px;
+    background:none;
+    padding: 20px;
+    background-image: url(./images/bench-accounting-nvzvopqw0gc-unsplash.jpg);
+    background-size:80%;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+.movie{
+    padding:10px;
+    display:block;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 200px;
+    margin: 0px 200px 0px 200px ;
+    overflow-y: scroll;
+    border: 1px solid black;
+}
+body {
+    background-image: url(./images/m-visvesvaraya-biography.jpg); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:center;
+    background-size:auto;
+    }
+.share{
+    width: auto;
+    height: 257px;
+    background-color: rgba(0, 0, 0, 0.668);
+    color: #ffffff;
+    font-family: Montserrat;
+    padding: 30px;
+    text-align: center;
+    
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align:center;
+  text-decoration: none;
+  margin: 5px;
+}
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+
+.fa-instagram {
+  background: #b71553;
+  color: white;
+}
+
+
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+}
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #130101;
+}
+
+th {
+    background-color: #000000e2;
+}
+
