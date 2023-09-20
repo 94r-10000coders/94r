@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .container{border: 2px solid black;
+        background-color: aqua;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: fit-content;
+     }
+     .head{color: black;
+        border: 2px solid black;
+        margin: 10px;
+        text-align: center;
+        border-radius: 10px;
+        background-image: linear-gradient(to bottom,orange,white,green)
+    }
+    .calender{margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: -15px;
+        gap: 5px;
+        display: flex;
+     }
+     .one{border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        border-radius: 10px;
+        background-image: linear-gradient(to bottom,orange,white,green);
+     }
+     .two{
+        border: 2px solid black;
+        width: 400px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-radius: 10px;
+        background-image: linear-gradient( to bottom,pink,yellow);
+     }
+     .two li{border: 1px solid black;
+        width: 20px;
+        text-wrap: wrap;
+        height: 20px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+     }
+     .two .i{
+        border-radius: 5px;
+        width: fit-content;
+        margin: 7px;
+     }
+     .two .s{
+        color: red;
+        background-color: azure;
+
+     }
+     .two .f{
+        color: blue;
+        background-color: aqua;
+     }
+     .three{
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        border-radius: 10px;
+        background-image: linear-gradient( to bottom,orange,white,green);
+     }
+     .day .e,.day1 .e{
+        border: none;
+     }
+     .day1{
+        margin-left: 5px;
+     }
+     .day,.day1{
+        display: flex;
+        flex-direction: row;
+        width: 350px;
+     }
+</style>
+</head>
+<body>
+    <div class="container">
+    <div class="head">
+        <h1>Calender</h1>
+    </div>
+    <div class="calender" >
+        <ul type="none" class="one">
+            <li>January</li>
+            <li>February</li>
+            <li>March</li>
+            <li>April</li>
+            <li>may</li>
+            <li>june</li>
+            <li>July</li>
+            <li>August</li>
+            <li style="color: blue;">september</li>
+            <li>October</li>
+            <li>November</li>
+            <li>December</li>
+        </ul>
+        <ul type="none" class="two">
+            <div class="day">
+            <li class="i">Sun</li>
+            <li class="i">Mon</li>
+            <li class="i">Tue</li>
+            <li class="i">Wed</li>
+            <li class="i">Thu</li>
+            <li class="i">Fri</li>
+            <li class="i">Sat</li>
+            </div>
+            <div class="day1">
+                <li class="e"></li>
+                <li class="e"></li>
+                <li class="e"></li>
+                <li class="e"></li>
+                <li class="e"></li>
+                <li>1</li>
+                <li class="s">2</li>
+                </div>
+                <div class="day">
+                    <li class="s">3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li class="f">6</li>
+                    <li class="f">7</li>
+                    <li>8</li>
+                    <li class="s">9</li>
+                </div>
+                <div class="day">
+                    <li class="s">10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li class="s">16</li>
+                 </div>
+                 <div class="day">
+                    <li class="s">17</li>
+                    <li>18</li>
+                    <li class="f">19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li class="s">23</li>
+                 </div>
+                 <div class="day">
+                    <li class="s">24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li class="f">28</li>
+                    <li>29</li>
+                    <li class="s">30</li>
+                 </div>
+                 <div class="day">
+                    <li class="s">31</li>
+                    <li class="e"></li>
+                    <li class="e"></li>
+                    <li class="e"></li>
+                    <li class="e"></li>
+                    <li class="e"></li>
+                    <li class="e"></li>
+                </div>
+                </ul>
+                <ul type="none" class="three">
+                    <li>06-sep-2023 Janmastami</li>
+                    <li>07-sep-2023 janmastami</li>
+                    <li>19-sep-2023 Ganesh chathurthi</li>
+                    <li>28-sep-2023 Milad Un-Nabi/Id-e-Milas</li>
+                </ul>
+            </div>
+            </div>
+            
+</body>
+</html>
