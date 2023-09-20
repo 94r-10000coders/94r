@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts</title>
+    <style>
+        .main{
+            border:3px solid black;
+            display:flex;
+            gap:5px;
+            flex-wrap: wrap;
+            padding:5px;
+            width:95%;
+            height:90%;
+            background-color: blanchedalmond;
+        }
+        .container{
+          border:2px solid black;
+          padding:40px;
+          display:flex;
+          flex-wrap: wrap;
+          width:500px;
+          height:200px;
+          gap:5px;
+          background-image: linear-gradient(pink,lightblue);
+        }
+        .container1{
+          border:2px solid black;
+          padding:40px;
+          display:flex;
+          flex-wrap: wrap;
+          width:600px;
+          height:200px;
+          gap:5px;
+          background-image: linear-gradient(pink,lightblue);
+        }
+        .container2{
+          border:2px solid black;
+          padding:40px;
+          display:flex;
+          flex-wrap: wrap;
+          width:700px;
+          height:200px;
+          gap:5px;
+          background-image: linear-gradient(pink,lightblue);
+        }
+        .items{
+            background-color: aqua;
+            padding:20px;
+            border:2px dashed black;
+            flex-wrap: wrap;
+            
+        }
+        .test{
+            border:2px solid black;
+            width:100%;
+            text-align: center;
+            background-color:yellow;
+        }
+        .main2{
+            border:2px solid black;
+            gap:5px;
+            padding:5px;
+            margin-top: 40px;
+            width:1200px;
+            height:500px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .title{
+            background-color: chocolate;
+            border:2px solid black;
+            width:100%;
+            flex-wrap: wrap;
+        }
+        .items2{
+            border:2px solid black;
+            padding:0px;
+            background-color: aquamarine;
+            width:500px;
+            height:270px;
+            flex-wrap: wrap;
+        }
+        .items3{
+            border:2px solid black;
+            padding:0px;
+            background-color: aquamarine;
+            width:500px;
+            height:252px;
+            flex-wrap: wrap;
+        }
+        .image{
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+            <div class="test">
+               <h1>4/5/6 LAYOUTS:-(Task-1)</h1>
+            </div>
+            <div class="container">
+                Main(4 layout)
+               <div class="items">item_1</div>
+               <div class="items">item_2</div>
+               <div class="items">item_3</div>
+               <div class="items">item_4</div>
+            </div>
+            <div class="container1">
+                Main(5 layout)
+                <div class="items">item_1</div>
+                <div class="items">item_2</div>
+                <div class="items">item_3</div>
+                <div class="items">item_4</div>
+                <div class="items">item_5</div>
+            </div>
+            <div class="container2">
+                Main(6 layout)
+                <div class="items">item_1</div>
+                <div class="items">item_2</div>
+                <div class="items">item_3</div>
+                <div class="items">item_4</div>
+                <div class="items">item_5</div>
+                <div class="items">item_6</div>
+            </div>
+            <p style="font-size: x-large;">&#128515;</p>
+    </div>
+    <div class="main2">
+        <div class="title">
+            <h1 style="text-align: center;">Logo_Layout(Task2)</h1>
+            <h2 style="text-align: center;">(Using 2 methods:Position&Flex)</h2>
+        </div> 
+        <div class="items2">
+            <div style="position:relative;"><img src="./login logo.jpg" height="50px";/></div>
+            <div style="position:relative;left:424px;bottom:53px"><img src="./login logo.jpg" height="50px";/></div>
+            <div style="position:relative;left:212px;"><img src="./login logo.jpg" height="50px";/></div>
+            <div style="position:relative;top:58px;"><img src="./login logo.jpg" height="50px";/></div>
+            <div style="position:relative;left:424px;top:3px;"><img src="./login logo.jpg" height="50px";/></div> 
+        </div>
+        <div class="items3">
+            <div class="image" style="display: flex;">
+                <img src="./login logo.jpg" height="50px";/>
+                <img src="./login logo.jpg" height="50px";/>
+            </div>
+            <div>
+                <p>&nbsp</p>
+            </div>
+            <div style="display: flex;justify-content: center;">
+                <img src="./login logo.jpg" height="50px";/>
+            </div>
+            <div>
+                <p>&nbsp;</p>
+                <!-- <p>&nbsp;</p> -->
+            </div>
+            <div class="image" style="display: flex;">
+                <img src="./login logo.jpg" height="50px";/>
+                <img src="./login logo.jpg" height="50px";/>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
