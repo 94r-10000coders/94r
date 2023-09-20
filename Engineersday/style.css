@@ -1,0 +1,94 @@
+.sec1{
+    background:linear-gradient(to left, blue,skyblue );
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 30px;
+    margin-bottom:30px;
+    box-shadow: 10px 10px  white;
+    
+}
+.sec2{
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 30px;
+    margin-bottom:30px;
+    box-shadow: 10px 10px  grey;
+}
+.sec3
+{
+    background:linear-gradient(to left, blue,skyblue);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom:30px;
+    box-shadow: 5px 5px  grey;
+   
+}
+.sec4{
+    background-color:white;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 30px;
+    margin-bottom:30px;
+    box-shadow: 5px 5px  grey;
+}
+.sec5
+{
+    background:linear-gradient(to left, blue,skyblue);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 30px;
+    margin-bottom:30px;
+    box-shadow: 5px 5px  grey;
+   
+}
+.sec6{
+    background-color:white;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 30px;
+    margin-bottom:30px;
+    box-shadow: 5px 5px  grey;
+}
+.sec7
+{
+    background:linear-gradient(to left, blue,skyblue);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 30px;
+    margin-bottom:30px;
+    box-shadow: 5px 5px  grey;
+}
+.sec8{
+    background-color:white ;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 30px;
+    margin-bottom:30px;
+    box-shadow: 5px 5px  grey;
+}
+.div1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
