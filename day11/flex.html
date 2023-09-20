@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>flex</title>
+    <style>
+        .container{
+            border: 3px solid black;
+            background-image:radial-gradient(red,yellow,green);
+            padding: 30px;
+            text-align: center;
+        }
+        .first{border: 3px solid black;
+            height:500px;width:500px;
+            background-image:linear-gradient(yellow,blue,pink); 
+
+        }
+        .second{
+            border: 3px solid black;
+            height: 500px;width: 500px;
+            background-image:linear-gradient(pink,skyblue);
+        }
+        .third{
+            border: 3px solid black;
+            height:50vh;
+            display:flex;
+            padding:30px;
+            gap: 20px;
+            background-image:linear-gradient(pink,white,gray);
+
+        }
+        .four{
+            border: 3px solid black;
+            height:50vh;
+            display: flex;
+            padding:50px;
+            gap: 20px;
+            background-image:radial-gradient(pink,blue);
+
+        }
+        .three{
+            border: 3px solid black;
+            height: 100%;width:50%;
+
+        }
+        .fourth{
+            border: 3px solid black;
+            height: 100%;width:50%;
+        }
+        .five{
+            border: 3px solid black;
+            height:50vh;
+            display: flex;
+            padding:50px;
+            gap: 20px;
+           background-image: conic-gradient(red,blue,green,yellow);
+
+        }
+        .six{
+            border: 3px solid black;
+            height: 100%;width:50%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="container">
+            <h1>Assignment</h1>
+        </div>
+               <h1>using absolute path</h1>
+        <div class="first">
+            <div style="position: absolute;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2ljCKN3HufEKGF2nZ8X91bLSDmMKSBckcgA&usqp=CAU" height="110px" width="110px"></div>
+            <div style="position: absolute;left: 401px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2ljCKN3HufEKGF2nZ8X91bLSDmMKSBckcgA&usqp=CAU" height="110px" width="110px"></div>
+            <div style="position: absolute;top:435px;left:205px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2ljCKN3HufEKGF2nZ8X91bLSDmMKSBckcgA&usqp=CAU" height="110px" width="110px"></div>
+            <div style="position: absolute;top:630px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2ljCKN3HufEKGF2nZ8X91bLSDmMKSBckcgA&usqp=CAU" height="110px" width="110px"></div>
+            <div style="position: absolute;top:630px;left: 401px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2ljCKN3HufEKGF2nZ8X91bLSDmMKSBckcgA&usqp=CAU" height="110px" width="110px"></div>
+        </div>
+        <h1>using relative path</h1>
+        <div class="second">
+        <div style="position: relative;left:-16px;top:-13px;"><img src="https://play-lh.googleusercontent.com/Pvy10jSuQzuGdpDneqfopf3fwVwR9PxLRCv2Vy6xh41Gqcdnn7xN5ZV2xVdpc02EF08" height="110px" width="110px"></div>
+        <div style="position: relative;top:-127px;px;left:405px;"><img src="https://play-lh.googleusercontent.com/Pvy10jSuQzuGdpDneqfopf3fwVwR9PxLRCv2Vy6xh41Gqcdnn7xN5ZV2xVdpc02EF08" height="110px" width="110px"></div>
+        <div style="position: relative;left:205px;top:-20px;"><img src="https://play-lh.googleusercontent.com/Pvy10jSuQzuGdpDneqfopf3fwVwR9PxLRCv2Vy6xh41Gqcdnn7xN5ZV2xVdpc02EF08" height="110px" width="110px"></div>
+        <div style="position: relative;left:-16px;bottom:-60px;"><img src="https://play-lh.googleusercontent.com/Pvy10jSuQzuGdpDneqfopf3fwVwR9PxLRCv2Vy6xh41Gqcdnn7xN5ZV2xVdpc02EF08" height="110px" width="110px"></div>
+        <div style="position: relative;left:405px;top:-54px;"><img src="https://play-lh.googleusercontent.com/Pvy10jSuQzuGdpDneqfopf3fwVwR9PxLRCv2Vy6xh41Gqcdnn7xN5ZV2xVdpc02EF08" height="110px" width="110px"></div>
+        </div>
+        <br>
+        <br>
+        <div class="third">
+            <div class="three" style="overflow: hidden;">Virat Kohli (Hindi pronunciation: [ʋɪˈɾɑːʈ ˈkoːɦli] i; born 5 November 1988) is an Indian international cricketer and the former captain of the Indian national cricket team who plays for Royal Challengers Bangalore in the IPL and Delhi in domestic cricket. Considered to be one of the best cricketers in the world, he is widely regarded as one of the greatest batsmen in the history of the sport.[4] Nicknamed "The King", due to his dominant style of play and popularity, Kohli holds numerous records in his career across all formats. In 2020, the International Cricket Council named him the male cricketer of the decade. Kohli has also contributed to India's successes, captaining the team from 2014 to 2022, and winning the 2011 World Cup and the 2013 Champions trophy</div>
+            <div class="three" style="overflow: hidden;">Rohit Gurunath Sharma (born 30 April 1987), is an Indian international cricketer and the current captain of India men’s cricket team in all formats. Considered one of the best batsmen of his generation and one of greatest opening batters of all time,[3] Sharma is known for his timing, elegance, six-hitting abilities and leadership skills. He plays as a right-handed batsman for India national cricket team in international cricket, Mumbai Indians in IPL and for Mumbai in domestic cricket. Rohit also captains Mumbai Indians and the team has won 5 titles under his leadership. With India, Sharma was a member of the team that won the 2007 T20 World Cup, and the 2013 ICC Champions Trophy, where he played in the finals of both tournaments.
+
+                Sharma currently holds the world record for the highest individual score (264) in a One Day International (ODI) match and is the only player to have scored three double-centuries in ODIs and also holds the record for scoring most hundreds (five) in a single Cricket World Cup, for which he won the ICC Men's ODI Cricketer of the Year award in 2019. Sharma has received two national honours, the Arjuna Award in 2015 and the prestigious Major Dhyan Chand Khel Ratna in 2020. Under his captaincy, India won the 2018 Asia Cup and the 2023 Asia Cup, the seventh and eighth time the country won the title, both in ODI format as well as the 2018 Nidahas Trophy, their second overall and first in T20I format.</div>
+            <div class="three" style="overflow: hidden;">Mahendra Singh Dhoni (/məˈheɪndrə ˈsɪŋ dhæˈnɪ/ i; born 7 July 1981) is a former Indian cricketer who played as a wicket-keeper-batsman. He was the captain of the Indian national team in limited-overs formats from 2007 to 2017 and in Test cricket from 2008 to 2014. He currently plays for and captains Chennai Super Kings in the Indian Premier League.
+
+                Born in Ranchi, Bihar (now in Jharkhand),[2][3] His exceptional wicketkeeping skills allowed him to become the regular wicketkeeper at the Commando Cricket Club (1995–1998), he was picked for the 1997/98 season Vinoo Mankad Trophy Under-16 Championship, where he performed well.[4] From 2001 to 2003, He worked as a Travelling Ticket Examiner at Kharagpur railway station under South Eastern Railway in Midnapore, in West Bengal.[5][6] In Indian domestic cricket he played for Bihar and then for Jharkhand Cricket team. Dhoni's performance in the 2002–03 season included three half-centuries in the Ranji Trophy and a couple of half-centuries in the Deodhar Trophy, as he started gaining recognition for his lower-order contribution as well as hard-hitting batting style.</div>
+            <div class="three" style="overflow: hidden;">Mahendra Singh Dhoni (/məˈheɪndrə ˈsɪŋ dhæˈnɪ/ i; born 7 July 1981) is a former Indian cricketer who played as a wicket-keeper-batsman. He was the captain of the Indian national team in limited-overs formats from 2007 to 2017 and in Test cricket from 2008 to 2014. He currently plays for and captains Chennai Super Kings in the Indian Premier League.
+
+                Born in Ranchi, Bihar (now in Jharkhand),[2][3] His exceptional wicketkeeping skills allowed him to become the regular wicketkeeper at the Commando Cricket Club (1995–1998), he was picked for the 1997/98 season Vinoo Mankad Trophy Under-16 Championship, where he performed well.[4] From 2001 to 2003, He worked as a Travelling Ticket Examiner at Kharagpur railway station under South Eastern Railway in Midnapore, in West Bengal.[5][6] In Indian domestic cricket he played for Bihar and then for Jharkhand Cricket team. Dhoni's performance in the 2002–03 season included three half-centuries in the Ranji Trophy and a couple of half-centuries in the Deodhar Trophy, as he started gaining recognition for his lower-order contribution as well as hard-hitting batting style.</div>
+
+        </div>
+        <br>
+        <br>
+        <div class="four">
+            <div class="fourth" style="overflow: hidden;" >Mahendra Singh Dhoni (/məˈheɪndrə ˈsɪŋ dhæˈnɪ/ i; born 7 July 1981) is a former Indian cricketer who played as a wicket-keeper-batsman. He was the captain of the Indian national team in limited-overs formats from 2007 to 2017 and in Test cricket from 2008 to 2014. He currently plays for and captains Chennai Super Kings in the Indian Premier League.
+
+                Born in Ranchi, Bihar (now in Jharkhand),[2][3] His exceptional wicketkeeping skills allowed him to become the regular wicketkeeper at the Commando Cricket Club (1995–1998), he was picked for the 1997/98 season Vinoo Mankad Trophy Under-16 Championship, where he performed well.[4] From 2001 to 2003, He worked as a Travelling Ticket Examiner at Kharagpur railway station under South Eastern Railway in Midnapore, in West Bengal.[5][6] In Indian domestic cricket he played for Bihar and then for Jharkhand Cricket team. Dhoni's performance in the 2002–03 season included three half-centuries in the Ranji Trophy and a couple of half-centuries in the Deodhar Trophy, as he started gaining recognition for his lower-order contribution as well as hard-hitting batting style.</div>
+            <div class="fourth" style="overflow: hidden;">Mahendra Singh Dhoni (/məˈheɪndrə ˈsɪŋ dhæˈnɪ/ i; born 7 July 1981) is a former Indian cricketer who played as a wicket-keeper-batsman. He was the captain of the Indian national team in limited-overs formats from 2007 to 2017 and in Test cricket from 2008 to 2014. He currently plays for and captains Chennai Super Kings in the Indian Premier League.
+
+                Born in Ranchi, Bihar (now in Jharkhand),[2][3] His exceptional wicketkeeping skills allowed him to become the regular wicketkeeper at the Commando Cricket Club (1995–1998), he was picked for the 1997/98 season Vinoo Mankad Trophy Under-16 Championship, where he performed well.[4] From 2001 to 2003, He worked as a Travelling Ticket Examiner at Kharagpur railway station under South Eastern Railway in Midnapore, in West Bengal.[5][6] In Indian domestic cricket he played for Bihar and then for Jharkhand Cricket team. Dhoni's performance in the 2002–03 season included three half-centuries in the Ranji Trophy and a couple of half-centuries in the Deodhar Trophy, as he started gaining recognition for his lower-order contribution as well as hard-hitting batting style.</div>
+            <div class="fourth" style="overflow: hidden;">Mahendra Singh Dhoni (/məˈheɪndrə ˈsɪŋ dhæˈnɪ/ i; born 7 July 1981) is a former Indian cricketer who played as a wicket-keeper-batsman. He was the captain of the Indian national team in limited-overs formats from 2007 to 2017 and in Test cricket from 2008 to 2014. He currently plays for and captains Chennai Super Kings in the Indian Premier League.
+
+                Born in Ranchi, Bihar (now in Jharkhand),[2][3] His exceptional wicketkeeping skills allowed him to become the regular wicketkeeper at the Commando Cricket Club (1995–1998), he was picked for the 1997/98 season Vinoo Mankad Trophy Under-16 Championship, where he performed well.[4] From 2001 to 2003, He worked as a Travelling Ticket Examiner at Kharagpur railway station under South Eastern Railway in Midnapore, in West Bengal.[5][6] In Indian domestic cricket he played for Bihar and then for Jharkhand Cricket team. Dhoni's performance in the 2002–03 season included three half-centuries in the Ranji Trophy and a couple of half-centuries in the Deodhar Trophy, as he started gaining recognition for his lower-order contribution as well as hard-hitting batting style.</div>
+            <div class="fourth" style="overflow: hidden;">Mahendra Singh Dhoni (/məˈheɪndrə ˈsɪŋ dhæˈnɪ/ i; born 7 July 1981) is a former Indian cricketer who played as a wicket-keeper-batsman. He was the captain of the Indian national team in limited-overs formats from 2007 to 2017 and in Test cricket from 2008 to 2014. He currently plays for and captains Chennai Super Kings in the Indian Premier League.
+
+                Born in Ranchi, Bihar (now in Jharkhand),[2][3] His exceptional wicketkeeping skills allowed him to become the regular wicketkeeper at the Commando Cricket Club (1995–1998), he was picked for the 1997/98 season Vinoo Mankad Trophy Under-16 Championship, where he performed well.[4] From 2001 to 2003, He worked as a Travelling Ticket Examiner at Kharagpur railway station under South Eastern Railway in Midnapore, in West Bengal.[5][6] In Indian domestic cricket he played for Bihar and then for Jharkhand Cricket team. Dhoni's performance in the 2002–03 season included three half-centuries in the Ranji Trophy and a couple of half-centuries in the Deodhar Trophy, as he started gaining recognition for his lower-order contribution as well as hard-hitting batting style.</div>
+            <div class="fourth" style="overflow: hidden;">Mahendra Singh Dhoni (/məˈheɪndrə ˈsɪŋ dhæˈnɪ/ i; born 7 July 1981) is a former Indian cricketer who played as a wicket-keeper-batsman. He was the captain of the Indian national team in limited-overs formats from 2007 to 2017 and in Test cricket from 2008 to 2014. He currently plays for and captains Chennai Super Kings in the Indian Premier League.
+
+                Born in Ranchi, Bihar (now in Jharkhand),[2][3] His exceptional wicketkeeping skills allowed him to become the regular wicketkeeper at the Commando Cricket Club (1995–1998), he was picked for the 1997/98 season Vinoo Mankad Trophy Under-16 Championship, where he performed well.[4] From 2001 to 2003, He worked as a Travelling Ticket Examiner at Kharagpur railway station under South Eastern Railway in Midnapore, in West Bengal.[5][6] In Indian domestic cricket he played for Bihar and then for Jharkhand Cricket team. Dhoni's performance in the 2002–03 season included three half-centuries in the Ranji Trophy and a couple of half-centuries in the Deodhar Trophy, as he started gaining recognition for his lower-order contribution as well as hard-hitting batting style.</div>
+
+        </div>
+        <br>
+        <br>
+        <div class="five">
+            <div class="six" style="overflow: hidden;">Mahendra Singh Dhoni (/məˈheɪndrə ˈsɪŋ dhæˈnɪ/ i; born 7 July 1981) is a former Indian cricketer who played as a wicket-keeper-batsman. He was the captain of the Indian national team in limited-overs formats from 2007 to 2017 and in Test cricket from 2008 to 2014. He currently plays for and captains Chennai Super Kings in the Indian Premier League.
+
+                Born in Ranchi, Bihar (now in Jharkhand),[2][3] His exceptional wicketkeeping skills allowed him to become the regular wicketkeeper at the Commando Cricket Club (1995–1998), he was picked for the 1997/98 season Vinoo Mankad Trophy Under-16 Championship, where he performed well.[4] From 2001 to 2003, He worked as a Travelling Ticket Examiner at Kharagpur railway station under South Eastern Railway in Midnapore, in West Bengal.[5][6] In Indian domestic cricket he played for Bihar and then for Jharkhand Cricket team. Dhoni's performance in the 2002–03 season included three half-centuries in the Ranji Trophy and a couple of half-centuries in the Deodhar Trophy, as he started gaining recognition for his lower-order contribution as well as hard-hitting batting style.</div>
+            <div class="six" style="overflow: hidden;">Mahendra Singh Dhoni (/məˈheɪndrə ˈsɪŋ dhæˈnɪ/ i; born 7 July 1981) is a former Indian cricketer who played as a wicket-keeper-batsman. He was the captain of the Indian national team in limited-overs formats from 2007 to 2017 and in Test cricket from 2008 to 2014. He currently plays for and captains Chennai Super Kings in the Indian Premier League.
+
+                Born in Ranchi, Bihar (now in Jharkhand),[2][3] His exceptional wicketkeeping skills allowed him to become the regular wicketkeeper at the Commando Cricket Club (1995–1998), he was picked for the 1997/98 season Vinoo Mankad Trophy Under-16 Championship, where he performed well.[4] From 2001 to 2003, He worked as a Travelling Ticket Examiner at Kharagpur railway station under South Eastern Railway in Midnapore, in West Bengal.[5][6] In Indian domestic cricket he played for Bihar and then for Jharkhand Cricket team. Dhoni's performance in the 2002–03 season included three half-centuries in the Ranji Trophy and a couple of half-centuries in the Deodhar Trophy, as he started gaining recognition for his lower-order contribution as well as hard-hitting batting style.</div>
+            <div class="six" style="overflow: hidden;">Mahendra Singh Dhoni (/məˈheɪndrə ˈsɪŋ dhæˈnɪ/ i; born 7 July 1981) is a former Indian cricketer who played as a wicket-keeper-batsman. He was the captain of the Indian national team in limited-overs formats from 2007 to 2017 and in Test cricket from 2008 to 2014. He currently plays for and captains Chennai Super Kings in the Indian Premier League.
+
+                Born in Ranchi, Bihar (now in Jharkhand),[2][3] His exceptional wicketkeeping skills allowed him to become the regular wicketkeeper at the Commando Cricket Club (1995–1998), he was picked for the 1997/98 season Vinoo Mankad Trophy Under-16 Championship, where he performed well.[4] From 2001 to 2003, He worked as a Travelling Ticket Examiner at Kharagpur railway station under South Eastern Railway in Midnapore, in West Bengal.[5][6] In Indian domestic cricket he played for Bihar and then for Jharkhand Cricket team. Dhoni's performance in the 2002–03 season included three half-centuries in the Ranji Trophy and a couple of half-centuries in the Deodhar Trophy, as he started gaining recognition for his lower-order contribution as well as hard-hitting batting style.</div>
+            <div class="six" style="overflow: hidden;">Mahendra Singh Dhoni (/məˈheɪndrə ˈsɪŋ dhæˈnɪ/ i; born 7 July 1981) is a former Indian cricketer who played as a wicket-keeper-batsman. He was the captain of the Indian national team in limited-overs formats from 2007 to 2017 and in Test cricket from 2008 to 2014. He currently plays for and captains Chennai Super Kings in the Indian Premier League.
+
+                Born in Ranchi, Bihar (now in Jharkhand),[2][3] His exceptional wicketkeeping skills allowed him to become the regular wicketkeeper at the Commando Cricket Club (1995–1998), he was picked for the 1997/98 season Vinoo Mankad Trophy Under-16 Championship, where he performed well.[4] From 2001 to 2003, He worked as a Travelling Ticket Examiner at Kharagpur railway station under South Eastern Railway in Midnapore, in West Bengal.[5][6] In Indian domestic cricket he played for Bihar and then for Jharkhand Cricket team. Dhoni's performance in the 2002–03 season included three half-centuries in the Ranji Trophy and a couple of half-centuries in the Deodhar Trophy, as he started gaining recognition for his lower-order contribution as well as hard-hitting batting style.</div>
+            <div class="six" style="overflow: hidden;">Mahendra Singh Dhoni (/məˈheɪndrə ˈsɪŋ dhæˈnɪ/ i; born 7 July 1981) is a former Indian cricketer who played as a wicket-keeper-batsman. He was the captain of the Indian national team in limited-overs formats from 2007 to 2017 and in Test cricket from 2008 to 2014. He currently plays for and captains Chennai Super Kings in the Indian Premier League.
+
+                Born in Ranchi, Bihar (now in Jharkhand),[2][3] His exceptional wicketkeeping skills allowed him to become the regular wicketkeeper at the Commando Cricket Club (1995–1998), he was picked for the 1997/98 season Vinoo Mankad Trophy Under-16 Championship, where he performed well.[4] From 2001 to 2003, He worked as a Travelling Ticket Examiner at Kharagpur railway station under South Eastern Railway in Midnapore, in West Bengal.[5][6] In Indian domestic cricket he played for Bihar and then for Jharkhand Cricket team. Dhoni's performance in the 2002–03 season included three half-centuries in the Ranji Trophy and a couple of half-centuries in the Deodhar Trophy, as he started gaining recognition for his lower-order contribution as well as hard-hitting batting style.</div>
+            <div class="six" style="overflow: hidden;">Mahendra Singh Dhoni (/məˈheɪndrə ˈsɪŋ dhæˈnɪ/ i; born 7 July 1981) is a former Indian cricketer who played as a wicket-keeper-batsman. He was the captain of the Indian national team in limited-overs formats from 2007 to 2017 and in Test cricket from 2008 to 2014. He currently plays for and captains Chennai Super Kings in the Indian Premier League.
+
+                Born in Ranchi, Bihar (now in Jharkhand),[2][3] His exceptional wicketkeeping skills allowed him to become the regular wicketkeeper at the Commando Cricket Club (1995–1998), he was picked for the 1997/98 season Vinoo Mankad Trophy Under-16 Championship, where he performed well.[4] From 2001 to 2003, He worked as a Travelling Ticket Examiner at Kharagpur railway station under South Eastern Railway in Midnapore, in West Bengal.[5][6] In Indian domestic cricket he played for Bihar and then for Jharkhand Cricket team. Dhoni's performance in the 2002–03 season included three half-centuries in the Ranji Trophy and a couple of half-centuries in the Deodhar Trophy, as he started gaining recognition for his lower-order contribution as well as hard-hitting batting style.</div>
+
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
