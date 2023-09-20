@@ -5,24 +5,25 @@ table td{
 .white{
 
     height: 50px;
-    background-color: white;
+    background-color:#FFFFFF;
     width: 100px;
 }
 
 #green{
- background-color: green;
+ background-color:#046A38;
  height: 100px;
+ 
 }
 
 #orange{
     height: 100px;
-    background-color: orange;
+    background-color: #FF671F;
 }
 
 #chakra{
    
 }
 
-caption{
+h1{
     background-color: rgba(218, 185, 237, 0.962);
 }
