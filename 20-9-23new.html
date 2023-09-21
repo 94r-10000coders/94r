@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>flex</title>
+    <style>
+        .container{
+            border: 3px solid black;
+            background-image:radial-gradient(olive,lightblue,pink);
+            padding: 30px;
+            text-align: center;
+        }
+        .first{border: 3px solid black ;
+            height:500px;width:500px;
+            background-image:linear-gradient(yellow,skyblue); 
+
+        }
+        .second{
+            border: 3px solid black;
+            height: 500px;width: 500px;
+            background-image:linear-gradient(green,red);
+        }
+        .third{
+            border: 3px solid black;
+            height:50vh;
+            display:flex;
+            padding:30px;
+            gap: 20px;
+            background-image:linear-gradient(lightblue,purple,gray);
+
+        }
+        .four{
+            border: 3px solid black;
+            height:50vh;
+            display: flex;
+            padding:50px;
+            gap: 20px;
+            background-image:radial-gradient(pink,blue);
+
+        }
+        .three{
+            border: 3px solid black;
+            height: 100%;width:50%;
+
+        }
+        .fourth{
+            border: 3px solid black;
+            height: 100%;width:50%;
+        }
+        .five{
+            border: 3px solid black;
+            height:50vh;
+            display: flex;
+            padding:50px;
+            gap: 20px;
+           background-image: conic-gradient(pink,olive,lightblue,wheat);
+
+        }
+        .six{
+            border: 3px solid black;
+            height: 100%;width:50%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="container">
+            <h1>Assignment</h1>
+        </div>
+               <h1>using absolute path</h1>
+        <div class="first">
+            <div style="position: absolute;"><img src="./download (1).png" height="110px" width="110px"></div>
+            <div style="position: absolute;left: 401px;"><img src="./download (1).png" height="110px" width="110px"></div>
+            <div style="position: absolute;top:435px;left:205px;"><img src="./download (1).png" height="110px" width="110px"></div>
+            <div style="position: absolute;top:630px;"><img src="./download (1).png" height="110px" width="110px"></div>
+            <div style="position: absolute;top:630px;left: 401px;"><img src="./download (1).png" height="110px" width="110px"></div>
+        </div>
+        <h1>using relative path</h1>
+        <div class="second">
+        <div style="position: relative;left:-16px;top:-10px;"><img src="./download.png" height="110px" width="110px"></div>
+        <div style="position: relative;top:-127px;px;left:405px;"><img src="./download.png" height="110px" width="110px"></div>
+        <div style="position: relative;left:205px;top:-10px;"><img src="./download.png" height="110px" width="110px"></div>
+        <div style="position: relative;left:-16px;bottom:-60px;"><img src="./download.png" height="110px" width="110px"></div>
+        <div style="position: relative;left:405px;top:-54px;"><img src="./download.png"  height="110px" width="110px"></div>
+        </div>
+        <br>
+        <br>
+        <h1>3 Column</h1>
+        <div class="third">
+            <div class="three" style="overflow: hidden;">he HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</div>
+            <div class="three" style="overflow: hidden;">he HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</div>
+            <div class="three" style="overflow: hidden;">he HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</div>
+            <div class="three" style="overflow: hidden;">he HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</div>
+
+       
+
+        </div>
+        <br>
+        <br>
+        <h1>4 Columns</h1>
+        <div class="five">
+            <div class="six" style="overflow: hidden;">CSS is designed to enable the separation of content and presentation, including layout, colors, and fonts.[3] This separation can improve content accessibility; provide more flexibility and control in the specification of presentation characteristics; enable multiple web pages to share formatting by specifying the relevant CSS in a separate .</div>
+            <div class="six" style="overflow: hidden;">CSS is designed to enable the separation of content and presentation, including layout, colors, and fonts.[3] This separation can improve content accessibility; provide more flexibility and control in the specification of presentation characteristics; enable multiple web pages to share formatting by specifying the relevant CSS in a separate .</div>
+            <div class="six" style="overflow: hidden;">CSS is designed to enable the separation of content and presentation, including layout, colors, and fonts.[3] This separation can improve content accessibility; provide more flexibility and control in the specification of presentation characteristics; enable multiple web pages to share formatting by specifying the relevant CSS in a separate .</div>
+            <div class="six" style="overflow: hidden;">CSS is designed to enable the separation of content and presentation, including layout, colors, and fonts.[3] This separation can improve content accessibility; provide more flexibility and control in the specification of presentation characteristics; enable multiple web pages to share formatting by specifying the relevant CSS in a separate .</div>
+            <div class="six" style="overflow: hidden;">CSS is designed to enable the separation of content and presentation, including layout, colors, and fonts.[3] This separation can improve content accessibility; provide more flexibility and control in the specification of presentation characteristics; enable multiple web pages to share formatting by specifying the relevant CSS in a separate .</div>
+            <div class="six" style="overflow: hidden;">CSS is designed to enable the separation of content and presentation, including layout, colors, and fonts.[3] This separation can improve content accessibility; provide more flexibility and control in the specification of presentation characteristics; enable multiple web pages to share formatting by specifying the relevant CSS in a separate .</div>
+
+        </div>
+
+
+    </div>
+
+</body>
+</html>

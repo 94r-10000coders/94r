@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one p{
+            color: yellow;
+            background-color: aqua;
+        }
+        .two>p{
+            color: blue;
+            background-color: orchid;
+        }
+        .three  + p{
+            color: blue;
+            background-color: beige;
+        }
+        .four ~ p{
+            color: aqua;
+            background-color: black;
+        }
+        [type]{
+            border: 2px solid olivedrab;
+        }
+        [type="text"]{
+            width: 200px;
+            height: 40px;
+        }
+        [name^="ge"]{
+            width: 100px;
+            height: 20px;
+        }
+        [name$="ge"]{
+            width: 300px;
+            height: 30px;
+        }
+        [name*="dr"]{
+            width: 200px;
+            height: 100px;
+            background-color: aquamarine;
+            border-radius: 20px;
+            padding: 10px;
+        }
+        [name|="pass"]{
+            width: 200px;
+            height: 40px;
+            border-radius: 10px;
+        }
+        [name~="mail"]{
+            background-color: green;
+            width: 200px;
+            height: 60px;
+            border-radius: 20px;
+        }
+        h1{
+            text-align: center;
+        }
+        [title^="fl"]{
+            width: 150px;
+            height: 150px;
+            margin-left: 20px;
+            border-radius: 20px;
+        }
+        [title|="animal"]{
+            width: 200px;
+            height: 200px;
+            margin-left: 20px;
+            border-radius: 20px;
+        }
+        [title$="fruit"]{
+            width: 180px;
+            height: 180px;
+            margin-left: 30px;
+            border-radius: 90px;
+            border: 2px solid black;
+        }
+        [title~="car"]{
+            width: 180px;
+            height: 180px;
+            margin-left: 30px;
+            border-radius: 50px;
+            border: 2px solid yellowgreen;
+        }
+
+    </style>
+</head>
+<body>
+   
+    <h1>Animals</h1>
+    <img src="./download (5).jpeg" title="animal-1">
+    <img src="./download (6).jpeg" title="animal-2">
+    <img src="./images (2).jpeg" title="animal-3">
+    <img src="./images (3).jpeg" title="animal-4">
+    <h1>Flowers</h1>
+    <img src="./images.jpeg" title="flower">
+    <img src="./images (1).jpeg" title="flower">
+    <img src="./download (3).jpeg" title="flower">
+    <img src="./download (4).jpeg" title="flower">
+    <h1>Fruits</h1>
+    <img src="./images (7).jpeg" title="first fruit">
+    <img src="./images (6).jpeg" title="second fruit">
+    <img src="./images (5).jpeg" title="third fruit">
+    <img src="./images (4).jpeg" title="fourth fruit">
+    <h1>Cars</h1>
+    <img src="./Skoda-Octavia-exteriro-larg.jpg" title="red car">
+    <img src="./20221110112028_lambo.jpg" title="car green">
+    <img src="./p90499807-highres-the-bmw-xm-label-red-64beeff2ccfab.jpg" title="this is blue car">
+    <img src="./images (8).jpeg" title="color car white">
+    <form action="./login form.html">
+     <fieldset>
+            <legend>Signup Form</legend>
+        <label for="fname">Fulla Name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="full name"><br>
+        <label for="dob">Date Of Birth</label><br>
+        <input type="date" id="dob" name="dob"><br>
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">Male<br>
+        <input type="radio" id="female" name="gender" value="female">Female<br>
+        <label for="address">Address:</label><br>
+        <textarea name="address" id="address" cols="20" rows="1" placeholder="address"></textarea><br>
+       
+        <label for="number">Mobile Number:</label><br>
+        <input type="tel" maxlength="10" pattern="[6-9]{1}[0-9]{9}" placeholder="mobile number"><br>
+        <label for="email">Email Id:</label><br>
+        <input type="emial" id="email" name="e mail" placeholder="email"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="pass-word" placeholder="password"><br>
+        <br><input type="submit" value="Signup"> <input type="reset"><br><br>
+       
+    </fieldset>
+    </form>
+   
+    
+</body>
+</html>
