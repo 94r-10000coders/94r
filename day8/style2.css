@@ -1,0 +1,42 @@
+
+    <style>
+.hello{
+            color:black;background-color:chartreuse;
+            
+        
+
+        }
+        
+    .p{
+            text-decoration:dashed;
+            text-align: center;
+        }
+
+
+        a{
+            text-decoration-color: blue;
+            text-transform: capitalize;
+            text-shadow: 60px 5px;color: black;
+            height: 100;
+            
+        }
+
+
+        #hi{
+            color: cyan;background-color:darkorange;
+        }
+        h1{
+            text-align: center;
+        }
+        .bro{
+            color: aquamarine;background-color:blue;
+            border-style:dotted;
+            border-color: red;
+            height: 300px;
+            width: 300px;
+            max-width:100px;
+            overflow:scroll;
+            background-image: url(../day8/engineer2);
+        }
+        
+    </style>
