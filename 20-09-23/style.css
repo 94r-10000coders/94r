@@ -1,0 +1,50 @@
+.abp {
+    display: block;
+    font-family: "montserrat", sans-serif;
+
+
+}
+
+.abox {
+
+    display: flex;
+    background-image: linear-gradient(rgba(177, 15, 15, 0.729), rgba(0, 0, 0, 0.844));
+    width: 550px;
+    height: 500px;
+
+
+
+
+}
+
+.rbox {
+    display: flex;
+    width: 650px;
+    height: 400px;
+
+    background-image: linear-gradient(rgba(115, 55, 55, 0.729), rgba(0, 0, 0, 0.844));
+
+
+
+
+}
+
+.flex {
+
+    background-image: linear-gradient(rgb(19, 163, 240), rgba(128, 128, 128, 0.544));
+    border: 3px solid black;
+    width: 500px;
+    display: flex;
+    padding: 30px;
+    gap: 20px;
+
+
+
+
+}
+
+.a {
+    border: 1px solid;
+    width: 50%;
+
+}
