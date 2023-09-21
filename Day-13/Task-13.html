@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            border: 2px solid black;
+            /* text-align:center; */
+            width:1150px;
+            height:auto;
+            padding: 10px;
+            background-color:gray;
+        }
+        .Container-f {
+            display: flex;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            gap: 30px;
+        }
+        .Container-fr {
+            display: flex;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            gap: 50px;
+        }
+        .Container-b {
+            display: flex;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            gap: 40px;
+        }
+        .Container-p {
+            display: flex;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            gap: 30px;
+        }   
+        img[height="150"] {
+            display: flex;
+            border: 2px solid red;
+            border-radius: 20px;
+            background-color: bisque;
+            padding: 20px;
+        }
+        [title~="Fruit-1"] {
+        border: 3px solid yellow;
+        background-color: cadetblue;
+        padding: 10px;
+        }
+        [title~="Fruit-2"] {
+        border: 5px solid black;
+        border-radius:20px;
+        background-color: brown;
+        padding: 10px;
+        }
+        [alt|="birds"]{
+        border: 5px solid palevioletred;
+        border-radius:20px;  
+        padding: 10px;
+        background-color: aqua;
+        }
+        [alt|="Birds"]{
+        border: 5px solid maroon;
+        border-radius:20px;  
+        padding: 10px;
+        background-color: greenyellow;
+        width: 240px;
+        height: 180px;
+        }
+        [title^="Pet- "]{
+            height: 150px;
+            border-radius: 30px;
+        }
+        [title$="Fish"] {
+            width: 250px;
+            border: 5px dashed red;
+            padding: 10px;
+            margin-left: 30px;
+            background-color: darkmagenta;
+        }
+        [title*="Pet"]{
+            border: 5px dotted orange;
+            padding: 10px;
+            border-radius: 100px;
+            background-color: white;
+        } 
+        .helo {
+            background-color:darksalmon;
+            border-radius: 100px;
+            width:700px;
+        }
+        h3 {
+            border: 2px solid yellow;
+            background-color: antiquewhite;
+            border-radius: 90px;
+        }
+        [type="date"]{
+            box-shadow: 5px 3px red;
+        }
+        label[for="name"]{
+            background-color:cornflowerblue;
+        }
+        [id=fname] {
+           background-color:aquamarine;
+        }
+        [id=mname] {
+            text-transform: uppercase;
+            background-color:burlywood;
+        }
+        [id=lname] {
+            background-color: coral;
+        }
+        [for~="mail"] {
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 3px;
+        }
+        [id|="mail"] {
+            border: 5px solid red;
+            padding: 10px;
+            background-color: aqua;
+            border-radius: 5px;
+        }
+        [id^="cli"] {
+            background-color:cadetblue;
+            padding: 1px;
+            margin-left: 60px;
+        }
+        [for$="der"] {
+            border: 2px solid green;
+            border-radius: 20px;
+            padding: 6px;
+        }
+        [for*="ail"]{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+   <div class="main">
+    <h1 style="background-color: aquamarine;text-align: center;position: sticky;top:0px;">Gallery</h1>
+    <br>
+    <h2>Flowers:</h2>
+    <div class="Container-f">
+        <img src="./Images task-13/flower-1.jpg" height="150" width="200">
+        <img src="./Images task-13/Flower-2.jpg" height="150" width="200">
+        <img src="./Images task-13/flower-3.webp" height="150" width="200">
+        <img src="./Images task-13/flower-4.webp" height="150" width="200">
+    </div>
+    <h2>Fruits:</h2>
+    <div class="Container-fr">
+        <img src="./Images task-13/Kiwi.jpg" height="160" width="200" title="Fruit-1">
+        <img src="./Images task-13/Strawberry.jpg" height="160" width="200" title="Fruit-1">
+        <img src="./Images task-13/Dragon fruit.avif" height="160" width="200" title="Fruit-2">
+        <img src="./Images task-13/Banana.jpg" height="160" width="200" title="Fruit-2">
+    </div>
+    <h2>Birds:</h2>
+    <div class="Container-b">
+        <img src="./Images task-13/bird-1.jpg" height="140" width="190" alt="birds">
+        <img src="./Images task-13/Bird-2.webp" height="140" width="190" alt="Birds-1">
+        <img src="./Images task-13/Bird-3.jpg" height="140" width="190" alt="birds">
+        <img src="./Images task-13/Bird-4.jpeg" height="140" width="190" alt="Birds-2">
+    </div>
+    <h2>Pets:</h2>
+    <div class="Container-p">
+        <img src="./Images task-13/Dog.jpg" height="190" width="210" title="Pet- Dog">
+        <img src="./Images task-13/Cat.jpg" height="190" width="210" title="Pet- Cat">
+        <img src="./Images task-13/rabbit.webp" height="190" width="210" title="Pets- Rabbit">
+        <img src="./Images task-13/fish.jpeg" height="190" width="210" title="Pest- Fish">
+    </div>
+   </div>
+   <hr>
+   <div class="helo">
+    <form>
+        <fieldset>
+            <h1>Forms styling using Attribute selectors</h1>
+            <h3><u>Registration Form</u></h3>
+        
+            <label for="name">Name:</label><br> <br>
+            <input type="text"id="fname" placeholder="First Name">&nbsp
+            <input type="text"id="mname" placeholder="Middle Name"> &nbsp 
+            <input type="text"id="lname" placeholder="Last Name"><br><br>
+            <labelfor="DoB">Birth Date:</label><br>
+            <input type="date" id="DoB"><br><br>
+            <label for="gender">Gender</label><br><br>
+            <input type="radio" id="male">male</input>
+            <input type="radio" id="female">female</input>
+            <br><br>
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" placeholder="enter"><br><br>
+            Address:
+            <textarea></textarea>
+            <br><br>
+           <input type="button" id="click" value="Register">  
+        </fieldset>
+    </form>
+   </div>
+</body>
+</html>
