@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container1{
+            border: 4px solid black;
+            width: fit-content;
+            padding: 20px ;
+            background-image: linear-gradient(blue,white);
+        }
+        .container1 img{
+            border:3px solid black;
+            padding: 10px;
+       }
+    
+        .container2
+        {
+            border: 4px solid red;
+            width: fit-content;
+            padding: 20px ;
+            background-image: linear-gradient(to left,orange,white);
+        }
+       .container2>img{
+       border: 3px solid black;
+       padding: 10px;
+       }
+       .container2+.container3>img{
+        border: 3px solid black;
+       }
+       .container2+.container3{
+        border:4px solid black;
+        padding: 20px;
+        width: fit-content;
+        background-image: linear-gradient(to right,pink,white);
+       }
+       .container4{
+        border: 4px solid black;
+        width: fit-content;
+        padding: 20px;
+        background-image: linear-gradient(to top,purple,white);
+    
+       }
+       [title]{
+        padding: 10px;
+       }
+       [title^="c"]{
+        border:3px solid yellow;
+        background-image: linear-gradient(to bottom,purple,white);
+       }
+       [title$="r"]{
+        background-image: linear-gradient(to right,white,orange);
+       }
+       [title*="lo"]{
+        background-image: linear-gradient(to bottom,white,blue);
+       }
+       [title|="dog"]{
+        background-image: linear-gradient(to left,pink,white);
+       }
+       .form>input{
+        color: aqua;
+       }
+       [type^="text"]{
+        background-color: aquamarine;
+    
+       }
+       
+       
+       [title^="hi"]{
+        color:brown
+       }
+       [title$="bi"]{
+        color: chartreuse;
+       }
+       [title^="female"]{
+        color:green}
+
+       [id$=hi]
+       {
+         color:red;
+       }
+       
+      [id="dob"]{
+        background-color: azure;
+      }
+      [for*=er]{
+        color:orangered;
+
+      }
+      [type="radio"]{
+        color: blueviolet;
+      }
+      [class="mi"]{
+        color: purple;
+      }
+        [title="m"]{
+            color:aqua;
+            background-color: black;
+        }  
+        [for="country"] {
+            color: chocolate;
+        }    
+       
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class=container1>
+        <img src="../images/teddy1.jpeg" width="100px;" height="100px;"title="teddy">
+        <img src="../images/teddy2.jpg" width="100px;" height="100px;"width="100px;"title="teddy">
+        <img src="../images/teddy3.jpg" width="100px;" height="100px;"width="100px;"title="teddy">
+        <img src="../images/teddy4.jpg" width="100px;" height="100px;"title="teddy">
+        </div>
+        <div  class="container2">
+        <img src="../images/rose1.jpg" width="100px;" height="100px;"title="rose">
+        <img src="../images/rose2.jpg" width="100px;" height="100px;"title="rose">
+        <img src="../images/rose3.jpg" width="100px;" height="100px;"title="rose">
+        <img src="../images/rose4.jpg" width="100px;" height="100px;"title="rose">
+        </div>
+        <div class="container3">
+        <img src="../images/dog1.jpg" width="100px;" height="100px;"title="dog">
+        <img src="../images/dog2.jpg" width="100px;" height="100px;"title="dog">
+        <img src="../images/dog3.jpg" width="100px;" height="100px;"title="dog">
+        <img src="../images/dog4.jpg" width="100px;" height="100px;"title="dog">
+        </div>
+        <div class="container4">
+        <img src="../images/coffee1.jpeg" width="100px;" height="100px;" title="coffee">
+        <img src="../images/coffee2.jpg" width="100px;" height="100px;" title="coffee">
+        <img src="../images/coffee3.jpg" width="100px;" height="100px;" title="coffee">
+        <img src="../images/coffee4.jpeg" width="100px;" height="100px;" title="coffee">
+        </div>
+    </div><hr>
+    <section style="background-color:antiquewhite;"><h2 style="color:black; text-align: center;background-color:aqua; display: inline;"> SIGNUP FORM</h2>
+    <form action="../day4/login.html"><br>
+        <label for="fname" title="hi">First Name:-</label><br>
+            <input type="text" id="fname" name="firstname" placeholder="Eenter Your Name" /><br><br>
+            <label for="sname" title="bi">Second Name:-</label><br>
+            <input type="text" id="sname" name="secondname" placeholder="Enter Your Name"/><br><br>
+            <label for="phone" id="ni">Mobile Number:-</label><br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" style="background-color:aquamarine" placeholder="Enter Your Number":><br><br>
+            <label for="dob" id="hi">Date Of Birth:-</label><br>
+            <input type="date" id="dob"/><br><br>
+            
+            <label for="gender">Gender:-</label><br>
+            <input type="radio" id="female" name="gender">Female</input><br>
+            <input type="radio" id="male" name="gender">Male</input><br><br>
+            <label class="mi">Address:-</label><br>
+            <textarea>
+            </textarea><br><br>
+            <label for="country">country:-</label><br>
+            <select>
+                <option id="ind" name="country">india</option>
+                <option id="pak" name="country">pakisthan</option>
+                <option id="slk" name="country">srilanka</option>
+                <option id="nzl" name="country">new zealanda</option>
+                <option id="sf" name="country">south africa</option>
+            </select><br><br>
+        <label for="Password" style="color: blueviolet;">Password:-</label><br>
+        <input type="password" style="background-color: aquamarine;" placeholder="enter password"/><br><br>
+
+            <input type="submit" value="sign up" style="color:red;"/>
+    
+            <p> If U Already have An Account?
+                <button formaction="../day4/login.html" title="m">login</button></section>
+                
+            </form>
+
+</body>
+</html>
+</body>
+</html>
