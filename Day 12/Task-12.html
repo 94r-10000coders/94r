@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .headi {
+            border-width: 2px;
+            border-color:black;
+            border-style:solid;
+            border-radius: 10px;
+            display:flex;
+            width:1500px;
+            height:auto;
+            flex-direction: column;
+        }
+        h1 {
+            text-align: center;
+            background-color: burlywood;
+            color: blue;
+            width:1500px;
+        }
+        .main {
+            border-width: 1px;
+            border-color:black;
+            border-style:solid;
+            border-radius: 10px;
+            display:flex;
+            width:900px;
+            height:auto;
+            margin: 5px;
+        }
+        .one {
+            border-width: 0.5px;
+            border-color:black;
+            border-style:solid;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            height:420px;
+            width:180px;
+            margin:5px;
+            padding:20px;
+            background-color:cadetblue;
+        }
+        .two {
+            border-width: 0.5px;
+            border-color:black;
+            border-style:solid;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            height:420px;
+            width:180px;
+            margin:5px;
+            padding:20px;
+            background-color:antiquewhite;
+        }
+        .three {
+            border-width: 0.5px;
+            border-color:black;
+            border-style:solid;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            height:420px;
+            width:180px;
+            margin:5px;
+            padding:20px;
+            background-color:darkgray;
+        }
+        .four {
+            border-width: 0.5px;
+            border-color:black;
+            border-style:solid;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            height:420px;
+            width:180px;
+            margin:5px;
+            padding:20px;
+            background-color: darkkhaki;
+        }
+        /* 5colomn */
+        .main1 {
+            border-width: 1px;
+            border-color:black;
+            border-style:solid;
+            border-radius: 10px;
+            display:flex;
+            width:1200px;
+            height:auto;
+            margin: 5px;
+        }
+        .one1 {
+            border-width: 0.5px;
+            border-color:black;
+            border-style:solid;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            height:420px;
+            width:180px;
+            margin:5px;
+            padding:20px;
+            background-color:aquamarine;
+        }
+        .two1 {
+            border-width: 0.5px;
+            border-color:black;
+            border-style:solid;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            height:420px;
+            width:200px;
+            margin:5px;
+            padding:20px;
+            background-color:greenyellow;
+        }
+        .three1 {
+            border-width: 0.5px;
+            border-color:black;
+            border-style:solid;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            height:420px;
+            width:200px;
+            margin:5px;
+            padding:20px;
+            background-color:darksalmon;
+        }
+        .four1 {
+            border-width: 1px;
+            border-color:black;
+            border-style:solid;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            height:420px;
+            width:200px;
+            margin:5px;
+            padding:20px;
+            background-color:indianred;
+        }
+        .five {
+            border-width: 2px;
+            border-color:black;
+            border-style:solid;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            height:420px;
+            width:200px;
+            margin:5px;
+            padding:20px;
+            background-color:dimgrey; 
+        }
+        /* 6colomn */
+        .main2 {
+            border-width: 1px;
+            border-color:black;
+            border-style:solid;
+            border-radius: 10px;
+            display:flex;
+            width:1300px;
+            height:auto;
+            margin: 5px;
+        }
+        .one2{
+            border-width: 0.5px;
+            border-color:black;
+            border-style:solid;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            height:420px;
+            width:200px;
+            margin:5px;
+            padding:20px;
+            background-color:fuchsia;
+        }
+        .two2 {
+            border-width: 0.5px;
+            border-color:black;
+            border-style:solid;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            height:420px;
+            width:200px;
+            margin:5px;
+            padding:20px;
+            background-color:aqua;
+        }
+        .three2 {
+            border-width: 0.5px;
+            border-color:black;
+            border-style:solid;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            height:420px;
+            width:200px;
+            margin:5px;
+            padding:20px;
+            background-color:gold;
+        }
+        .four2 {
+            border-width: 0.5px;
+            border-color:black;
+            border-style:solid;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            height:420px;
+            width:200px;
+            margin:5px;
+            padding:20px;
+            background-color:lightblue;
+        }
+        .five2{
+            border-width: 0.5px;
+            border-color:black;
+            border-style:solid;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            height:420px;
+            width:200px;
+            margin:5px;
+            padding:20px;
+            background-color:lightcoral;
+        }
+        .six {
+            border-width: 0.5px;
+            border-color:black;
+            border-style:solid;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            height:420px;
+            width:200px;
+            margin:5px;
+            padding:20px;
+            background-color:maroon;
+        }
+        h2 {
+            padding-left: 20px;
+        }
+        img {
+            padding-left: 30px;
+        }
+        .container{
+            height:80vh;
+            width:95vw;
+            border-width: 0.5px;
+            border-color:black;
+            border-style:solid;
+            border-radius: 1px;
+        }
+        .container1 {
+            height:80vh;
+            width:95vw;
+            border-width: 0.5px;
+            border-color:black;
+            border-style:solid;
+            border-radius: 1px;
+        }
+        .container3 {
+            height:450px;
+            width:1500px;;
+            border-width: 0.5px;
+            border-color:black;
+            border-style:solid;
+            border-radius: 1px;
+        }
+        .container3 .c-1,.c-5{
+            display: flex;
+            justify-content: space-between;
+        }
+        .c-2{
+            display: flex;
+            justify-content: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Using Absolute</h3>
+        <div style="position: absolute;"><img src="./ODI squad images/india.jpg" height="100" width="100"></div>
+        <div style="position: absolute;right:70px;"><img src="./ODI squad images/india.jpg" height="100" width="100"></div>
+        <div style="position: absolute;right:130px;top:220px;"><img src="./ODI squad images/india.jpg" height="100" width="100"></div>
+        <div style="position: absolute;right:70px;bottom:130px;"><img src="./ODI squad images/india.jpg" height="100" width="100"></div>
+        <div style="position: absolute;left:70px;bottom:250px;"><img src="./ODI squad images/india.jpg" height="100" width="100"></div>
+        <div style="position: absolute;bottom:130px;"><img src="./ODI squad images/india.jpg" height="100" width="100"></div>
+        <div style="position: absolute;left:700px;top:260px;"><img src="./ODI squad images/india.jpg" height="100" width="100"></div>
+    </div>
+    <br>
+    <div class="container1">
+        <h3>Using Relative</h3>
+        <div style="position: relative;"><img src="./ODI squad images/india.jpg" height="100" width="100"></div>
+        <div style="position: relative;left:1370px;bottom:105px;"><img src="./ODI squad images/india.jpg" height="100" width="100"></div>
+        <div style="position: relative;left:120px;bottom:85px;"><img src="./ODI squad images/india.jpg" height="100" width="100"></div>
+        <div style="position: relative;left:600px;bottom:100px;"><img src="./ODI squad images/india.jpg" height="100" width="100"></div>
+        <div style="position: relative;top:-5px;"><img src="./ODI squad images/india.jpg" height="100" width="100"></div>
+        <div style="position: relative;left:1270px;top:-200px;"><img src="./ODI squad images/india.jpg" height="100" width="100"></div>
+        <div style="position: relative;left:1370px;top:-190px;"><img src="./ODI squad images/india.jpg" height="100" width="100"></div>
+    </div>
+    <br>
+    <div class="container3">
+        <h3>Using Flex</h3>
+        <div class="c-1">
+        <img src="./ODI squad images/india.jpg" height="100" width="100">
+        <span style="margin: 20px;"><img src="./ODI squad images/india.jpg" height="100" width="100"></span>
+        </div>
+        <div class="c-2">
+        <img src="./ODI squad images/india.jpg" height="100" width="100">
+        </div>
+        <!-- <div class="c-4">
+         <img src="./ODI squad images/india.jpg" height="100" width="100">
+        </div> -->
+        <div class="c-5">
+        <img src="./ODI squad images/india.jpg" height="100" width="100">
+       <span style="margin: 20px;"><img src="./ODI squad images/india.jpg" height="100" width="100"></span>
+        </div>
+    </div>
+    <hr>
+    <div class= headi>
+        <h1 style="position: sticky;top:0px;">Team India's ODI World Cup Squad 2023</h1>
+        <div class="main">
+            <div class="one">
+            <h2><u>Rohit Sharma</u></h2>
+            <img src="./ODI squad images/rohit sharma.jpeg" height="100" width="100"><br>
+            <span style="padding-left: 10px; background-image: linear-gradient(orange,white,lightskyblue,green);">
+            ODI STATS:
+            <hr>
+            <p>
+                <b>Matches:</b> 250<br>
+                <b>Innings:</b>&nbsp 249<br>
+                <b>Role:&nbsp </b>&nbsp &nbsp &nbspBatsman<br>
+                <b>Runs:&nbsp </b> &nbsp &nbsp 10,031 <br>
+                <b>H.S:&nbsp &nbsp </b> &nbsp &nbsp &nbsp264 <br>
+                <b>100's:&nbsp </b> &nbsp  &nbsp &nbsp30<br>
+                <b>50's:&nbsp </b>&nbsp  &nbsp &nbsp &nbsp51<br>
+                <b>Sixes:</b>&nbsp  &nbsp &nbsp &nbsp286<br>
+                <b>Fours:&nbsp</b>&nbsp  &nbsp &nbsp923<br>
+            </p>
+            </span>
+            </div>
+            <div class="two">
+            <h2><u>Shubman Gill</u></h2>
+            <img src="./ODI squad images/shubman gill.jpeg"height="100" width="100"><br>
+            <span style="padding-left: 10px; background-image: linear-gradient(orange,white,lightskyblue,green);">
+            ODI STATS:
+            <hr>
+            <p>
+                <b>Matches:</b> 33<br>
+                <b>Innings:</b>&nbsp 33<br>
+                <b>Role:&nbsp </b>&nbsp &nbsp &nbspBatsman<br>
+                <b>Runs:&nbsp </b> &nbsp &nbsp 1,739 <br>
+                <b>H.S:&nbsp &nbsp </b> &nbsp &nbsp &nbsp208<br>
+                <b>100's:&nbsp </b> &nbsp  &nbsp &nbsp5<br>
+                <b>50's:&nbsp </b>&nbsp  &nbsp &nbsp &nbsp8<br>
+                <b>Sixes:</b>&nbsp  &nbsp &nbsp &nbsp34<br>
+                <b>Fours:&nbsp</b>&nbsp  &nbsp &nbsp201<br>
+            </p>
+            </span>
+            </div>
+            <div class="three">
+            <h2><u>Virat Kohli</u></h2>
+            <img src="./ODI squad images/Virat Kohli.jpeg" height="100" width="100"><br>
+            <span style="padding-left: 10px; background-image: linear-gradient(orange,white,lightskyblue,green);">
+            ODI STATS:
+            <hr>
+            <p>
+            <b>Matches:</b> 280<br>
+            <b>Innings:</b>&nbsp 268<br>
+            <b>Role:&nbsp </b>&nbsp &nbsp &nbspBatsman<br>
+            <b>Runs:&nbsp </b> &nbsp &nbsp 13,027 <br>
+            <b>H.S:&nbsp &nbsp </b> &nbsp &nbsp &nbsp183 <br>
+            <b>100's:&nbsp </b> &nbsp  &nbsp &nbsp47<br>
+            <b>50's:&nbsp </b>&nbsp  &nbsp &nbsp &nbsp65<br>
+            <b>Sixes:</b>&nbsp  &nbsp &nbsp &nbsp141<br>
+            <b>Fours:&nbsp</b>&nbsp  &nbsp &nbsp1,221<br>
+            </p>
+            </span>
+            </div>
+            <div class="four">
+            <h2><u>Shreyas Iyer</u></h2>
+            <img src="./ODI squad images/shreyas iyer.jpg" height="100" width="100"><br>
+            <span style="padding-left: 10px; background-image: linear-gradient(orange,white,lightskyblue,green);">
+            ODI STATS:
+            <hr>
+            <p>
+            <b>Matches:</b> 44<br>
+            <b>Innings:</b>&nbsp 39<br>
+            <b>Role:&nbsp </b>&nbsp &nbsp &nbspBatsman<br>
+            <b>Runs:&nbsp </b> &nbsp &nbsp 1,645 <br>
+            <b>H.S:&nbsp &nbsp </b> &nbsp &nbsp &nbsp113 <br>
+            <b>100's:&nbsp </b> &nbsp  &nbsp &nbsp2<br>
+            <b>50's:&nbsp </b>&nbsp  &nbsp &nbsp &nbsp14<br>
+            <b>Sixes:</b>&nbsp  &nbsp &nbsp &nbsp32<br>
+            <b>Fours:&nbsp</b>&nbsp  &nbsp &nbsp164<br>
+            </p>
+            </span>
+            </div>
+        </div>
+        <!-- 5-column -->
+        <br>
+        <div class="main1">
+            <div class="one1">
+            <h2><u>K L Rahul</u></h2>
+            <img src="./ODI squad images/K l rahul.jpg" height="100" width="100"><br>
+            <span style="padding-left: 10px; background-image: linear-gradient(orange,white,lightskyblue,green);">
+            ODI STATS:
+            <hr>
+            <p>
+                <b>Matches:</b> 58<br>
+                <b>Innings:</b>&nbsp 55<br>
+                <b>Role:&nbsp </b>&nbsp &nbsp &nbspBatsman &W.k<br>
+                <b>Runs:&nbsp </b> &nbsp &nbsp 2,155 <br>
+                <b>H.S:&nbsp &nbsp </b> &nbsp &nbsp &nbsp112 <br>
+                <b>100's:&nbsp </b> &nbsp  &nbsp &nbsp6<br>
+                <b>50's:&nbsp </b>&nbsp  &nbsp &nbsp &nbsp13<br>
+                <b>Sixes:</b>&nbsp  &nbsp &nbsp &nbsp48<br>
+                <b>Fours:&nbsp</b>&nbsp  &nbsp &nbsp168<br>
+            </p>
+            </span>
+            </div>
+            <div class="two1">
+            <h2><u>Hardik Pandya</u></h2>
+            <img src="./ODI squad images/Hardik.webp"height="100" width="100"><br>
+            <span style="padding-left: 10px; background-image: linear-gradient(orange,white,lightskyblue,green);">
+            ODI STATS:
+            <hr>
+            <p>
+                <b>Matches:</b> 82<br>
+                <b>Innings:</b>&nbsp 60<br>
+                <b>Role:&nbsp </b>&nbsp &nbsp &nbspAll-Rounder<br>
+                <b>Runs:&nbsp </b> &nbsp &nbsp 1,758 <br>
+                <b>Wickets:&nbsp</b>79<br>
+                <b>H.S:&nbsp &nbsp </b> &nbsp &nbsp &nbsp92<br>
+                <b>B.B:&nbsp </b>&nbsp &nbsp &nbsp &nbsp4/24<br>
+                <b>100's:&nbsp </b> &nbsp  &nbsp &nbsp0<br>
+                <b>50's:&nbsp </b>&nbsp  &nbsp &nbsp &nbsp11<br>
+                <b>Sixes:</b>&nbsp  &nbsp &nbsp &nbsp66<br>
+                <b>Fours:&nbsp</b>&nbsp  &nbsp &nbsp132<br>
+            </p>
+            </span>
+            </div>
+            <div class="three1">
+            <h2><u>Ravindra Jadeja</u></h2>
+            <img src="./ODI squad images/Ravindra jadeja.webp" height="100" width="100"><br>
+            <span style="padding-left: 10px; background-image: linear-gradient(orange,white,lightskyblue,green);">
+            ODI STATS:
+            <hr>
+            <p>
+            <b>Matches:</b> 183<br>
+            <b>Innings:</b>&nbsp 124<br>
+            <b>Role:&nbsp </b>&nbsp &nbsp &nbspAll-Rounder<br>
+            <b>Runs:&nbsp </b> &nbsp &nbsp 2,585 <br>
+            <b>Wickets:&nbsp</b>200<br>
+            <b>H.S:&nbsp &nbsp </b> &nbsp &nbsp &nbsp87 <br>
+            <b>B.B:&nbsp </b>&nbsp &nbsp &nbsp &nbsp5/36<br>
+            <b>100's:&nbsp </b> &nbsp  &nbsp &nbsp0<br>
+            <b>50's:&nbsp </b>&nbsp  &nbsp &nbsp &nbsp13<br>
+            <b>Sixes:</b>&nbsp  &nbsp &nbsp &nbsp50<br>
+            <b>Fours:&nbsp</b>&nbsp  &nbsp &nbsp1,188<br>
+            </p>
+            </span>
+            </div>
+            <div class="four1">
+            <h2><u>Kuldeep  Yadav</u></h2>
+            <img src="./ODI squad images/Kuldeep.gif" height="100" width="100"><br>
+            <span style="padding-left: 10px; background-image: linear-gradient(orange,white,lightskyblue,green);">
+            ODI STATS:
+            <hr>
+            <p>
+            <b>Matches:</b> 89<br>
+            <b>Innings:</b>&nbsp 86<br>
+            <b>Role:&nbsp </b>&nbsp &nbsp &nbspBowler<br>
+            <b>Balls:&nbsp </b>&nbsp &nbsp 4,519<br>
+            <b>Wickets:&nbsp </b>150<br>
+            <b>B.B:&nbsp &nbsp </b> &nbsp &nbsp &nbsp6/25 <br>
+            <b>Maidens:</b> 27<br>
+            <b>5W's:&nbsp </b> &nbsp  &nbsp &nbsp2<br>
+            <b>4w's </b>&nbsp  &nbsp &nbsp &nbsp 7<br>
+            </p>
+            </span>
+            </div>
+            <div class="five">
+            <h2><u>Md Siraj</u></h2>
+            <img src="./ODI squad images/siraj.avif" height="100" width="100"><br>
+            <span style="padding-left: 10px; background-image: linear-gradient(orange,white,lightskyblue,green);">
+            ODI STATS:
+            <hr>
+                <p>
+                <b>Matches:</b> 29<br>
+                <b>Innings:</b>&nbsp 28<br>
+                <b>Role:&nbsp </b>&nbsp &nbsp &nbspBowler<br>
+                <b>Balls:&nbsp </b> &nbsp &nbsp 1,276 <br>
+                <b>Wickets:&nbsp</b>53<br>
+                <b>B.B:&nbsp </b> &nbsp  &nbsp &nbsp 6/21<br>
+                <b>Maidens:</b>23<br>
+                <b>5W's:&nbsp </b> &nbsp  &nbsp 1<br>
+                <b>4w's </b>&nbsp  &nbsp &nbsp &nbsp2<br>
+                </p>
+            </span>
+            </div>
+        </div>
+        <!-- 6-column -->
+        <br>
+        <div class="main2">
+            <div class="one2">
+                <h2><u>J Bumrah</u></h2>
+                <img src="./ODI squad images/Bumrah.webp" height="100" width="100"><br>
+                <span style="padding-left: 10px; background-image: linear-gradient(orange,white,lightskyblue,green);">
+                ODI STATS:
+                <hr>
+                <p>
+                <b>Matches:</b> 76<br>
+                <b>Innings:</b>&nbsp 75<br>
+                <b>Role:&nbsp </b>&nbsp &nbsp &nbspBowler<br>
+                <b>Balls:&nbsp </b> &nbsp &nbsp 3,909<br>
+                <b>Wickets:&nbsp</b>125<br>
+                <b>B.B:&nbsp </b> &nbsp  &nbsp &nbsp 6/19<br>
+                <b>Maidens:</b>46<br>
+                <b>5W's:&nbsp </b> &nbsp  &nbsp 2<br>
+                <b>4w's </b>&nbsp  &nbsp &nbsp &nbsp5<br>
+                </p>
+                </span>
+            </div> 
+            <div class="two2">
+                <h2><u>Ishan kishan</u></h2>
+                <img src="./ODI squad images/ISHANKISHAN.avif" height="100" width="100"><br>
+                <span style="padding-left: 10px; background-image: linear-gradient(orange,white,lightskyblue,green);">
+                ODI STATS:
+                <hr>
+                <p>
+                    <b>Matches:</b> 23<br>
+                    <b>Innings:</b>&nbsp 20<br>
+                    <b>Role:&nbsp </b>&nbsp &nbspBatsman&W.k<br>
+                    <b>Runs:&nbsp </b> &nbsp &nbsp 837 <br>
+                    <b>H.S:&nbsp &nbsp </b> &nbsp &nbsp &nbsp210 <br>
+                    <b>100's:&nbsp </b> &nbsp  &nbsp &nbsp1<br>
+                    <b>50's:&nbsp </b>&nbsp  &nbsp &nbsp &nbsp7<br>
+                    <b>Sixes:</b>&nbsp  &nbsp &nbsp &nbsp29<br>
+                    <b>Fours:&nbsp</b>&nbsp  &nbsp &nbsp86<br>
+                </p>
+                </span>
+                </div>
+                <div class="three2">
+                <h2><u>SuryaKuamr</u></h2>
+                <img src="./ODI squad images/Suryakumar-Yadav.jpg"height="100" width="100"><br>
+                <span style="padding-left: 10px; background-image: linear-gradient(orange,white,lightskyblue,green);">
+                ODI STATS:
+                <hr>
+                <p>
+                    <b>Matches:</b> 27<br>
+                    <b>Innings:</b>&nbsp 25<br>
+                    <b>Role:&nbsp </b>&nbsp &nbsp &nbspBatsman<br>
+                    <b>Runs:&nbsp </b> &nbsp &nbsp 537 <br>
+                    <b>H.S:&nbsp &nbsp </b> &nbsp &nbsp &nbsp64<br>
+                    <b>100's:&nbsp </b> &nbsp  &nbsp &nbsp0<br>
+                    <b>50's:&nbsp </b>&nbsp  &nbsp &nbsp &nbsp2<br>
+                    <b>Sixes:</b>&nbsp  &nbsp &nbsp &nbsp11<br>
+                    <b>Fours:&nbsp</b>&nbsp  &nbsp &nbsp56<br>
+                </p>
+                </span>
+                </div>
+                <div class="four2">
+                <h2><u>Axar Patel</u></h2>
+                <img src="./ODI squad images/axar patel.webp" height="100" width="100"><br>
+                <span style="padding-left: 10px; background-image: linear-gradient(orange,white,lightskyblue,green);">
+                ODI STATS:
+                <hr>
+                <p>
+                <b>Matches:</b> 54<br>
+                <b>Innings:</b>&nbsp 34<br>
+                <b>Role:&nbsp </b>&nbsp &nbsp &nbspAll-Rounder<br>
+                <b>Runs:&nbsp </b> &nbsp &nbsp 481 <br>
+                <b>Wickets:&nbsp</b>59<br>
+                <b>H.S:&nbsp &nbsp </b> &nbsp &nbsp &nbsp64 <br>
+                <b>B.B:&nbsp </b>&nbsp &nbsp &nbsp &nbsp3/24<br>
+                <b>100's:&nbsp </b> &nbsp  &nbsp &nbsp0<br>
+                <b>50's:&nbsp </b>&nbsp  &nbsp &nbsp &nbsp2<br>
+                <b>Sixes:</b>&nbsp  &nbsp &nbsp &nbsp24<br>
+                <b>Fours:&nbsp</b>&nbsp  &nbsp &nbsp21<br>
+                </p>
+                </span>
+                </div>
+                <div class="five2">
+                <h2><u>S Thakur</u></h2>
+                <img src="./ODI squad images/shardul thakur.webp" height="100" width="100"><br>
+                <span style="padding-left: 10px; background-image: linear-gradient(orange,white,lightskyblue,green);">
+                ODI STATS:
+                <hr>
+                <p>
+                <b>Matches:</b> 42<br>
+                <b>Innings:</b>&nbsp 41<br>
+                <b>Role:&nbsp </b>&nbsp &nbsp &nbspAll-Rounder<br>
+                <b>Runs:&nbsp </b> &nbsp &nbsp 329<br>
+                <b>Wickets:&nbsp </b>63<br>
+                <b>H.S:&nbsp &nbsp </b> &nbsp &nbsp &nbsp50<br>
+                <b>B.B:&nbsp &nbsp </b> &nbsp &nbsp &nbsp4/37 <br>
+                <b>100's:&nbsp </b> &nbsp  &nbsp &nbsp0<br>
+                <b>50's:&nbsp </b>&nbsp  &nbsp &nbsp &nbsp1<br>
+                <b>Sixes:</b>&nbsp  &nbsp &nbsp &nbsp9<br>
+                <b>Fours:&nbsp</b>&nbsp  &nbsp &nbsp31<br>
+                </p>
+                </span>
+                </div>
+                <div class="six">
+                <h2><u>Md Shami</u></h2>
+                <img src="./ODI squad images/Shami.jpg" height="100" width="100"><br>
+                <span style="padding-left: 10px; background-image: linear-gradient(orange,white,lightskyblue,green);">
+                ODI STATS:
+                <hr>
+                    <p>
+                    <b>Matches:</b> 92<br>
+                    <b>Innings:</b>&nbsp 91<br>
+                    <b>Role:&nbsp </b>&nbsp &nbsp &nbspBowler<br>
+                    <b>Balls:&nbsp </b> &nbsp &nbsp 4596 <br>
+                    <b>Wickets:&nbsp</b>165<br>
+                    <b>B.B:&nbsp </b> &nbsp  &nbsp &nbsp 5/69<br>
+                    <b>Maidens:</b>46<br>
+                    <b>5W's:&nbsp </b> &nbsp  &nbsp 1<br>
+                    <b>4w's </b>&nbsp  &nbsp &nbsp &nbsp9<br>
+                    </p>
+                </span>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
