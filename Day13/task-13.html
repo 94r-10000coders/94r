@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-13</title>
+    <style>
+        .main{
+           border:3px solid black;
+           padding:5px;
+           height:auto;
+           width:1200px;
+           background-image: linear-gradient(to top right,lightblue,pink);
+           
+        }
+        .div1{
+           border:2px solid black;
+           border-radius: 20px;
+           padding:5px; 
+        }
+        .div2{
+            border:2px solid black;
+            border-radius: 10px;
+            padding:15px;
+            display: flex; 
+            gap:190px;
+        }
+        .div3{
+            border:2px solid black;
+            border-radius: 10px;
+            padding:15px;
+            gap:20px; 
+            display: flex; 
+            gap:145px;
+        }
+        .div4{
+            border:2px solid black;
+            border-radius: 10px;
+            padding:15px;
+            display: flex; 
+            gap:41px;
+        }
+        .div5{
+            border:2px solid black;
+            border-radius: 10px;
+            padding:15px;
+            display: flex; 
+            gap:20px;
+        }
+        /* Here i used attribute selectors for styling images */
+        img[height="150px"]{
+            border-radius: 20px;
+            padding:5px;
+            background-color: aquamarine;
+        }
+        [title~="flower1"]{
+            border-radius: 20px;
+            padding:5px;
+            background-color: blue; 
+        }
+        [title|="flower"]{
+            border-radius: 20px;
+            padding:5px;
+            background-color: cornflowerblue;
+        }
+        [title^="Do"]{
+            border-radius: 20px;
+            padding:5px;
+            background-color: dimgray;
+        }
+        [title$="end"]{
+            border-radius: 20px;
+            padding:5px;
+            background-color: magenta;
+        }
+        [title*="pp"]{
+            border: 5px double black;
+            border-radius: 20px;
+            padding:5px;
+            background-color:forestgreen
+        }
+        .main2{
+            border: 2px solid black;
+            border-radius: 20px;
+            height:auto;
+            padding:5px;
+            width:400px;
+            background-color: rgb(105, 255, 228);
+        }
+        label[for="add"]{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: darkred;
+        }
+        [id="fname"]{
+            background-color:darksalmon;
+        }
+        label[for="fname"]{
+            background-color: darkviolet;
+        }
+        [id="sname"]{
+            background-color:beige;
+        }
+        label[for="sname"]{
+            background-color:burlywood;
+        }
+        [for^="ge"]{
+            background-color: darkgrey;
+        }
+        [for$="il"]{
+            background-color: lawngreen;
+        }
+        [placeholder$="ss"]{
+            background-color: darkorange;
+        }
+        [value^="sign"]{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="div1" style="background-color: firebrick;">
+            <h1 style="text-align: center;">Gallery</h1>
+        </div>
+        <h1>BIRDS:</h1>
+        <div class="div2">
+           <img src="./task-13 images/bir1.jpeg" height="150px" width="150px"  title="parrot" />
+           <img src="./task-13 images/bir2.jpeg" height="150px" width="150px" title="peacock"/>
+           <img src="./task-13 images/bir3.jpeg" height="150px" width="150px" title="eagle"/>
+           <img src="./task-13 images/bir4.jpeg" height="150px" width="150px" title="peigeon"/>
+        </div>
+        <h1>FLOWERS:</h1>
+        <div class="div3">
+           <img src="./task-13 images/flo1.jpeg" height="200px" width="200px" title="flower1"/>
+           <img src="./task-13 images/flo2.jpeg" height="200px" width="200px" title="flower-2"/>
+           <img src="./task-13 images/flo3.jpeg" height="200px" width="200px" title="flower-3"/>
+           <img src="./task-13 images/flo4.jpg" height="200px" width="200px" title="flower-4"/>
+        </div>
+        <h1>PETS:</h1>
+        <div class="div4">
+           <img src="./task-13 images/pet1.jpeg" height="250px" width="250px" title="Dog"/>
+           <img src="./task-13 images/pet2.jpeg" height="250px" width="250px" title="Cat-end"/>
+           <img src="./task-13 images/pet3.jpg" height="250px" width="250px" title="rabbit-end"/>
+           <img src="./task-13 images/pet4.jpeg" height="250px" width="250px" title="Sqirrel-end"/>
+        </div>
+        <h1>FRUITS:</h1>
+        <div class="div5">
+           <img src="./task-13 images/fru1.jpeg" height="280px" width="280px" title="Pineapple"/>
+           <img src="./task-13 images/fru2.jpeg" height="280px" width="280px" title="Ban-pp-ana"/>
+           <img src="./task-13 images/fru3.jpeg" height="280px" width="280px" title="Ora-pp-nge"/>
+           <img src="./task-13 images/fru4.jpeg" height="280px" width="280px" title="Straw-pp-berry"/>
+        </div>
+    </div>
+    <hr>
+     <br> <br>
+    <h1 style="color:navy;">Form styling using Attribute Selectors:</h1>
+    <div class="main2">
+        <label style="text-align: center;color: darkred;"><h1>SIGNUP FORM</h1></label>
+        <form>
+          <label for="fname">First Name:</label>  
+          <input type="text" name="fname" id="fname" placeholder="enter first name"></input> <br> <br>
+          <label for="sname">Second Name:</label>  
+          <input type="text" name="sname" id="sname" placeholder="enter second name"></input> <br> <br>
+          <label for="mail">Email:</label>  
+          <input type="email" name="mail" id="mail" placeholder="enter email address"></input> <br> <br>
+          <label for="date">DOB:</label> <br>
+          <input type="date"/> <br> <br>
+          <label for="gen">Gender:</label>  <br>
+          <input type="radio" checked>male</input> <br>
+          <input type="radio">female</input> <br>
+          <label for="add">Address:</label>   <br>
+          <input type="text" name="add" id="add" placeholder="enter address"></input> <br> <br>
+          <input type="submit" value="signup"></input>
+          <a href="">already have an account?</a>
+        </form>
+    </div>
+</body>
+</html>
