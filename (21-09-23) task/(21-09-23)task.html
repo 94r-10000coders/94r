@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        width: 820px;
+    }
+    [src]{
+        width: 180px;
+        height: 180px;
+        border-radius: 30px;
+        margin-left: 15px;
+    }
+    [for=name]{
+        color: orange;
+    }
+    [for^=na]{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    [for$=il]{
+        color: orange;
+    }
+    [for*=ai]{font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    [for~=phne]{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: orange;
+    }
+    [placeholder|=enter]{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    [name*=swe]{
+        background-color: aqua;
+        width: 250px;
+        height: 70px;
+        border-radius: 6px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    [placeholder~=here],[type*=l]{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        box-shadow: 3px 3px;
+        
+    }  
+    [type~=submit]{
+        width: 150px;
+        height: 20px;
+        background-color: orange;
+        border: transparent;
+        border-radius: 4px;
+        color: white;
+    }
+    
+</style>
+<body>
+    <h1 style="text-align: center;">Flowers</h1>
+    <div>
+        <img src="./flower1.jpeg" title="flower">
+        <img src="./flower2.jpeg" title="flower">
+        <img src="./flower3.jpeg" title="flower">
+        <img src="./flower4.jpeg" title="flower">
+    </div>
+    <h1 style="text-align: center;">Fruits</h1>
+    <div>
+        <img src="./fruit1.jpeg">
+        <img src="./fruit2.jpeg">
+        <img src="./fruit3.jpeg">
+        <img src="./fruit4.jpeg">
+    </div>
+    <h1 style="text-align: center;">Animals</h1>
+    <div>
+        <img src="./animal1.webp">
+        <img src="./animal2.jpeg">
+        <img src="./animal3.jpeg">
+        <img src="./animal4.jpg">
+    </div>
+    <h1 style="text-align: center;">Birds</h1>
+    <div>
+        <img src="./bird1.jpeg">
+        <img src="./bird2.jpeg">
+        <img src="./bird3.webp">
+        <img src="./bird4.jpeg">
+    </div>
+    <hr>
+    <form>
+        <center>
+        <fieldset>
+            <legend>Register Form</legend>
+            <label for="name">Name</label><br>
+        <input type="text" id="name" name="Name" placeholder="enter here" /><br><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="Email" placeholder="enter-here"/><br><br>
+        <label for="phne">Phone</label><br>
+        <input type="tel" id="phne" name="phone" pattern="[0-9]{10}"/><br><br>
+        <label>Degree details</label><br>
+        <select>
+            <option >-select-</option>
+            <option>BTech/BE/MTech</option>
+            <option>BA/BCom/BSc</option>
+            <option>MCA/BCA</option>
+            <option>Others</option>
+        </select><br><br>
+        <label >Year Of Pass</label>
+        <br>
+        <select>
+            <option>-select-</option>
+            <option>Still Pursuing</option>
+            <option>2023</option>
+            <option>2022</option>
+        </select><br><br>
+        <label>Please share questions if you have any?</label><br>
+        <textarea name="answer"></textarea><br><br>
+        <button   type="submit">Register</button>
+        </fieldset>
+        </center>
+    </form>
+</body>
+</html>

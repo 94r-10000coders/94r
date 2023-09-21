@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ab,.re,.fl{
+            border:1px solid black;
+            width:100px;
+            height:100px;
+            margin-bottom:10px;
+            background-image:conic-gradient(deepskyblue,whitesmoke,orange,lightgreen)
+        }
+        .f1,.f3{
+            display: flex;
+            justify-content: space-between;
+        }
+        .f2{
+            display: flex;
+            justify-content: center;
+        }
+        p{
+            background-image: linear-gradient(skyblue,whitesmoke);
+            padding:5px;
+        }
+        .four{
+            border: 2px solid black;
+            display: flex;
+            gap: 5px;
+            width: fit-content;
+            height: fit-content;
+            padding: 15px;
+        }
+ 
+          
+    </style>
+</head>
+<body>
+   <div style="position: sticky;top: 0px;background-color:orange;width: 100vw;border: 1px solid orange;z-index:1; text-align: center;"><h2>Sticky Position</h2></div>
+    <h1>Using Absolute Position</h1>
+    <div style="border:2px solid black; width:320px;height:320px ;">
+        <div class="ab"></div>
+        <div class="ab" style="position:absolute;left:229px;top:158px;"></div>
+        <div class="ab" style="position:absolute;left:120px;"></div>
+        <div class="ab" style="position:absolute;left:229px;top:377px ;" ></div>
+        <div class="ab" style="position:absolute;top:377px;"></div>
+    </div>
+    <h1>Using Relalative Position</h1>
+    <div style="border:2px solid black; width:320px;height:320px ;">
+        <div class="re"></div>
+        <div class="re" style="position:relative;left:219px;top:-112px;"></div>
+        <div class="re" style="position:relative;bottom:4px;"></div>
+        <div class="re" style="position:relative;bottom:225px;left: 110.5px;"></div>
+        <div class="re" style="position:relative;left:219px;bottom:226px;"></div>
+    </div>
+    <h1>Using Flex Property</h1>
+    <div class="m" style="border:2px solid black; width:320px;height:324px ;">
+        <div class="f1">
+            <div class="fl"></div>
+            <div class="fl"></div>
+        </div>
+        <div class="f2">
+            <div class="fl"></div>
+        </div>
+        <div class="f3">
+            <div class="fl"></div>
+            <div class="fl"></div>
+        </div>
+    </div>
+    <h1>4 Columns</h1>
+    <div class="four">
+        <p>The flex CSS shorthand property is the combination of flex-grow, flex-shrink, and flex-basis properties. It is used to set the length of flexible items. The flex property is much more responsive and mobile-friendly. It is easy to position child elements and the main container.</p>
+        <p>Absolute positioning defines the position of a given bounding box from the top and left side margins of the web page. This not only allows objects to be placed in an exact location, it also allows objects to be placed one on top of another.</p>
+        <p>Relative Positioning. Relative positioning changes the position of the HTML element relative to where it normally appears. So "left:20" adds 20 pixels to the element's LEFT position. You can use two values top and left along with the position property to move an HTML element anywhere in the HTML document.</p>
+        <p>An element with position: sticky; is positioned based on the user's scroll position. A sticky element toggles between relative and fixed , depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).</p>
+    </div>
+    <h1>5 Columns</h1>
+    <div class="four">
+        <p>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.</p>
+        <p>The flex-grow property specifies how much the item will grow relative to the rest of the flexible items inside the same container. Note: If the element is not a flexible item, the flex-grow property has no effect.</p>
+        <p>The flex-shrink property specifies how the item will shrink relative to the rest of the flexible items inside the same container. Note: If the element is not a flexible item, the flex-shrink property has no effect. Default value: 1.</p>
+        <p>The flex-basis property specifies the initial length of a flexible item. Note: If the element is not a flexible item, the flex-basis property has no effect.</p>
+        <p>The align-self property specifies the alignment in the block direction for the selected item inside a flexbox or grid container. For pages in English, block direction is downward and inline direction is left to right.</p>
+    </div>
+</body>
+</html>

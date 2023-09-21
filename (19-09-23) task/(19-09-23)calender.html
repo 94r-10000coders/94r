@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 10px;
+        }
+        .calender{
+            border:2px solid black;
+            border-radius: 20px;
+            background-image: linear-gradient(skyblue,lightgray);
+            /* text-align: center;
+            text-wrap: wrap; */
+            color: orangered;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .list{
+            border: 2px solid black;
+            border-radius: 15px;
+            height: 303px;
+            padding-right: 15px;
+            padding-top: 15px;
+            width: 400px;
+            background-image: linear-gradient(skyblue,lightgray);
+            
+        }
+        .day{
+             display: flex;
+             flex-flow: row wrap;
+             justify-content: space-evenly;
+             align-items: center;
+             align-content: center;
+
+        }
+        .date1,.date2,.date3,.date4,.date5{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+
+        }
+        .emt{
+            border: 1px solid black;
+            width: 20px;
+            border-radius: 50%;
+            text-align: center;
+            padding: 3px;
+            margin-left: 10px;
+            visibility: hidden;
+        }
+        .num{
+            border: 1px solid black;
+            width: 20px;
+            border-radius: 25%;
+            text-align: center;
+            padding:3px;
+            margin-left: 10px;
+        }
+        .month{
+            border: 2px solid black;
+            border-radius: 15px;
+            width:fit-content;
+            height: 315px;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+            align-items: center;
+            padding-right: 20px;
+            background-image: linear-gradient(skyblue,lightgray);
+        }
+        .side2{
+            border: 2px solid black;
+            border-radius: 15px;
+            width: fit-content;
+            height: 311px;px ;
+            /* margin-right: 10px; */
+            display: flex;
+            flex-direction: column;
+            justify-content:first baseline;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 3px;
+            margin-top: 15px;
+            background-image: linear-gradient(skyblue,lightgray);
+        }
+        .whole{
+            margin-bottom: 20px;
+            margin-left: 20px; 
+            margin-right: 20px;
+             margin-top: -18px;
+            display: flex;
+            gap: 3px;
+        }
+        /* .s{
+            border: 1px solid ;
+            border-radius: 5px;
+            margin-right: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            
+        } */
+       
+    </style>
+</head>
+<body>
+    <center>
+<div style="border:2px solid black; width: fit-content;padding: 8px;align-content: center;">
+    
+        <h1 class="calender"><span style="color: green;">2023</span> Calender</h1>
+    
+    <div style="display: flex;" class="whole">
+        <div>
+            <ul class="month" type="none">
+                <li>January</li>
+                <li>Febuary</li>
+                <li>March</li>
+                <li>April</li>
+                <li>May</li>
+                <li>June</li>
+                <li>July</li>
+                <li>August</li>
+                <li style="color:red;">September</li>
+                <li>October</li>
+                <li>November</li>
+                <li>December</li>
+            </ul>
+    </div>
+    <div>
+        <ul type="none" class="list">
+           <div class="day">
+            <li class="s" style="color: red;">SUN</li>
+            <li class="s">MON</li>
+            <li class="s">TUE</li>
+            <li class="s">WED</li>
+            <li class="s">THU</li>
+            <li class="s">FRI</li>
+            <li class="s">SAT</li>
+           </div>
+           <hr>
+           <div class="date1">
+               <li class="emt">e</li>
+               <li class="emt">e</li>
+               <li class="emt">e</li>
+               <li class="emt">e</li>
+               <li class="emt">e</li>
+               <li class="num">1</li>
+               <li class="num">2</li>
+           </div>
+           <div class="date2">
+                <li class="num" style="color: red;border-color: red;">3</li>
+                <li class="num">4</li>
+                <li class="num">5</li>
+                <li class="num">6</li>
+                <li class="num">7</li>
+                <li class="num">8</li>
+                <li class="num">9</li>
+           </div>
+           <div class="date3">
+                 <li class="num" style="color: red;border-color: red;">10</li>
+                 <li class="num">11</li>
+                 <li class="num">12</li>
+                 <li class="num">13</li>
+                 <li class="num">14</li>
+                 <li class="num">15</li>
+                 <li class="num">16</li>
+           </div>
+           <div class="date4">
+                 <li class="num" style="color: red;border-color: red;">17</li>
+                 <li class="num">18</li>
+                 <li class="num">19</li>
+                 <li class="num">20</li>
+                 <li class="num">21</li>
+                 <li class="num">22</li>
+                 <li class="num">23</li>
+           </div>
+           <div class="date5">
+                 <li class="num" style="color: red;border-color: red;">24</li>
+                 <li class="num">25</li>
+                 <li class="num">26</li>
+                 <li class="num">27</li>
+                 <li class="num">28</li>
+                 <li class="num">29</li>
+                 <li class="num">30</li>
+           </div>
+        </ul>
+    </div>
+ 
+    <div class="side2">
+         <li type="none">06-09-23 Janmastami</li>
+         <li type="none">19-09-23 Ganesh Chathurthi</li>
+    </div>
+    </div>
+</div>
+    </center>
+      
+        
+    
+   
+</body>
+</html>
