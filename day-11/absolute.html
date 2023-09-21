@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .gh,.ty,.fl{
+        border: 1px solid black;
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+        background-image: conic-gradient(orange,white,green);
+       }
+       .b,.s{
+        display: flex;
+        justify-content: space-between;
+       }
+       .v{
+        display: flex;
+        justify-content: center;
+       }
+       p{
+        background-image: linear-gradient(skyblue,lightpink);
+        padding: 5px;
+       }
+       .four{
+        border: 2px solid black;
+        display: flex;
+        gap: 5px;
+         width: fit-content;
+        height: fit-content; 
+        padding: 15px;
+       }
+    </style>
+</head>
+<body>
+    <div style="position: sticky;top:0px;background-color: aquamarine;width: 100vw;border:1px solid aquamarine;z-index: 1;text-align: center;"><h2>Sticky position</h2></div>
+     <h1>Using Absolute position</h1>   
+    <div style="border: 2px solid black; width: 320px; height: 320px;">
+        <div class="gh"></div>
+         <div class="gh" style="position: absolute;left: 229px;top: 160px;"></div>
+         <div class="gh" style="position:absolute;left:120px;"></div>
+         <div class="gh" style="position:absolute;left:229px;top:377px ;" ></div>
+         <div class="gh" style="position:absolute;top:377px;"></div>  
+        </div>
+        <h1>Using Relalative position</h1>
+        <div style="border: 2px solid#000;width: 320px;height: 320px;">
+            <div class="ty"></div>
+            <div class="ty" style="position:relative;left:219px;top:-112px;"></div>
+            <div class="ty" style="position:relative;bottom:4px;"></div>
+            <div class="ty" style="position:relative;bottom:225px;left: 110.5px;"></div>
+            <div class="ty" style="position:relative;left:219px;bottom:226px;"></div>   
+         </div>
+         <h1>Using Flex property</h1>
+         <div class="k" style="border: 2px solid black; width: 320px;height: 324px;">
+        <div class="b">
+            <div class="fl"></div>
+            <div class="fl"></div>
+        </div>
+        <div class="v">
+            <div class="fl"></div>
+        </div>
+        <div class="s">
+            <div class="fl"></div>
+            <div class="fl"></div>
+        </div>
+        </div>
+        <h1>4 Columns</h1>
+        <div class="four">
+         <p>The Space Between Us is a 2017 American romantic science fiction film directed by Peter Chelsom and written by Allan Loeb, from a story by Stewart Schill, Richard Barton Lewis, and Loeb</p>
+         <p> The film stars Gary Oldman, Asa Butterfield, Britt Robertson, and Carla Gugino, and follows a teenage boy, born on Mars, who travels to Earth.</p>
+         <p>Principal photography began on September 14, 2015, in Albuquerque, New Mexico. The film was released on February 3, 2017, by STXfilms.</p>
+         <p> It received negative reviews from critics and was a box office bomb, grossing $16.08 million against its $30 million budget.[1]</p>    
+    </div>
+    <h1>5 Columns</h1>
+    <div class="four">
+        <p>Multi-billionaire Nathaniel Shepard, CEO of Genesis, launches the first mission to colonize Mars. During the journey, astronaut Sarah Elliot discovers she is pregnant. </p>
+         <p> She gives birth to Gardner after landing on Mars, and dies shortly afterwards from eclampsia; the father is unknown. Gardner is kept on Mars as a secret;</p>
+         <p>they fear a public relations disaster and returning to Earth could be dangerous to his health. Gardner is raised by astronaut Kendra Wyndham and the other scientists on Mars.</p>   
+        </div>
+</body>
+</html>
