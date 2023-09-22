@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gallery</title>
+    <style>
+   .gallery
+        {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            max-width: 60%;
+            height: auto;
+            gap: 8px 5px;
+            background-image: linear-gradient(45deg ,pink,lightblue);
+            padding: 30px;
+            margin: 30px;
+            border-radius: 5px;
+            /* border: 1px solid; */
+            border: none;
+            box-shadow: -10px 10px rgba(128, 128, 128, 0.519);
+            
+        }
+        [src]
+        {
+            border: 2px solid gray;
+            padding: 8px;
+            background-color: rgba(250, 235, 215, 0.697);
+        }
+        [placeholder~="name"]{
+            height: 30px;
+            width: 190px;
+            background-color: rgba(128, 128, 128, 0.222);
+
+        }
+        [for*= "name"]
+        {
+            color:rgb(10, 164, 113)
+        }
+        p{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        [class |="form"]
+        {
+            background-image:LINEAR-GRADIENT(45DEG, #405DE6,#5851DB,#833AB4, #C13584,#E1306C, #FD1D1D);
+            
+        }
+        [placeholder $="Password"]{
+               
+            background-color: rgba(165, 42, 42, 0.421);
+
+
+        }
+    </style>
+</head>
+<body>
+    <h1 style="margin: 20px auto 1px 100px;">Gallery</h1>
+    <div class="gallery">
+    
+        <div class="img"><img src="./images/Coringa-wildlife-sanctuary.jpg" height="180" width="200"></div>
+        <div class="img"><img src="./images/France.jpg" height="180" width="200"></div>
+        <div class="img"><img src="./images/kerala.jpg" height="180" width="200"></div>
+        <div class="img"><img src="./images/flight.jpg" height="180" width="200"></div>
+        <div class="img"><img src="./images/best-guard-dogs-1650302456.jpeg" height="180" width="200"></div>
+        <div class="img"><img src="./images/rottweiler.jpg" height="180" width="200"></div>
+        <div class="img"><img src="./images/doberman.jpg"height="180" width="200"></div>
+        <div class="img"><img src="./images/boxer.jpg"height="180" width="200"></div>
+        <div class="img"><img src="./images/N1.webp" height="180" width="200"></div>
+        <div class="img"><img src="./images/N2.jpg" height="180" width="200"></div>
+        <div class="img"><img src="./images/N4.jpg" height="180" width="200"></div>
+        <div class="img"><img src="./images/N3.jpg" height="180" width="200"></div>
+
+
+
+    </div><br>
+ <form>
+        <h2 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display:inline-block; background-color: rgba(137, 43, 226, 0.652);margin-left: 250px;">Signup Form</h2>
+     <fieldset style="width:60%;">
+        <div class="form">
+           <div style="margin-left:250px;">
+
+            <h3 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Easy Signup using</h3>
+            <button class="button"><a href="https://www.facebook.com/" target="_blank"> Facebook</a></button> or
+            <button><a
+                    href="https://accounts.google.com/v3/signin/identifier?hl=en-GB&ifkv=AXo7B7UNPtZZJv-h3HGszNQqOd7qrUiIUq6UkWA6_hnD13dAwwBXDTwm2xypUOTYRyQTGzvwo3LQvA&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-586749104%3A1694171751339694&theme=glif"
+                    target="_blank"> Google</a></button><br><br>
+
+            <lable for="Firstname"><b> First Name:</b></lable><br />
+            <input type="text" placeholder="First name" /><br><br>
+            <label for="Lastname"><b> Last Name:</b></label><br />
+            <input type="text" placeholder="Last name" /><br><br>
+            <lable for="email"><b>Email:</b></lable><br />
+            <input type="email" placeholder="Email address" /><br><br>
+            <lable for="Mobile"><b>Mobile number:</b></lable><br />
+            <input type="tel" placeholder="Phone number" pattern="[0-9]{10}" /><br><br>
+            <label for="pass"><b>Set Password:</b></label><br>
+            <input type="password" placeholder="Create Password" min="8"><br><br>
+            <label for="pass"><b>Re-enter Password:</b></label><br>
+            <input type="text" placeholder="Re-enter Password">
+            <p>-Minimum 8 number of characters.<br>
+                -At least one number.<br>
+                -At least one non-alphanumeric character.<br>
+                -Mixed upper and lower-case characters.
+            </p>
+            <label for="Gender"><b>Gender</b></label><br>
+            <input type="radio" id="Male" name="Gender" value="HTML">
+            <label for="html">Male</label><br>
+            <input type="radio" id="female" name="Gender" value="CSS">
+            <label for="css">Female</label><br><br>
+            <input type="submit" value="Signup" formaction="./login.html"  style="background-color: black; color: whitesmoke;border: none; height: 30px;"/>
+            &nbsp;<input type="reset" value="Reset" />
+            &nbsp;Already have account?
+         </div>  
+        </div>   
+
+
+     </fieldset>
+   
+
+ </form>
+   
+</body>
+</html>
