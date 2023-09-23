@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: center;
+            align-content: center;
+        }
+        .calculator{
+            width: fit-content;
+            margin-left: 40vw;
+        }
+        .calculator div{
+            display: flex;
+            align-items: center;
+            background-color:black;
+            justify-content: center;
+        }
+        .calculator div>div{
+            width: 30px;
+            height: 30px;
+            border:1px solid gray;
+            border-radius: 15px;
+            margin: 5px;
+            color: white;
+            font-weight: bold;
+            background-color: rgba(197, 184, 184);
+        }
+        .calculator div>input{
+            height: 50px;
+            background-color: black;
+            border: 1px solid white;
+            border-radius: 3px;
+            margin-top: 1px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+            <div class="row1">
+                <input type="text" id="display" value="123">
+            </div>
+            <div class="row2">
+                <div>AC</div>
+                <div>+/-</div>
+                <div>%</div>
+                <div>/</div>
+            </div>
+            <div class="row3">
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>&cross;</div>
+            </div>
+            <div class="row4">
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>-</div>
+            </div>
+            <div class="row5">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>+</div>
+            </div>
+            <div class="row6">
+                <div>.</div>
+                <div>0</div>
+                <div>=</div>
+            </div>
+    </div>
+</body>
+</html>
