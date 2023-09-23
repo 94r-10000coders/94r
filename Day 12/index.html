@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 12</title>
+    <style>
+        .one{
+            border: 3px solid black;
+            background-image: linear-gradient(white,skyblue);
+            width: 500px;
+            height: 500px;
+        }
+        .two{
+            border: 3px solid black;
+            background-image: linear-gradient(white,skyblue);
+            width: 500px;
+            height: 500px;
+
+        }
+        .three{
+            border: 2px solid black;
+            border-radius: 3px;
+            display: flex;
+            width: 500px;
+            height: 500px;
+            flex-wrap: wrap;
+            gap: 100px;
+            background-image: linear-gradient(blue,orange);            
+        }
+        .five,.six{
+            border: 3px solid green;
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            gap: 10px;
+            background-color: beige;
+            padding: 10px;
+            justify-content: center;
+        }
+        .items,.items1{
+            border: 3px dotted red;
+            border-radius: 2px;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="color: rgb(255, 8, 0);">Absolute position:</h1>
+    <div class="one">
+        <div class="abposition"style="position: absolute;top:"><img src="./images.jpg"width="100px" height="100px"/></div>
+        <div class="abposition"style="position: absolute;left: 411px"><img src="./images.jpg"width="100px" height="100px"/></div>
+        <div class="abposition"style="position: absolute;top: 483px"><img src="./images.jpg"width="100px" height="100px"/></div>
+        <div class="abposition"style="position: absolute;left: 211px;top: 280px"><img src="./images.jpg"width="100px" height="100px"/></div>
+        <div class="abposition"style="position: absolute;top: 483px;left: 411px"><img src="./images.jpg"width="100px" height="100px"/></div>
+
+    </div>
+    <h1 style="color: rgb(255, 8, 0);">Relative position:</h1>
+    <div class="two">
+        <div class="reposition"style="position: relative;"><img src="./images.jpg"width="100px" height="100px"/></div>
+        <div class="reposition"style="position: relative;left: 400px;top: -104px;"><img src="./images.jpg"width="100px" height="100px"/></div>
+        <div class="reposition"style="position: relative;left: 200px;"><img src="./images.jpg"width="100px" height="100px"/></div>
+        <div class="reposition"style="position: relative;top: 84px"><img src="./images.jpg"width="100px" height="100px"/></div>
+        <div class="reposition"style="position: relative;left:400px;bottom: 21px"><img src="./images.jpg"width="100px" height="100px"/></div>
+        
+    </div>
+    <h1 style="color: rgb(255, 8, 0);">layout using flex:</h1>
+    <div class="three">
+        <div style="display: flex;flex-direction:column;gap: 300px;"><img src="./images.jpg"width="100px" height="100px"/>
+            <img src="./images.jpg"width="100px" height="100px"/>
+        </div>
+        <div style="position: relative;top: 200px;"><img src="./images.jpg"width="100px" height="100px"/></div>
+        <div style="display: flex;flex-direction:column;gap: 300px;"><img src="./images.jpg"width="100px" height="100px"/>
+            <img src="./images.jpg"width="100px" height="100px"/>
+        </div>
+    
+    </div>
+    <h1 style="color:blue">5 Columns:</h1>
+    <div class="five">
+        <p class="items">Mahendra Singh Dhoni, commonly known as MS Dhoni and Mahi, is an Indian cricketer player and was a former captain of the Indian cricket team.[1][2] Dhoni is a right-handed batsman.
+
+            The Indian cricket team won the 2011 Cricket World Cup under his captainship. His Test cricket and One Day International records are the best of all Indian captains to date. He took over the ODI captaincy from Rahul Dravid in 2007 and led the team to its first ever inter-country ODI series wins in Sri Lanka and New Zealand. Dhoni also holds the post of Vice-President of India Cements Ltd. after resigning from Air India. India Cements is the owner of the Indian Premier League team Chennai Super Kings, and Dhoni has been its captain since the first edition of IPL.[3][4]
+            
+            Dhoni was given many awards, such as the ICC ODI Player of the Year award in 2008 and 2009 (the first Indian player to achieve this), the Rajiv Gandhi Khel Ratna award in 2007 and the Padma Shri, India's fourth-highest civilian honour, in 2009.
+            
+            On 6 February 2015, Dhoni's daughter was born. He retired from international cricket in 2020.</p>
+        <p class="items">Mahendra Singh Dhoni, commonly known as MS Dhoni and Mahi, is an Indian cricketer player and was a former captain of the Indian cricket team.[1][2] Dhoni is a right-handed batsman.
+
+            The Indian cricket team won the 2011 Cricket World Cup under his captainship. His Test cricket and One Day International records are the best of all Indian captains to date. He took over the ODI captaincy from Rahul Dravid in 2007 and led the team to its first ever inter-country ODI series wins in Sri Lanka and New Zealand. Dhoni also holds the post of Vice-President of India Cements Ltd. after resigning from Air India. India Cements is the owner of the Indian Premier League team Chennai Super Kings, and Dhoni has been its captain since the first edition of IPL.[3][4]
+            
+            Dhoni was given many awards, such as the ICC ODI Player of the Year award in 2008 and 2009 (the first Indian player to achieve this), the Rajiv Gandhi Khel Ratna award in 2007 and the Padma Shri, India's fourth-highest civilian honour, in 2009.
+            
+            On 6 February 2015, Dhoni's daughter was born. He retired from international cricket in 2020.</p>
+        <p class="items">Mahendra Singh Dhoni, commonly known as MS Dhoni and Mahi, is an Indian cricketer player and was a former captain of the Indian cricket team.[1][2] Dhoni is a right-handed batsman.
+
+            The Indian cricket team won the 2011 Cricket World Cup under his captainship. His Test cricket and One Day International records are the best of all Indian captains to date. He took over the ODI captaincy from Rahul Dravid in 2007 and led the team to its first ever inter-country ODI series wins in Sri Lanka and New Zealand. Dhoni also holds the post of Vice-President of India Cements Ltd. after resigning from Air India. India Cements is the owner of the Indian Premier League team Chennai Super Kings, and Dhoni has been its captain since the first edition of IPL.[3][4]
+            
+            Dhoni was given many awards, such as the ICC ODI Player of the Year award in 2008 and 2009 (the first Indian player to achieve this), the Rajiv Gandhi Khel Ratna award in 2007 and the Padma Shri, India's fourth-highest civilian honour, in 2009.
+            
+            On 6 February 2015, Dhoni's daughter was born. He retired from international cricket in 2020.</p>
+        <p class="items">Mahendra Singh Dhoni, commonly known as MS Dhoni and Mahi, is an Indian cricketer player and was a former captain of the Indian cricket team.[1][2] Dhoni is a right-handed batsman.
+
+            The Indian cricket team won the 2011 Cricket World Cup under his captainship. His Test cricket and One Day International records are the best of all Indian captains to date. He took over the ODI captaincy from Rahul Dravid in 2007 and led the team to its first ever inter-country ODI series wins in Sri Lanka and New Zealand. Dhoni also holds the post of Vice-President of India Cements Ltd. after resigning from Air India. India Cements is the owner of the Indian Premier League team Chennai Super Kings, and Dhoni has been its captain since the first edition of IPL.[3][4]
+            
+            Dhoni was given many awards, such as the ICC ODI Player of the Year award in 2008 and 2009 (the first Indian player to achieve this), the Rajiv Gandhi Khel Ratna award in 2007 and the Padma Shri, India's fourth-highest civilian honour, in 2009.
+            
+            On 6 February 2015, Dhoni's daughter was born. He retired from international cricket in 2020.</p>
+        <p class="items">Mahendra Singh Dhoni, commonly known as MS Dhoni and Mahi, is an Indian cricketer player and was a former captain of the Indian cricket team.[1][2] Dhoni is a right-handed batsman.
+
+            The Indian cricket team won the 2011 Cricket World Cup under his captainship. His Test cricket and One Day International records are the best of all Indian captains to date. He took over the ODI captaincy from Rahul Dravid in 2007 and led the team to its first ever inter-country ODI series wins in Sri Lanka and New Zealand. Dhoni also holds the post of Vice-President of India Cements Ltd. after resigning from Air India. India Cements is the owner of the Indian Premier League team Chennai Super Kings, and Dhoni has been its captain since the first edition of IPL.[3][4]
+            
+            Dhoni was given many awards, such as the ICC ODI Player of the Year award in 2008 and 2009 (the first Indian player to achieve this), the Rajiv Gandhi Khel Ratna award in 2007 and the Padma Shri, India's fourth-highest civilian honour, in 2009.
+            
+            On 6 February 2015, Dhoni's daughter was born. He retired from international cricket in 2020.</p>
+    </div>
+    <h1 style="color:blue">6 Columns:</h1>
+    <div class="six" style="flex-direction: column;">
+        <p class="items1">Mahendra Singh Dhoni, commonly known as MS Dhoni and Mahi, is an Indian cricketer player and was a former captain of the Indian cricket team.[1][2] Dhoni is a right-handed batsman.
+
+            The Indian cricket team won the 2011 Cricket World Cup under his captainship. His Test cricket and One Day International records are the best of all Indian captains to date. He took over the ODI captaincy from Rahul Dravid in 2007 and led the team to its first ever inter-country ODI series wins in Sri Lanka and New Zealand. Dhoni also holds the post of Vice-President of India Cements Ltd. after resigning from Air India. India Cements is the owner of the Indian Premier League team Chennai Super Kings, and Dhoni has been its captain since the first edition of IPL.[3][4]
+            
+            Dhoni was given many awards, such as the ICC ODI Player of the Year award in 2008 and 2009 (the first Indian player to achieve this), the Rajiv Gandhi Khel Ratna award in 2007 and the Padma Shri, India's fourth-highest civilian honour, in 2009.
+            
+            On 6 February 2015, Dhoni's daughter was born. He retired from international cricket in 2020.</p>
+        <p class="items1">Mahendra Singh Dhoni, commonly known as MS Dhoni and Mahi, is an Indian cricketer player and was a former captain of the Indian cricket team.[1][2] Dhoni is a right-handed batsman.
+
+            The Indian cricket team won the 2011 Cricket World Cup under his captainship. His Test cricket and One Day International records are the best of all Indian captains to date. He took over the ODI captaincy from Rahul Dravid in 2007 and led the team to its first ever inter-country ODI series wins in Sri Lanka and New Zealand. Dhoni also holds the post of Vice-President of India Cements Ltd. after resigning from Air India. India Cements is the owner of the Indian Premier League team Chennai Super Kings, and Dhoni has been its captain since the first edition of IPL.[3][4]
+            
+            Dhoni was given many awards, such as the ICC ODI Player of the Year award in 2008 and 2009 (the first Indian player to achieve this), the Rajiv Gandhi Khel Ratna award in 2007 and the Padma Shri, India's fourth-highest civilian honour, in 2009.
+            
+            On 6 February 2015, Dhoni's daughter was born. He retired from international cricket in 2020.</p>
+        <p class="items1">Mahendra Singh Dhoni, commonly known as MS Dhoni and Mahi, is an Indian cricketer player and was a former captain of the Indian cricket team.[1][2] Dhoni is a right-handed batsman.
+
+            The Indian cricket team won the 2011 Cricket World Cup under his captainship. His Test cricket and One Day International records are the best of all Indian captains to date. He took over the ODI captaincy from Rahul Dravid in 2007 and led the team to its first ever inter-country ODI series wins in Sri Lanka and New Zealand. Dhoni also holds the post of Vice-President of India Cements Ltd. after resigning from Air India. India Cements is the owner of the Indian Premier League team Chennai Super Kings, and Dhoni has been its captain since the first edition of IPL.[3][4]
+            
+            Dhoni was given many awards, such as the ICC ODI Player of the Year award in 2008 and 2009 (the first Indian player to achieve this), the Rajiv Gandhi Khel Ratna award in 2007 and the Padma Shri, India's fourth-highest civilian honour, in 2009.
+            
+            On 6 February 2015, Dhoni's daughter was born. He retired from international cricket in 2020.</p>
+        <p class="items1">Mahendra Singh Dhoni, commonly known as MS Dhoni and Mahi, is an Indian cricketer player and was a former captain of the Indian cricket team.[1][2] Dhoni is a right-handed batsman.
+
+            The Indian cricket team won the 2011 Cricket World Cup under his captainship. His Test cricket and One Day International records are the best of all Indian captains to date. He took over the ODI captaincy from Rahul Dravid in 2007 and led the team to its first ever inter-country ODI series wins in Sri Lanka and New Zealand. Dhoni also holds the post of Vice-President of India Cements Ltd. after resigning from Air India. India Cements is the owner of the Indian Premier League team Chennai Super Kings, and Dhoni has been its captain since the first edition of IPL.[3][4]
+            
+            Dhoni was given many awards, such as the ICC ODI Player of the Year award in 2008 and 2009 (the first Indian player to achieve this), the Rajiv Gandhi Khel Ratna award in 2007 and the Padma Shri, India's fourth-highest civilian honour, in 2009.
+            
+            On 6 February 2015, Dhoni's daughter was born. He retired from international cricket in 2020.</p>
+        <p class="items1">Mahendra Singh Dhoni, commonly known as MS Dhoni and Mahi, is an Indian cricketer player and was a former captain of the Indian cricket team.[1][2] Dhoni is a right-handed batsman.
+
+            The Indian cricket team won the 2011 Cricket World Cup under his captainship. His Test cricket and One Day International records are the best of all Indian captains to date. He took over the ODI captaincy from Rahul Dravid in 2007 and led the team to its first ever inter-country ODI series wins in Sri Lanka and New Zealand. Dhoni also holds the post of Vice-President of India Cements Ltd. after resigning from Air India. India Cements is the owner of the Indian Premier League team Chennai Super Kings, and Dhoni has been its captain since the first edition of IPL.[3][4]
+            
+            Dhoni was given many awards, such as the ICC ODI Player of the Year award in 2008 and 2009 (the first Indian player to achieve this), the Rajiv Gandhi Khel Ratna award in 2007 and the Padma Shri, India's fourth-highest civilian honour, in 2009.
+            
+            On 6 February 2015, Dhoni's daughter was born. He retired from international cricket in 2020.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023 calender</title>
+    <style>
+         .box{
+            height: 110vh;
+            width: 68vw;
+            border: 3px solid rgb(7, 85, 138);
+            border-radius: 8px;
+            background-image: url("./flower.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            white-space: wrap;
+            box-shadow: 8px 8px black;
+            margin-left: 100px;
+            
+        } 
+        .title{
+            color: bisque;
+            text-align: center;
+            padding: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .daily{
+            border: 4px solid black;
+            border-radius: 10px;
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            flex-wrap: wrap;
+            padding-right: 30px;
+            background-color: beige;
+            line-height: 2.09;
+            font-size: larger;
+            gap: 20px;
+        }
+        .months{
+            border: 4px solid black;
+            border-radius: 10px;
+            width: fit-content;
+            height: 64vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-image: linear-gradient(orange,beige);
+            flex-direction: column;
+            padding-right: 30px;
+            font-size: large;
+
+        }
+        .start{
+            display: flex;
+            flex-direction: row;
+            gap: 52PX;
+            text-align: center;
+
+        }
+        .week{
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            text-align: center;
+        margin: 2px;
+        }
+        .holidays{
+            border: 4px solid black;
+            border-radius: 10px;
+            width: fit-content;
+            height: 64vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            background-image: linear-gradient(orange,beige);
+            flex-direction: column;
+            padding-right: 30px;
+            font-size: large;
+        }
+
+    </style>
+</head>
+<body style="background-color:rgb(163, 108, 155)">
+    <div class="box">
+        <div class="title">
+            <h1>CALENDAR <span style="color: rgb(255, 132, 16);">2023</span></h1>
+        </div>
+        <div style="display: flex;gap:2px;flex-direction: row;margin-left: 25px;">
+                <ul type="none" class="months">
+                    <li>January</li>
+                    <li>February</li>
+                    <li>March</li>
+                    <li>April</li>
+                    <li>May</li>
+                    <li>June</li>
+                    <li>July</li>
+                    <li>August</li>
+                    <li style="color: red;">September</li>
+                    <li>October</li>
+                    <li>November</li>
+                    <li>December</li>
+                </ul>
+                <ul type="none" class="daily">
+                    <div class="week" style="gap: 20PX;">
+                    <li class="bor"style="background-color:red">SUN</li>
+                    <li class="bor">MON</li>
+                    <li class="bor">TUE</li>
+                    <li class="bor">WED</li>
+                    <li class="bor">THU</li>
+                    <li class="bor">FRI</li>
+                    <li class="bor">SAT</li></div>
+                    <div class="start" ><li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li></div>
+                    <div class="week" style="gap: 42px;"><li style="background-color: red;padding:0px 8px 0px 8px ">8</li>
+                    <li >9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li></div>
+                    <div class="week" style="gap: 42px;"><li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li style="background-color: red;padding:0px 8px 0px 8px ">19</li>
+                    <li>20</li>
+                    <li>21</li></div>
+                    <div class="week" style="gap: 42px;"><li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li></div>
+                    <div class="week" style="gap: 42px;"><li>29</li>
+                    <li>30</li>
+                    <li>31</li>
+                    <li style="visibility: hidden;">32</li>
+                    <li style="visibility: hidden;">33</li>
+                    <li style="visibility: hidden;">34</li>
+                    <li style="visibility: hidden;">35</li></div>
+                </ul>
+                <ul type="none" class="holidays">
+                    <li>Vinyaka chavit</li>
+                    <li>Srikrishna janmastami</li>
+                    <li>Dasara</li>
+                    <li></li>
+                    <li></li>
+                </ul>
+    </div>
+    
+            
+</body>
+</html>
