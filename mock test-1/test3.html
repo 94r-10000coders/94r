@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex{
+            display: flex;
+            gap: 40px;
+            width: fit-content;
+            margin-left: 55px;
+            margin-right: 55px;
+        }
+        .fl{
+            display: flex;
+            gap: 20px;
+        }
+        textarea{
+            width:550px;
+            height: 390px;
+        }
+        label{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        hr{
+            border-top: 3px solid rgb(33, 164, 33);
+        }
+        b{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="flex">
+        <div><hr>
+            <i class="fa fa-map-marker" style="font-size:24px;color: darkgreen;background-color: lightgreen;border-radius: 50%;padding: 5px;"></i> <b>Location:</B>
+            <p style="color: grey;">A108 Adam Street, New York, NY 535022</p>
+            <i class="fa fa-envelope" style="font-size:24px;color: darkgreen;background-color: lightgreen;border-radius: 50%;padding: 5px;"></i> <b>Email:</b>
+            <p style="color: grey;">info@example.com</p>
+            <i class="fa fa-phone" style="font-size:24px;color: darkgreen;background-color: lightgreen;border-radius: 50%;padding: 5px;"></i> <b>Call:</b>
+            <p style="color: grey;">+1 5589 55488 55s</p>
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.2950144839724!2d78.3988876742288!3d17.493425099743668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb914a9b182e31%3A0x2d93e91e23f44951!2s10000coders-classroom!5e0!3m2!1sen!2sin!4v1695455073276!5m2!1sen!2sin" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+        </div>
+        <div><hr>
+            <div class="fl">
+                <div>
+                    <label for="name">Your Name:</label><br>
+                    <input type="text" id="name" name="yname">
+                </div>
+                <div>
+                    <label for="email">Your Email:</label><br>
+                    <input type="email" id="email" name="yemail">
+                </div>
+            </div><br><br><br><br><br>
+            <label for="sub">Subject:</label><br>
+            <input type="text" id="sub" name="subject"><br><br><br>
+            <label for="msg">Message</label><br>
+            <textarea id="msg" name="message">some text...</textarea>
+        </div>
+    </div><hr>
+</body>
+</html>
