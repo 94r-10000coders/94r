@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        @media screen and (min-width:0px) and (max-width:468px) {
+           
+            
+            .container2{
+                display: flex;
+                flex-direction: column;
+                background-color:burlywood;
+                align-items: center;
+                justify-content: center;
+            }
+            .container2 img{
+                width: 80vw;
+                height: 40vh;
+                margin-bottom: 10px;
+                border-radius: 20px;
+            }
+        }
+       
+      
+        @media screen and (min-width:468px) and (max-width:768px) {
+           
+            .container2{
+                display: flex;
+                flex-direction: column;
+                background-color:lightgreen;
+                align-items: center;
+                justify-content: center;
+            }
+            .container2 .one{
+                display: flex;
+                gap: 20px;
+            }
+            .container2 img{
+                width: 40vw;
+                height: 40vh;
+                margin-bottom: 10px;
+                border-radius: 20px;
+            }
+        }
+        @media screen and (min-width:769px) and (max-width:1024px) {
+          
+            .container2{
+                display: flex;
+                flex-direction: column;
+                background-color:lightslategrey;
+                align-items: center;
+                justify-content: center;
+            }
+            .container2 .two{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+            .container2 img{
+                width: 30vw;
+                height: 30vh;
+                margin-bottom: 10px;
+                border-radius: 20px;
+            }         
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="container2">
+        <div class="two">
+            <div class="one">
+                <div><img src="./apple.png"></div>
+                <div><img src="./Huawei.png"></div>
+            </div>
+            <div class="one">
+                <div><img src="./apple.png"></div>
+                <div><img src="./Huawei.png"></div>
+            </div>
+            <div class="one">
+                <div><img src="./apple.png"></div>
+                <div><img src="./Huawei.png"></div>
+            </div>
+        </div>   
+    </div>
+   
+</body>
+</html>

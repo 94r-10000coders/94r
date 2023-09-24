@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>Media Queries</title>
+    <style>
+        @media screen and (min-width:0px) and (max-width:468px) {
+            
+            .class{
+                display: flex;
+                flex-direction: column;
+                background-color:burlywood;
+                align-items: center;
+                justify-content: center;
+            }
+            .class img{
+                width: 80vw;
+                height: 40vh;
+                margin-bottom: 10px;
+                border-radius: 20px;
+            }
+        }
+       
+        @media screen and (min-width:468px) and (max-width:768px) {
+            
+            .class{
+                display: flex;
+                flex-direction: column;
+                background-color:brown;
+                align-items: center;
+                justify-content: center;
+            }
+            .class .one{
+                display: flex;
+                gap: 20px;
+            }
+            .class img{
+                width: 40vw;
+                height: 40vh;
+                margin-bottom: 10px;
+                border-radius: 20px;
+            }
+           
+        }
+        @media screen and (min-width:769px) and (max-width:1024px) {
+           
+            .class{
+                display: flex;
+                flex-direction: column;
+                background-color:lightgreen;
+                align-items: center;
+                justify-content: center;
+            }
+            .class .two{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+           
+            .class img{
+                width: 30vw;
+                height: 30vh;
+                margin-bottom: 10px;
+                border-radius: 20px;
+            }
+            
+        }
+      
+    </style>
+</head>
+<body>
+  
+    <div class="class">
+        <div class="two">
+            <div class="one">
+                <div><img src="./apple.png"></div>
+                <div><img src="./Huawei.png"></div>
+            </div>
+            <div class="one">
+                <div><img src="./apple.png"></div>
+                <div><img src="./Huawei.png"></div>
+            </div>
+            <div class="one">
+                <div><img src="./apple.png"></div>
+                <div><img src="./Huawei.png"></div>
+            </div>
+        
+</body>
+</html>
