@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: fit-content;
+        }
+        .row1{
+            display: flex;
+        }
+        .item1,.item2{
+            border: 1px solid black;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .item1:nth-child(2n){
+            background-color: silver;
+        }
+        .item2:nth-child(2n+1){
+            background-color:silver;
+        }
+        span{
+            scale: 2.5;
+        }
+        .car{
+            transition:margin-left 4s;
+        }
+        .car:hover{
+            margin-left: 380px;
+            transition: margin-left 4s;
+        }
+        .car1{
+            display: block;
+            margin-top: 80px;
+            margin-bottom: 90px;
+            margin-left: 80px;
+        }
+        .car1:hover{
+            transform: scale(2,2.5);
+            transition: transform 4s;
+        }
+        .bgc{
+            border: 2px solid black;
+            width: 380px;
+            height: 230px;
+            background-color: orange;
+        }
+        .bgc:hover{
+            background-image: conic-gradient(silver,orangered,gold,green);
+            transition: background-image;
+        }
+        .width{
+            border: 2px solid black;
+            width: 380px;
+            height: 230px;
+            background-image:conic-gradient(skyblue,green,aquamarine,beige,rgb(255, 0, 21),silver);
+        }
+        .width:hover{
+            width: 500px;
+            transition: width 3s;
+        }
+        .height{
+            border: 2px solid black;
+            width: 380px;
+            height: 230px;
+            background-image:conic-gradient(skyblue,green,aquamarine,beige,rgb(255, 0, 21),silver);
+        }
+        .height:hover{
+            height:315px;
+            transition: height 3s;
+        }
+        .flag{
+             border: 1px solid black;
+             width: 400px;
+             height: fit-content;
+        }
+        .row{
+            border: 1px solid transparent;
+            height: 90px;
+        }
+        .rows{
+            text-align: center;
+        }
+        .chakra{
+            border-radius: 50%;
+        }
+        .chakra:hover{
+            transform:rotate(360deg);
+            transition: transform 3s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align:center;background-image:conic-gradient(red,black);color: azure;">Chess Board</h1>
+        <div class="row1">
+            <div class="item1"><span>&#9820</span></div>
+            <div class="item1"><span>&#9822</span></div>
+            <div class="item1"><span>&#9821</span></div>
+            <div class="item1"><span>&#9819</span></div>
+            <div class="item1"><span>&#9818</span></div>
+            <div class="item1"><span>&#9821</span></div>
+            <div class="item1"><span>&#9822</span></div>
+            <div class="item1"><span>&#9820</span></div>
+        </div>
+        <div class="row1">
+            <div class="item2"><span>&#9823</span></div>
+            <div class="item2"><span>&#9823</span></div>
+            <div class="item2"><span>&#9823</span></div>
+            <div class="item2"><span>&#9823</span></div>
+            <div class="item2"><span>&#9823</span></div>
+            <div class="item2"><span>&#9823</span></div>
+            <div class="item2"><span>&#9823</span></div>
+            <div class="item2"><span>&#9823</span></div>
+        </div>
+        <div class="row1">
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+        </div>
+        <div class="row1">
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+        </div>
+        <div class="row1">
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+        </div>
+        <div class="row1">
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+        </div>
+        <div class="row1">
+            <div class="item1"><span>&#9817</span></div>
+            <div class="item1"><span>&#9817</span></div>
+            <div class="item1"><span>&#9817</span></div>
+            <div class="item1"><span>&#9817</span></div>
+            <div class="item1"><span>&#9817</span></div>
+            <div class="item1"><span>&#9817</span></div>
+            <div class="item1"><span>&#9817</span></div>
+            <div class="item1"><span>&#9817</span></div>
+        </div>
+        <div class="row1">
+            <div class="item2"><span>&#9814</span></div>
+            <div class="item2"><span>&#9816</span></div>
+            <div class="item2"><span>&#9815</span></div>
+            <div class="item2"><span>&#9813</span></div>
+            <div class="item2"><span>&#9812</span></div>
+            <div class="item2"><span>&#9815</span></div>
+            <div class="item2"><span>&#9816</span></div>
+            <div class="item2"><span>&#9814</span></div>
+        </div>
+    </div>
+    <br><br>
+    <h1>Transition and Transform</h1>
+    <div>
+        <img src="./car img.jpeg" width="250px" class="car">
+        <img src="./car img.jpeg" width="200px" class="car1">
+    </div>
+    <div>
+        <h2>Flag with Ashoka Chakra Rotating</h2>
+        <div class="flag">
+            <div class="row" style="background-color: orange;"></div>
+            <div class="rows"><img src="./ashoka chakra.png" width="80px" class="chakra"></div>
+            <div class="row" style="background-color: green;"></div>
+        </div>
+        <h2>Background Color Changing Transition</h2>
+        <div class="bgc"></div>
+        <h2>Width and Height Increasing Transition</h2>
+        <div class="width"></div><br>
+        <div class="height"></div>
+    </div>
+</body>
+</html>
