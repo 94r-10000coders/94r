@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-15</title>
+    <style>
+        .items,.items1,.items2,.items3,.items4,.items5,.items6,.items7{
+            border:1px solid black;
+            padding:5px;
+            width:75px;
+            height:75px;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        .main{
+            border: 1px solid black;
+            width:800px;
+            height: auto;
+            padding: 10px;
+        }
+        .items:nth-child(2n){
+            background-color: black;
+        }
+        .items1:nth-child(2n+1){
+            background-color: black;
+        }
+        .items2:nth-child(2n){
+            background-color: black;
+        }
+        .items3:nth-child(2n+1){
+            background-color: black;
+        }
+        .items4:nth-child(2n){
+            background-color: black;
+        }
+        .items5:nth-child(2n+1){
+            background-color: black;
+        }
+        .items6:nth-child(2n){
+            background-color: black;
+        }
+        .items7:nth-child(2n+1){
+            background-color: black;
+        }
+        img{
+            margin-top: 7px;
+            margin-left: 7px;
+        }
+        .main2{
+            border:1px solid black;
+            padding:10px;
+            width:700px;
+        }
+        .test{
+            margin-right:-200px;
+            transition:margin-left 5s;
+        }
+        .test:hover{
+            margin-left: 200px;
+            transition:margin-left 5s;
+        }
+        .test2:hover{
+            width:500px;
+            height:300px;
+        }
+        .test4:active{
+            background-color: lightseagreen;
+        }
+        .test5:hover{
+            transform: rotate(360deg);
+            transition: transform 5s;
+        }
+        .test6:focus{
+            background-color: forestgreen;
+        }
+        .ele{
+            border: 1px solid black;
+            padding:10px;
+            width:350px;
+            height:50px;
+        }
+        .test7:hover{
+            transform:rotate(360deg);
+            transition: transform 1s;
+        }
+        .test8:hover{
+            transform:skew(360deg);
+            transition: transform 4s;
+        }
+    </style>
+    
+</head>
+<body>
+    <div style="display: flex;justify-content: center;">
+    <div class="main">
+    <h1 style="text-align: center;color: firebrick;">Chess</h1>
+    <div class="container">
+        <div class="items"><img src="./elephant.png"/></div>
+        <div class="items"><img src="./horse.png"/></div>
+        <div class="items"><img src="./camel.png"/></div>
+        <div class="items"><img src="./minister.png"/></div>
+        <div class="items"><img src="./king.png"/></div>
+        <div class="items"><img src="./camel.png"/></div>
+        <div class="items"><img src="./horse.png"/></div>
+        <div class="items"><img src="./elephant.png"/></div>
+    </div>
+    <div class="container">
+        <div class="items1"><img src="./pawn.png"/></div>
+        <div class="items1"><img src="./pawn.png"/></div>
+        <div class="items1"><img src="./pawn.png"/></div>
+        <div class="items1"><img src="./pawn.png"/></div>
+        <div class="items1"><img src="./pawn.png"/></div>
+        <div class="items1"><img src="./pawn.png"/></div>
+        <div class="items1"><img src="./pawn.png"/></div>
+        <div class="items1"><img src="./pawn.png"/></div>
+    </div>
+    <div class="container">
+        <div class="items2"></div>
+        <div class="items2"></div>
+        <div class="items2"></div>
+        <div class="items2"></div>
+        <div class="items2"></div>
+        <div class="items2"></div>
+        <div class="items2"></div>
+        <div class="items2"></div>
+    </div>
+    <div class="container">
+        <div class="items3"></div>
+        <div class="items3"></div>
+        <div class="items3"></div>
+        <div class="items3"></div>
+        <div class="items3"></div>
+        <div class="items3"></div>
+        <div class="items3"></div>
+        <div class="items3"></div>
+    </div>
+    <div class="container">
+        <div class="items4"></div>
+        <div class="items4"></div>
+        <div class="items4"></div>
+        <div class="items4"></div>
+        <div class="items4"><img src="./pawn1.png"/></div>
+        <div class="items4"></div>
+        <div class="items4"></div>
+        <div class="items4"></div>
+    </div>
+    <div class="container">
+        <div class="items5"></div>
+        <div class="items5"></div>
+        <div class="items5"></div>
+        <div class="items5"></div>
+        <div class="items5"></div>
+        <div class="items5"></div>
+        <div class="items5"></div>
+        <div class="items5"></div>
+    </div>
+    <div class="container">
+        <div class="items6"><img src="./pawn1.png"/></div>
+        <div class="items6"><img src="./pawn1.png"/></div>
+        <div class="items6"><img src="./pawn1.png"/></div>
+        <div class="items6"><img src="./pawn1.png"/></div>
+        <div class="items6"></div>
+        <div class="items6"><img src="./pawn1.png"/></div>
+        <div class="items6"><img src="./pawn1.png"/></div>
+        <div class="items6"><img src="./pawn1.png"/></div>
+    </div>
+    <div class="container">
+        <div class="items7"><img src="./elephant1.png"/></div>
+        <div class="items7"><img src="./horse1.png"/></div>
+        <div class="items7"><img src="./camel1.png"/></div>
+        <div class="items7"><img src="./minister1.png"/></div>
+        <div class="items7"><img src="./king1.png"/></div>
+        <div class="items7"><img src="./camel1.png"/></div>
+        <div class="items7"><img src="./horse1.png"/></div>
+        <div class="items7"><img src="./elephant1.png"/></div>
+    </div>
+    </div>
+    </div>
+    <br>
+    <hr>
+    <div style="display: flex;justify-content: center;">
+        <div class="main2">
+            <h1 style="text-align: center;color: darkred;">Car Transitions</h1>
+            <div style="border: 1px solid black;">
+                <img class="test" src="./vintage-car-png.webp" width="150px;" />
+            </div> 
+            <br>
+            <div style="border: 1px solid black;">
+                <img class="test2" src="./vintage-car-png.webp" width="150px;" />
+            </div> <br>
+            <div style="border: 1px solid black;display: flex;justify-content: center;" class="test4">
+                <img class="test3" src="./vintage-car-png.webp" width="150px;" />
+            </div> <br>
+            <div style="border: 1px solid black;display: flex;justify-content: center;">
+                <img class="test5" src="./vintage-car-png.webp" width="150px;" />
+            </div> <br>
+            <div style="border: 1px solid black;display: flex;justify-content: center;">
+                <img class="test8" src="./vintage-car-png.webp" width="150px;" />
+            </div> <br>
+            <div style="border: 1px solid black;padding: 5px;display: flex;justify-content: center;" >
+                <form>
+                    <label>Owner:</label>
+                    <input class="test6" type="text" placeholder="xyz"/>
+                </form>
+            </div>
+        </div>
+</div>
+<br>
+<hr>
+<div style="display:flex;justify-content: center;">
+    <div style="border: 1px solid black;padding: 10px;width: 800px;">
+        <h1 style="color: darkred;text-align: center;">National Flag</h1>
+        <div style="display: flex;justify-content: center;align-items: center;">
+        <div class="main3">
+            <div class="ele" style="background-color:darkorange;"></div>
+            <div style="display: flex;text-align:center">
+            <div class="ele">
+                <img class="test7" src="./asokha2.png" width="50px" height="50px" />
+            </div>
+            </div>
+            <div class="ele" style="background-color: green;"></div>
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
