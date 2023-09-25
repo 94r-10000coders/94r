@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-15</title>
+    <style>
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box {
+            /* border: 1px solid black; */
+            /* width:600px;
+            height: 500px; */
+            /* padding:5px; */
+            display: flex;
+
+        }
+        .items1,.items2,.items3,.items4,.items5,.items6,.items7,.items8 {
+            border: 1px solid black;
+            padding:5px;
+            width:64px;
+            height:64px;
+            
+        }
+        .items1:nth-child(2n){
+            background-color: black;
+            
+        }
+        .items2:nth-child(2n+1) {
+            background-color: black;
+        }
+        .items3:nth-child(2n){
+            background-color: black;
+        }
+        .items4:nth-child(2n+1) {
+            background-color: black;
+        }
+        .items5:nth-child(2n){
+            background-color: black;
+        }
+        .items6:nth-child(2n+1) {
+            background-color: black;
+        }
+        .items7:nth-child(2n){
+            background-color: black;
+        }
+        .items8:nth-child(2n+1) {
+            background-color: black;
+        }
+        /* task-2 */
+        .one:hover {
+            width: 500px;
+            height: 200px;
+        }
+        .two {
+            background-color:blue;
+            padding: 20px;
+            /* display: none; */
+        }
+        .two:active {
+           background-color:orangered;
+        }
+        .three {
+            margin-right: -300px;
+            transition: margin-left 4s;
+        }
+        .three:hover {
+            margin-left: 300px;
+            transition: margin-left 5s 2s;
+        }
+        .four {
+            transform: skew(60deg)
+        }
+        .closures {
+            border: 2px solid black;
+            width:500px;
+            height: 120px;
+        }
+        .hi {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .chakra {
+            transition: margin-left 4s;
+        }
+        .chakra:hover{
+            transform: rotate(360deg);
+            transition: transform 3s;
+        }
+        input:focus {
+            background-image: linear-gradient(90deg,darkorange,white,forestgreen);
+        }
+        [type="text"] {
+            text-align: center;
+        }
+        .Flag {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cric {
+            display: flex;
+            gap:10px;
+            justify-content: center;
+            align-items: center;
+        }
+        .cric:hover {
+            transform:scaleX(-3);
+        }
+        .ket {
+            display: flex;
+            gap:10px;
+            justify-content: center;
+            align-items: center;
+        }
+        .ket:hover {
+            transform:scaleY(-3);
+            transition: transform 1s;
+        }
+        .main1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="container">
+        <h1 style=" text-align:center;background-color:burlywood"><span style="color:white">C</span>h<span style="color:white">e</span>s<span style="color: white;">s</span> B<span style="color:white">o</span>a<span style="color:white">r</span>d</h1>
+        <div class="box">
+            <div class="items1">
+                <img src="./Elephant.png" height="50" width="50"> 
+            </div>
+            <div class="items1"><img src="./Horse.png" height="50" width="50"></div>
+            <div class="items1"><img src="./Cross.png" height="50" width="50"></div>
+            <div class="items1"><img src="./Queen.png" height="50" width="50"></div>
+            <div class="items1"><img src="./King.png" height="50" width="50"></div>
+            <div class="items1"><img src="./Cross.png" height="50" width="50"> </div>
+            <div class="items1"><img src="./Horse.png" height="50" width="50"> </div>
+            <div class="items1"><img src="./Elephant.png" height="50" width="50"> </div>
+        </div>
+        <div class="box">
+            <div class="items2"><img src="./solider.png" height="50" width="50"></div>
+            <div class="items2"><img src="./solider.png" height="50" width="50"></div>
+            <div class="items2"><img src="./solider.png" height="50" width="50"></div>
+            <div class="items2"><img src="./solider.png" height="50" width="50"></div>
+            <div class="items2"></div>
+            <div class="items2"><img src="./solider.png" height="50" width="50"></div>
+            <div class="items2"><img src="./solider.png" height="50" width="50"></div>
+            <div class="items2"><img src="./solider.png" height="50" width="50"></div>
+        </div>
+        <div class="box">
+            <div class="items3"></div>
+            <div class="items3"></div>
+            <div class="items3"></div>
+            <div class="items3"></div>
+            <div class="items3"></div>
+            <div class="items3"></div>
+            <div class="items3"></div>
+            <div class="items3"></div>
+        </div>
+        <div class="box">
+            <div class="items4"></div>
+            <div class="items4"></div>
+            <div class="items4"></div>
+            <div class="items4"></div>
+            <div class="items4"><img src="./solider.png" height="50" width="50"></div>
+            <div class="items4"></div>
+            <div class="items4"></div>
+            <div class="items4"></div>
+        </div>
+        <div class="box">
+            <div class="items5"></div>
+            <div class="items5"></div>
+            <div class="items5"><img src="./White soldier.png" height="50" width="50"></div>
+            <div class="items5"></div>
+            <div class="items5"></div>
+            <div class="items5"></div>
+            <div class="items5"></div>
+            <div class="items5"></div>
+        </div>
+        <div class="box">
+            <div class="items6"></div>
+            <div class="items6"></div>
+            <div class="items6"></div>
+            <div class="items6"></div>
+            <div class="items6"></div>
+            <div class="items6"></div>
+            <div class="items6"></div>
+            <div class="items6"></div>
+        </div>
+        <div class="box">
+            <div class="items7"><img src="./White soldier.png" height="50" width="50"></div>
+            <div class="items7"><img src="./White soldier.png" height="50" width="50"></div>
+            <div class="items7"></div>
+            <div class="items7"><img src="./White soldier.png" height="50" width="50"></div>
+            <div class="items7"><img src="./White soldier.png" height="50" width="50"></div>
+            <div class="items7"><img src="./White soldier.png" height="50" width="50"></div>
+            <div class="items7"><img src="./White soldier.png" height="50" width="50"></div>
+            <div class="items7"><img src="./White soldier.png" height="50" width="50"></div>
+        </div>
+        <div class="box">
+            <div class="items8"><img src="./White elephant.png" height="50" width="50"></div>
+            <div class="items8"><img src="./White horse.png" height="50" width="50"></div>
+            <div class="items8"><img src="./White cross.png" height="50" width="50"></div>
+            <div class="items8"><img src="./White queen.png" height="50" width="50"></div>
+            <div class="items8"><img src="./White King.png" height="50" width="50"></div>
+            <div class="items8"><img src="./White horse.png" height="50" width="50"></div>
+            <div class="items8"><img src="./White cross.png" height="50" width="50"></div>
+            <div class="items8"><img src="./White elephant.png" height="50" width="50"></div>
+        </div>
+    </div>
+</div>
+<br>
+<hr>
+    <div class="main1">
+        <div>
+        <img  class="one" src="./car.jpeg" height="150" width="300">
+        <hr>
+        <img  class="two" src="./car.jpeg" height="150" width="300">
+        <hr>
+        <img  class="three" src="./car.jpeg" height="150" width="300">
+        <hr>
+        <img  class="four" src="./car.jpeg" height="200" width="400">
+    </div>
+    </div>
+<hr>
+    <div class="hi">
+        <div><h1 style="text-align: center; background-color:burlywood;"><span style="color: darkorange;">INDIAN</span><span style="color: white;"> NAT</span><span style="color: blue;">IO</span><span style="color: white;">NAL</span> <span style="color:green"> FLAG</span></h1>
+            <div class="closures" style="background-color:darkorange;"></div>
+            <div class="closures" style="background-color: white;">
+                <div style="display: flex; justify-content: center; align-items: center; padding-top: 15px;">
+                <img  class=chakra src="./Ashoka Chakra.png" height="90" width="90">
+                </div>
+            </div>
+            <div class="closures" style="background-color: darkgreen;"></div>
+            <br>
+                <div class = Flag>
+                    <input type="text" placeholder="Jai Hind">
+                </div>
+        </div>
+    </div>
+    <br>
+    <div class="cric">
+        <img src="./rohit sharma.jpeg" height="200" width="200">
+        <img src="./Virat Kohli.jpeg" height="200" width="200">
+        <img src="./Bumrah.webp" height="200" width="200">
+    </div>
+    <br>
+    <div class="ket">
+        <img src="./shubman gill.jpeg" height="200" width="200">
+        <img src="./siraj.avif" height="200" width="200">
+        <img src="./Suryakumar-Yadav.jpg" height="200" width="200">
+    </div>
+</div>
+</body>
+</html>
