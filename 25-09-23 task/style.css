@@ -1,0 +1,131 @@
+
+.chess{
+    width: fit-content;
+    border: 2px solid black;
+    text-align: center;
+}
+.user1 i{
+    font-size: 80px;
+}
+.user2 i{
+    font-size: 80px;
+    transform: rotate(180deg);
+}
+       .row1,.row2,.row3,.row4,.row5,.row6,.row7,.row8{
+        display: flex;
+        justify-content: center;
+       }
+       .row1 div,.row2 div,.row3 div,.row4 div,.row5 div,.row6 div,.row7 div,.row8 div{
+        width: 80px;
+        height: 80px;
+        border: 1px groove black;
+        display: flex;
+        flex-direction: column;
+       }
+       .row1 :nth-child(2n),.row3 :nth-child(2n),.row5 :nth-child(2n),.row7 :nth-child(2n){
+        background-color: gainsboro;
+       }
+       .row2 :nth-child(2n+1),.row4 :nth-child(2n+1),.row6 :nth-child(2n+1),.row8 :nth-child(2n+1){
+        background-color: gainsboro;
+       }
+       .row2 div,.row1 div{
+        font-size: 60px;
+       }
+       .row7 div,.row8 div{
+        font-size: 60px;
+        transform: rotate(180deg);
+       }
+       .cars img:hover{
+        margin-left: 800px;
+        transition: margin-left 10s;
+       }
+       .cars img{
+        transition: margin-left 10s;
+       }
+       .flag div{
+        border: 1px solid ghostwhite;
+        width: 200px;
+        height: 50px;
+        text-align: center;
+       }
+       .flag .orange{
+        background-color: orange;
+       }
+       .flag .white{
+        background-color: white;
+       }
+       .flag .green{
+        background-color: green;
+       }
+       .flag img{
+        border-radius: 30px;
+        transition: transform 5s;
+       }
+       .flag img:hover{
+        transform: rotate(360deg);
+        transition: transform 5s;
+       }
+       .transform .one{
+        width: 400px;
+        height: 200px;
+        border: 2px solid black;
+        background-color: aquamarine;
+       }
+       .transform .one:hover{
+        background-image: linear-gradient(lightblue,pink);
+        transition: backhround-image 10s;
+       }
+       .transform .two{
+        width: 400px;
+        height: 200px;
+        border: 2px solid black;
+        transition: width 10s;
+        background-image: radial-gradient(lightblue,pink);
+       }
+       .transform .two:hover{
+        width: 600px;
+        transition: width 10s;
+       }
+.transform .three{
+    width: 400px;
+    height: 200px;
+    border: 2px solid black;
+    transition: height 10s;
+    background-image: conic-gradient(lightblue,pink);
+}
+.transform .three:hover{
+    height: 400px;
+    transition: height 10s;
+}
+.d2 img{
+    transition: transform 10s;
+}
+.d2 img:hover{
+    transform: rotate(360deg);
+    transition: transform 10s;
+}
+.d3 img{
+    transition: transform 2s;
+}
+.d3 img:hover{
+    transform: translateX(100px);
+    transition: transform 2s;
+}
+.d4 img{
+    transition: transform 10s;
+}
+.d4 img:hover{
+    transform: skew(45deg,45deg);
+    transition: transform 10s;
+}
+.d5 img{
+    margin-top: 100px;
+    transition: transform 5s;
+}
+.d5 img:hover{
+    transform: scale(2,2);
+    transition: transform 5s;
+}
+
+
+
