@@ -8,68 +8,92 @@
         @media screen and (min-width:0px) and (max-width:468px) {
            
             
-            .container2{
+            .class{
                 display: flex;
                 flex-direction: column;
                 background-color:burlywood;
                 align-items: center;
                 justify-content: center;
             }
-            .container2 img{
+            .class{
                 width: 80vw;
                 height: 40vh;
                 margin-bottom: 10px;
                 border-radius: 20px;
             }
+           
         }
        
       
         @media screen and (min-width:468px) and (max-width:768px) {
            
-            .container2{
+            .class{
                 display: flex;
                 flex-direction: column;
-                background-color:lightgreen;
+                background-color:brown;
                 align-items: center;
                 justify-content: center;
             }
-            .container2 .one{
+            .class .one{
                 display: flex;
                 gap: 20px;
             }
-            .container2 img{
+            .class img{
                 width: 40vw;
                 height: 40vh;
                 margin-bottom: 10px;
                 border-radius: 20px;
             }
+            nav{
+                display: flex;
+                flex-direction: row;
+                background-color: darkgoldenrod;
+                gap: 10px;
+                justify-content:center;
+                align-items: center;
+            }  
         }
         @media screen and (min-width:769px) and (max-width:1024px) {
           
-            .container2{
+            .class{
                 display: flex;
                 flex-direction: column;
                 background-color:lightslategrey;
                 align-items: center;
                 justify-content: center;
             }
-            .container2 .two{
+            .class .two{
                 display: flex;
                 flex-wrap: wrap;
                 gap: 20px;
             }
-            .container2 img{
+            .class img{
                 width: 30vw;
                 height: 30vh;
                 margin-bottom: 10px;
                 border-radius: 20px;
-            }         
+            }   
+            nav{
+                display: flex;
+                flex-direction: row;
+                background-color: darkgoldenrod;
+                gap: 10px;
+                justify-content:center;
+                align-items: center;
+            }      
         }
     </style>
 </head>
 <body>
+    <nav>
+        <div class="clss">Home</div>
+        <div class="clss">About us</div>
+        <div class="clss">Contact us</div>
+        <div class="clss">Login</div>
+        <div class="clss">Submit</div>
+    </nav>
    
-    <div class="container2">
+    <div class="class">
         <div class="two">
             <div class="one">
                 <div><img src="./apple.png"></div>
