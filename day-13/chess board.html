@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            outline: rgb(66, 187, 92) solid 30px;
+            width: fit-content;
+            height: fit-content;
+        }
+        .box1 div{
+            display: flex;
+            width: 20px;
+            height: 20px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+        .items1,.items2{
+            border: 1px solid black;
+            border-radius: 1px;
+            padding: 30px;
+            font-size: 60px;
+        }
+        .items1:nth-child(2n){
+            background-color: rgb(76, 238, 117);
+        }
+        .items2:nth-child(2n+1){
+            background-color: rgb(76, 238, 117);
+        }   
+        .flag div{
+            width: 500px;
+            height: 120px;
+            border: 1px solid white;
+            text-align: center;
+        }
+        .flag .ora{
+            background-color: orange;
+        }
+        .flag .whi{
+            background-color: white;
+        }
+        .flag .gree{
+            background-color: green;
+        }
+        .flag{
+            margin:50px;
+        }
+        .ashoka:hover{
+            transform: rotate(360deg);
+            transition: transform 6s 1s;
+        }
+        .cycle{
+            transition:margin-left 10s 1s;
+        }
+        .cycle:hover{
+            margin-left: 800px;
+            transition: margin-left 10s 1s; 
+        }
+        .bike:hover{
+            transform: skew(120deg);
+            transition: transform 10s;
+        }
+        .car{
+            margin: 30px;
+        }
+        .car:hover{
+            transform: scale(2,5);
+            transition: transform 3s; 
+        }
+        </style>
+</head>
+<body>
+   <h1 style="font-family: Arial, Helvetica, sans-serif;color: orangered;background-color: aqua;text-align: center;padding: 30px;">Chess Board</h1>
+   <div class="container">
+    <div class="box1">
+        <div class="items1">&#9814;</div>
+        <div class="items1">&#9817;</div>
+        <div class="items1"></div>
+        <div class="items1"></div>
+        <div class="items1"></div>
+        <div class="items1"></div>
+        <div class="items1">&#9823;</div>
+        <div class="items1">&#9820;</div>
+    </div>
+    <div class="box1">
+        <div class="items2">&#9816;</div>
+        <div class="items2">&#9817;</div>
+        <div class="items2"></div>
+        <div class="items2"></div>
+        <div class="items2"></div>
+        <div class="items2"></div>
+        <div class="items2">&#9823;</div>
+        <div class="items2">&#9822;</div>
+
+    </div>
+    <div class="box1">
+        <div class="items1">&#9815;</div>
+        <div class="items1">&#9817;</div>
+        <div class="items1"></div>
+        <div class="items1"></div>
+        <div class="items1"></div>
+        <div class="items1"></div>
+        <div class="items1 display">&#9823;</div>
+        <div class="items1">&#9821;</div>
+    </div>
+    <div class="box1">
+        <div class="items2">&#9813;</div>
+        <div class="items2">&#9817;</div>
+        <div class="items2"></div>
+        <div class="items2"></div>
+        <div class="items2"></div>
+        <div class="items2"></div>
+        <div class="items2">&#9823;</div>
+        <div class="items2">&#9819;</div>
+
+    </div>
+    <div class="box1">
+        <div class="items1">&#9812;</div>
+        <div class="items1">&#9817;</div>
+        <div class="items1"></div>
+        <div class="items1"></div>
+        <div class="items1"></div>
+        <div class="items1"></div>
+        <div class="items1">&#9823;</div>
+        <div class="items1">&#9818;</div>
+    </div>
+    <div class="box1">
+        <div class="items2">&#9815;</div>
+        <div class="items2">&#9817;</div>
+        <div class="items2"></div>
+        <div class="items2"></div>
+        <div class="items2"></div>
+        <div class="items2"></div>
+        <div class="items2">&#9823;</div>
+        <div class="items2">&#9821</div>
+
+    </div>
+    <div class="box1">
+        <div class="items1">&#9816;</div>
+        <div class="items1">&#9817;</div>
+        <div class="items1"></div>
+        <div class="items1"></div>
+        <div class="items1"></div>
+        <div class="items1"></div>
+        <div class="items1">&#9823;</div>
+        <div class="items1">&#9822;</div>
+    </div>
+    <div class="box1">
+        <div class="items2">&#9814;</div>
+        <div class="items2">&#9817;</div>
+        <div class="items2"></div>
+        <div class="items2"></div>
+        <div class="items2"></div>
+        <div class="items2"></div>
+        <div class="items2">&#9823;</div>
+        <div class="items2">&#9820;</div>
+
+    </div>
+</div>
+<hr>
+<h1>Flag with rotating ashokachakra</h1>
+<div class="flag">
+    <div class="ora"></div>
+    <div class="whi"><img class="ashoka" src="../image/ashokachakra.png" width="110px" style="position: relative;top: 5px;" /></div>
+    <div class="gree"></div>
+</div>  
+<br>
+<hr>
+<div><h1>Car transition and transform</h1>
+    <div class="cycle">
+    <img src="../image/cycle.jpg" width="300px" >
+    </div>
+    <div class="bike">
+    <img src="../image/bike.webp" width="300px">
+    </div>
+    <div class="car">
+      <img src="../image/car.webp" width="100px" >
+    </div>
+
+</div>
+</body>
+</html>
