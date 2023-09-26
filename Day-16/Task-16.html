@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes display {
+            5% {background-image: url(./eeswar-1.jpg);}
+            10% {background-image: url(./Varsham-2.jpg);}
+            20% {background-image: url(./Adavi\ Ramudu\ -3.jpg);}
+            30% {background: url(./Chatrapathi-4.jpg);}
+            40% {background-image: url(./Pournami-5.jpg);}
+            50% {background-image: url(./Darling-6.jpg);}
+            60% {background-image:url(./Mirchi\ -7.jpg) ;}
+            70% {background-image: url(./Bahubali-8.jpg);}
+            85% {background-image: url(./Sahoo-9.jpg);}
+            100% {background-image: url(./Salaar-10.jpg);}
+        }
+        .item {
+            border: 2px solid black;
+            width: 420px;
+            height:300px;
+            animation-name: display;
+            animation-duration: 10s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            background-repeat: repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .load1,.load2,.load3,.load4,.load5 {
+            border: 1px solid black;
+            border-radius: 50%;
+            gap:5px;
+            height: 30px;
+            width:30px;
+
+        }
+        .loader {
+           display: flex;
+           gap:20px;
+           justify-content: center;
+        }
+        @keyframes load1 {
+            from{
+                transform: scale(1);
+                background-color: beige;
+            }
+            to {
+                transform: scale(1.5);
+                background-color: deepskyblue;
+            }
+        }
+        @keyframes load2 {
+            from{
+                transform: scale(1);
+                background-color:cadetblue;
+            }
+            to {
+                transform: scale(1.5);
+                background-color:aqua;
+            }
+        }
+        .load1 {
+            animation-name: load1;
+            animation-duration: 3s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+        }
+        .load2 {
+            animation-name: load2;
+            animation-duration: 3s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            
+        }
+        @keyframes load3 {
+            from{
+                transform: scale(1);
+                background-color:chartreuse;
+            }
+            to {
+                transform: scale(1.5);
+                background-color:deeppink;
+            }
+        }
+        .load3 {
+            animation-name: load3;
+            animation-duration: 3s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-delay: 3s;
+            
+        }
+        @keyframes load4 {
+            from{
+                transform: scale(1);
+                background-color:aqua;
+            }
+            to {
+                transform: scale(1.5);
+                background-color:yellow;
+            }
+        }
+        .load4 {
+            animation-name: load4;
+            animation-duration: 3s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-delay: 4s;
+            
+        }
+        @keyframes load5 {
+            from{
+                transform: scale(1);
+                background-color:orangered;
+            }
+            to {
+                transform: scale(1.5);
+                background-color:black;
+            }
+        }
+        .load5 {
+            animation-name: load5;
+            animation-duration: 3s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-delay: 5s;
+        }
+        /* task-3 */
+        .Ball1,.Ball2,.Ball3,.Ball4,.Ball5,.Ball6 {
+            border: 1px solid black;
+            border-radius: 50%;
+            gap:10px;
+            height: 40px;
+            width:40px;
+        }
+        .Balls {
+           display: flex;
+           gap:20px;
+           justify-content: center;
+           margin: 40px;
+           padding: 100px;
+        }
+        #hi {
+            border: 1px solid red;
+            width:500px;
+            height:300px;
+        }
+        .hlo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @keyframes Ball1 {
+            from {
+                transform: translate(20px,30px);
+                background-color:aquamarine;
+            }
+            to {
+                transform: translate(100px,100px);
+                background-color: brown;
+            }
+        }
+        .Ball1 {
+            animation-name: Ball1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes Ball2 {
+            from {
+                transform: translate(20px,30px);
+                background-color:darkgray;
+            }
+            to {
+                transform: translate(-100px,-100px);
+                background-color: blue;
+            }
+        }
+        .Ball2 {
+            animation-name: Ball2;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes Ball3 {
+            from {
+                transform: translate(20px,30px);
+                background-color:darkmagenta;
+            }
+            to {
+                transform: translate(100px,-100px);
+                background-color:chartreuse;
+            }
+        }
+        .Ball3 {
+            animation-name: Ball3;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes Ball4 {
+            from {
+                transform: translate(20px,30px);
+                background-color:darkgoldenrod;
+            }
+            to {
+                transform: translate(140px,110px);
+                background-color: red;
+            }
+        }
+        .Ball4 {
+            animation-name: Ball4;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes Ball5 {
+            from {
+                transform: translate(20px,30px);
+                background-color:cadetblue;
+            }
+            to {
+                transform: translate(-150px,100px);
+                background-color: orchid;
+            }
+        }
+        .Ball5 {
+            animation-name: Ball5;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes Ball6 {
+            from {
+                transform: translate(20px,30px);
+                background-color:deeppink;
+            }
+            to {
+                transform: translate(-100px,-100px);
+                background-color: gold;
+            }
+        }
+        .Ball6 {
+            animation-name: Ball6;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        h2::first-letter{
+            background-image: linear-gradient(orange,white,green);
+            font-size: larger;
+        }
+        P::first-line {
+            background-image:linear-gradient(orange,white,green);
+        }
+        h2::after {
+            content: url(./icons8-india-flag-48.png)
+            
+        }
+        b::before {
+            content:" The Indian Team:";
+            color: white;
+            background-color: aquamarine;
+        }
+        b::selection {
+            background-color: deepskyblue;
+            color:red;
+        }
+        li::marker {
+            color:orangered;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1 style="text-align: center; color:crimson;">Prabhas Movies</h1>
+        <div class="container">
+            <div class="item">
+            </div>
+        </div>
+        <hr>
+<br>
+    <div>
+        <div class="loader">
+            <span style="font-size: 40px; padding-bottom: 40px;margin-bottom: 10px;">Loading </span>
+                <div class="load1"></div>
+                <div class="load2"></div>
+                <div class="load3"></div>
+                <div class="load4"></div>
+                <div class="load5"></div>
+        </div>  
+    </div>
+<br>
+<hr>
+<h1 style="text-align: center;">Bouncing Balls</h1>
+<div class="hlo">
+    <div id="hi">
+        <div class="Balls">
+            <div class="Ball1"></div>
+            <div class="Ball2"></div>
+            <div class="Ball3"></div>
+            <div class="Ball4"></div>
+            <div class="Ball5"></div>
+            <div class="Ball6"></div>
+        </div>
+    </div>
+</div>
+<br>
+<hr>
+<span style="background-color: dimgray;color: darkkhaki;">Pseudo elements</span>
+<div>
+    <h2>India national cricket team</h1>
+    <p>
+The India men's national cricket team, also known as Team India or the Men in blue,represents India in men's international cricket. It is governed by the Board of Control for Cricket in India (BCCI), and is a Full Member of the International Cricket Council (ICC) with Test, One Day International (ODI) and Twenty20 International (T20I) status
+</p>
+<b> The team has won five major ICC tournaments, winning the Cricket World Cup twice (1983 and 2011), the ICC T20 World Cup once (2007) and the ICC Champions Trophy twice (2002 and 2013) and have also finished as runners-up in the World Cup once (2003), the T20 World Cup once (2014), and the Champions Trophy twice (2000 and 2017).</b>
+<br>
+<br>
+<details>
+<summary>
+    List of trophies won in major tournaments
+</summary>
+<ol>
+<li>ODI World Cup 1983</li>
+<li>Champions trophy 2002</li>
+<li>T20 World Cup 2007</li>
+<li>ODI World Cup 2011</li>
+<li>Champions trophy2013</li>
+</ol>
+</details>
+</div>
+</body>
+</html>
