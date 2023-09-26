@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            display: flex;
+            gap: 18px;
+            background-color: antiquewhite;
+            
+        }
+        @media screen and (min-width:0px) and (max-width:456px){
+            .hi{
+                border: 2px solid blue;
+               background-color: bisque;
+                margin: 40px;
+                padding: 80px;
+            }
+            .hii,.hiii{
+                display: none;
+            }
+            
+        }
+        @media screen and (min-width:457px) and (max-width:768px){
+            .hii{
+                border: 2px solid blue;
+               background-color: rgb(142, 232, 241);
+                margin: 80px;
+                padding: 200px;
+                
+            }
+            .hi,.hiii{
+                display: none;
+            }
+            
+        }
+        @media screen and (min-width:769px) and (max-width:1440px){
+            .hiii{
+                border: 2px solid blue;
+               background-color: rgb(147, 236, 147);
+                margin: 150px;
+                padding: 200px;
+                
+            }
+            .hi,.hii{
+                display: none;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>Home</div>
+        <div>AboutUs</div>
+        <div>ContactUs</div>
+        <div>Help</div>
+        <div>Login</div>
+    </nav>
+    <div class="container">
+        <div class="hi">
+            <img src="./apple.jpeg" height="90px" width="80px"><br>
+            <img src="./Custard-apple-copy.jpg" width="80px" height="90px">
+        </div>
+        <div class="hii">
+            <img src="./apple.jpeg" height="90px" width="80px">
+            <img src="./Custard-apple-copy.jpg" width="80px" height="90px"><br>
+            <img src="./apple.jpeg" height="90px" width="80px">
+            <img src="./Custard-apple-copy.jpg" width="80px" height="90px">
+        </div>
+        <div class="hiii">
+            <img src="./apple.jpeg" height="90px" width="80px">
+            <img src="./Custard-apple-copy.jpg" width="80px" height="90px">
+            <img src="./apple.jpeg" height="90px" width="80px"><br>
+            <img src="./Custard-apple-copy.jpg" width="80px" height="90px">
+            <img src="./apple.jpeg" height="90px" width="80px">
+            <img src="./Custard-apple-copy.jpg" width="80px" height="90px">
+        </div>
+
+    </div>
+    
+</body>
+</html>

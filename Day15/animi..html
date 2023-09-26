@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       @keyframes imagechange{
+        0%{background-image: url(./Kushi_\(2022_film\).jpg);}
+        50%{background-image: url(./gk2.jpg);}
+        70%{background-image: url(./projk.jpg);}
+        100%{background-image: url(./ntr.webp);}
+       }
+       .bgc{
+        animation: imagechange 10s infinite alternate;
+        width: 900px;
+        height: 450px;
+        background-repeat: no-repeat;
+       }
+       .load{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: rgb(242, 185, 39);
+        display: flex;
+        gap: 5px;
+    
+       }
+       .load2{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: rgb(135, 211, 119);
+        display: flex;
+        gap: 5px;
+    
+       }
+       .load3{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: rgb(56, 101, 248);
+        display: flex;
+        gap: 5px;
+    
+       }
+       .load4{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: red;
+        display: flex;
+        gap: 5px;
+    
+       }
+
+       @keyframes loading{
+        from{
+            transform: scaleX(2);
+        
+            
+        }
+        to{
+            transform: scaleY(1);
+        
+            
+        }
+       }
+       .load{
+        animation: loading 4s infinite alternate;
+       }
+       .load2{
+        animation: loading 4s infinite alternate;
+       }
+       .load3{
+        animation: loading 4s infinite alternate;
+       }
+       .load4{
+        animation: loading 4s infinite alternate;
+       }
+       h1{
+        color: rgb(31, 143, 235);
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+       }
+       .bounce1{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        
+        display: flex;
+        gap: 5px;
+    
+       }
+       .bounce2{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+       
+        display: flex;
+        gap: 5px;
+    
+       }
+       .bounce3{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+       
+        display: flex;
+        gap: 5px;
+    
+       }
+       .bounce4{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+       
+        display: flex;
+        gap: 5px;
+    
+       }
+       @keyframes bouncing1{
+        0%{background-color: aqua;}
+        50%{background-color: aquamarine;}
+        100%{background-color: violet; transform: translateY(200px);}
+    }
+       @keyframes bouncing2{
+        0%{background-color: rebeccapurple;}
+        50%{background-color: yellowgreen; }
+        100%{background-color: brown;transform: translateY(150px);}
+       }
+       @keyframes bouncing3{
+        0%{background-color: blueviolet;}
+        50%{background-color: blue;}
+        100%{background-color: black; transform: translate3d(100px,150px,100px)}
+       }
+       @keyframes bouncing4{
+        0%{background-color: rgb(132, 225, 225);}
+        50%{background-color: rgb(200, 236, 36);}
+        100%{background-color: rgb(80, 36, 161);transform: translate(-130px,90px);}
+       }
+       .bounce1{
+       
+        animation: bouncing1 4s infinite alternate;
+
+       }
+       .bounce2{
+        animation: bouncing2 4s infinite alternate;
+       }
+       .bounce3{
+        animation: bouncing3 4s infinite alternate;
+       }
+       .bounce4{
+        animation: bouncing4 4s infinite alternate;
+       }
+       
+    </style>
+</head>
+<body>
+    <h1 >Telugu Movies</h1>
+    <div class="bgc">
+
+    </div><br><br><br>
+    <h3>Loading Image</h3>
+    <div class="load1">
+    <div style="display: flex; gap: 15px;" class="load1">
+    <div class="load"></div>
+    <div class="load2"></div>
+    <div class="load3"></div>
+    <div class="load4"></div>
+    </div><br><br><br>
+    <h2>Bouncing Balls</h2>
+    <div class="bounce" style="display: flex; gap: 15px;">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+        <div class="bounce4"></div>
+    </div>
+
+    
+</body>
+</html>
