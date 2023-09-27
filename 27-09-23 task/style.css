@@ -1,0 +1,155 @@
+.ludo,.ludo1,.ludo2{
+    display: flex;
+}
+.one,.three,.seven,.nine
+{
+    width: 130px;
+    height: 130px;
+    border: 1px solid;
+}
+.two div,.four div,.six div,.eight div{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+.two,.eight{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.four,.six{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+.five{
+    width: 64px;
+    height: 64px;
+    border: 1px solid;
+}
+.one{
+    background-color: rgb(68, 171, 255);
+}
+.three{
+    background-color: yellow;
+}
+.seven{
+    background-color: rgb(255, 72, 0);
+}
+.nine{
+    background-color: rgb(10, 248, 10);
+}
+.y{
+    background-color: yellow;
+}
+.b{
+    background-color: rgb(68, 171, 255);
+}
+.g{
+    background-color: rgb(10, 248, 10);
+}
+.r{
+    background-color: rgb(255, 72, 0);
+}
+.a{
+    text-align: center;
+}
+.a1{
+    color: yellow;
+}
+.a2{
+    color: rgb(68, 171, 255);
+}
+.a3{
+    color: rgb(10, 248, 10);
+}
+.a4{
+    color: rgb(255, 72, 0);
+}
+.ten1,.ten2,.ten3,.ten4{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    margin-top: 25px;
+    margin-left: 25px;
+    transform: rotate(45deg);
+    border-radius: 10px;
+}
+.ten1 div,.ten2 div,.ten3 div,.ten4 div{
+    display: flex;
+    gap: 10px;
+}
+.ten1 div div,.ten2 div div,.ten3 div div,.ten4 div div{
+    width: 30px;
+    margin-top: 3px;
+    margin-bottom: 6px;
+    margin-left: 3px;
+    margin-right: 3px;
+    height: 30px;
+    border-radius: 20px;
+}
+.ten1 div div{
+    background-color: rgb(68, 171, 255);
+}
+.ten2 div div{
+    background-color: yellow;
+}
+.ten3 div div{
+    background-color: rgb(255, 72, 0);
+}
+.ten4 div div{
+    background-color: rgb(10, 248, 10);
+}
+.gallary div{
+    border: 1px solid;
+}
+.gallary{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+    gap: 10px;
+}
+.item1{
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+.item2{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.item3{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.item4{
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
+.item5{
+    grid-row-start: 3;
+    grid-row-end: 7;
+}
+.item6{
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+.item7{
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+.chess div{
+    border: 1px solid black;
+    font-size: 40px;
+    text-align: center;
+}
+.chess{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px;
+}
+.d{
+    background-color: rgb(252, 146, 146);
+}
+.e{
+    transform: rotate(180deg);
+}
