@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .task1{
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            border: 2px solid black;
+        }
+        .for,.loc{
+            /* border: 1px solid black; */
+            width: 100%;
+            height: auto;
+            
+        }
+        /* .img{
+            color: green;
+            padding-bottom: 30px;
+        } */
+        .task2{
+            background-color: black;
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            gap: 5px;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .items1{
+            border: 1px solid white;
+            width: 100%;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            font-size: xx-large;
+            
+        }
+        .container{
+            display: flex;
+            gap: 10px;
+            /* margin: -10px;
+            margin: 0px -5px 0px -5px;
+            margin-bottom: 10px; */
+            padding-right: 50px;
+            justify-content: center;
+            align-items: center;
+            width: fit-content;
+          
+        }
+        .text{
+            background-color: grey;
+            border-radius: 50%;
+            padding: 8px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .task3{
+            background-color: aqua;
+            border: 2px solid black;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 80px;
+            justify-content: center;
+            align-items: center;
+        }
+        .container4{
+            display: flex;
+            gap: 60px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+            
+        }
+        .box{
+            background-color: white;
+            border-radius: 10px;
+            padding: 50px;
+            height: 100%;
+        }
+        .icons{
+            display: flex;
+            gap: 50px;
+            margin: 50px;
+            font-size: xx-large;
+            color: gray;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: blue">First task:</h1>
+    <div class="task1">
+        <div class="loc">
+            
+            <address>
+                <img src="./location.png" width="30px"/><i>Location:</i>
+                <p>A 108 Adam Street, New York,NY 535022</p><br>
+                <img src="./email.png" width="30px"/><i>Email:</i>
+                <p>info@example.com</p>
+                <img src="./call.jpg" width="50px" st/><i>Call:</i>
+                <p>+91 9576212320</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31289.908015206318!2d79.69646880955013!3d11.390215933076473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a54c2f4de28cccb%3A0x6048cc9ce4b78701!2sAnnamalai%20Nagar%2C%20Chidambaram%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1695536536861!5m2!1sen!2sin" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </address>
+            
+           
+
+        </div>
+        <div class="for">
+            <form>
+                <label for="Yname" style="display: inline;"><i>Your Name:</i></label>
+                <input type="text" id="Yname" name="Your Name"/>
+                <label for="email"><i>Your Email:</i></label>
+                <input type="email" id="email" name="your email"/><br><br><br><br>
+                <label for="email"><i>Subject</i></label><br>
+                <input type="text" id="email" name="your email"/><br><br><br><br>
+                <label>Message</label><br> 
+                <textarea>hai welcome</textarea><br><br><br><br>
+                <input type="submit" value="SEND"/>
+
+            </form>
+
+        </div>
+    </div>
+    <br><br><hr>
+    <center><div class="task2">
+        <div class="items1" style="padding-right: 200px;">112</div>
+        <div class="items2">
+            <ul class="container" type="none">
+                <div class="one">
+                    <li class="text">AC</li>
+                    <li class="text">7</li>
+                    <li class="text">4</li>
+                    <li class="text">1</li>
+                    <li class="text">.</li>
+
+                </div>
+                <div class="one">
+                    <li class="text">+/-</li>
+                    <li class="text "style="background-color: orange;">8</li>
+                    <li class="text">5</li>
+                    <li class="text">2</li>
+                    <li class="text">0</li>
+                    
+
+                </div>
+                <div class="one">
+                    <li class="text">%</li>
+                    <li class="text">9</li>
+                    <li class="text">6</li>
+                    <li class="text">3</li>
+                    <li class="text">=</li>
+
+                </div>
+                <div class="one">
+                    <li class="text">/</li>
+                    <li class="text">X</li>
+                    <li class="text">-</li>
+                    <li class="text">+</li>
+                    <li class="text" style="visibility: hidden">3</li>
+
+                </div>
+            </ul>
+        </div></center>
+        <br><br>
+        <div class="task3" >
+            <div>
+                <h1 style="text-align: center;">TEAM</h1>
+            <p  style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non pLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris .</p>
+
+            </div>
+            <div class="container4">
+                <div class="box">
+                    <div>
+                        <figure>
+                            <img src="./rahul.jpg" width="250x" height="250px" style="border-radius: 100%;" /><br>
+                            <caption><strong>KL Rahul</strong><br>cricketer</caption>
+                        </figure>
+                        <p>Kananur Lokesh Rahul (born 18 April 1992) is an Indian international cricketer who plays as a right-handed Wicketkeeper-Batsman for Karnataka at the domestic level and is the captain for Lucknow Super Giants in the Indian Premier League</p>
+
+                    </div>
+                    <div class="icons">
+                        <a class="fa fa-twitter"></a>
+                        <a class="fa fa-facebook"></a>
+                        <a class="fa fa-instagram"></a>
+                        <a class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <figure>
+                            <img src="./salman.jpg" width="250x" height="250px" style="border-radius: 100%;" /><br>
+                            <caption><strong>Salman khan</strong><br>Actor</caption>
+                        </figure>
+                        <p>Abdul Rashid Salim Salman Khan (pronounced [səlˈmɑːn xɑːn]; born 27 December 1965)[3] is an Indian actor, film producer, writer and television personality who works predominantly in Hindi films.</p>
+
+                    </div>
+                    <div class="icons">
+                        <a class="fa fa-twitter"></a>
+                        <a class="fa fa-facebook"></a>
+                        <a class="fa fa-instagram"></a>
+                        <a class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <figure>
+                            <img src="./sharukh.jpg" width="250x" height="250px" style="border-radius: 100%;" /><br>
+                            <caption><strong>Sharuh khan</strong><br>Actor</caption>
+                        </figure>
+                        <p>Shah Rukh Khan (pronounced [ˈʃɑːɦɾʊx xɑːn]; born 2 November 1965), also known by the initialism SRK, is an Indian actor and film producer who works in Hindi films.</p>
+
+                    </div>
+                    <div class="icons">
+                        <a class="fa fa-twitter"></a>
+                        <a class="fa fa-facebook"></a>
+                        <a class="fa fa-instagram"></a>
+                        <a class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+
+</body>
+</html>
