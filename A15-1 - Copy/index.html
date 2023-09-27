@@ -1,0 +1,203 @@
+<html>
+    <head>
+        <title>26/09/2023</title>
+        <style>
+            .movies{
+                border:  2px solid black;
+                width: 300px;
+                height: 150px;
+                animation: change 15s infinite; 
+                
+            }
+            @keyframes change {
+                    0%{background-image: url(./iron\ man.jpeg);}
+                    25%{background-image: url(./caption\ america.jpeg);}
+                    50%{background-image: url(./thor.jpeg);}
+                    75%{background-image: url(./spider\ man.jpeg);}
+                    100%{background-image: url(./black\ panter.jpeg);}
+                    
+            }
+            .load{
+                border: 2px solid lightcoral ;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color:brown;
+            }
+            @keyframes load1 {
+                from{transform:scaleX(1.5);}
+                to{transform: scaleY(1);}
+            }
+            .load1{
+                animation-name: load1;
+                animation-duration: 4s;
+                animation-delay:1s ;
+                animation-iteration-count: infinite;
+            }
+            @keyframes load2 {
+                from{transform:scaleX(1.5);}
+                to{transform: scaleY(1);}
+
+                
+            }
+            .load2{
+                animation-name: load2;
+                animation-duration: 4s;
+                animation-delay: 2s;
+                animation-iteration-count: infinite;
+                background-color: coral;
+            }
+            @keyframes load2 {
+                from{transform:scaleX(1.5);}
+                to{transform: scaleY(1);}
+
+                
+            }
+            .load3{
+                animation-name: load3;
+                animation-duration: 4s;
+                animation-delay: 3s;
+                animation-iteration-count: infinite;
+                background-color: aquamarine;
+            }
+            @keyframes load3 {
+                from{transform:scaleX(1.5);}
+                to{transform: scaleY(1);}
+                
+
+                
+            }
+            .load4{
+                animation-name: load4;
+                animation-duration: 4s;
+                animation-delay: 4s;
+                animation-iteration-count: infinite;
+                background-color: blue;
+            }
+            @keyframes load4 {
+                from{transform:scaleX(1.5);}
+                to{transform: scaleY(1);}
+            }
+            .load5{
+                animation-name: load5;
+                animation-duration: 4s;
+                animation-delay: 5s;
+                animation-iteration-count: infinite;
+                background-color: darkmagenta;
+            }
+            @keyframes load5 {
+                from{transform:scaleX(1.5);}
+                to{transform: scaleY(1);}
+            }
+            @keyframes load {
+                from{transform:scaleX(1.5);}
+                to{transform: scaleY(1);}
+            }
+            @keyframes bouns {
+                from{
+                    transform:translate(20px,20px);
+                    background-color: lightgreen;
+                }
+                top{
+                    transform: translate(100px);
+                }
+                
+            }
+            .bouns{
+                display: flex;
+                gap: 5px;
+                margin-top: 50px;
+                margin-bottom: 50px;
+
+            }
+            .bouns div{
+                width: 30px;
+                height: 30px;
+                background-color: blueviolet;
+                border-radius: 150px;
+            }
+            .bouns1{
+                animation-name: bouns1;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-delay: 1s;
+                animation-direction: alternate;
+            }
+            .bouns2{
+                animation-name: bouns2;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-delay: 1s;
+                animation-direction: alternate;
+            }       
+            .bouns3{
+                animation-name: bouns3;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-delay: 1s;
+                animation-direction: alternate;
+            }
+            .bouns4{
+                animation-name: bouns4;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-delay: 1s;
+                animation-direction: alternate;
+            }
+            .bouns5{
+                animation-name: bouns5;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                animation-delay: 1s;
+            }
+            @keyframes bouns1 {
+                0%{background-color:coral;}
+                50%{background-color:lightgreen;}  
+                100%{transform: translateY(200px);background-color:violet;}               
+            }
+            @keyframes bouns2 {
+                0%{background-color:palevioletred;}
+                50%{background-color:yellowgreen;}  
+                100%{transform: translate(200px,400px);background-color:blue;}               
+            }
+            @keyframes bouns3 {
+                0%{background-color:yellow;}
+                50%{background-color:red;}  
+                100%{transform: translatex(200px);background-color:chartreuse;}               
+            }
+            @keyframes bouns4 {
+                0%{background-color:black;}
+                50%{background-color:green;}  
+                100%{transform: translate(200px,200px);background-color:navy;}               
+            }
+            @keyframes bouns5 {
+                0%{background-color:chartreuse;}
+                50%{background-color:darkmagenta;}  
+                100%{transform: translatey(200px);background-color:crimson;}               
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Marvel Movies</h2>
+        <div class="Movies"></div><br>
+        <h2>loading:</h2>
+        <div style="display: flex; gap: 3px;">
+            
+            <div>&nbsp;&nbsp;</div>
+          <div class="load load1"></div>&nbsp;&nbsp;
+          <div class="load load2"></div>&nbsp;&nbsp;
+          <div class="load load3"></div>&nbsp;&nbsp;
+          <div class="load load4"></div>&nbsp;&nbsp;
+          <div class="load load5"></div>&nbsp;&nbsp;
+        </div>
+        <H2>Bounsing Balls:</H2>
+        <div class="bouns">
+            <div class="bouns1"></div>
+            <div class="bouns2"></div>
+            <div class="bouns3"></div>
+            <div class="bouns4"></div>
+            <div class="bouns5"></div>
+        </div>
+    </body>
+</html>
