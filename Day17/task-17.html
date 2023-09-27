@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-17</title>
+    <style>
+        .ele1 {grid-area: test1;}
+        .ele2 {grid-area: test2;}
+        .ele3 {grid-area: test3;}
+        .ele4 {grid-area: test4;}
+        .ele5 {grid-area: test5;}
+        .ele6 {grid-area: test6;}
+        .ele7 {grid-area: test7;}
+        .ele8 {grid-area: test8;}
+        .ele9 {grid-area: test9;}
+        .container{
+            border:1px solid black;
+            padding:20px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-areas: 'test1 test2 test3' 
+                                 'test1 test4 test5'
+                                 'test6 test4 test7';
+            width:700px;
+            height:1000px;
+        }
+        .items{
+            border:2px solid red;
+            padding:5px;
+            background-color:aqua;
+        }
+        img{
+            width:100%;
+            height:100%;
+        }
+        .container1{
+            border:3px solid blue;
+            display: grid;
+            padding:10px;
+            background-color: black;
+            grid-template-columns: auto auto auto auto;
+            grid-template-areas: 'run1 run1 run1 run1'
+                                 'run2 run3 run4 run5'
+                                 'run6 run7 run8 run9'
+                                 'run10 run11 run12 run13'
+                                 'run14 run15 run16 run17'
+                                 'run18 run19 run20 run20';
+        }
+        .item{
+            border:2px solid red;
+            padding:2px;
+            border-radius: 50%;
+            background-color: grey;
+            text-align: center;
+        }
+        .el1{
+            border-radius: 0%;
+            text-align: left;
+        }
+        .el1{grid-area: run1;}
+        .el2{grid-area: run2;}
+        .el3{grid-area: run3;}
+        .el4{grid-area: run4;}
+        .el5{grid-area: run5;}
+        .el6{grid-area: run6;}
+        .el7{grid-area: run7;}
+        .el8{grid-area: run8;}
+        .el9{grid-area: run9;}
+        .el10{grid-area: run10;}
+        .el11{grid-area: run11;}
+        .el12{grid-area: run12;}
+        .el13{grid-area: run13;}
+        .el14{grid-area: run14;}
+        .el15{grid-area: run15;}
+        .el16{grid-area: run16;}
+        .el17{grid-area: run17;}
+        .el18{grid-area: run18;}
+        .el19{grid-area: run19;}
+        .el20{grid-area: run20;}
+        
+    </style>
+</head>
+<body>
+    <h1 style="color: darkred;text-align: center;">Gallery Using Grid</h1>
+    <div style="display:flex;justify-content:center;">
+        <div class="container">
+            <div class="items ele1"><img src="./athadu_66.jpg"/></div>
+            <div class="items ele2"><img src="./businessman_77.jpg"/></div>
+            <div class="items ele3"><img src="./khaleja_444.jpg"/></div>
+            <div class="items ele4"><img src="./maharshi_99.jpg"/></div>
+            <div class="items ele5"><img src="./pokiri_33.jpg"/></div>
+            <div class="items ele6"><img src="./srimanthudu_88.jpg"/></div>
+            <div class="items ele7"><img src="./guntur kaaram_10_10.jpg"/></div>
+            <!-- <div class="items ele8">8</div>
+            <div class="items ele9">9</div> -->
+        </div>
+    </div>
+    <br>
+    <hr>
+    <h1 style="color: darkred;text-align: center;">Calculator Using Grid</h1>
+    <div style="display:flex;justify-content:center;"> 
+        <div class="container1">
+            <div class="item el1">112</div>
+            <div class="item el2">AC</div>
+            <div class="item el3">+/-</div>
+            <div class="item el4">%</div>
+            <div class="item el5">/</div>
+            <div class="item el6">7</div>
+            <div class="item el7" style="color:red;">8</div>
+            <div class="item el8">9</div>
+            <div class="item el9">*</div>
+            <div class="item el10">4</div>
+            <div class="item el11">5</div>
+            <div class="item el12">6</div>
+            <div class="item el13">-</div>
+            <div class="item el14">1</div>
+            <div class="item el15">2</div>
+            <div class="item el16">3</div>
+            <div class="item el17">+</div>
+            <div class="item el18">.</div>
+            <div class="item el19">0</div>
+            <div class="item el20">=</div>
+        </div>
+    </div>
+    <br>
+    <br>
+</body>
+</html>
