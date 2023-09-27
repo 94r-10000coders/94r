@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 11</title>
+    <style>
+         .Rock{
+            border: 2px solid black; 
+            height: 800px;
+            width:800px;
+            background-image:linear-gradient(skyblue,white);
+        } 
+        .raj{
+            border: 2px solid black; 
+            width:530px;
+            height:140px;
+        }
+        
+        [title="flowers"]{
+            border: 2px solid black; 
+            border-radius: 10px;
+            padding:10px;
+           border-color: red;
+           background-color: coral;
+           
+
+        }
+        .raja{
+            border: 2px solid black; 
+            width:470px;
+            height:120px;
+        }
+        
+        [title="animals"]{
+            border: 2px solid black; 
+            border-radius: 5px;
+            padding:10px;
+           border-color: blue;
+           background-color: grey;
+
+        }
+        .ram{
+            border: 2px solid black; 
+            width:370px;
+            height:90px;
+        }
+        
+        [title="bikes"]{
+            border: 2px solid black; 
+            border-radius: 5px;
+            padding:10px;
+           border-color: green;
+           background-color: aqua;
+
+        }
+        .ramu{
+            border: 2px solid black; 
+            width:280px;
+            height:80px;
+        }
+        
+        [title="birds"]{
+            border: 2px solid black; 
+            border-radius: 5px;
+            padding:10px;
+           border-color: orange;
+           background-color: goldenrod;
+
+        }
+        [name="Name"]{
+            background: orangered;
+        }
+        [name="email"]{
+            background-color: darkkhaki;
+        }
+        [name="password"]{
+            background-color: chartreuse;
+        }
+        [type="date"]{
+            background-color: darkblue;
+        }
+        [name="number"]{
+            background-color: darkslategray;
+        }
+        [type="submit"]{
+            background-color: darkorange;
+        }
+        [value="reset"]{
+            background-color: gold;
+        }
+        .aa{
+            background-image:linear-gradient(skyblue,pink);
+        
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="Rock">
+        <h1 style="background-color: aqua; text-align: center;" >Gallery</h1>
+        <h2>flowers:</h2>
+    
+        <div class="raj"> <img src="./images/flower1.jpeg" height="100" width="100" alt="flowers" title="flowers"/>
+            <img src="./images/flower 2.webp" height="100" width="100" alt="flowers " title="flowers"/>
+            <img src="./images/flower 3.webp" height="100" width="100" alt="flowers" title="flowers"/>
+          <img src="./images/flower 4.jpg"height="100" width="100" alt="flowers" title="flowers"/> 
+    </div>
+    <h2>Animals:</h2>
+    
+        <div class="raja"> <img src="./images/animal 1.jpg" height="80" width="80" alt="animals " title="animals"/>
+            <img src="./images/animal 2.jpg" height="80" width="80" alt="animals " title="animals"/>
+            <img src="./images/animal 3.webp" height="80" width="80" alt="animals" title="animals"/>
+          <img src="./images/animal 4.jpeg"height="80" width="80" alt="animals" title="animals"/> 
+    </div>
+    <h2>Bikes:</h2>
+    
+        <div class="ram"> <img src="./images/bike 1.webp" height="60" width="60" alt="bikes " title="bikes"/>
+            <img src="./images/bike 2.jpg" height="60" width="60" alt="bikesanimals " title="bikes"/>
+            <img src="./images/bike 3.jpg" height="60" width="60" alt="bikes" title="bikes"/>
+          <img src="./images/bike 4.jpeg"height="60" width="60" alt="bikes" title="bikes"/> 
+    </div>
+    <h2>Birds:</h2>
+    
+        <div class="ramu"> <img src="./images/bird 1.jpeg" height="40" width="40" alt="birds " title="birds"/>
+            <img src="./images/bird 2.jpg" height="40" width="40" alt="birds " title="birds"/>
+            <img src="./images/bird 3.webp "height="40" width="40" alt="birds" title="bikes"/>
+          <img src="./images/bide 4.webp"height="40" width="40" alt="birds" title="birds"/> 
+    </div>
+    </div><br>
+
+   <br> <form >
+    <fieldset class="aa" >
+        <legend> <h2>sign up</h2></legend>
+    <form>
+        <lable for="fname">Name: </lable>
+        <input type="text" id="fname" name="Name" placeholder="enter your name"><br>
+       <br> <label for="mail">Email:</label>
+        <input type="text" id="mail" name="email" placeholder="enter your email"><br>
+       <br> <label for="pswrd">Password:</label>
+        <input type="text" id="pswrd" name="password" placeholder="Enter your password"/><br>
+        <br>
+        <label>DOB:</label>
+        <input type="date"><br>
+          <br>  <label for="mobile">Phone number:</label>
+            <input type="tel" id="mobile" name="number" part="[0-9]{10}" placeholder="enter your mobile number">
+           <br> <label for="Gender">Gender:</label><br>
+            <input type="radio" id="Gender" name="Male" ><label> Male</label><br>
+            <input type="radio" id="Gender" name=" Female"><label>Female</label><br>
+            <input type="submit">
+            <input type="submit" value="reset">
+            </fieldset>
+    </form>
+
+</body>
+</html>

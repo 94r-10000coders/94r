@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day13</title>
+    <style>
+        @keyframes pics{
+            0%{background-image: url("./images/rebel.jpg");}
+          20%{background-image: url("./images/varsham\ pic.jpg");}
+           40%{background-image: url("./images/bujigadu.jpg");} 
+           50%{background-image: url("./images/billa.jpeg");}
+           60%{background-image: url("./images/darling.jpg");}
+           70%{background-image: url("./images/mr\ perfect.jpg");}
+           80%{background-image: url("./images/rebel.jpg");}
+           100%{background-image: url("./images/bujigadu.jpg");}
+        }
+        .item {
+            border: 2px solid black;
+            width: 1000px;
+            height:1000px;
+            animation-name: pics;
+            animation-duration: 10s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            background-repeat:repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+       .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading .load1,
+.loading .load2,
+.loading .load3,
+.loading .load4,
+.loading .load5 {
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background-color: aquamarine;
+}
+
+.loading .load2 {
+    background-color: brown;
+}
+
+.loading .load3 {
+    background-color: red;
+}
+
+.loading .load4 {
+    background-color: gray;
+}
+
+.loading .load5 {
+    background-color: green;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+.loading .load1 {
+    width: 30px;
+    height: 30px;
+    animation: bounce 1s infinite alternate;
+}
+
+.loading .load2 {
+    width: 40px;
+    height: 40px;
+    animation: bounce 1s infinite alternate 0.2s;
+}
+
+.loading .load3 {
+    width: 50px;
+    height: 50px;
+    animation: bounce 1s infinite alternate 0.4s;
+}
+
+.loading .load4 {
+    width: 60px;
+    height: 60px;
+    animation: bounce 1s infinite alternate 0.6s;
+}
+
+.loading .load5 {
+    width: 70px;
+    height: 70px;
+    animation: bounce 1s infinite alternate 0.8s;
+}
+
+
+    
+    .balls {
+            border: 2px solid black;
+            width: 350px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .ball1, .ball2, .ball3, .ball4, .ball5, .ball6, .ball7{
+            border: 2px solid transparent;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .ball2 {
+            background-color: brown;
+        }
+        
+        .ball3 {
+            background-color: red;
+        }
+        
+        .ball4 {
+            background-color: gray;
+        }
+        
+        .ball5 {
+            background-color: green;
+        }
+        .ball6{
+            background-color: pink;
+        }
+        .ball7 {
+            background-color: skyblue;
+        }
+        
+        @keyframes ball1 {
+            from {
+                transform: translate(10px, 10px);
+            }
+            to {
+                transform: translate(40px, -40px);
+            }
+        }
+        
+        .ball1 {
+            border: 2px solid black;
+            width: 30px;
+            height: 30px;
+            animation-name: ball1;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        
+        @keyframes ball2 {
+            from {
+                transform:translate(10px, 10px);
+            }
+            to {
+                transform: translate(-80px, -80px);
+            }
+        }
+        
+        .ball2 {
+            border: 2px solid black;
+            width: 30px;
+            height: 30px;
+            animation-name: ball2;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        
+        @keyframes ball3 {
+            from {
+                transform:translate(10px, 10px);
+            }
+            to {
+                transform: translate(100px, 100px);
+            }
+        }
+        
+        .ball3 {
+            border: 2px solid black;
+            width: 30px;
+            height: 30px;
+            animation-name: ball3;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        
+        @keyframes ball4 {
+            from {
+                transform:translate(10px, 10px);
+            }
+            to {
+                transform: translate(-140px, -140px);
+            }
+        }
+        
+        .ball4 {
+            border: 2px solid black;
+            width: 30px;
+            height: 30px;
+            animation-name: ball4;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        
+        @keyframes ball5 {
+            from {
+                transform: translate(10px, 10px);
+            }
+            to {
+                transform: translate(170px, -170px);
+            }
+        }
+        
+        .ball5 {
+            border: 2px solid black;
+            width: 30px;
+            height: 30px;
+            animation-name: ball5;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes ball6 {
+            from {
+                transform: translate(10px, 10px);
+            }
+            to {
+                transform: translate(120px, 170px);
+            }
+        }
+        .ball6 {
+            border: 2px solid black;
+            width: 30px;
+            height: 30px;
+            animation-name: ball6;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes ball7 {
+            from {
+                transform: translate(10px, 10px);
+            }
+            to {
+                transform: translate(100px, -200px);
+            }
+        }
+        .ball7 {
+            border: 2px solid black;
+            width: 30px;
+            height: 30px;
+            animation-name: ball7;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center; background-color: black; color: aliceblue;">Prabhas:</h2>
+    <div class="container">
+        <div class="item"> <hr>
+        </div>
+    </div><hr>
+
+<div  style="display: flex; gap:5px"  class="loading">
+    <h3> Loading:</h3>
+    <div class="load1"></div>
+    <div class="load2"></div>
+    <div class="load3"></div>
+    <div class="load4"></div>
+    <div class="load5"></div>
+</div><hr>
+<div  style="display: flex; gap:5px"  class="balls">
+    <h3>Bouncing Balls:</h3>
+    <div class="ball1"></div>
+    <div class="ball2"></div>
+    <div class="ball3"></div>
+    <div class="ball4"></div>
+    <div class="ball5"></div>
+    <div class="ball6"></div>
+    <div class="ball7"></div>
+</div>
+</html>

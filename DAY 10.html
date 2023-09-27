@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10</title>
+    <style>
+        .inter{
+            border :2px solid black;
+            padding: 30px;
+            width: 100px;  
+
+        }
+        .container{
+            border: 2px solid black;
+            background-image:linear-gradient(lightgreen,gray);
+            padding: 60px;
+            display: flex;
+            gap:10px;
+            height:400px;
+            width: 600px;
+           
+        }
+        .certain{
+            border: 2px solid black;
+            background-image:linear-gradient(gold,gray);
+            padding: 60px;
+            display: flex;
+            gap:10px;
+            height:400px;
+            width: 800px;
+           
+        }
+        .raj{
+            border :2px solid black;
+            width: 500px; 
+            height:600px; 
+         background-image: linear-gradient(skyblue,black,blue);
+        }
+        .rac{
+            border :2px solid black;
+            width: 500px; 
+            height:600px;  
+            background-image: linear-gradient(gray,blueviolet,lightgreen);
+        }
+        .flux{
+            border :2px solid black;
+            width: 400px; 
+            height:310px;  
+            background-image: linear-gradient(white,skyblue);
+            
+        }
+        .AA{
+            display: flex;
+            justify-content:space-between;
+
+        }
+        .BB{
+            display: flex;
+            justify-content:center;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h2 style="color: violet;">Absolute position:</h2>
+    <div class="raj">
+       <div ><img src="./images/rammohan-naidu.jpg" height="100" width="100"/></div> 
+       <div style="position: absolute;right:1010px; top:65px;"><img src="./images/rammohan-naidu.jpg" height="100" width="100"/></div> 
+       <div style="position: absolute;bottom: 75px;"><img src="./images/rammohan-naidu.jpg" height="100" width="100"/></div> 
+       <div style="position: absolute;right:1010px;bottom:73px;"><img src="./images/rammohan-naidu.jpg" height="100" width="100"/></div> 
+       <div style="position: absolute;left: 200px;bottom: 350px;"><img src="./images/rammohan-naidu.jpg" height="100" width="100"/></div> 
+         </div>
+         <br><h2 style="color: blueviolet;">Relative position:</h2>
+         <div class="rac">
+         <div><img src="./images/Money.jpg" height="100" width="100"/></div>
+         <div style="position:Relative; right:-400px;top:-105px;"><img src="./images/Money.jpg" height="100" width="100"/></div>
+         <div style="position:relative;bottom: -290px;"><img src="./images/Money.jpg" height="100" width="100"/></div>
+         <div style="position: relative;right:-400px;bottom:-187px;"><img src="./images/Money.jpg" height="100" width="100"/></div>
+         <div style="position: absolute;right:1200px;bottom: -350px;"><img src="./images/Money.jpg" height="100" width="100"/></div>
+        </div>
+            <h2>flux position</h2>
+            <div class="flux">
+            <div class="AA">
+                <div> <img src="./images/KTR.jpg" height="100" width="100"/></div>
+            <div><img src="./images/KTR.jpg" height="100" width="100"/></div></div>
+            <div class="BB"> 
+                <div><img src="./images/KTR.jpg" height="100" width="100"/></div>
+                </div>
+                <div class="AA">
+                    <div> <img src="./images/KTR.jpg" height="100" width="100"/></div>
+                <div><img src="./images/KTR.jpg" height="100" width="100"/></div></div>
+        </div>
+  <h2 style ="color: brown;">4 columns:</h2>
+    <div class="container">
+    <div class="inter"><p style="color: brown;">During an interview, he jokingly revealed that he would get married only after superstar Salman Khan’s marriage. Then, there were report.</p></div>
+    <div class="inter"><p style="color: brown;">However, Prabhas refuted all the rumours and said that both Anushka and Kriti were only his best friends. Now, ‘RRR’ fame director SS Rajamouli.</p></div>
+    <div class="inter" style="flex-shrink: 3;"><p style="color: brown;">During an interview, Rajamouli revealed that Prabhas is so lazy that he won’t even get married because that’s too much. Reacting.</p></div>
+    <div class="inter"><p style="color: brown;">He further stated, “I don’t want that shyness. Sometimes it is very uncomfortable for me also. I want to break free. I don’t know why, but it takes time for me to meet new people and talk. </p></div> 
+    </div>
+        <h2 style ="color: brown;">5 columns:</h2>
+        <div class="certain">
+        <div class="inter"><p style="color: brown;" >During an interview, he jokingly revealed that he would get married only after superstar Salman Khan’s marriage. Then, there were report.</p></div>
+        <div class="inter"><p style="color: brown;">However, Prabhas refuted all the rumours and said that both Anushka and Kriti were only his best friends. Now, ‘RRR’ fame director SS Rajamouli.</p></div>
+        <div class="inter"><p style="color: brown;">During an interview, Rajamouli revealed that Prabhas is so lazy that he won’t even get married because that’s too much. Reacting to his comments, Prabhas also said.</p></div>
+        <div class="inter"><p style="color: brown;">He further stated, “I don’t want that shyness. Sometimes it is very uncomfortable for me also. I want to break free. I don’t know why, but it takes time for me to meet new people and talk. </p></div> 
+        <div class="inter"><p style="color: brown;">However, Prabhas refuted all the rumours and said that both Anushka and Kriti were only his best friends. Now, ‘RRR’ fame director SS Rajamouli.</p></div>
+        </div>
+    <br>
+    <br>
+</body>
+</html>

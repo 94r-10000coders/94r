@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day13</title>
+    <style>
+       
+       .box1{
+        display:flex;
+       }
+       .items1,.items2{
+        border: 1px solid black;
+        
+        padding:30px;
+       }
+       .items1:nth-child(2n+1){
+        background-color:gray;
+       }
+       .items2:nth-child(2n){
+        background-color:gray;
+       }
+       .flag{
+        
+        .block1{
+            border: 2px solid orange;
+            width:200px;
+            height:40px;
+            background-color: orange;
+        }
+        .block2{
+            border: 2px solid white;
+            width:200px;
+            height:40px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        .block3{
+            border: 2px solid green;
+            width:200px;
+            height:40px;
+            background-color: green;
+        }
+       
+        
+       }
+       .flag img:hover{
+            transform: rotate(3600deg);
+            transition: transform 2s;
+        }
+        .car img{
+            margin-right: -140px;
+            transition: margin-left 10s;
+
+        }
+       .car img:hover{
+margin-left: 140px;
+transition: margin-left 10s;
+       }
+       .cycle img{
+            margin-right: -140px;
+            transition: margin-left 10s;
+
+        }
+       .cycle img:hover{
+margin-left: 140px;
+transition: margin-left 10s;
+       }
+       .mon img:hover{
+            transform: rotate(360deg);
+            transition: transform 2s;
+       }
+       .ram img:hover{
+            transform: Skew(180deg);
+            transition: transform 2s;
+       }
+       .lion img:hover{
+            transform: scale(2,4);
+            transition: transform 2s;
+       }
+       </style>
+</head>
+<body>
+    <h2 style="background-color: black; color: azure; display: inline; text-align: center;" >Chess Board</h2>
+    <div class="container">
+<div class="box1">
+    <div class="items1" style="width: 1px; height: 1px; font-size: 40px; display: flex;justify-content: center;align-items: center;">&#9814;</div>
+    <div class="items1"style="width: 1px; height: 1px; font-size: 40px; display: flex;justify-content: center;align-items: center;">&#9816;</div>
+    <div class="items1" style="width: 1px; height: 1px; font-size: 40px; display: flex;justify-content: center;align-items: center;">&#9815;</div>
+    <div class="items1" style="width: 1px; height: 1px; font-size: 40px; display: flex;justify-content: center;align-items: center;">&#9813;</div>
+    <div class="items1" style="width: 1px; height: 1px; font-size: 40px; display: flex;justify-content: center;align-items: center;">&#9812;</div>
+    <div class="items1" style="width: 1px; height: 1px; font-size: 40px; display: flex;justify-content: center;align-items: center;">&#9815;</div>
+    <div class="items1" style="width: 1px; height: 1px; font-size: 40px; display: flex;justify-content: center;align-items: center;">&#9816;</div>
+    <div class="items1" style="width: 1px; height: 1px; font-size: 40px; display: flex;justify-content: center;align-items: center;">&#9814;</div>
+</div>
+<div class="box1">
+    <div class="items2" style="width: 1px; height: 1px; font-size: 40px; display: flex;justify-content: center;align-items: center;">&#9817;</div>
+    <div class="items2" style="width: 1px; height: 1px; font-size: 40px; display: flex;justify-content: center;align-items: center;">&#9817;</div>
+    <div class="items2" style="width: 1px; height: 1px; font-size: 40px; display: flex;justify-content: center;align-items: center;">&#9817;</div>
+    <div class="items2" style="width: 1px; height: 1px; font-size: 40px; display: flex;justify-content: center;align-items: center;">&#9817;</div>
+    <div class="items2" style="width: 1px; height: 1px; font-size: 40px; display: flex;justify-content: center;align-items: center;">&#9817;</div>
+    <div class="items2" style="width: 1px; height: 1px; font-size: 40px; display: flex;justify-content: center;align-items: center;">&#9817;</div>
+    <div class="items2" style="width: 1px; height: 1px; font-size: 40px; display: flex;justify-content: center;align-items: center;">&#9817;</div>
+    <div class="items2" style="width: 1px; height: 1px; font-size: 40px; display: flex;justify-content: center;align-items: center;">&#9817;</div>
+</div>
+<div class="box1">
+    <div class="items1"  style="width: 1px; height: 1px;"></div>
+    <div class="items1" style="width: 1px; height: 1px;"></div>
+    <div class="items1" style="width: 1px; height: 1px;"></div>
+    <div class="items1" style="width: 1px; height: 1px;"></div>
+    <div class="items1" style="width: 1px; height: 1px;"></div>
+    <div class="items1" style="width: 1px; height: 1px;"></div>
+    <div class="items1" style="width: 1px; height: 1px;"></div>
+    <div class="items1" style="width: 1px; height: 1px;"></div>
+</div>
+<div class="box1">
+    <div class="items2" style="width: 1px; height: 1px;"></div>
+    <div class="items2" style="width: 1px; height: 1px;"></div>
+    <div class="items2" style="width: 1px; height: 1px;"></div>
+    <div class="items2" style="width: 1px; height: 1px;"></div>
+    <div class="items2" style="width: 1px; height: 1px;"></div>
+    <div class="items2" style="width: 1px; height: 1px;"></div>
+    <div class="items2" style="width: 1px; height: 1px;"></div>
+    <div class="items2" style="width: 1px; height: 1px;"></div>
+</div>
+<div class="box1">
+    <div class="items1" style="width: 1px; height: 1px;"></div>
+    <div class="items1" style="width: 1px; height: 1px;"></div>
+    <div class="items1" style="width: 1px; height: 1px;"></div>
+    <div class="items1" style="width: 1px; height: 1px;"></div>
+    <div class="items1" style="width: 1px; height: 1px;"></div>
+    <div class="items1" style="width: 1px; height: 1px;"></div>
+    <div class="items1" style="width: 1px; height: 1px;"></div>
+    <div class="items1" style="width: 1px; height: 1px;"></div>
+</div>
+<div class="box1">
+    <div class="items2" style="width: 1px; height: 1px;"></div>
+    <div class="items2"style="width: 1px; height: 1px;"></div>
+    <div class="items2" style="width: 1px; height: 1px;"></div>
+    <div class="items2" style="width: 1px; height: 1px;"></div>
+    <div class="items2" style="width: 1px; height: 1px;"></div>
+    <div class="items2" style="width: 1px; height: 1px;"></div>
+    <div class="items2" style="width: 1px; height: 1px;"></div>
+    <div class="items2" style="width: 1px; height: 1px;"></div>
+</div>
+<div class="box1">
+    <div class="items1" style="width: 1px; height: 1px; font-size: 40px; display: flex;justify-content: center;align-items: center;">&#9820;</div>
+    <div class="items1" style="width: 1px; height: 1px; font-size: 40px; display: flex;justify-content: center;align-items: center;">&#9822;</div>
+    <div class="items1" style="width: 1px; height: 1px; font-size: 40px; display: flex;justify-content: center;align-items: center;">&#9821;</div>
+    <div class="items1"style="width: 1px; height: 1px; font-size: 40px; display: flex;justify-content: center;align-items: center;">&#9818;	</div>
+    <div class="items1" style="width: 1px; height: 1px; font-size: 40px; display: flex;justify-content: center;align-items: center;">&#9819;</div>
+    <div class="items1"style="width: 1px; height: 1px; font-size: 40px; display: flex;justify-content: center;align-items: center;">&#9821;	</div>
+    <div class="items1"style="width: 1px; height: 1px; font-size: 40px; display: flex;justify-content: center;align-items: center;">&#9822;	</div>
+    <div class="items1"style="width: 1px; height: 1px; font-size: 40px; display: flex;justify-content: center;align-items: center;">&#9820;</div>
+</div>
+<div class="box1">
+    <div class="items2" style="width: 1px; height: 1px; font-size: 40px; display: flex;justify-content: center;align-items: center;">&#9823;</div>
+    <div class="items2" style="width: 1px; height: 1px; font-size: 40px; display: flex;justify-content: center;align-items: center;">&#9823;</div>
+    <div class="items2" style="width: 1px; height: 1px; font-size: 40px; display: flex;justify-content: center;align-items: center;">&#9823;</div>
+    <div class="items2" style="width: 1px; height: 1px; font-size: 40px; display: flex;justify-content: center;align-items: center;">&#9823;</div>
+    <div class="items2" style="width: 1px; height: 1px; font-size: 40px; display: flex;justify-content: center;align-items: center;">&#9823;</div>
+    <div class="items2" style="width: 1px; height: 1px; font-size: 40px; display: flex;justify-content: center;align-items: center;">&#9823;</div>
+    <div class="items2" style="width: 1px; height: 1px; font-size: 40px; display: flex;justify-content: center;align-items: center;">&#9823;</div>
+    <div class="items2" style="width: 1px; height: 1px; font-size: 40px; display: flex;justify-content: center;align-items: center;">&#9823;</div>
+</div>
+</div>
+<div class="flag">
+    <h3>Ashoka Chakra Rotate :</h3>
+<div class="block1"></div>
+<div class="block2"><img src="./images/Ashoka_Chakra.png " width="50px" height="50px "/></div>
+<div class="block3"></div>
+</div>
+<div class="veh">
+    <h3>Using Transition</h3>
+    <div class="car"><img src="./images/car png.png" width="100px" heidht="100px"/> </div>
+   <br><br> <div class="cycle"><img src="./images/cycle png.png" width="100px" heidht="100px"/></div>
+</div>
+<h2>Transform</h2>
+<h4>Rotate</h4>
+<div class="mon"><img src="./images/Money.jpg" width="130px" height="100px"/></div> 
+ <h4>Skew</h4>   
+<div class="ram"><img src="./images/rammohan-naidu.jpg" width="130px" height="100px"/></div>
+<h4>scale</h4>
+<div class="lion"><img src="./images/animal 2.jpg" width="130px" height="100px"/></div>
+</body>
+</html>
