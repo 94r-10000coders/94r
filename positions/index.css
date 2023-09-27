@@ -1,0 +1,125 @@
+.abs ,.rela,.flex{
+
+    width: 700px;
+    height: 800px;
+    /* border: 1px solid rgb(214, 187, 187); */
+    /* gap: 10px; */
+}
+.abss,.relas,.flexs{
+
+    width: 200px;
+    height: 200px;
+    /* border: 1px solid teal; */
+    background-image: linear-gradient(red,rgb(135, 135, 209),green,yellow,teal,orange);
+    padding-left: 10px;
+    flex-wrap: wrap;
+}
+.flex{
+    margin-top: 160px;
+    padding: 60px;
+    display: flex;
+    gap: 10px;
+
+    width:100%;
+    
+
+}
+
+.flex1{
+    /* order: ; */
+    /* background-color: red; */
+    /* color: antiquewhite; */
+    flex-shrink:5;
+    /* flex-grow:; */
+    /* flex-basis:400px; */
+    border-radius: 20px;
+
+}
+.flex2{
+    flex-direction: column-reverse;
+    /* flex-shrink:1; */
+    flex-grow:0.5;
+    margin-top: 500px;
+    border-radius: 20px;
+}
+
+.flex3{
+    /* flex-shrink:7; */
+    /* margin-left: 60px; */
+    margin-right: 60px;
+    flex-shrink:1;
+    border-radius: 20px;
+}
+.flex5{
+    flex-basis: 400px;
+    margin-top: 500px;
+    border-radius: 20px;
+}
+.abs1{
+    position: absolute;
+}
+.abs2{
+    position: absolute;
+    left:500px;
+    
+}
+.abs3{
+    position: absolute;
+    left:250px;
+    top:300px;
+}
+.abs4,.abs5{
+    position: absolute;
+    top:610px;
+}
+.abs5{
+    right:760px
+}
+.rela{
+    height: 1000px;
+    margin-left: 700px;
+    margin-top: 40px;
+}
+.relas{
+    position: relative;
+    /* height: 900px; */
+    background-image:conic-gradient(red,rgb(135, 135, 209),green,yellow,teal,orange);
+}
+.rel1{
+    position: relative;
+}
+.rel2{
+    position: relative;
+    right:-500px;
+    top: -200px;
+}
+.rel3{
+   left:270px;
+}
+.rel4{
+    top: 200px;
+}
+.rel5{
+    left: 500px;
+}
+
+@media all and (min-width:360px) and (max-width:768px){
+    body{
+        /* background-color: rgb(216, 182, 182); */
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px){
+    body{
+        /* background-color: teal; */
+    }
+}
+
+@media all and (min-width:1024px){
+    body{
+    /* background-color:violet; */
+}
+}
+
+
+

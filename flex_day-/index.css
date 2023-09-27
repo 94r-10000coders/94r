@@ -126,4 +126,5 @@ h1{
 body{
 
     background-image: linear-gradient(to top,teal ,rgb(143, 225, 143),rgb(234, 22, 22));
+    /* background-image: url(../day-6/image/chakra.jpeg); */
 }
