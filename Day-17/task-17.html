@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .items {
+            border: 1px solid black;
+            padding:5px;
+            display: grid;
+            background-color: grey;
+            grid-template-columns: auto auto auto;
+            grid-template-areas:'one two three'
+                                'one four five'
+                                'six four seven';
+                                
+        }
+        .item {
+           
+            margin: 5px;
+            /* padding: 5px; */
+            border: 5px solid green;
+        }
+        .player1{grid-area:one;}
+        .player2{grid-area:two;}
+        .player3{grid-area:three;}
+        .player4{grid-area:four;}
+        .player5{grid-area:five;}
+        .player6{grid-area:six;}
+        .player7{grid-area:seven;}
+        img {
+            width:100%;
+            height:100%;
+        }
+        /* calci */
+        .container {
+            border:5px solid red;
+            display: grid;
+            Width:250px;
+            padding: 10px;
+            height:300px;
+            background-color: black;
+            grid-template-columns: auto auto auto auto;
+            grid-template-areas: 'cal1 cal1 cal1 cal1'
+                                 'cal2 cal3 cal4 cal5'
+                                 'cal6 cal7 cal8 cal9'
+                                 'cal10 cal11 cal12 cal13'
+                                 'cal14 cal15 cal16 cal17'
+                                 'cal18 cal19 cal20 cal20';
+        }
+        .boxes {
+            border: 2px solid grey;
+            background-color: gray;
+            border-radius: 50%;
+            padding: 10px;
+            margin: 2px;
+            text-align: center;
+        }
+        .ic1 {
+            border-radius: 0%;
+            text-align: left;
+            
+        }
+        .ic1{grid-area:cal1;}
+        .ic2{grid-area:cal2;}
+        .ic3{grid-area:cal3;}
+        .ic4{grid-area:cal4;}
+        .ic5{grid-area:cal5;}
+        .ic6{grid-area:cal6;}
+        .ic7{grid-area:cal7;}
+        .ic8{grid-area:cal8;}
+        .ic9{grid-area:cal9;}
+        .ic10{grid-area:cal10;}
+        .ic11{grid-area:cal11;}
+        .ic12{grid-area:cal12;}
+        .ic13{grid-area:cal13;}
+        .ic14{grid-area:cal14;}
+        .ic15{grid-area:cal15;}
+        .ic16{grid-area:cal16;}
+        .ic17{grid-area:cal17;}
+        .ic18{grid-area:cal18;}
+        .ic19{grid-area:cal19;}
+        .ic20{grid-area:cal20;}
+        /* task-3 */
+        .games {
+            /* padding:5px; */
+            /* margin:50px; */
+            /* padding: 10px; */
+            display: grid;
+            
+            width:0px;
+            height:0px;
+            border: 1px solid black;
+            grid-template-columns: auto auto auto auto auto auto auto auto;
+            grid-template-areas:'p1 p2 p3 p4 p5 p6 p7 p8'
+                                'p9 p10 p11 p12 p13 p14 p15 p16'
+                                'p17 p18 p19 p20 p21 p22 p23 p24'
+                                'p25 p26 p27 p28 p29 p30 p31 p32'
+                                'p33 p34 p35 p36 p37 p38 p39 p40'
+                                'p41 p42 p43 p44 p45 p46 p47 p48'
+                                'p49 p50 p51 p52 p53 p54 p55 p56'
+                                'p57 p58 p59 p60 p61 p62 p63 p64';
+        }
+        .chess {
+            /* margin: 5px; */
+            /* padding: 5px; */
+         border: 1px solid black;
+         /* margin: 10px;
+         padding: 20px; */
+         width:90px;
+         height: 90px;
+        }
+        .pieces-1{grid-area:p1;}
+        .pieces-2{grid-area:p2;}
+        .pieces-3{grid-area:p3;}
+        .pieces-4{grid-area:p4;}
+        .pieces-5{grid-area:p5;}
+        .pieces-6{grid-area:p6;}
+        .pieces-7{grid-area:p7;}
+        .pieces-8{grid-area:p8;}
+        .pieces-9{grid-area:p9;}
+        .pieces-10{grid-area:p10;}
+        .pieces-11{grid-area:p11;}
+        .pieces-12{grid-area:p12;}
+        .pieces-13{grid-area:p13;}
+        .pieces-14{grid-area:p14;}
+        .pieces-15{grid-area:p15;}
+        .pieces-16{grid-area:p16;}
+        .pieces-17{grid-area:p17;}
+        .pieces-18{grid-area:p18;}
+        .pieces-19{grid-area:p19;}
+        .pieces-20{grid-area:p20;}
+        .pieces-21{grid-area:p21;}
+        .pieces-22{grid-area:p22;}
+        .pieces-23{grid-area:p23;}
+        .pieces-24{grid-area:p24;}
+        .pieces-25{grid-area:p25;}
+        .pieces-26{grid-area:p26;}
+        .pieces-27{grid-area:p27;}
+        .pieces-28{grid-area:p28;}
+        .pieces-29{grid-area:p29;}
+        .pieces-30{grid-area:p30;}
+        .pieces-31{grid-area:p31;}
+        .pieces-32{grid-area:p32;}
+        .pieces-33{grid-area:p33;}
+        .pieces-34{grid-area:p34;}
+        .pieces-35{grid-area:p35;}
+        .pieces-36{grid-area:p36;}
+        .pieces-37{grid-area:p37;}
+        .pieces-38{grid-area:p38;}
+        .pieces-39{grid-area:p39;}
+        .pieces-40{grid-area:p40;}
+        .pieces-41{grid-area:p41;}
+        .pieces-42{grid-area:p42;}
+        .pieces-43{grid-area:p43;}
+        .pieces-44{grid-area:p44;}
+        .pieces-45{grid-area:p45;}
+        .pieces-46{grid-area:p46}
+        .pieces-47{grid-area:p47;}
+        .pieces-48{grid-area:p48;}
+        .pieces-49{grid-area:p49;}
+        .pieces-50{grid-area:p50;}
+        .pieces-51{grid-area:p51;}
+        .pieces-52{grid-area:p52;}
+        .pieces-53{grid-area:p53;}
+        .pieces-54{grid-area:p54;}
+        .pieces-55{grid-area:p55;}
+        .pieces-56{grid-area:p56;}
+        .pieces-57{grid-area:p57;}
+        .pieces-58{grid-area:p58;}
+        .pieces-59{grid-area:p59;}
+        .pieces-60{grid-area:p60;}
+        .pieces-61{grid-area:p61;}
+        .pieces-62{grid-area:p62;}
+        .pieces-63{grid-area:p63;}
+        .pieces-64{grid-area:p64;}
+        
+        .i1:nth-child(2n) {
+            background-color: black;
+        }
+        .i2:nth-child(2n+1) {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; background-image:linear-gradient(violet,indigo,blue,green,yellow,orange,red);"> Gallery using grid</h1>
+    <div class="items">
+        <div class="item player1"><img src="./rohit sharma.jpeg"></div>
+        <div class="item player2"><img src="./shreyas iyer.jpg"></div>
+        <div class="item player3"><img src="./siraj.avif"></div>
+        <div class="item player4"><img src="./Virat Kohli.jpeg"></div>
+        <div class="item player5"><img src="./Suryakumar-Yadav.jpg"></div>
+        <div class="item player6"><img src="./Bumrah.webp"></div>
+        <div class="item player7"><img src="./shubman gill.jpeg"></div>
+    </div>
+    <h1 style="text-align: center;">Calculator</h1>
+    <br>
+<div>
+    <div style="display: flex; justify-content: center;">
+        <div class="container">
+            <div class="boxes ic1">112</div>
+            <div class="boxes ic2">AC</div>
+            <div class="boxes ic3">+/-</div>
+            <div class="boxes ic4">%</div>
+            <div class="boxes ic5">/</div>
+            <div class="boxes ic6">7</div>
+            <div class="boxes ic7">8</div>
+            <div class="boxes ic8">9</div>
+            <div class="boxes ic9">%</div>
+            <div class="boxes ic10">4</div>
+            <div class="boxes ic11" style="background-color:bisque; color:orangered; text-decoration: double;font-size: large;">5</div>
+            <div class="boxes ic12">6</div>
+            <div class="boxes ic13">-</div>
+            <div class="boxes 1c14">1</div>
+            <div class="boxes ic15">2</div>
+            <div class="boxes ic16">3</div>
+            <div class="boxes ic17">+</div>
+            <div class="boxes ic18">-</div>
+            <div class="boxes ic19">0</div>
+            <div class="boxes ic20">=</div>
+        </div>
+    </div>
+</div>
+<br>
+
+    <br>
+    <h1 style="background-color: aqua;">Chess design using grid</h1>
+    <div class="games">
+        <div class="chess pieces-1 i1"><img src="./Elephant.png"></div>
+        <div  class="chess pieces-2 i1"><img src="./Horse.png"></div>
+        <div class="chess pieces-3 i1"><img src="./Cross.png"></div>
+        <div class="chess pieces-4 i1"><img src="./Queen.png"></div>
+        <div class="chess pieces-5 i1"><img src="./King.png"></div>
+        <div class="chess pieces-6 i1"><img src="./Cross.png"></div>
+        <div class="chess pieces-7 i1"><img src="./Horse.png"></div>
+        <div class="chess pieces-8 i1"><img src="./Elephant.png"></div>
+        <div class="chess pieces-9 i2"><img src="./solider.png"></div>
+        <div class="chess pieces-10 i2"><img src="./solider.png"></div>
+        <div class="chess pieces-11 i2"><img src="./solider.png"></div>
+        <div class="chess pieces-12 i2"><img src="./solider.png"></div>
+        <div class="chess pieces-13 i2"><img src="./solider.png"></div>
+        <div class="chess pieces-14 i2"><img src="./solider.png"></div>
+        <div class="chess pieces-15 i2"><img src="./solider.png"></div>
+        <div class="chess pieces-16 i2"><img src="./solider.png"></div>
+        <div class="chess pieces-17 i1"></div>
+        <div class="chess pieces-18 i1"></div>
+        <div class="chess pieces-19 i1"></div>
+        <div class="chess pieces-20 i1"></div>
+        <div class="chess pieces-21 i1"></div>
+        <div class="chess pieces-22 i1"></div>
+        <div class="chess pieces-23 i1"></div>
+        <div class="chess pieces-24 i1"></div>
+        <div class="chess pieces-25 i2"></div>
+        <div class="chess pieces-26 i2"></div>
+        <div class="chess pieces-27 i2"></div>
+        <div class="chess pieces-28 i2"></div>
+        <div class="chess pieces-29 i2"></div>
+        <div class="chess pieces-30 i2"></div>
+        <div class="chess pieces-31 i2"></div>
+        <div class="chess pieces-32 i2"><img src="./solider.png"></div>
+        <div class="chess pieces-33 i1"><img src="./White soldier.png"></div>
+        <div class="chess pieces-34 i1"></div>
+        <div class="chess pieces-35 i1"></div>
+        <div class="chess pieces-36 i1"></div>
+        <div class="chess pieces-37 i1"></div>
+        <div class="chess pieces-38 i1"></div>
+        <div class="chess pieces-39 i1"></div>
+        <div class="chess pieces-40 i1"></div>
+        <div class="chess pieces-41 i2"></div>
+        <div class="chess pieces-42 i2"></div>
+        <div class="chess pieces-43 i2"></div>
+        <div class="chess pieces-44 i2"></div>
+        <div class="chess pieces-45 i2"></div>
+        <div class="chess pieces-46 i2"></div>
+        <div class="chess pieces-47 i2"></div>
+        <div class="chess pieces-48 i2"></div>
+        <div class="chess pieces-49 i1"><img src="./White soldier.png"></div>
+        <div class="chess pieces-50 i1"><img src="./White soldier.png"></div>
+        <div class="chess pieces-51 i1"><img src="./White soldier.png"></div>
+        <div class="chess pieces-52 i1"><img src="./White soldier.png"></div>
+        <div class="chess pieces-53 i1"><img src="./White soldier.png"></div>
+        <div class="chess pieces-54 i1"><img src="./White soldier.png"></div>
+        <div class="chess pieces-55 i1"><img src="./White soldier.png"></div>
+        <div class="chess pieces-56 i1"><img src="./White soldier.png"></div>
+        <div class="chess pieces-57 i2"><img src="./White elephant.png"></div>
+        <div class="chess pieces-58 i2"><img src="./White horse.png"></div>
+        <div class="chess pieces-59 i2"><img src="./White cross.png"></div>
+        <div class="chess pieces-60 i2"><img src="./White queen.png"></div>
+        <div class="chess pieces-61 i2"><img src="./White King.png"></div>
+        <div class="chess  pieces-62 i2"><img src="./White cross.png"></div>
+        <div class="chess pieces-63 i2"><img src="./White horse.png"></div>
+        <div class="chess pieces-64 i2"><img src="./White elephant.png"></div>
+    </div>
+</div>
+</body>
+</html>
