@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+
+    <style>
+        .container,
+        .container2 {
+            display: none;
+        }
+
+        @media screen and (min-width:300px) and (max-width:1000px) {
+            .G1 {
+                display: flex;
+                gap: 5px;
+
+
+
+            }
+
+            .nav-bar {
+                width: 140px;
+
+            }
+
+            .images {
+                border: 1px solid;
+                max-width: 345px;
+                background-color: rgba(245, 245, 220, 0.615);
+                margin-top: 10px;
+
+            }
+
+            [height |="200px"] {
+                border: 1px solid;
+                margin: 5px;
+
+            }
+
+            .container {
+                display: flex;
+                justify-content: center;
+            }
+
+
+
+        }
+
+        @media screen and (min-width:1000px) and (max-width:3000px) {
+            .container2 {
+                display: block;
+            }
+
+            img {
+
+                border: 1px solid;
+                padding: 3px;
+                margin: 5px;
+                background-color: rgba(0, 0, 0, 0.652);
+                border-radius: 5px;
+
+
+
+
+
+            }
+
+            .nav2 {
+                display: flex;
+                height: 40px;
+                background-color: rgba(0, 0, 0, 0.842);
+                color: white;
+                gap: 50px;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .images2 {
+                border: 1px solid white;
+                width: 880px;
+                margin: -10px auto 0 auto;
+                background-color: rgba(128, 128, 128, 0.415);
+
+            }
+
+
+        }
+
+        /* .nav2{
+             display: flex;
+             height: 40px;
+             background-color: rgba(0, 0, 0, 0.842);
+             color: white;
+             gap: 50px;
+             align-items: center;
+             justify-content: center;
+
+        }
+        .images2{
+            border: 1px solid white;
+            width: 880px;
+            margin: 0 25% 0 25%;
+            background-color: rgba(128, 128, 128, 0.415);
+
+        } */
+        /* .frame{
+            border: 1px solid;
+            padding: 3px;
+            margin: 5px;
+            background-color: rgba(0, 0, 0, 0.652);
+            border-radius: 5px;
+            
+
+
+
+
+        } */
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="G1">
+            <div class="nav-bar">
+
+                <nav
+                    style="line-height: 40px;background-color: rgba(124, 117, 117, 0.241);font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;flex-wrap: wrap;">
+                    <ul type="none" style="margin-left: -20px;">
+                        <li>Home</li>
+                        <li style="color: brown;">Gallery</li>
+                        <li>Blog</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="images">
+                <img src="./images/b1.jpg" height="200px" alt="img1">
+                <img src="./images/b2.jpg" height="200px" width="170px" alt="img2">
+                <img src="./images/b3.jpg" height="200px" alt="img3" style="margin-left: 20px;">
+                <img src="./images/b5.jpg" height="200px" alt="img4">
+                <img src="./images/b6.jpg" height="200px" width="180px" alt="img5">
+                <img src="./images/b4.jpg" height="200px" width="140px" alt="img6">
+                <img src="./images/b7.jpg" height="200px" width="170px" alt="img7">
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="container2">
+        <div>
+            <nav>
+                <ul class="nav2" type="none">
+                    <li>Home</li>
+                    <li>Gallery</li>
+                    <li>Blog</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+
+            </nav>
+        </div>
+        <div class="images2">
+
+            <img src="./images/L1.avif" height="210px" alt="imge1" style="margin-left: 80px;">
+            <img src="./images/L3.jpg" height="210px" width="200px" alt="imge3">
+            <img src="./images/L2.avif" height="210px" alt="imge2">
+            <img src="./images/6682344.jpg" height="210px" alt="imge4" style="margin-left: 40px;">
+            <img src="./images/L4.jpg" height="210px" width="200px" alt="imge5">
+            <img src="./images/L7.jpg" height="210px" alt="imge9">
+
+            <img src="./images/women-line-art.jpg" height="220px" width="220px" alt="imge7" style="margin-left: 20px;">
+            <img src="./images/L6.jpg" height="220px" alt="imge8">
+            <img src="./images/L5.jpg" height="220px" alt="img6">
+
+            <img src="./images/L8.webp" height="210px" alt="imge10" style="margin-left: 90px;">
+            <img src="./images/L9.jpg" height="210px" alt="imge11">
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
