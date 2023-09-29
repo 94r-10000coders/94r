@@ -1,0 +1,237 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 18</title>
+    <style>
+        .container{
+            display: grid;
+       grid-template-columns: auto auto auto auto;
+       grid-template-areas: 'item1 item2 item3  item3'
+                            'item4 item2 item5  item6'
+                            'item7 item7 item8  item6'
+                            'item9 item10 item11 item12'
+                            'item13 item14 item14 item12';
+        gap: 5px;
+        width: 600px;
+        height: fit-content;
+        margin-left: 50px;
+        border: 2px solid black;
+        padding: 30px;
+        }
+        .items{
+            border: 1px solid transparent;
+            padding: 2px;
+            
+            
+        }
+        .item1{grid-area: item1;}
+        .item2{grid-area: item2;}
+        .item3{grid-area: item3;}
+        .item4{grid-area: item4;}
+        .item5{grid-area: item5;}
+        .item6{grid-area: item6;}
+        .item7{grid-area: item7;}
+        .item8{grid-area: item8;}
+        .item9{grid-area: item9;}
+        .item10{grid-area: item10;}
+        .item11{grid-area: item11;}
+        .item12{grid-area: item12;}
+        .item13{grid-area: item13;}
+        .item14{grid-area: item14;}
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .box{
+            width: fit-content;
+            height: fit-content;
+            border: 1px solid gray;
+            display: grid;
+            grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px; 
+            grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px;
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+        .row1,.row2{
+            background-color: white;
+            border: 1px solid transparent;
+            font-size: 30px;
+            text-align: center;
+           
+        }
+        .row2:nth-child(2n+1){
+            background-color: darkcyan;
+        }
+        .row1:nth-child(2n){
+            background-color: darkcyan;
+        }
+        .box2{
+            border: 1px solid darkgray;
+            border-radius: 10px;
+            width: 300px;
+            height: 500px;
+            margin-left: 50px;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            padding: 20px;
+            gap: 5px;
+            background-color: rgb(244, 243, 243);
+            box-shadow: 0px 0px 20px 3px lightblue;
+        }
+        .cal1{
+            border: 1px solid darkgray ;
+            margin-bottom: 20px;
+            width: 100%;
+            font-size: 60px;
+            outline: darkgrey solid 1px;
+
+        }
+        .cal{
+            border: 2px solid darkgray ;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 25px;
+        }
+        .total{
+            grid-column: 1/5;
+
+        }
+        .cal3{
+            background-color: darkgray;
+        }
+        .cal:hover{
+            background-color: lightgrey;
+            color: blue;
+        }
+
+    </style>
+</head>
+<body style="background-color: beige;">
+    <h1>Using <span style="background: red;color: aliceblue;">GRID</span> layout</h1>
+    <div class="box2">
+        <div class="cal1 total">0</div>
+        <div class="cal cal3">mc</div>
+        <div class="cal cal3 ">mr</div>
+        <div class="cal cal3">m-</div>
+        <div class="cal cal3">m+</div>
+        <div class="cal cal3">CE</div>
+        <div class="cal cal3">√x</div>
+        <div class="cal cal3">%</div>
+        <div class="cal cal3">÷</div>
+        <div class="cal">7</div>
+        <div class="cal">8</div>
+        <div class="cal">9</div>
+        <div class="cal cal3">x</div>
+        <div class="cal">4</div>
+        <div class="cal">5</div>
+        <div class="cal">6</div>
+        <div class="cal cal3">-</div>
+        <div class="cal">1</div>
+        <div class="cal">2</div>
+        <div class="cal">3</div>
+        <div class="cal cal3">+</div>
+        <div class="cal">0</div>
+        <div class="cal">.</div>
+        <div class="cal">+/-</div>
+        <div class="cal cal3">=</div>
+        <div class="cal cal3">π</div>
+        <div class="cal cal3">x<sup>y</sup></div>
+        <div class="cal cal3">R2</div>
+        <div class="cal cal3">R0</div>
+
+
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="items item1"><img src="./images/dove.jpg" /></div>
+        <div class="items item2"><img src="./images/parrot.jpg" /></div>
+        <div class="items item3"><img src="./images/flowerpurple.jpg"/></div>
+        <div class="items item4"><img src="./images/bird.jpg" /></div>
+        <div class="items item5"><img src="./images/fox.jpg" /></div>
+        <div class="items item6"><img src="./images/elephant.jpg" /></div>
+        <div class="items item7"><img src="./images/flower.jpg" /></div>
+        <div class="items item8"><img src="./images/lion.jpg" /></div>
+        <div class="items item9"><img src="./images/kingfisher.jpg" /></div>
+        <div class="items item10"><img src="./images/kiwi.jpg" /></div>
+        <div class="items item11"><img src="./images/rose.jpg" /></div>
+        <div class="items item12"><img src="./images/pomegranate.jpg" /></div>
+        <div class="items item13"><img src="./images/apple.jpg" /></div>
+        <div class="items item14"><img src="./images/lilly.jpg" /></div>
+
+    </div>
+    <br><br>
+    <div class="box">
+        <div class="row1">&#9814;</div>
+        <div class="row1">&#9816;</div>
+        <div class="row1">&#9815;</div>
+        <div class="row1">&#9813;</div>
+        <div class="row1">&#9812;</div>
+        <div class="row1">&#9815;</div>
+        <div class="row1">&#9816;</div>
+        <div class="row1">&#9814;</div>
+        <div class="row2">&#9817;</div>
+        <div class="row2">&#9817;</div>
+        <div class="row2">&#9817;</div>
+        <div class="row2">&#9817;</div>
+        <div class="row2">&#9817;</div>
+        <div class="row2">&#9817;</div>
+        <div class="row2">&#9817;</div>
+        <div class="row2">&#9817;</div>
+        <div class="row1"></div>
+        <div class="row1"></div>
+        <div class="row1"></div>
+        <div class="row1"></div>
+        <div class="row1"></div>
+        <div class="row1"></div>
+        <div class="row1"></div>
+        <div class="row1"></div>
+        <div class="row2"></div>
+        <div class="row2"></div>
+        <div class="row2"></div>
+        <div class="row2"></div>
+        <div class="row2"></div>
+        <div class="row2"></div>
+        <div class="row2"></div>
+        <div class="row2"></div>
+        <div class="row1"></div>
+        <div class="row1"></div>
+        <div class="row1"></div>
+        <div class="row1"></div>
+        <div class="row1"></div>
+        <div class="row1"></div>
+        <div class="row1"></div>
+        <div class="row1"></div>
+        <div class="row2"></div>
+        <div class="row2"></div>
+        <div class="row2"></div>
+        <div class="row2"></div>
+        <div class="row2"></div>
+        <div class="row2"></div>
+        <div class="row2"></div>
+        <div class="row2"></div>
+        <div class="row1">&#9823;</div>
+        <div class="row1">&#9823;</div>
+        <div class="row1">&#9823;</div>
+        <div class="row1">&#9823;</div>
+        <div class="row1">&#9823;</div>
+        <div class="row1">&#9823;</div>
+        <div class="row1">&#9823;</div>
+        <div class="row1">&#9823;</div>
+        <div class="row2">&#9820;</div>
+        <div class="row2">&#9822;</div>
+        <div class="row2">&#9821;</div>
+        <div class="row2">&#9818;</div>
+        <div class="row2">&#9819;</div>
+        <div class="row2">&#9821;</div>
+        <div class="row2">&#9822;</div>
+        <div class="row2">&#9820;</div>
+        
+    </div>
+    
+    
+</body>
+</html>
