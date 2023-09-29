@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <style>
+        img {
+            width:100%;
+            height: 100%;
+        }
+        .hi {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap:10px;
+        }
+        .grids {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap:10px;
+        }
+        table, tr, th,td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }  
+        td, th {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+            background-color: lightgray;
+        } 
+        input {
+             width: 1000px;
+             height:30px;
+        }
+        .in {
+            width: 1000px;
+             height:30px;
+        }
+        .bco:hover {
+            background-color: white;
+            color:black;
+        }
+        button {
+            width:100px;
+            height:50px;
+        }
+        .name1:hover {
+            opacity: 0.5;
+        }
+        /* * {
+            font-size: 20px;
+        } */
+         </style>
+</head>
+<body>
+<div class="main">
+    <div style="display: flex;">
+        <div style="padding: 40px; color:white; background-color: orangered;width:70Vw;height:100Vh;position: sticky;top: 0px;"><br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1>Company</h1>
+            <h1>Name</h1>
+            <br>
+            <br>
+            <h2 class=" bco">Home</h2>
+            <h2 class=" bco">Showcase</h2>
+            <h2 class=" bco">Services</h2>
+            <h2 class=" bco">Designers</h2>
+            <h2 class=" bco">Packages</h2>
+            <h2 class=" bco">Contact</h2>
+        </div>
+        <div class="main2" style="padding: 40px;">
+                <h1>Interior Design.</h1>
+                <h1 style="color: orangered;">Showcase.</h1>
+                <div style="border: 4px solid red; width:40px;border-radius:20%;"></div>
+                <br>
+                    <div class="hi">
+                        <img  class="name1" src="./kitchenconcrete.jpg" >
+                        <img  class="name1" src="./bedroom.jpg"  >
+                        <img class="name1" src="./diningroom.jpg" >
+                        <img  class="name1" src="./atrium.jpg" >
+                        <img  class="name1" src="./livingroom.jpg">
+                        <img  class="name1" src="./livingroom2.jpg">
+                    </div>
+                    <br>
+                    <div>
+                        <h1 style="color: orangered;"> Services.</h1>
+                        <div  style="border: 4px solid red; width:40px;border-radius:20%;"></div>
+                        <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+                        <p>We are a interior design service that focus on what's best for your home and what's best for you!
+                            Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <br>
+                    <div>
+                        <h1 style="color: orangered;"> Designers.</h1>
+                        <div style="border: 4px solid red; width:40px;border-radius:20%;"></div>
+                        <p>The best team in the world.</p>
+                        <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p><b>Our designers are thoughtfully chosen:</b></p>
+                    </div>
+                <div class="grids">
+                    <div> 
+                        <div style="background-color: lightgray;">
+                        <img src="./person-1.jpg">
+                            <div style="padding: 10px;">
+                                <h1>John Doe</h1>
+                                <h2 style="opacity: 0.3;">CEO & Founder</h2>
+                                <p>
+                                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                            <div style="background-color: lightgray;">
+                                <img src="./person-2.jpg">
+                                <div style="padding: 10px;">
+                                    <h1>Jane Doe</h1>
+                                    <h2 style="opacity: 0.3;">Designer</h2>
+                                    <p>
+                                        Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                                    </p>
+                                </div>
+                            </div>
+                    </div>
+                    <div>
+                        <div style="background-color: lightgray;">
+                            <img src="./person-3.jpg">
+                            <div style="padding: 10px;">
+                                    <h1>Mike Ross</h1>
+                                    <h2 style="opacity: 0.3;">Architect</h2>
+                                    <p>
+                                        Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <h1 style="color: orangered;">Packages.</h1>
+                    <div style="border: 4px solid red; width:40px;border-radius:20%;"></div>
+                    <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+                </div>
+                <div style="display: grid; grid-template-columns: auto auto; gap:10px;">
+                    <table>
+                        <tr >
+                            <th style="background-color: dimgrey; color:white;">Basic</th>
+                        </tr>
+                        <tr>
+                            <td>Floorplanning</td>
+                        </tr>
+                        <tr>
+                            <td>10 hours support</td>
+                        </tr>
+                        <tr>
+                            <td>Photography</td>
+                        </tr>
+                        <tr>
+                            <td>20% future discount</td>
+                        </tr>
+                        <tr>
+                            <td>Good deals</td>
+                        </tr>
+                        <tr>
+                            <td style="display: block;">$ 199
+                                <br>
+                            <span style="opacity: 0.3;">per room</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <button  class="ko" style="background-color: white;">Sign up </button></td>
+                        </tr>
+                </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th style="background-color: orangered; color:white;">Pro</th>
+                    </tr>
+                    <tr>
+                        <td>Floorplanning</td>
+                    </tr>
+                    <tr>
+                        <td>50 hours support</td>
+                    </tr>
+                    <tr>
+                        <td>Photography</td>
+                    </tr>
+                    <tr>
+                        <td>50% future discount</td>
+                    </tr>
+                    <tr>
+                        <td>GREAT deals</td>
+                    </tr>
+                    <tr>
+                        <td style="display: block;">$ 249<br>
+                        <span  style="opacity: 0.3;">per room</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button style="background-color:orangered;color: white;">Sign up </button></td>
+                    </tr>
+            </tr>
+            </table>
+                </div>
+                <div>
+                    <h1 style="color: orangered;"> Contact.</h1>
+                        <div style="border: 4px solid red; width:40px;border-radius:20%;"></div>
+                        <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+                        <label>Name</label><br>
+                        <input type="text">
+                        <br>
+                        <br>
+                        <label>Email</label><br>
+                        <input type="text">
+                        <br>
+                        <br>
+                        <label>Message</label><br>
+                        <input type="text">
+                        <br>
+                        <br>
+                        <button class="in" style="background-color:orangered;color: white;">Send Message</button>
+                </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
