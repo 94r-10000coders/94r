@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{grid-area:image1;}
+       .b{grid-area:image2;}
+       .c{grid-area:image3;}
+       .d{grid-area:image4;}
+       .e{grid-area:image5;}
+       .f{grid-area:image6;}
+       .g{grid-area:image7;}
+       .h{grid-area:image8;}
+       .i{grid-area:image9;} 
+        
+       .container{
+        display: grid;
+        /* grid-template-columns: auto auto auto; */
+grid-template-areas: "image1 image2 image3""image1 image4 image5""image6 image4 image7 " "image8 image9 image9";
+        gap: 10px;
+        background-color: burlywood;
+        padding:0px;
+
+
+       } 
+       img{ width: 100%;
+    height: 100%;}
+       
+       .container>div{ color: white;
+        text-align: center;
+        background-color: black;
+        gap: 50px;
+        padding:10px 10px;
+       }
+
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="a"><img src="https://tse3.mm.bing.net/th?id=OIP.dayVTNSNEIkuEQVC2iXfVQHaKx&pid=Api&P=0&h=220"/></div>
+    <div class="b"><img src="https://tse2.mm.bing.net/th?id=OIP.joYO1nI2IygAptDSy55VQwHaE8&pid=Api&P=0&h=220"/></div>
+    <div class="c"><img src="https://tse2.mm.bing.net/th?id=OIP.pddHR5s7NDGhrva5rfU9CQHaEo&pid=Api&P=0&h=220" alt=""></div>
+    <div class="d"><img src="https://tse4.mm.bing.net/th?id=OIP.-xbfD7HI0zOREl1BocuQ8AHaE2&pid=Api&P=0&h=220" alt=""></div>
+    <div class="e"><img src="https://tse1.mm.bing.net/th?id=OIP.Z_kVMcXHbbPPPq0KzwAUqQHaEo&pid=Api&P=0&h=220" alt=""></div>
+    <div class="f"><img src="https://tse1.mm.bing.net/th?id=OIP.oTFA4xtufnIY0hO8Ajk4lAHaEK&pid=Api&P=0&h=220" alt=""></div>
+    <div class="g"><img src="https://tse3.mm.bing.net/th?id=OIP.q3LTAcYuiTNyQXEh-Q3VwQHaEo&pid=Api&P=0&h=220" alt=""></div>
+    <div class="h"><img src="http://wallpapercave.com/wp/8HOAv9x.jpg" alt=""></div>
+    <div class="i"><img src="https://cdn.wallpapersafari.com/2/13/gnmV0j.jpg" alt=""></div> 
+    </div>
+    
+</body>
+</html>
