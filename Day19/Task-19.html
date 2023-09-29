@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-19</title>
+    <style>
+        .test_grid{
+            border:1px solid white;
+            display: grid;
+            gap:20px;
+            grid-template-columns: auto auto;
+            grid-template-areas:'one two'
+                                'three four'
+                                'five six';
+        }
+        .el1{grid-area: one;}
+        .el2{grid-area: two;}
+        .el3{grid-area: three;}
+        .el4{grid-area: four;}
+        .el5{grid-area: five;}
+        .el6{grid-area: six;}
+        img{
+            height:100%;
+            width:100%;
+        }
+        /* .items{
+            border:1px solid black;
+        } */
+        p{
+            font-size: larger;
+        }
+        .main3{
+            border:1px solid white;
+            display: grid;
+            gap:20px;
+            grid-template-rows: auto ;
+            grid-template-areas:'ya1 ya2 ya3';
+        }
+        .it1{grid-area: ya1;}
+        .it2{grid-area: ya2;}
+        .it3{grid-area: ya3;}
+
+        table,tr,td,th{
+            border: 1px solid black;
+            border-collapse: collapse;
+            height:50px;
+        }
+        td,th{
+            justify-content: center;
+            display: flex; 
+            text-align: center; 
+            align-items: center;
+        }
+        table{
+            width:500px;
+        }
+        /* tr,td,th{
+            height:50px;
+        } */
+        .test_grid2{
+            border:1px solid white;
+            display: grid;
+            gap:20px;
+            grid-template-rows: auto;
+            grid-template-areas:'yash1 yash2';
+        }
+        .yas1{grid-area: yash1;}
+        .yas2{grid-area: yash2;}
+        
+        .ho3:hover{
+            background-color:darkseagreen;
+            color: black;   
+        }
+        .ho4:hover:hover{
+            background-color:darkseagreen;
+            color: black;     
+        }
+        .ho5:hover:hover{
+            background-color:darkseagreen;
+            color: black;     
+        }
+        .ho6:hover:hover{
+            background-color:darkseagreen;
+            color: black;     
+        }
+        .ho7:hover:hover{
+            background-color:darkseagreen; 
+            color: black;    
+        }
+        .ho8:hover:hover{
+            background-color:darkseagreen;
+            color: black;    
+        }
+        .he1:hover{
+            background-color:blue;
+        }
+        .he2:hover{
+            background-color:blue;
+        }
+        .he3:hover{
+            background-color:aqua;
+        }
+        .items:hover{
+            opacity: 90%;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div style="display: flex;">
+            <div style="background-color: red;position:sticky;top:0px;width:70Vw;padding: 40px;height:100vh;border-radius: 2%;color: white;">
+                <br> <br>
+                <h1 class="ho1">Company</h1>
+                <h1 class="h02">Name</h1> 
+                <br> <br> <br> <br>
+                <h2 class="ho3">Home</h2>
+                <h2 class="ho4">Showcase</h2>
+                <h2 class="ho5">Services</h2>
+                <h2 class="ho6">Designers</h2>
+                <h2 class="ho7">Packages</h2>
+                <h2 class="ho8">Contact</h2>
+            </div>
+            <div class="main2">
+                <div class="interior" style="padding: 40px;">
+                    <h1>Interior Design</h1>
+                    <h2 style="color:red;">Showcase.</h2>
+                    <div style="border:4px solid red;border-radius: 20%;width:40px;"></div> <br>
+                    <div class="test_grid" style="opacity: 0.9;">
+                        <div class="items el1"><img src="./1.jpg"/></div>
+                        <div class="items el2"><img src="./2.jpg"/></div>
+                        <div class="items el3"><img src="./3.jpg"/></div>
+                        <div class="items el4"><img src="./4.jpg"/></div>
+                        <div class="items el5"><img src="./5.jpg"/></div>
+                        <div class="items el6"><img src="./6.jpg"/></div>
+                    </div>
+                </div>
+                <div class="services" style="padding: 40px;">
+                    <h2 style="color:red;">Services.</h2>
+                    <div style="border:4px solid red;border-radius: 20%;width:40px;"></div> <br> 
+                    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+                    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            
+                <div class="designers" style="padding: 40px;">
+                    <h2 style="color:red;">Designers.</h2>
+                    <div style="border:4px solid red;border-radius: 20%;width:40px;"></div> <br>  
+                    <p>The best team in the world.</p>
+                    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p style="font-size:x-large"><b>Our designers are thoughtfully chosen:</b></p>
+                    <div class="main3">
+                        <div class="box it1">
+                            <div style="background-color:beige;">
+                                <img src="./7.jpg" />
+                                <div style="padding: 25px;">
+                                    <h2>John Doe</h2>
+                                    <h3>CEO & Founder</h3>
+                                    <h3>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box it2">
+                            <div style="background-color: beige;">
+                                <img src="./8.jpg" />
+                                <div style="padding: 25px;">
+                                    <h2>Jane Doe</h2>
+                                    <h3>Designer</h3>
+                                    <h3>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box it3">
+                            <div style="background-color: beige;">
+                                <img src="./9.jpg" />
+                                <div style="padding: 25px;">
+                                    <h2>Mike Ross</h2>
+                                    <h3>Architect</h3>
+                                    <h3>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="packages" style="padding: 40px;">
+                    <h2 style="color:red;">Packages.</h2>
+                    <div style="border:4px solid red;border-radius: 20%;width:40px;"></div> <br>
+                    <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+                    <div class="test_grid2">
+                        <div class="tab yas1">
+                            <table>
+                                <tr><th style="background-color:dimgray;">Basic</th></tr>
+                                <tr><td>Floorplanning</td></tr>
+                                <tr><td>10 hours support</td></tr>
+                                <tr><td>Photography</td></tr>
+                                <tr><td>20% furniture discount</td></tr>
+                                <tr><td>Good deals</td></tr>
+                                <tr><td>$199<br> per room</td></tr>
+                                <tr><td  style="justify-content: center;display: flex;"><input type="button" class="he2" value="Sign Up"  style="background-color:white;"></input></td></tr>
+                            </table>
+                        </div>
+                        <div class="tab yas2">
+                            <table>
+                                <tr><th style="background-color: red;">Pro</th></tr>
+                                <tr><td>Floorplanning</td></tr>
+                                <tr><td>50 hours support</td></tr>
+                                <tr><td>Photography</td></tr>
+                                <tr><td>20% furniture discount</td></tr>
+                                <tr><td>Great deals</td></tr>
+                                <tr><td>$249<br> per room</td></tr>
+                                <tr><td style="justify-content: center;display: flex;"><button  style="background-color: red;border: 1px solid black;"><span class="he1" style="color: white;">Sign Up</span></button></td></tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact" style="padding: 40px;">
+                    <h2 style="color:red;">Contact.</h2>
+                    <div style="border:4px solid red;border-radius: 20%;width:40px;"></div> <br> 
+                    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+                    <form>
+                        <label><span style="font-size: larger;">Name</span></label> <br> 
+                        <input type="text" style="width:70vw;height:35px;"/> <br> <br>
+                        <label><span style="font-size: larger;">Email</span></label> <br> 
+                        <input type="text" style="width:70vw;height:35px;"/> <br> <br>
+                        <label><span style="font-size: larger;">Message</span></label> <br> 
+                        <input type="text" style="width:70vw;height:35px;"/> <br> <br>
+                        <!-- <button  style="text-align: center;width:70.5vw;background-color: red;color: white;height:35px;"><span class="he3" style="font-size: larger;">Send Message</span></button> -->
+                        <input class="he3" type="button" value="Send Message" style="text-align: center;width:70.5vw;background-color: red;color: white;height:35px;"></input>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
