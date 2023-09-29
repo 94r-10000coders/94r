@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .items{
+border: 1px solid black;
+padding: 50px;
+
+
+
+        }
+        .container{
+            display: grid;
+            width: 300px;
+            grid-template-columns: auto auto auto;
+            margin-top: 100px;
+        }
+        .items1{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-image: linear-gradient(green, white);
+        }
+        .items2{
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+       
+        .items5{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            background-image: linear-gradient(pink, white);
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        .items2{
+            background-color: aqua;
+            background-image: url("https://m.media-amazon.com/images/I/91y9IrbmrTL.jpg");
+        }
+        .items3{
+            background-image: url("");
+        }
+        .items4{
+            background-image: url("https://i.pinimg.com/originals/bd/43/b9/bd43b976dd51eae8e88815126e6dcab8.jpg");
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+<div class="items items1"><img src="https://www.hindustantimes.com/ht-img/img/2023/08/18/1600x900/kohli_71_1683829193033_1692354506172.webp"/></div>
+<div class="items items2"><img src="https://www.shutterstock.com/shutterstock/photos/2259644567/display_1500/stock-photo-abstract-colorful-oil-acrylic-painting-of-bird-and-spring-flower-modern-art-paintings-brush-2259644567.jpg"/></div>
+<div class="items items3"><img src="https://m.media-amazon.com/images/I/91y9IrbmrTL.jpg"/></div>
+<div class="items items4"></div>
+<div class="items items5"><img src="https://imageio.forbes.com/specials-images/imageserve/5ecebee7938ec500060ab34f/0x0.jpg?format=jpg&crop=2336,2337,x1064,y702,safe&height=416&width=416&fit=bounds"/></div>
+
+</body>
+</html>

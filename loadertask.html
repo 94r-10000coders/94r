@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+.load{
+  gap: 5px;
+    display: flex;
+}
+   
+.item1,.item2,.item3,.item4,.item5,.item6{
+border-radius: 50%;
+    border: 1px solid black;
+    padding: 20px;
+    height: 0px;
+    margin-top: 50px;
+    
+}
+.item1{
+    background-image: linear-gradient(lightblue, white)
+}
+.item2{
+    background-image: linear-gradient(green, white);
+}
+.item3{
+    background-image: linear-gradient(pink, white);
+}
+.item4{
+background-image: linear-gradient(red, white);
+}
+.item5{
+    background-image: linear-gradient(brown, white);
+}
+
+@keyframes item1{
+
+    from{
+transform: translateY(-30px);
+
+    }
+    to{
+transform: translateY(30px);
+background-image: linear-gradient(white, lightblue)
+
+    
+}
+
+
+
+}
+.item1{
+    animation-name: item1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+@keyframes item2{
+    from{transform: translateY(-30px);
+        background-image: linear-gradient(yellow, red);
+    }
+
+    to{transform: translateY(30px);
+    }
+}
+.item2{
+    animation-name: item2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+@keyframes item3{
+    from{
+    transform: translateY(-30px);
+    }
+    to{
+transform: translateY(30px);
+background-image: linear-gradient(blue, green);
+    }
+}
+.item3{
+    animation-name: item3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+@keyframes item4{
+    from{
+transform: translateY(-30px);
+    }
+    to{
+transform: translateY(30px);
+background-image: linear-gradient(grey, pink);
+    }
+}
+.item4{
+    animation-name: item4;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;   
+}
+@keyframes item5{
+    from{
+transform: translateY(-30px);
+background-image:linear-gradient(blue, green);
+    }
+    to{
+transform: translateY(30px);
+
+    }
+
+}
+.item5{
+    animation-name: item5;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;   
+}  
+
+
+
+.images{
+    border: 2px solid black;
+    height: 500px;
+    width: 500px;
+    
+
+}
+.img1{
+    animation-name: img1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+@keyframes img1{
+    from{
+transform: translate(10%);
+background-image: url("https://static.independent.co.uk/s3fs-public/thumbnails/image/2020/08/15/15/gettyimages-111436497.jpg");
+    }
+    to{
+transform: translate(20%);
+background-image: url("https://m.economictimes.com/thumb/msid-73295898,width-1200,height-900,resizemode-4,imgsize-187943/dhoni.jpg");
+    }
+}
+@keyframes img2{
+    from{
+transform: translate(20%);
+background-image: url("https://m.economictimes.com/thumb/msid-73295898,width-1200,height-900,resizemode-4,imgsize-187943/dhoni.jpg");
+    }
+    to{
+
+    }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <h3>Bouncing Balls</h3>
+    <div class="load">
+<div class="item1"></div>
+<div class="item2"></div>
+<div class="item3"></div>
+<div class="item4"></div>
+<div class="item5"></div>
+    </div>
+
+<br>
+<br>
+<div class="images">
+<div class="img1">
+<img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2020/08/15/15/gettyimages-111436497.jpg" height="500px" width="500px"/></div>
+<div class="img2">
+    <img src="https://m.economictimes.com/thumb/msid-73295898,width-1200,height-900,resizemode-4,imgsize-187943/dhoni.jpg" height="500px" width="500px"/>
+</div>
+<div class="img3">
+    <img src="https://images.mid-day.com/images/images/2021/oct/Dhoni-aa_d.jpg" height="500px" width="500px"/>
+</div>
+<div class="img4">
+    <img src="https://resources.pulse.icc-cricket.com/ICC/photo/2019/08/23/060a7fcc-10b5-487b-ba68-fa86069dfb20/Dhoni.jpg" height="500px" width="500px"/>
+</div>
+<div class="img5">
+    <img src="https://images.news18.com/ibnlive/uploads/2021/10/ms-dhoni-1600-final-ipl.jpg" height="500px" width="500px"/>
+</div>
+</div>
+</body>
+
+</html>
