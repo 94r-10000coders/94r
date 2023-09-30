@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes images
+         { 30% {background-image: url(./imges/lion\ small\ image.jpeg);}
+           45%{ background-image: url(./imges/lion\ 2.jpeg)}
+        75%{ background-image: url(./imges/lion3.jpeg);}
+         100%{background-image: url(./imges/lion4.jpeg);}
+
+        }
+          
+        .images{border: 1px solid rgb(207, 196, 196);
+                 padding: 100px;
+                animation-name: images;
+                animation-duration: 7s;
+            background-repeat: no-repeat;
+              animation-iteration-count: infinite; }
+
+       @keyframes balls
+       {from{background-color: rgb(199, 25, 25);
+              transform: translate(0px,65px);
+               height: 1px; }
+
+        to{background-color:darkorange ;
+           transform: translate(0px,0px);
+           height: 10px;}}
+
+    @keyframes two{
+      from{background-color: rgb(58, 138, 208);
+           transform: translate(0px,75px);
+           width: 1px; }
+      to{ background-color: aqua;
+            width: 15px;
+             transform: translate(0px,0px);}
+         }
+
+         @keyframes three {
+          from{background-color: coral;
+                transform: translate(0px,85px);
+                height: 10px;
+                  width: 10px;}
+             to{ background-color: dimgray;
+                  transform: translate(0px,0px);
+                 height: 1px;
+                   width: 1px;}     
+         }
+
+         @keyframes first{
+          from{background-color: aqua;
+                transform: scale(1.5,1.5);}
+           to{  background-color: black;
+               transform: scale(1,1);}
+         }
+         @keyframes second{
+          from{background-color: darkolivegreen;  
+            transform: scale(1.5,1.5)   }
+          to{background-color: rgb(225, 41, 81);
+                 transform: scale(1,1); }
+        
+         }
+         @keyframes third{
+          from{ background-color: tomato;
+            transform: scale(1.5,1.5)  }
+          to{background-color: mediumvioletred;
+            transform: scale(1,1); }
+         }
+         @keyframes fourth{
+          from{ background-color: antiquewhite;
+          transform: scale(1.5,1.5) }
+          to{background-color: darkolivegreen;
+            transform: scale(1,1) }
+         }
+          .ball{display: flex; gap: 50px;}
+           .one{border: 1px solid black;
+                     padding: 20px;
+                      border-radius: 30px;
+                    animation-name: balls;
+                    animation-duration: 4s;
+                    /* animation-delay: s; */
+                    animation-iteration-count: infinite;
+                 }
+
+                
+
+                 .two{border: 1px solid black;
+                     padding: 30px;
+                      border-radius: 30px;
+                    animation-name: two;
+                    animation-duration: 3s;
+                    animation-delay: 1s;
+                    animation-iteration-count: infinite;
+                     animation-direction: alternate-reverse;
+                 }
+                  .three{border: 1px solid black;
+                     padding: 30px;
+                      border-radius: 30px;
+                    animation-name: three;
+                    animation-duration: 2s;
+                    animation-delay: 1s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate-reverse;
+                 } 
+                 .four{border: 1px solid black;
+                     padding: 20px;
+                      border-radius: 30px;
+                    animation-name: balls;
+                    animation-duration: 3s;
+                    animation-delay: s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate-reverse;
+                 } 
+
+                  .chandhu{display: flex;gap: 10px; }
+
+                 .first{ border: 1px solid black;
+                          padding: 10px;
+                            border-radius: 30px;
+                          animation-name: first;
+                           animation-duration: 2s;
+                          animation-iteration-count: infinite;
+                        animation-direction: alternate; 
+                  }
+
+                  .second{ border: 1px solid black;
+                          padding: 10px;
+                            border-radius: 50px;
+                          animation-name: second;
+                           animation-duration: 2s;
+                           animation-delay:1s ;
+                          animation-iteration-count: infinite;
+                          animation-direction: alternate }
+                          
+                          .third{ border: 1px solid black;
+                          padding: 10px;
+                            border-radius: 50px;
+                          animation-name: third;
+                           animation-duration: 2s;
+                          animation-iteration-count: infinite; 
+                            animation-delay: 2s;
+                            animation-direction: alternate}
+                          .fourth{ border: 1px solid black;
+                          padding: 10px;
+                            border-radius: 50px;
+                          animation-name: fourth;
+                           animation-duration: 2s;
+                          animation-iteration-count: infinite; 
+                             animation-delay: 2.5s;
+                             animation-direction: alternate}
+
+
+                
+                
+
+
+   
+    </style>
+</head>
+<body>
+    <div class="aravind">
+       <div class="images"></div>
+            
+       <div class="ball"> 
+           <div class="one"></div>
+         <div class="two"></div>
+         <div class="three"></div>
+         <div class="four"></div>
+          </div>
+       <br><br><br><br><br><br><br><br>
+
+       <div class="chandhu">
+           <div class="first"></div>
+           <div class="second"></div>
+           <div   class="third"> </div>
+           <div class="fourth"></div>
+      </div>
+       
+</body>
+</html>
