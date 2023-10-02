@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="../bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <style>
+        .folder1{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 10px;
+        }
+        .img1{
+            width: 100%;
+            height: 100%;
+        }
+        .folder2{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+         }
+         table,tr,td,th{
+            border: 1px solid lightgray;
+            border-collapse: collapse;
+            height:50px;
+         }
+         td,th{
+            justify-content: center;
+            display: flex; 
+            text-align: center; 
+            align-items: center;
+        }
+        table{
+            width:520px;
+        }
+        .maintab{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 20px;
+        }
+        /* .menubar{
+            overflow: scroll;
+        } */
+        .items{
+            padding: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            position: relative;right: 20px;
+            font-size: 24px;
+        }
+        .items:hover{
+            background-color: white;
+            color: black;
+        }
+        .button{
+            background-color: orangered;
+            color: white;
+        }
+        .button:hover{
+            background-color: grey;
+            color: black;
+        }
+        .power{
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: large;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main" style="width: 50vw;">
+        <div class="sideco" style="display: flex;gap: 20px;">
+            <div class="menubar" style="padding: 40px; color:white; background-color: rgb(227, 51, 24);width:30vw;height:100Vh;position: sticky;top: 0px;">
+                <br>
+                <br>
+                <br>
+                <h1 class="items" style="font-size: 30px;">Company<br>Name</h1>
+                <br>
+                <br>
+                <h2 class="items">Home</h2>
+                <h2 class="items">Showcase</h2>
+                <h2 class="items">Services</h2>
+                <h2 class="items">Designers</h2>
+                <h2 class="items">Packages</h2>
+                <h2 class="items">Contact</h2>
+            </div>
+            <div class="infor" style="padding: 20px;">
+                <h1 style="font-size: 70px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Interior Design</h1>
+                <h2 style="color: orangered;font-size: 55px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Showcase.</h2>
+                <div style="border: 1px solid orange; width: 70px; border-radius: 50px;height: 10px ;background-color: orange;"></div>
+                <br>
+                    <div class="folder1">
+                        <div><img class="img1" src="./images/atrium.jpg" alt=""></div>
+                        <div><img class="img1" src="./images/bedroom.jpg" alt=""></div>
+                        <div><img class="img1" src="./images/diningroom.jpg" alt=""></div>
+                        <div><img class="img1" src="./images/livingroom.jpg" alt=""></div>
+                        <div><img class="img1" src="./images/livingroomtw.jpg" alt=""></div>
+                        <div><img class="img1" src="./images/kitchenconcrete.jpg" alt=""></div>
+                    </div>
+                    <br>
+                    <div>
+                        <h2 style="color: orangered;font-size: 55px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Services.</h2>
+                        <div style="border: 1px solid orange; width: 70px; border-radius: 50px;height: 10px ;background-color: orange;"></div>
+                        <p>We are a interior design service that focus on what's best for your home and what's best for you!<br><br>
+
+                            Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <br>
+                    <div>
+                        <h2 style="color: orangered;font-size: 55px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Designers.</h2>
+                        <div style="border: 1px solid orange; width: 70px; border-radius: 50px;height: 10px ;background-color: orange;"></div>
+                        <p>
+                            The best team in the world.<br><br>
+
+                            We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <p><b>Our designers are thoughtfully chosen:</b></p>
+                        
+                    </div>
+                    <div class="folder2">
+                            <div class="char1">
+                                <div style="background-color: lightgrey;">
+                                    <img src="./images/teamone.jpg" />
+                                    <div style="padding: 15px;">
+                                        <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">John Doe</h1>
+                                        <h2 style="opacity: 0.4;font-family: 'Times New Roman', Times, serif;">CEO & Founder</h2>
+                                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="char2">
+                                <div style="background-color: lightgrey;">
+                                    <img src="./images/teamtwo.jpg" />
+                                    <div style="padding: 15px;">
+                                        <h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Jane Doe</h1>
+                                        <h2 style="opacity: 0.4;">Designer</h2>
+                                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="char3">
+                                <div style="background-color: lightgrey;">
+                                    <img src="./images/teamthree.jpg" />
+                                    <div style="padding: 15px;">
+                                        <h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Mike Ross</h1>
+                                        <h2 style="opacity: 0.4;">Architect</h2>
+                                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 style="color: orangered;font-size: 55px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Packages.</h2>
+                            <div style="border: 1px solid orange; width: 70px; border-radius: 50px;height: 10px ;background-color: orange;"></div>
+                            <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                <div class="maintab" style="display: grid;">
+                                    <div class="tab">
+                                        <table style="background-color: rgb(238, 233, 233);">
+                                            <tr><th style="background-color:dimgray;height: 100px;font-size: x-large;">Basic</th></tr>
+                                            <tr><td>Floorplanning</td></tr>
+                                            <tr><td>10 hours support</td></tr>
+                                            <tr><td>Photography</td></tr>
+                                            <tr><td>20% furniture discount</td></tr>
+                                            <tr><td>Good deals</td></tr>
+                                            <tr><td style="height: 100px;font-size: x-large;">$199<br> per room</td></tr>
+                                            <tr><td  style="justify-content: center;height: 100px;"><input type="button" class="Sign" value="Sign Up"  style="background-color: white;color: black;width: 100px;height: 50px;border: 1px solid transparent;font-size: 20px;"></input></td></tr>
+                                        </table>
+    
+                                    </div>
+                                    <div class="tab">
+                                        <table style="background-color: rgb(238, 233, 233);">
+                                            <tr><th style="background-color:red;height: 100px;font-size: x-large;">Pro</th></tr>
+                                            <tr><td>Floorplanning</td></tr>
+                                            <tr><td>50 hours support</td></tr>
+                                            <tr><td>Photography</td></tr>
+                                            <tr><td>50% furniture discount</td></tr>
+                                            <tr><td>Great deals</td></tr>
+                                            <tr><td style="height: 100px;font-size: x-large;">$249<br>room</p></td></tr>
+                                            <tr><td  style="justify-content: center;height: 100px;"><input type="button" class="Sign" value="Sign Up"  style="background-color: orangered;color: white;width: 100px;height: 50px;border: 1px solid transparent;font-size: 20px;"></input></td></tr>
+                                        </table>
+    
+                                    </div>
+                                </div> 
+                        </div>
+                        <div>
+                            <h2 style="color: orangered;font-size: 55px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Contact.</h2>
+                            <div style="border: 1px solid orange; width: 70px; border-radius: 50px;height: 10px ;background-color: orange;"></div>
+                            <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+                            <label for="name">Name</label><br>
+                            <input type="text" id="name" name="name" style="width: 74vw;height: 30px;"/><br><br>
+                            <label for="mail">Email</label><br>
+                            <input type="mail" id="mail" name="mail" style="width: 74vw;height: 30px;" /><br><br>
+                            <label>Message</label><br>
+                            <input type="text" id="text" name="text" style="width: 74vw;height: 30px;" /><br><br>
+                            <button class="button" style="width: 75vw;height: 50px;font-size: 20px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;border: 1px solid transparent;">Send Message</button>
+
+
+                        </div>
+                        <br><br>
+                        <div class="power" style="background-color: lightgrey;width: 78vw; height: 100px;position: relative;top: 20px;right: 40px;">Powered by<a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></div>
+    
+                    </div>
+            </div>
+    </div>
+</body>
+</html>
