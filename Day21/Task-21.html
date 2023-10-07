@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("Personalized-Greeting");
+        var i=prompt("Enter your name:");
+        alert("Hello Mr."+i+"!Welcome to our website");
+        
+
+        alert("Basic Calculator");
+        var x=+prompt("Enter First number:");
+        var y=prompt("enter the operator:");
+        var z=+prompt("Enter Second number:");
+        y=="*"?alert(x+y+z+" is "+x*z):y=="+"?alert(x+y+z+" is "+(x+z)):y=="-"?alert(x+y+z+" is "+(x-z)):y=="/"?alert(x+y+z+" is "+(x/z)):alert("Enter valid one");
+        
+        alert("Age verification");
+        var s=+prompt("Enter your age:");
+        s>=18?alert("You are eligible to vote."):alert.log("You are too young to vote.");
+
+        alert("Temperature converter");
+        var t=+prompt("Enter temperature in degree celcius:");
+        u=(t*(9/5)+32);
+        alert("Temp in farenhiet is "+u);
+
+        alert("Odd or Even");
+        var m=+prompt("Enter the number:");
+        m%2==0?alert(+m+" is even"):alert(+m+" is odd");
+
+        alert("Password Checker");
+        var p=+prompt("Enter the password:");
+        p==12345?alert("Access Granted"):alert("Access Denied");
+
+        
+    </script>
+</body>
+</html>
