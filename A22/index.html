@@ -1,0 +1,158 @@
+<html>
+    <head>
+        <title>09/10/23</title>
+    </head>
+    <body>
+        <script>
+            var number=+prompt("Enter number");
+            if(number % 2==0){
+                alert("It is even number");
+            }
+            else {
+                alert("It is odd number");
+            }
+
+            var leap=+prompt("Enter the year");
+            if (leap%4==0){
+                alert("It is a leap year");
+            }       
+            else {
+                alert("It is not a leap year");
+            }
+
+            var num1=+prompt("Enter Number1");
+            var num2=+prompt("Enter Number2");
+            var num3=+prompt("Enter Number3");
+            if(num1 > num2 && num1 > num3){               
+                alert(+num1+ "is the largest number")
+            }
+            else if (num2 > num1 && num2 > num3){
+                alert(+num2+ "is the largest number")
+            }
+            else if(num1<0 || num2<0 || num3<0){
+                alert("It is negative value")
+            }
+            else if(num1==num2 && num2==num3 && num3==num1){
+                alert("All are equal numbers");
+            }
+            else {
+                alert(+num3+ "is the largest number")
+            }
+
+            var time=+prompt("Enter time");
+            if (time>=6&&time<=11){
+                alert("Good Morning");
+            }
+            else if(time>=12 && time<=17){
+                alert("Good Afternoon");
+            }
+            else if(time>=18 && time<=23){
+                alert("Good Evening");
+            }
+            else{
+                alert("Good Night");
+            }
+            var
+            var traffic=prompt("Enter color:");
+            switch(traffic){
+                case"red":
+                alert("Stop")
+                break;
+                case "Yellow":
+                alert("Slowdown")
+                break;
+                case "Green":
+                alert("Grow")
+            }
+            var season=prompt("Enter Month:");
+            switch(season){
+                case"January":
+                case"Febuary":
+                case"December":
+                alert("Winter")
+                break;
+                case"March":
+                case"April":
+                case"May":
+                alert("Summer")
+                break;
+                case"June":
+                case"July":
+                case"August":
+                alert("Rainy")
+                break;
+                case"September":
+                case"October":
+                case"November":
+                alert("Spring")
+                break;
+                default:
+                alert("Invalid")
+                break;
+            }
+            var menu=prompt("Enter number:");
+            switch(menu){
+                case"1":
+                alert("Coffee")
+                break;
+                case"2":
+                alert("Soft Drinks")
+                break;
+                case"3":
+                alert("cool drinks")
+                break;
+                case"4":
+                alert("Cakes")
+                break; 
+                default:
+                alert("Invalid")
+                break;       
+            }
+            
+
+        </script>
+        <!-- 
+            var month=prompt("enter number");
+            switch(month){
+                case "1":
+                alert("January")
+                break;
+                case "2":
+                alert("February")
+                break;
+                case "3":
+                alert("March")
+                break;
+                case "4":
+                alert("April")
+                break;
+                case "5":
+                alert("May")
+                break;
+                case "6":
+                alert("June")
+                break;
+                case "7":
+                alert("July")
+                break;
+                case "8":
+                alert("August")
+                break;
+                case "9":
+                alert("September")
+                break;
+                case "10":
+                alert("October")
+                break;
+                case "11":
+                alert("November")
+                break;
+                case "10":
+                alert("December")
+                break;
+                default: 
+                alert("Invalid")
+            }
+        </script> -->
+    </body>
+</html>

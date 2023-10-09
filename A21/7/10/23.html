@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>7/10/23</title>
+    </head>
+    <body>
+        <script>
+            var x=prompt("Enter your name:");
+            alert("Hello," + x + " ! Welcome to our website")
+            var y=prompt("Enter Your First value:");
+            var y1=prompt("Enter Your secound value:");
+            var r=prompt("Enter the operator:");
+            if(r== '+'){
+                result=y+y1;
+            }
+            else if(r=='-'){
+                result=y-y1;
+            }
+            else if(r=='*'){
+                result=y*y1;
+            }
+            else{
+                result=y/y1
+            }
+            alert(result);
+
+            var age=+prompt("enter age");
+            if(age<18){
+                alert("your are  not eligible to vote");
+            }
+            else{
+                alert("your are eligible to vote");
+            }
+            var temp=+prompt("Enter Temperature");
+            var t=(temp*9/5)+32;
+            alert(+ temp + "C is equal to" +t+ "F");
+
+            var number=+prompt("Enter number");
+            if(number % 2==0){
+                alert("It is even number");
+            }
+            else {
+                alert("It is odd number");
+            }
+            var pass=prompt("Enter Password");
+            if(pass="1234"){
+                alert("Correct" );
+            }
+            else{
+                alert("Worng");
+            }
+
+        </script>
+    </body>
+</html>
