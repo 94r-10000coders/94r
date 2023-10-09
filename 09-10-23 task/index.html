@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //program 1
+        var a=+prompt("Enter a number to check even or not :")
+        if(a%2==0){
+            alert(a+" is an even number")
+        }
+        else{
+            alert(a+" is an odd number")
+        }
+        //program 2
+        var a = +prompt("Enter an year to check leaf year or not: ")
+        if(a%400==0 || a%4==0){
+            alert(a+" is a leaf year")
+        }
+        else{
+            alert(a+" is not a leaf year")
+        }
+        //program 3
+        var a=+prompt("Enter first number: ")
+        var b=+prompt("Enter second number: ")
+        var c=+prompt("Enter third number: ")
+        if(a>b && a>c){
+            alert(a+" is a largest number among three")
+        }
+        else if(b>a && b>c){
+            alert(b+" is a largest number among three")
+        }
+        else if(a===b && b===c){
+            alert("All numbers are equal")
+        }
+        else{
+            alert(c+" is a largest number among three")
+        }
+        //program 4
+        var a=+prompt("Enter an hour between 1 to 24: ")
+        if(a>=1 && a<=11){
+            alert("Good Morning")
+        }
+        else if(a>=12 && a<=17){
+            alert("Good Afternoon")
+        }
+        else if(a>=18 && a<=23){
+            alert("Good Night")
+        }
+        else{
+            alert("Invalid Input")
+        }
+        //program 5
+        var a=+prompt("Enter a number of dollers to convert into Euro: ")
+        var b=a*0.94395
+        alert(a+" dollars equal to "+b+" Euros")
+        //program 6
+        var a=prompt("Enter a color of traffic lights: ")
+        switch(a){
+            case "yellow":alert("Slow Down")
+            break
+            case "red": alert("Stop")
+            break
+            case "green": alert("Go")
+            break
+            default:alert("invalid color")
+        }
+        //program 7
+        var a=prompt("Enter a Month Name in lower case letters: ")
+        switch(a){
+            case "january":alert("Winter season")
+            break
+            case "febuary": alert("spring season")
+            break
+            case "march":alert("spring season")
+            break
+            case "april":alert("spring season")
+            break
+            case "may": alert("Summer season")
+            break
+            case "june":alert("Summer season")
+            break
+            case "july":alert("Summer season")
+            break
+            case "august":alert("Antumn season")
+            break
+            case "september":alert("Antumn season")
+            break
+            case "october":alert("Antumn season")
+            break
+            case "november":alert("winter season")
+            break
+            case "december":alert("winter season")
+            break
+            default:alert("Enter valid month name")
+        }
+        //program 8
+        var a=+prompt("Enter first value: ")
+        var b=+prompt("Enter second value: ")
+        var c=+prompt("1.Addition\n 2.Subtraction\n 3.Multiplication\n 4.Division\n 5.Modulus Division\nEnter an option: ")
+        switch(c){
+            case 1:alert((a+b))
+            break
+            case 2:alert((a-b))
+            break
+            case 3:alert((a*b))
+            break
+            case 4:alert((a/b))
+            break
+            case 5:alert((a%b))
+            break
+            default:alert("Enter valid option")
+            
+        }
+
+    </script>
+</body>
+</html>

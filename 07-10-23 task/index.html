@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //program1
+        var a=prompt("Enter your name: ")
+        alert("Hi "+a+" welcome to our webpage")
+        //Program2
+        var a =+prompt("Enter first value: ")
+        var c =+prompt("Enter second value: ")
+        var s=prompt("Enter arithmetic operator: ")
+        sum=a+c;
+        sub=a-c;
+        mul=a*c;
+        divi = a/c;
+        mod=a%c;
+        (s==="+")?alert("addition is "+sum):(s==="-")?alert("subtraction is "+sub):(s==="*")?alert("multiplication is "+mul):(s==="/")?alert("division is "+divi):(s==="%")?alert("modulus division is "+mod):alert("please enter a valid operator")
+        //program 3
+        var a =+prompt("enter your age: ")
+        a>18? alert("you are eligible for vote"):alert("you are not eligible for vote")
+        //program 4
+        var a=+prompt("Enter temparature in celcius: ")
+        var b=(a*(9/5))+32;
+        alert(a+"°C is equal to "+b+"F")
+        //program 5
+        var a=+prompt("enter a number: ");
+        (a%2==0)?alert("it is an even number"):alert("it is an odd number")
+        //program 6
+        var a=prompt("Enter your password : ")
+        a==="12345"?alert("gretings\nwelcome to my web page"):alert("check your password once and re-enter")
+    </script>
+</body>
+</html>
