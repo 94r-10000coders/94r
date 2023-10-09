@@ -1,0 +1,64 @@
+/<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        alert("Personalized greeting");
+        var Uname;
+        var Uname = prompt("Enter your name:");
+        console.log(Uname);
+        alert("Hello," + Uname + "! welcome to our website");
+        
+
+        alert(" Calculator  Arithmetic operations");
+        var x = +prompt("Enter x value:");
+        var y = +prompt("Enter y value:");
+        var art = prompt("Enter arithmetic perator:");
+        var mul=x*y;
+        var div=x/y;
+        var sub=x-y;
+        var add=x+y;
+        console.log(x+y);
+        console.log(x-y);
+        console.log(x*y);
+        console.log(x/y);
+        art=="+"?alert("Sum of x and y is: " + add):art=="-"?alert("Subtraction is: " + sub):art=="*"?alert("multiplication is: " + mul):art=="/"?alert("Division is:" + div):alert("invalid operator");
+        
+        alert("voter AGE verification");
+        var age = +prompt("Enter your age:");
+        console.log("Your age is",age);
+        age>="18"?alert("Your are eligible to vote"):alert("You are too young to vote");
+
+
+        alert("Temperature converter");
+        var c = +prompt("Enter celsius value");
+        var F = (c*9/5)+32;
+        console.log(F);
+        alert(c + "°C is equal to " + F + "°F");
+
+       alert("Odd or Even")
+        var num = +prompt("Enter number");
+        var mod = num%2
+        console.log(num);
+        mod=="0"?alert( num + " is even number"):alert( num + " is odd number");
+
+        alert("Password checking")
+        var pwd = +prompt("Enter password");
+        var newpwd = 12345;
+        console .log("Enter password is:",newpwd);
+        pwd=="12345"?alert("Access granted"):alert("Access denied");
+
+
+
+
+        
+    </script>
+    
+</body>
+</html>
