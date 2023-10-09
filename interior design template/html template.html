@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sidenav{
+            height: 100%;
+            width:260px;
+            background-color: orangered;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            overflow-x: hidden;
+            padding-top: 80px;
+            padding-left: 40px ;
+        }
+        .sidenav a{
+            display: block;
+            text-decoration: none;
+            line-height: 42px;
+            color: white;
+        }
+        .main{
+            margin-left: 300px;
+            padding-top: 80px;
+            padding-left: 45px;
+        }
+        .images img{
+            width: 33vw;
+            height: 50vh;
+            margin: 8px;
+            cursor: pointer;
+            opacity: 0.8;
+        }
+        .images img:hover{
+            opacity: 1;
+        }
+        body{
+            font-family: "Poppins", sans-serif;
+            font-size: 17px;
+        }
+        p{
+            line-height: 29px;
+        }
+        .nav{
+            margin-top: 75px;
+            font-weight: 600;
+            font-size: large;
+        }
+        .nav1:hover{
+            background-color: white;
+            color: black;
+            margin-right: 20px;
+            margin-left: -15px;
+            padding-left: 15px;
+        }
+        .header1{
+            font-size:65px;
+            display: block;
+            font-weight: 700;
+        }
+        .header2{
+            font-size: 50px;
+            color: orangered;
+            margin-top: -30px;
+           font-weight: 620;
+
+        }
+        hr{
+            width: 70px;
+            height: 8px;
+            background-color: orangered;
+            border-radius: 10px;
+            margin-left: -0px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        .grid div{
+            border: 1px solid transparent;
+            width: 290px;
+            height: fit-content;
+            background-color:antiquewhite;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        .grid p,.grid h3,.grid h2{
+            margin-left: 10px;
+            margin-right: 5px;
+        }
+        .flex{
+            display: flex;
+            gap: 10px;
+        }
+        ul>li{
+            border: 0.5px solid rgba(183, 177, 177, 0.744);
+            border-left: transparent;
+            border-right: transparent;
+            border-bottom: transparent;
+            margin-left: -37px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            background-color: rgba(194, 188, 188, 0.247);
+        }
+        .leftrow,.rightrow{
+            padding: 35px 180px 35px 180px;
+            text-align: center;
+            margin-left: -37px;
+            font-size: x-large;
+        }
+        .leftrow{
+            background-color: rgba(0, 0, 0, 0.61);
+            color: white;
+        }
+        .rightrow{
+            background-color: orangered;
+            color: white;
+        }
+        .dollar{
+            font-size: xx-large;
+        }
+        .grey{
+            color: gray;
+        }
+        li>button{
+            font-size: 16px;
+            padding: 12px 20px 12px 20px;
+        }
+        .su1{
+            background-color: white;
+            border: transparent;
+        }
+        .su2{
+            background-color: orangered;
+            border: transparent;
+            color: white;
+        }
+        .su1:hover{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+        .su2:hover{
+            background-color: black;
+            cursor:pointer;
+        }
+        input{
+            width: 90%;
+            height: 35px;
+            display: block;
+            font-size: large;
+        }
+        .sm{
+            display: block;
+            width: 91%;
+            height: 40px;
+            font-size: 16px;
+            background-color: orangered;
+            color: white;
+            border: transparent;
+        }
+        .sm:hover{
+            background-color: rgba(169, 163, 163, 0.653);
+            color: black;
+            cursor: pointer;
+        }
+        .last{
+            background-color: rgba(179, 172, 172, 0.557);
+            text-align: right;
+            padding: 60px;
+            margin-right: -8px;
+        }
+        /* .item{
+            border: 2px solid white;
+            margin-bottom: 4px;
+            width: 20px;
+        }
+        .navflex{
+            display: flex;
+        } */
+        /* @media screen (max-width:426px){
+            .item{
+                display:inline;
+            }
+            .navflex{
+                position: sticky;
+                top:0;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div class="sidenav">
+        <div class="navflex">
+            <!-- <div class="symbol">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div> -->
+            <h3 style="color: white;font-size:30px;">Company<br>Name</h3>
+        </div>
+        <div class="nav">
+            <a href="#home" class="nav1">Home</a>
+            <a href="#showcase" class="nav1">Showcase</a>
+            <a href="#services" class="nav1">Services</a>
+            <a href="#designers" class="nav1">Designers</a>
+            <a href="#packages" class="nav1">Packages</a>
+            <a href="#contact" class="nav1">Contact</a>
+        </div>
+    </div>
+    <div class="main">
+        <div id="home">
+            <span class="header1">Interior Design</span>
+        </div><br>
+        <div id="showcase">
+            <span class="header2">Showcase.</span>
+            <hr>
+        </div>
+        <div class="images">
+            <img src=".//kitchenconcrete.jpg" alt="">
+            <img src="./atrium.jpg" alt="">
+            <img src="./livingroom.jpg" alt="">
+            <img src="./bedroom.jpg" alt="">
+            <img src="./diningroom.jpg" alt="">
+            <img src="./livingroom2.jpg" alt="">
+        </div><br><br><br><br>
+        <div id="services">
+            <span class="header2">Services.</span>
+            <hr>
+            <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+            <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div><br><br><br><br>
+        <div id="designers">
+            <span class="header2">Designers.</span>
+            <hr>
+            <p>The best team in the world.</p>
+            <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h3>Our designers are thoughtfully chosen:</h3>
+            <div class="grid">
+                <div>
+                    <img src="./team2.jpg" width="290px" height="200px">
+                    <h2>John Doe</h2>
+                    <h3 style="color: gray;"><small>CEO&Founder</small></h3>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                </div>
+                <div>
+                    <img src="./team1.jpg" width="290px" height="200px">
+                    <h2>Jane Doe</h2>
+                    <h3 style="color: gray;"><small>Designer</small></h3>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p> 
+                </div>
+                <div>
+                    <img src="./team3.jpg" width="290px" height="200px">
+                    <h2>Mike Ross</h2>
+                    <h3 style="color: gray;"><small>Architect</small></h3>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                </div>
+            </div><br><br><br><br>
+            <div id="packages">
+                <span class="header2">Packages.</span>
+                <hr>
+                <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+                <div class="flex">
+                    <div>
+                        <ul type="none">
+                            <div class="leftrow"><li>Basic</li></div>
+                            <li>Floorplanning</li>
+                            <li>10 hours support</li>
+                            <li>Photography</li>
+                            <li>20% furniture discount</li>
+                            <li>Good deals</li>
+                            <li><span class="dollar">&#36 199</span><br><br><span class="grey">per room</span></li>
+                            <li><button class="su1">Sign Up</button></li> 
+                        </ul>
+                    </div>
+                    <div>
+                        <ul type="none">
+                            <div class="rightrow"><li>Pro</li></div>
+                            <li>Floorplanning</li>
+                            <li>50 hours support</li>
+                            <li>Photography</li>
+                            <li>50% furniture discount</li>
+                            <li>Great deals</li>
+                            <li><span class="dollar">&#36 249</span><br><br><span class="grey">per room</span></li>
+                            <li><button class="su2">Sign Up</button></li>
+                        </ul>
+                    </div>
+                </div><br><br><br><br>
+            </div>    
+            <div id="contact">
+                <span class="header2">Contact.</span>
+                <hr>
+                <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+                <form>
+                    <label for="name">Name</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="msg">Message</label><br>
+                <input type="text" id="msg"><br>
+                <input type="submit" value="Send Message" class="sm">
+                </form>
+            </div><br><br><br><br>
+        </div>
+    </div>
+    <div class="last">
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" style="color: black;">w3.css</a></p>
+    </div>
+</body>
+</html>
