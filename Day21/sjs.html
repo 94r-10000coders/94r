@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=prompt("enter your name");
+        alert("Hello, " + a + "!" + " Welcome to our website");
+        var b=+prompt("enter number");
+        var c=+prompt("enter number");
+        var d=prompt("enter operator");
+        if (d== '+'){
+            result=b+c;
+        }
+        else if (d== '-'){
+            result=b-c;
+        }
+        else if (d== '*'){
+            result=b*c;
+        }
+        else{
+            result=b/c;
+        }
+        alert(result);
+        var age=+prompt("enter age");
+        if (age<18){
+            alert("You are not eligible to vote");
+        }
+        else {
+        alert("You are eligible to vote");
+        }
+        var temp=+prompt("enter temperature");
+        var f=(temp*9/5)+32;
+        alert(+ temp  + " C is equals to " +f+" F");
+        var n=+prompt("enter number");
+        if (n%2==0){
+            alert(+n+ " is even number");
+        }
+        else{
+            alert(+n+ " is odd number");
+        }
+        var pass=+prompt("enter password");
+        
+        if (pass==12345){
+            alert("access granted");
+        }
+        else{
+            alert("access denied");
+        }
+        
+        </script>
+</body>
+</html>

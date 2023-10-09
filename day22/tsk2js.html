@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+     var n=+prompt("enter number");
+        if (n%2==0){
+            alert(+n+ " is even number");
+        }
+        else{
+            alert(+n+ " is odd number");
+        }
+        var year=+prompt("Enter Year");
+        if (year%4==0){
+            alert(+year+ " is a leap year");
+        
+        }
+        else{
+            alert(+year+ " is not a leap year")
+        }
+        var a=+prompt("enter number1");
+        var b=+prompt("enter number2");
+        var c=+prompt("enter number3");
+        if (a>c && a>b){
+            alert(+a+ " is largest number");
+        }
+        else if(b>a && b>c){
+
+            alert(+b+ " is largest number");
+        }
+    
+       else if(a<0 || b<0 || c<0){
+        alert("negative input");
+       }
+       else if(a==b && b==c && c==a){
+        alert("all are equal");
+       }
+        else {
+            alert(+c+ " is greatest number");
+        }
+        var t=+prompt("Enter time");
+        if (t>=6 && t<=11){
+            alert("Good morning");
+        }
+        else if (t>=12 && t<=17){
+            alert("Good Afternoon");
+        }
+        else if (t>=18 && t<=23){
+            alert("Good Evening");
+        }
+        else{
+            alert("Good night");
+        }
+       amt=+prompt("enter amount");
+       cur1=prompt("enter currency code");
+       cur2=prompt("enter converted currency code");
+       camt=amt*0.90;
+       alert(+amt +cur1 +" converted into "+ camt +cur2);
+
+
+        tr=prompt("enter color of traffic light");
+        switch(tr){
+            case "red":
+                alert("stop");
+                break;
+        
+        case "yellow":
+                alert("slow down");
+                break;
+        
+        case "green":
+                alert("go");
+                break;
+        default:
+            alert("wrong input");
+            break;
+        }
+       var mon=prompt("enter month");
+        switch(mon){
+            case "January":
+            case "Febraury":
+            case "December":
+                alert("spring season");
+                break;
+            case "March":
+            case "April":
+            case "May":
+                alert("summer season");
+                break;
+            case "June":
+            case "July":
+            case "August":
+                alert("Rainy season");
+                break;
+            case "September":
+            case "October":
+            case "November":
+                alert("winter season")
+                break;
+            default:
+                alert("wrong input")
+                break;
+
+        }
+        menu=prompt("select menu options from 1 to 4")
+        switch(menu){
+            case "1":
+                alert("Paneer Biryani");
+                break;
+            case "2":
+                alert("Mushroom Biryani");
+                break;
+            case "3":
+                alert("Noodles");
+                break;
+            case "4":
+                alert("Fried rice");
+                break;
+            default:
+                alert("invalid input");
+                break;
+            
+
+        }
+
+   </script> 
+</body>
+</html>
