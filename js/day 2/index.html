@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HAI WELCOME</h1>
+    <script>
+        alert("Using if else statement check given number is even or odd");
+        var a =+prompt("Enter a number");
+        if(a%2==0){
+            alert(a + " is even numer");
+        }
+        else{
+            alert(a + " is odd numer");
+        }
+
+        alert("Check leap year");
+        var year =+prompt("Enter year");
+        if(year%4==0 && year%100!=0 || year%400==0){
+            alert(year + " is a leap year");
+        }
+        else{
+            alert(year + " is not a leap year ");
+        }
+        
+        alert("Find the largest number among three number");
+        var num1 =+prompt("Enter a first number");
+        var num2 =+prompt("Enter a second number");
+        var num3 =+prompt("Enter a third number");
+       if(num1>=0 && num2>=0 && num3>=0){
+        if(num1>=num2 && num1>=num3){
+            alert(num1 + " is a largest number ");
+        }
+        else if( num2>=num1 && num2>=num3){
+            (num2 + " is a largest nalertumber");
+        }
+        else if(num1==num2 && num2==num3){
+            alert("all are equal");
+        }
+        else{
+            alert(num3 + " is a largest number");
+        }
+       }
+       else{
+        alert("Enter negative value");
+       }
+
+    alert("Checking time of day");
+    var hour = +prompt("Enter an hour 0-24 ");
+    if(hour>=1 && hour<=11){
+        alert("Good Morning");
+    }
+    else if(hour>=12 && hour<=17){
+        alert("Good Afternoon");
+    }
+    else if(hour>=18 && hour<=23){
+        alert("Good Evening");
+    }
+    else{
+        alert("Good Night");
+    }
+
+    alert("Traffic lights");
+    var color = prompt("Enter a one color of traffic lights");
+    switch(color){
+        case "red":alert("Stop");
+        break;
+
+        case "yellow":alert("slow down and wait");
+        break;
+
+        case "green":alert("GO");
+        break;
+
+        default:alert("wrong color entered");
+    }
+
+    alert("Seasons");
+    var season = prompt("Enter a Month name");
+    switch(season){
+        case "february":alert("spring season");
+        break;
+        case "march":alert("spring season");
+        break;
+        case "april":alert("spring season");
+        break;
+        case "may":alert("summer season");
+        break;
+        case "june":alert("summer season");
+        break;
+        case "july":alert("summer season");
+        break;
+        case "august":alert("autumn season");
+        break;
+        case "september":alert("autumn season");
+        break;
+        case "october":alert("autumn season");
+        break;
+        case "november":alert("winter season");
+        break;
+        case "december":alert("winter season");
+        break;
+        case "january":alert("winter season");
+        break;
+        default:alert("Enter a valid month name");
+    }
+
+    alert("food menu");
+    var menu=prompt("Enter a one number between 1 to 4 to select food item");
+    switch(menu){
+        case "1":alert("Chicken fry piece biryani");
+        break;
+        case "2":alert("idli");
+        break;
+        case "3":alert("pizza");
+        break;
+        case "4":alert("icecream");
+        break;
+        default:alert("Sorry! food item is not available");
+    }
+    
+        alert("currency converter");
+        var amount=+prompt("Enter the amount");
+        var code=prompt("Enter a input currency code,Ex: USD, INR, EUR");
+        var converter=prompt("Enter a output currency code,Ex: USD, INR EUR");
+        if((code=="USD")&&(converter=="INR")){
+            alert(amount + code +" is equals to "+(amount*83.27)+" INR");
+        }
+        else if((code=="INR")&&(converter=="EUR")){
+            alert(amount + code +" is equals to " +(amount*0.011)+"EUR");
+        }
+        else{
+            alert("invalid input");
+        } 
+    
+    </script>
+    
+</body>
+</html>
