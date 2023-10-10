@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var r=+prompt("Enter anumber to even or not")
+       if(r%2==0){
+        alert("is an even number")
+       } 
+       else{
+        alert("is  an odd  number")
+       }
+
+       var b=+prompt("Enter an year to leaf year or not")
+       if(b%400==0 || b%4==0){
+        alert("is a leaf year")
+       }
+       else{
+        alert("is not a leaf year")
+       } 
+
+       var l=+prompt("enter first number")
+       var k=+prompt("enter second number")
+       var j=+prompt("enter third number")
+       if(l>k && l>j){
+        alert("is a largest number among three")
+         }
+       else if (k>l && k>j){
+        alert("is a largest number among three")
+       }
+       else if(l===k && k===j){
+        alert("all number are equal")
+       }
+       else{
+        alert("is a largest number among three")
+       }
+
+
+       var o=+prompt("enter an hour between 1 to 24")
+       if(o>=1 && o<=11){
+        alert("good morning")
+       }
+       else if(o>=12 & o<=17){
+              alert("good afternoon")
+       }
+       else{
+        alert("invalid input")
+       }
+
+
+       var p=+prompt("enter a number of dollers to convert into euro")
+       var d=p*0.94395
+       alert("dollars equal to"+d+"euros")
+
+
+       var a=prompt("Enter a color of traffic lights: ")
+        switch(a){
+            case "yellow":alert("Slow Down")
+            break
+            case "red": alert("Stop")
+            break
+            case "green": alert("Go")
+            break
+            default:alert("invalid color")}
+
+
+       var x=+prompt("enter first value")
+       var y=+prompt("enter second value")
+       var z=+prompt("1.sum 2.sub 3.mult 4.divi")
+       switch(z){
+        case 1:alert((x+y))
+        break
+        case 2:alert((x-y))
+        break
+        case 3:alert((x*y))
+        break
+        case 4:((x/y))
+        break
+        default:alert("enter vaild option")
+       }
+    </script>
+</body>
+</html>
