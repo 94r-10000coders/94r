@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var number = prompt("Enter a integer: ");
+
+
+if(number % 2 == 0) {
+    alert("Even.");
+}
+
+else {
+    alert("Odd.");
+}
+
+
+var year= prompt("Enter a year:");
+
+if ((year % 4 === 0 && year % 100 !== 0) ||( year % 400 === 0)) 
+  {
+    alert(year + " is a leap year.");
+  } 
+  else
+   {
+      alert(year+ "is not a leap year")
+   }
+
+var num1 =prompt("Enter first number: ");
+var num2 =prompt("Enter second number: ");
+var num3 =prompt("Enter third number: ");
+
+if(num1 >= num2 && num1 >= num3) 
+{
+    alert("largest = num1")
+}
+else if (num2 >= num1 && num2 >= num3) 
+{
+    alert("largest = num2")
+}
+else {
+    alert("largest = num3")
+}
+
+var time=prompt("enter the time:");
+        if(time>=6 && time<=11)
+        {
+            alert( "Good Morning")
+        }
+        else if(time>=12 && time<=17)
+        {
+            alert("Good Afternoon")
+        }
+        else if(time>=18 && time<=23)
+        {
+            alert("Good Evening")
+        }
+        else
+        {
+         alert("Good Night")
+        }
+
+var color=prompt("enter a color")
+        switch(color){
+            case "red":alert("red signal indicates you to stop");
+            break;
+            case "yellow":alert("yellow signals indicates you to slow down ");
+            break;
+            case "green":alert("green signal indicates you can go");
+            }
+
+ var month=prompt("enter a month")
+        switch(month){
+            case "january":alert("its a winter season");
+            break;
+            case "february":alert("its a winter season");
+            break;
+            case "march":alert("its a spring season");
+            break;
+            case "april":alert("its a spring season");
+            break;
+            case "may":alert("its a spring season");
+            break;
+            case "june":alert("its a summer season");
+            break;
+            case "july":alert("its a summer season");
+            break;
+            case "august":alert("its a summer season");
+            break;
+            case "september":alert("its a autumn season");
+            break;
+            case "october":alert("its a autumn season");
+            break;
+            case "november":alert("its a autumn season");
+            break;
+            case "december":alert("its a winter season");
+         } 
+
+         var menu=prompt("enter a number to select an option from menu");
+        switch(menu){
+            case "1":alert("biyani");
+            break;
+            case "2":alert("staters");
+            break;
+            case "3":alert("cool drinks");
+            break;
+            case "4":alert("desserts");
+            break;
+            case "5":alert("soups");
+            break;
+            case "6":alert("fast foods");
+            break;
+            default:alert("sorry, its not available");
+
+        }
+    </script>
+    
+</body>
+</html>

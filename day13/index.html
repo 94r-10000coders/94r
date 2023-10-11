@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+         
+    
+       
+        .k img:hover{
+            padding: 10px;
+            border: 1px solid purple;
+            transform: rotate(30deg);
+            background-color: purple;
+            height: 150px;
+            width: 150px;
+            transition: transform 5s;
+        }
+        
+        
+        .s:hover{
+           transform: scale(10);
+           transition: transform 5s;
+        }
+        
+        
+        .g:hover{
+            transform: skew(80deg);
+            transition: transform 6s;
+        }
+        .p:hover{
+            margin-left: 300px;
+            transition: margin-left 4s;
+        }
+    
+        .p{
+            transition: margin-left 4s;
+        }
+        .o:hover{
+            margin-right: 200px;
+            transition: margin-right 7s;
+        }
+        .o{
+            transition: margin-right 7s;
+        }.l:hover{
+            margin-top: 300px;
+            transition: margin-top 5s;
+        }
+        .l{
+            transition: margin-top 5s;
+        }
+
+        .n:hover{
+            margin-bottom: 200px;
+            transition: margin-bottom 6s;
+        }
+        .n{
+            transition: margin-bottom 5s;
+        }
+        .x{
+            border: 1px solid orangered;
+            height: 40px;
+            width: 300px;
+            background-color: orangered;
+        }
+        .y{
+            border: 1px solid white;
+            height: 40px;
+            width: 300px;
+            background-color: white;
+        }   
+        .z{
+            border: 1px solid green;
+            height: 40px;
+            width: 300px;
+            background-color: green;
+        }   
+        .y img:hover{
+            transform: rotate(30deg);
+            transition: transform 15s;
+           
+        }
+        .y img{
+            margin-bottom: 35px;
+           } 
+        
+           
+           .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .item,.item1,.item2,.item3{
+            
+           
+            display: flex;
+        }
+        
+        .a{
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            font-size: 80px;
+        }
+        .item .a:nth-child(2n){
+            background-color: black;
+            color: white;
+        }
+        .item1 .a:nth-child(2n+1){
+            background-color: black;
+            color: white;
+        }
+        .item2 .a:nth-child(2n){
+            background-color: black;
+            color: white;}
+         .item3 .a:nth-child(2n+1){
+            background-color: black;
+            color: white;
+         }
+        
+
+        
+    </style>
+</head>
+<body>
+    <h1 style="text-transform: capitalize; text-align: center;color: orangered;">chess board</h1>
+<div class="container">
+    <div class="item">
+        <div class="a">&#9814;</div>
+        <div class="a">&#9816;</div>
+        <div class="a">&#9815;</div>
+        <div class="a">&#9813;</div>
+        <div class="a">&#9812;</div>
+        <div class="a">&#9815;</div>
+        <div class="a">&#9816;</div>
+        <div class="a">&#9814;</div>
+    </div>
+    <div class="item1">
+        <div class="a">&#9817;</div>
+        <div class="a"></div>
+        <div class="a">&#9817</div>
+        <div class="a">&#9817</div>
+        <div class="a">&#9817</div>
+        <div class="a">&#9817</div>
+        <div class="a">&#9817</div>
+        <div class="a">&#9817</div>
+    </div>
+    <div class="item">
+        <div class="a"></div>
+        <div class="a">&#9817;</div>
+        <div class="a"></div>
+        <div class="a"></div>
+        <div class="a"></div>
+        <div class="a"></div>
+        <div class="a"></div>
+        <div class="a"></div>
+    </div>
+    <div class="item1">
+        <div class="a"></div>
+        <div class="a"></div>
+        <div class="a"></div>
+        <div class="a"></div>
+        <div class="a"></div>
+        <div class="a"></div>
+        <div class="a"></div>
+        <div class="a"></div>
+    </div>
+    <div class="item">
+        <div class="a"></div>
+        <div class="a"></div>
+        <div class="a"></div>
+        <div class="a"></div>
+        <div class="a"></div>
+        <div class="a"></div>
+        <div class="a"></div>
+        <div class="a"></div>
+    </div>
+    <div class="item1">
+        <div class="a"></div>
+        <div class="a"></div>
+        <div class="a"></div>
+        <div class="a"></div>
+        <div class="a"></div>
+        <div class="a"></div>
+        <div class="a">&#9817;</div>
+        <div class="a"></div>
+    </div>
+    <div class="item2">
+        <div class="a" style="rotate: 180deg;">&#9817;</div>
+        <div class="a" style="rotate: 180deg;">&#9817;</div>
+        <div class="a" style="rotate: 180deg;">&#9817;</div>
+        <div class="a" style="rotate: 180deg;">&#9817;</div>
+        <div class="a" style="rotate: 180deg;">&#9817;</div>
+        <div class="a" style="rotate: 180deg;">&#9817;</div>
+        <div class="a" style="rotate: 180deg;"></div>
+        <div class="a" style="rotate: 180deg;">&#9817;</div>
+    </div>
+    <div class="item3">
+        <div class="a"style="rotate: 180deg;">&#9814;</div>
+        <div class="a"style="rotate: 180deg;">&#9816</div>
+        <div class="a"style="rotate: 180deg;">&#9815;</div>
+        <div class="a"style="rotate: 180deg;">&#9813;</div>
+        <div class="a"style="rotate: 180deg;">&#9812;</div>
+        <div class="a"style="rotate: 180deg;">&#9813;</div>
+        <div class="a"style="rotate: 180deg;">&#9815;</div>
+        <div class="a"style="rotate: 180deg;">&#9816</div>
+    </div>
+</div><br><br>
+
+    <h1 > Transforms</h3>
+        
+        <h3 style="color: blue;">Rotate</h3>
+            <div class="k">
+<img src="../images/rose1.jpg"height="100px" width="100px">
+</div><br>
+<h2 style="color: slateblue;">scale</h2>
+<div >
+    <img src="../images/rose2.jpg" height="100px"width="100px" class="s">
+</div>
+<h1 style="color: saddlebrown;">skew</h1>
+<div class="g">
+    <img src="../images/rose3.jpg" height="300px" width="300px">
+</div>
+<h1 style="color: aqua;">Transitions</h1>
+<div>
+<img src="../images/thar.jpg" class="p" height="150px" width="150px">
+<img  align="right" src="../images/helicopter.jpg" height="150px" width="150px" class="l"></div>
+<div>
+<img src="../images/cycle.jpg" class="o" height="150px" width="150px"><br></div>
+<div>
+<img  align="right" src="../images/rocket.jpg" height="200px" width="200px" class="n">
+</div><br><br><br><br><br>
+<h1 style="color: blueviolet;">Flag</h1>
+       <div>
+        <div class="x"></div>
+        <div class="y"><center><img src="../images/ashok.jpg" height="35px" width="30px" style="margin: 6px;"></center></div>
+        <div class="z">
+            
+        
+  
+  
+</body>
+</html>
