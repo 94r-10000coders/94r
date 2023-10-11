@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        document.write("even numbers form 1 to 20 using a for loop:")
+        document.write("<br>");
+        for(i=2;i<=20;i=i+2){ 
+            document.write(i +"<br>");
+
+        }
+        document.write("<br>");
+        document.write("multipes of 5:");
+        document.write("<br>");
+        for(i=1;i<=10;i++){
+            document.write("5*"+i+ "=" +(5*i) +"<br>");
+            
+        }
+        document.write("<br>");
+        document.write("odd  numbers form 30 to 1 using a while loop:");
+        document.write("<br>");
+        var i=30;
+        while(i>0){
+            i=i-1;
+            document.write(i-- +"<br>");
+        }
+        document.write("<br>");
+        document.write("sum of the   numbers form 1 to 10 using a  do while loop:");
+        document.write("<br>");
+        
+        var n=1;
+        do{
+            s=n*(n+1)/2
+        }
+        while(n<10&&n++);
+        {
+            document.write(s);
+        }
+
+
+    </script>
+</body>
+</html>
