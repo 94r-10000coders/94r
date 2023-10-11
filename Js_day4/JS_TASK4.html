@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_TASK4</title>
+</head>
+<body>
+    <script>
+        // 1.print even and odd numbers using for loop and control statements
+        document.write("(1)ODD Numbers Using for and control statements:"+"<br>");
+        for(var i=1;i<=30;i++){
+            if(i%2==0){
+                continue;
+            }
+            document.write(i+"<br>");
+        }
+        document.write("(2)EVEN Numbers Using for and control statements:"+"<br>");
+        for(var i=1;i<=30;i++){
+            if(i%2!=0){
+                continue;
+            }
+            document.write(i+"<br>");
+        }
+
+        // 2.Print odd numbers from 30 to 1 using a functions.
+        document.write("(3)ODD Numbers from 30 to 1 using function:"+"<br>")
+        var a=30;
+        function odd(){
+            if(a%2!=0){
+                document.write(a+"<br>");
+            }
+            a--; 
+        }
+        for(b=1000;b<=1030;b++){
+            odd();
+        }
+
+        // 3. Calculate the sum of numbers from 1 to 10 using functions.
+        document.write("(4)Sum of numbers from 1 to 10 using functions:"+"<br>");
+        var i=1;
+        var sum=0;
+        function add(i){
+            sum=sum+i;
+        }
+        for(var i=1;i<=10;i++){
+            add(i);
+        }
+        document.write(sum+"<br>");
+
+        // 4.Print the multiplication table for 5 using functions.
+        document.write("(5)Multiplication table for 5 using functions:"+"<br>");
+        function mul(c){
+            document.write("5"+"*"+c+"="+(5*c)+"<br>");
+        }
+        for(var c=1;c<=10;c++){
+            mul(c);
+        }
+      
+        
+
+    </script>
+</body>
+</html>
