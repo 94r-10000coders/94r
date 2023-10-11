@@ -1,0 +1,113 @@
+.main{
+    border: 2px groove black;
+    display:flex; 
+    flex-direction:column;
+    width:342px;
+    margin-left: 30px;
+}
+[title|="lang"]{
+    border: 5px groove brown;
+    border-radius:5px;
+    margin: 2px;
+}
+
+[alt="html"]{
+    padding:10px;
+    background-color:orangered;
+}
+[alt^="css"]{
+    background-color:rgb(9, 105, 173);
+    padding:10px;
+}
+[alt="js"]{
+    background-color:rgb(204, 188, 9);
+    padding:10px;
+}
+[title="server"]{
+    background-color:rgb(1, 5, 8);
+    padding:15px;
+    margin: 2px;
+}
+[title^="Fram"]{
+    background-color:rgb(1, 5, 8);
+    padding:10px;
+    margin: 2px;
+}
+[title*="ew"]{
+    background-color:rgb(15, 199, 196);
+    padding:10px;
+    margin: 2px;
+}
+[alt$="lar"]{
+    background-color:rgb(148, 7, 7);
+    padding:10px;
+    margin: 2px;
+}
+[title$="rks"]{
+    border:4px groove rgb(200, 232, 208);
+}
+.con{
+    display:flex;
+    flex-direction:row;
+    border-radius:8px;
+}
+.con2{
+    display:flex;
+    flex-direction:row;
+}
+.con3{
+    display:flex;
+    flex-direction:row;
+}
+#B04{
+    margin-top:2px;
+    margin-left:5px;
+    border: 1px;
+    height:105px;
+    width:105px;
+    background-color: rgb(237, 235, 235);
+    border-radius:8px;
+}
+img{
+    display:flex;
+    padding: 2px;
+    border-radius:5px;
+}
+.con4,.con5,.con6{
+    display:flex;
+    flex-direction:row;
+}
+.mai2{
+    border:3px groove black;
+    padding:5px;
+    margin-left: 30px;
+    width:486px;   
+}
+
+.row1{
+    display:flex;
+    flex-direction:column;
+    border-radius:10px;
+}
+.main3{
+    display:flex;
+    flex-direction:row;
+    border:2px groove black;
+    width:460px;
+    margin-left: 30px;
+    padding: 5px;
+}
+.row2{
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    left:-155px;
+    border-radius:10px;
+}
+.row3{
+    display:flex;
+    flex-direction: column;
+    position:relative;
+    left:-155px;
+    border-radius:10px;
+}

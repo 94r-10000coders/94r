@@ -1,0 +1,853 @@
+body{
+    background-color: rgb(222, 231, 239);
+}
+.Boss{   
+    display: flex;
+    flex-direction:row;
+}
+/* NAVBAR*/
+.frame1{
+    display:flex;
+    background-color: rgb(71, 72, 74);
+    flex-direction:row;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.frame1{
+    position: sticky;
+    top: 0;
+    padding-top: 5px;
+}
+.settings{
+    margin:8px 0px 8px 1030px;
+    font-size:33px;
+    width:30px;
+    height:30px;
+    padding:20px;
+    color:white;
+    
+}
+
+.home,.globe,.plus,.user,.msg,.bell{
+    font-size:30px;
+    margin:8px 30px 8px 30px;
+    /* border: 1px groove; */
+    width:30px;
+    height:30px;
+    padding:20px;
+    color: white;
+}
+/*hover to navbar*/
+.home:hover{width:30px;
+    height:30px;
+    color: black;
+    background-color: aliceblue;
+    
+}
+.globe:hover{width:30px;
+    height:30px;
+    color: black;
+    background-color: aliceblue;}
+.plus:hover{width:30px;
+    color: black;
+    height:30px;
+    background-color: aliceblue;}
+.user:hover{width:30px;
+    color: black;
+    height:30px;
+    background-color: aliceblue;}
+.msg:hover{width:30px;
+    color: black;
+    height:30px;
+    background-color: aliceblue;}
+.bell:hover{
+    width:30px;
+    color: black;
+    height:30px;
+    background-color: aliceblue;
+}
+.settings:hover{
+    width:30px;
+    height:30px;
+    color: black;
+    background-color: aliceblue;
+
+
+
+}
+.f1{
+    position:absolute;
+    left:70px;
+    top:90px;
+    font-size:2.6ch;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border:1px groove black;
+    background-color:rgb(238, 242, 243);
+    padding:2px;
+    display:none;
+}
+.home:hover+.f1{
+    display:block;
+
+}
+
+
+.f2{
+    position:absolute;
+    left:200px;
+    top:90px;
+    font-size:2.6ch;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border:1px groove black;
+    background-color: rgb(238, 242, 243);
+    padding:2px;
+    display:none;
+}
+.globe:hover+.f2{
+    display:block;
+
+}
+
+.f3{
+    position:absolute;
+    left:330px;
+    top:90px;
+    font-size:2.6ch;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border:1px groove black;
+    background-color: rgb(238, 242, 243);
+    padding:2px;
+    display:none;
+}
+.plus:hover+.f3{
+    display:block;}
+
+
+
+.f4{
+    position:absolute;
+    left:460px;
+    top:90px;
+    font-size:2.6ch;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border:1px groove black;
+    background-color: rgb(238, 242, 243);
+    padding:2px;
+    display:none;
+}
+.user:hover+.f4{
+    display:block;
+}
+
+
+.f5{
+    position:absolute;
+    left:590px;
+    top:90px;
+    font-size:2.6ch;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border:1px groove black;
+    background-color: rgb(238, 242, 243);
+    padding:2px;
+    display:none;
+}
+.msg:hover+.f5{
+    display:block;
+}
+.f6{
+    position:absolute;
+    left:720px;
+    top:90px;
+    font-size:2.6ch;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border:1px groove black;
+    background-color: rgb(238, 242, 243);
+    padding:2px;
+    display:none;
+}
+.bell:hover + .f6{
+    display:block;
+}
+
+.f7{
+    position:absolute;
+    left:1800px;
+    top:90px;
+    font-size:2.6ch;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border:1px groove black;
+    background-color: rgb(238, 242, 243);
+    padding:2px;
+    display:none;
+}
+.settings:hover+.f7{
+    display:block;
+}
+/*------ NAVBAR close---- */
+
+
+/*------------ LEFT SIDE ELEMENTS -----------*/
+
+/* ------------------L-element-1------------- */
+.container1{
+    position:fixed;
+    top:120px;
+}
+.box1{
+    margin: 30px 0px 0px 20px;
+    width: 380px;
+    height: 330px;
+    border: 1px;
+    background-color:whitesmoke;
+    border-radius:5px;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.view{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+    
+}
+.box1view{
+    font-size: xx-large;
+    color: rgb(63, 5, 5);
+    text-shadow:2px 2px 5px rgb(215, 158, 158);
+    font-family:Arial, Helvetica, sans-serif;
+}
+.box1img{
+    width: 130px;
+    border-radius: 200px;
+    border:2px solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.view1{
+    display:flex;
+    flex-direction: column;
+    margin-top: 20px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+}
+.fa-vcard,.fa-birthday-cake{
+    color: rgb(120, 153, 50);
+    padding: 15px 30px 0px 10px;
+}
+.fa-map-marker{
+    color:rgb(120, 153, 50);
+    padding: 16px 40px 5px 10px;
+    font-size:25px;
+}
+
+.txt1,.txt2,.txt3{
+    font-size:19px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+/* -----------------------L-element-2---------------- */
+
+
+table{
+    background-color:rgb(114, 121, 171);
+    border-radius:5px;
+    width: 440px;
+    height: 160px;
+    margin: 20px 0px 0px 20px;
+    box-shadow: 0 4px 8px 0 rgba(104, 100, 231, 0.2), 0 6px 20px 0 rgba(48, 114, 245, 0.19);
+
+}
+.fa-group,.fa-photo,.fa-calendar{
+    color: rgb(159, 6, 6);
+    padding-left: 36px;
+}
+.colm1,.colm2,.colm3{
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 30px;
+    color:white;
+}
+.A:hover,.B:hover,.C:hover{
+    background-color: rgb(31, 41, 114);
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    color: white;
+}
+
+/* -------------------L-element-3---------------- */
+
+.box2{
+    width:400px;
+    height:120px;
+    border-radius:5px;
+    margin: 20px 0px 0px 20px;
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    background-color:rgb(222, 231, 239);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.but{
+    gap:2px;
+    padding: 20px 0px 0px 2px;
+}
+button{
+    background-color: rgb(57, 91, 80);
+    border-radius: 10px;
+    color: rgb(248, 243, 236);
+    padding: 8px;
+    margin: 2px;
+}
+button:hover{
+    background-color: rgb(79, 55, 7);
+    width:70px;
+}
+
+
+       /* -------------Middle-Elements----------- */
+
+       
+.container2{
+   margin:18px 0px 0px 488px;
+}  
+        /* ----------------M-E-1--------------    */
+        /* ---------------story-post------------ */
+.storybox{
+    margin:34px 0px 0px -10px;
+    color: rgb(13, 12, 12);
+    width: 1100px;
+    height: 230px;
+    background-color:whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    /* box-shadow:2px 2px rgb(205, 205, 232); */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.story{
+    border: 1.5px groove black;
+    height: 130px;
+    padding:10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+.addfiles{
+    /* position:absolute; */
+    margin:67px 0px 0px -4px;
+    background-color: rgb(250, 250, 250);
+    padding: 5px;
+    border-radius:15px;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 12px 0 rgba(0, 0, 0, 0.19);
+    width:1073px;
+    height:24px;
+}
+.fa-plus-circle{
+    padding-left: 10px;
+}
+.fa-plus-circle:hover{
+    font-size:40px;
+    width:50px;
+}
+.fa-plus-circle:hover +.files{
+    display: block;
+    font-size: 20px;
+    border:1px groove black;
+    color: rgb(8, 8, 8);
+    width:84px;
+    height:18px;
+    padding:5px;
+    background-color:rgb(238, 242, 243);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.files{
+    display:none;
+}
+.key{
+    margin:-30px 0px 0px 1030px;
+}
+.space{
+    border:1px groove rgb(252, 249, 249);
+    width:990px;
+    height: 28px;
+    margin:-27px 0px 0px 36px ;
+}
+.space:hover{
+    background-color: rgb(224, 224, 223);
+}  
+  @keyframes blink{
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity:0.9;
+    }
+    100%{
+      opacity: 0;
+    }
+}
+    .blink{
+        font-size:30px;
+        font-weight: 80;
+        color:black;
+        animation: blink 1.5s linear infinite;
+      } 
+
+.post{
+    width:90px;
+    height:30px;
+    background-color:rgb(71, 72, 74);
+    display:flex;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    color: beige;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius:10px;
+    gap:10px;
+    box-shadow: 0 4px 8px 0 rgba(1, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* -------------------M-E-2---------------- */
+.midelement{
+    margin:30px 30px 30px -10px;
+    width:1120px;
+    height:795px;
+    border:1px groove rgb(247, 246, 246);
+    border-radius:5px;
+    background-color:rgb(247, 248, 246);
+    box-shadow: 0 4px 8px 0 rgba(1, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.element1{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    padding:0px 0px 0px 30px;
+    margin-top:30px;
+    margin-bottom:25px;
+    background-color:rgb(233, 229, 229);
+
+}
+
+.pro10k{
+    border-radius:160px ;
+    width:80px;
+    box-shadow: 0 4px 8px 0 rgba(1, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.name10k{
+    font-size:20px;
+    font-weight: 790;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left:10px;
+}
+
+.time10k{
+    padding-left:778px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+}
+
+.element2{
+    padding: 20px;
+    height:585px;
+}
+
+.data10k,.data10k1,.data10k11{
+    font-family:"Open Sans", sans-serif;
+    font-weight:540;
+    font-size: 21px;
+    padding:0px 10px 10px 15px;
+    letter-spacing: 0.1px;
+    line-height:30px;
+}
+.data10k{
+    color: rgb(4, 87, 16);
+}
+.data10k1{
+    color: rgb(56, 11, 11);
+}
+.data10k11{
+    color: rgb(4, 105, 187);
+}
+
+.img10k{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    padding: 10px;
+    margin: 5px 10px 10px 15px;
+    /* box-shadow: 0 4px 8px 0 rgba(1, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+.img10k1{
+    border:1px groove rgb(179, 179, 179);
+
+}
+.lc{
+    display:flex;
+    flex-direction: row;
+    margin-top:20px;
+}
+.thumbbox{
+    border:1px groove rgb(100, 99, 99);
+    width:69px;
+    padding:10px;
+    background-color:rgb(71, 72, 74);
+    color: white;
+    /* border-radius: 10px; */
+    margin:10px 0px 0px 17px ;
+    box-shadow: 0 4px 8px 0 rgba(1, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.combox{
+    border:1px groove rgb(72, 72, 72);
+    width:120px;
+    padding:10px;
+    background-color:rgb(71, 72, 74);
+    color: white;
+    /* border-radius: 10px; */
+    margin:10px 0px 0px 4px ;
+    box-shadow: 0 4px 8px 0 rgba(1, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.like{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-left:6px;
+}
+.comment{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-left:6px;
+}
+/* ----------------M-E-3------------- */
+.mid3{
+    margin:30px 30px 30px -10px;
+    width:1120px;
+    height:480px;
+    border:1px groove rgb(247, 246, 246);
+    border-radius:5px;
+    background-color:rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(1, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.news{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    padding:0px 0px 0px 30px;
+    margin-top:25px;
+    margin-bottom: 40px;
+    background-color:whitesmoke;
+
+}
+
+.newspro{
+    border-radius:160px ;
+    width:80px;
+    box-shadow: 0 4px 8px 0 rgba(1, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.newsname{
+    font-size:20px;
+    font-weight: 790;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left:15px;
+}
+
+.newstime{
+    padding-left:800px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+}
+.line1,.line2,.hash{
+    font-family:"Open Sans", sans-serif;
+    font-weight:540;
+    font-size: 21px;
+    padding:10px 20px 0px 40px;
+    letter-spacing: 0.1px;
+    line-height:30px;
+}
+.line2,.line1{
+    color: rgb(14, 13, 13);
+}
+.hash{
+    color: rgb(7, 80, 237);
+}
+.newslc{
+    display:flex;
+    flex-direction: row;
+    margin-top:20px;
+}
+.newsthumb{
+    border:1px groove rgb(66, 66, 66);
+    width:69px;
+    padding:10px;
+    background-color:rgb(71, 72, 74);
+    color: white;
+    /* border-radius: 10px; */
+    margin:10px 0px 0px 40px ;
+    box-shadow: 0 4px 8px 0 rgba(1, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.newscom{
+    border:1px groove rgb(66, 66, 66);
+    width:120px;
+    padding:10px;
+    background-color:rgb(71, 72, 74);
+    color: white;
+    /* border-radius: 10px; */
+    margin:10px 0px 0px 4px ;
+    box-shadow: 0 4px 8px 0 rgba(1, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.likenews{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-left:6px;
+}
+.commentnews{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-left:6px;
+}
+/* --------------------wagh-nakh----------- */
+.waghnakh{
+    margin:30px 30px 30px -10px;
+    width:1120px;
+    height:860px;
+    border:1px groove rgb(247, 246, 246);
+    border-radius:5px;
+    background-color:rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(1, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.waghnews{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    padding:0px 0px 0px 30px;
+    margin-top:25px;
+    margin-bottom: 40px;
+    background-color:whitesmoke;
+
+}
+
+.tom{
+    border-radius:160px ;
+    width:80px;
+    box-shadow: 0 4px 8px 0 rgba(1, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.waghname{
+    font-size:20px;
+    font-weight: 790;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left:15px;
+}
+
+.waghtime{
+    padding-left:700px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+}
+.wagh{
+    font-family:"Open Sans", sans-serif;
+    font-weight:540;
+    font-size: 21px;
+    padding:10px 20px 0px 40px;
+    letter-spacing: 0.1px;
+    line-height:30px;
+}
+.waghimg{
+    display: flex;
+    flex-direction: row;
+    margin: 40px 10px 10px -45px;
+}
+.shivaji{
+    margin:10px 0px 0px 20px;
+}
+.waghlc{
+    display:flex;
+    flex-direction: row;
+    margin-top:15px;
+    margin-left:-30px;
+}
+.waghthumb{
+    border:1px groove rgb(66, 66, 66);
+    width:69px;
+    padding:10px;
+    background-color:rgb(71, 72, 74);
+    color: white;
+    /* border-radius: 10px; */
+    margin:10px 0px 0px 27px ;
+    box-shadow: 0 4px 8px 0 rgba(1, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.waghcom{
+    border:1px groove rgb(66, 66, 66);
+    width:120px;
+    padding:10px;
+    background-color:rgb(71, 72, 74);
+    color: white;
+    /* border-radius: 10px; */
+    margin:10px 0px 0px 4px ;
+    box-shadow: 0 4px 8px 0 rgba(1, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+.likewagh{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-left:6px;
+}
+.commentwagh{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-left:6px;
+}
+
+/* -----------------------Right-Elements---------------------- */
+.con3{
+display: flex;
+flex-direction: column;
+}
+ /* ---------------------R-element-1----------------- */
+.re1{
+    border:1px groove black;
+    width:250px;
+    height:360px;
+    margin:50px 0px 0px -10px;
+    background-color:whitesmoke;
+}
+.event{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+    padding: 20px 0px 10px 40px ;
+}
+.holiday{
+    padding:10px 0px 20px 15px;
+    
+}
+.day{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+    margin:60px 0px 0px 89px;
+}
+.eventtime{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:18px;
+    margin:20px 0px 10px 76px;
+}
+.eventinfo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:18px;
+    padding: 10px 20px 10px 89px;
+    width:100px;
+    height:20px;
+    margin:20px 0px 0px 20px;
+    background-color:rgb(212, 218, 222);
+}
+.eventinfo:hover{
+    background-color:rgb(95, 96, 98);
+    color:white;
+}
+/* ------------------R-element-2--------------- */
+.re2{
+    border:1px groove black;
+    width:250px;
+    height:365px;
+    margin:50px 0px 0px -10px;
+    background-color:whitesmoke;
+}
+.frname{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+    padding: 20px 0px 10px 57px ;
+}
+.modi{
+    border-radius:110px;
+    margin:20px 0px 20px 50px;
+    box-shadow: 0 4px 8px 0 rgba(1, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.modiname{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+    margin:-10px 0px 30px 65px;
+}
+.fa-check{
+    background-color: rgb(124, 228, 79);
+    width:60px;
+    height: 40px;
+    padding:10px 10px 0px 40px;
+    margin-left:13px;
+}
+.fa-times{
+    background-color: rgb(228, 79, 79);
+    width:60px;
+    height: 40px;
+    padding:10px 8px 0px 49px;
+}
+
+/* ------------------HOVER on bottons----------- */
+
+.post:hover,.newsthumb:hover,.newscom:hover,.thumbbox:hover,.combox:hover,.eventinfo:hover{
+    box-shadow: 0 4px 8px 0 rgba(20, 20, 242, 0.773), 0 6px 20px 0 rgba(0, 0, 0, 0.504);
+}
+.fa-times:hover{
+    color:red;
+    background-color:white;
+    box-shadow: 0 4px 8px 0 rgba(220, 58, 8, 0.773), 0 6px 20px 0 rgba(177, 3, 3, 0.679);
+
+}
+.fa-check:hover{
+    color:green;
+    background-color:white;
+    box-shadow: 0 4px 8px 0 rgba(20, 242, 24, 0.773), 0 6px 20px 0 rgba(57, 230, 9, 0.774);
+
+}
+/* @media screen and (min-width:0px) and (max-width:374px){
+.frame1{
+    display:flex;
+    flex-direction:row;
+    gap:7px;
+    background-color: rgb(134, 166, 247);
+    width: 170px;
+    
+    overflow:visible;
+    overflow:scroll ;
+
+
+}
+.settings{
+    padding:2px 0px 2px 21px;
+    font-size:10px;
+    
+}
+}
+.home,.globe,.plus,.user,.msg,.bell{
+    font-size:10px;
+    padding:2px 0px 2px 4px;
+
+} */
+/* @media screen and (min-width:375px) and (max-width:480px){
+    .frame1{
+        display:flex;
+        flex-direction:row;
+        gap:7px;
+        background-color: rgb(134, 166, 247);
+        width: 300px;
+        
+        overflow:visible;
+        overflow:scroll ;
+    
+    }
+    .settings{
+        padding:2px 0px 2px 56px;
+        font-size:10px;
+     */
+    /* }
+    }
+    .home,.globe,.plus,.user,.msg,.bell{
+        font-size:11px;
+        padding:2px 0px 2px 4px;
+} */
