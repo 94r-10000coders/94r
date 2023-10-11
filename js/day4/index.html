@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // // print even numbers using for loop and control statements
+        for(var i=1;i<=10;i++){
+            if(i%2!==0){
+               continue;
+            }
+            document.write(i + "<br> ");
+        }
+        document.write("<br><br>");
+        //  // print odd numbers using for loop and control statements
+         for(var i=20;i>=1;i--){
+            if(i%2==0){
+               continue;
+            }
+            document.write(i + "<br>");
+        }
+        document.write("<br><br>");
+         // calculate the sum of numbers from 1 to 10 usin function and for loop
+         function res(){
+            sum=0;
+            for(i=1;i<=10;i++){
+                sum +=i; 
+            }
+            document.write("sum of numbers 1 to 10 is: " + sum);
+         }
+         res();
+         document.write("<br><br>");
+          // print odd numbers from 30 to 1 using function and loops
+          function odd(i){
+            if(i%2!==0){
+                document.write(i + " <br> ");
+            }
+          }
+          for(i=30;i>=1;i--){
+            odd(i);
+          }
+          document.write("<br><br>");
+          //  Print the multiplication tables 1 to 5
+          function mul(i,j){
+            document.write(i + "*" + j + " = " + (i*j)+ " <br>");
+          }
+          for(i=1;i<=5;i++){
+            for(j=1;j<=10;j++){
+                mul(i,j);
+
+            }
+          }
+        
+
+    </script>
+</body>
+</html>
