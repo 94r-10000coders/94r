@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_Task</title>
+</head>
+<body>
+    <script>
+        // 1.Print even numbers from 1 to 20 using a for loop.
+        document.write("even numbers from 1 to 20 using a for loop:"+"<br>")
+        for(var a=1;a<=20;a++){
+            if(a%2==0){
+                document.write(a+"<br>");
+            }
+        }
+
+        // 2.Print the multiplication table for 5 using a for loop.
+        document.write("multiplication table for 5 using a for loop:"+"<br>")
+        for(var b=1;b<=10;b++){
+            
+             document.write(5+"*"+b+"="+(5*b)+"<br>"); 
+        }
+
+        // 3.Print odd numbers from 30 to 1 using a while loop.
+        document.write("odd numbers from 30 to 1 using a while loop:"+"<br>")
+        var c=30;    
+        while(c>=1){
+            if(c%2!=0){
+                document.write(c+"<br>");
+            }
+            c--;
+        }
+
+        // 4. Calculate the sum of numbers from 1 to 10 using a do-while loop.
+        document.write("sum of numbers from 1 to 10 using a do-while loop:"+"<br>")
+        var d=1;
+        var sum=0;
+        do{
+            sum=sum+d;
+            d++;
+        }
+        while(d<=10)
+        document.write("The sum of numbers from 1 to 10 is "+sum);
+
+       
+        
+    </script>
+</body>
+</html>
