@@ -3,52 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../HTML/web.css">
+    <title>SignUp</title>
     <style>
-        body{
-            align-items: center;
-            margin-left: 500px;
-            margin-top: 50px;
-            
-        }
-        form{
-            align-items: center;
-            
-            
+        .form-input{
+        border: 2px double #E6E6E6;
+        width: 300px;
+        height: 530px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 5px #E6E6E6;
+        margin-top: 30px;
         }
     </style>
+    
 </head>
 <body>
     <img src="../images/amazon.PNG" alt="">
-        <form>
-            <h1>Create Account</h1>
-            <label for="name" name="name"><b>Your Name</b></label>
-            <br>
-            <br>
-            <input type="text" id="name" placeholder="Enter your name">
-            <br>
-            <br>
-            <label for="email" name="email"><b>E-mail</b></label>
-            <br>
-            <br>
-            <input type="text" id="email" placeholder="Enter mail">
-            <br>
-            <br>
-            <label for="number" name="number"><b>Mobile Number</b></label>
-            <br>
-            <br>
-            <input type="text" id="number" placeholder="Enter Phone Number">
-            <br>
-            <br>
-            <label for="password"><b>Password</b></label>
-            <br>
-            <br>
-            <input type="password" id="password" name="password" placeholder="Enter Password">
-            <br>
-            <br>
-            <input type="submit" value="Sign Up" formaction="../HTML/login.html">
-            <a href="../HTML/login.html">Already have an account?</a>
-        </form>
+        <div class="form-input">
+            <form>
+                <h1>Create Account</h1>
+                <label for="name" name="name" required><b>Your Name</b></label>
+                <br>
+                <br>
+                <input type="text" id="name" placeholder="Enter your name">
+                <br>
+                <br>
+                <label for="email" name="email"><b>E-mail</b></label>
+                <br>
+                <br>
+                <input type="text" id="email" placeholder="Enter mail" required>
+                <br>
+                <br>
+                <label for="number" name="number"><b>Mobile Number</b></label>
+                <br>
+                <br>
+                <input type="text" id="number" placeholder="Enter Phone Number" required>
+                <br>
+                <br>
+                <label for="password"><b>Password</b></label>
+                <br>
+                <br>
+                <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                <br>
+                <br>
+                <input type="submit" value="Sign Up" formaction="../HTML/login.html">
+                <br>
+                <br>
+                <a href="../HTML/login.html">Already have an account?</a>
+            </form>
+        </div>
 
     
 </body>

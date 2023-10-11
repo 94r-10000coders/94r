@@ -3,42 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            align-items: center;
-            margin-left: 500px;
-            margin-top: 50px;
-        }
-        form{
-            align-items: center;
-        }
-    </style>
+    <link rel="stylesheet" href="../HTML/web.css">
+    <title>forgot</title>
 </head>
 <body>
     <img src="../images/amazon.PNG">
-    <form>
-        <h1>Forgot Password</h1>
-        <label for="email" name="email"><b>E-mail</b></label>
-        <br>
-        <br>
-        <input type="text" id="email" placeholder="Enter mail">
-        <br>
-        <br>
-        <label for="password"><b>New Password</b></label>
-        <br>
-        <br>
-        <input type="password" id="password" name="password" placeholder="Enter Password">
-        <br>
-        <br>
-        <label for="cnpassword"><b>Confirm Password</b></label>
-        <br>
-        <br>
-        <input type="password" id="cnpassword" name="password" placeholder="Re-enter Password">
-        <br>
-        <br>
-        <input type="submit" value="Update Password" formaction="../HTML/home.html">
-    </form>
+    <div class="form-input">
+        <form>
+            <h1>Forgot Password</h1>
+            <label for="email" name="email"><b>E-mail</b></label>
+            <br>
+            <br>
+            <input type="text" id="email" placeholder="Enter mail" required>
+            <br>
+            <br>
+            <label for="password"><b>New Password</b></label>
+            <br>
+            <br>
+            <input type="password" id="password" name="password" placeholder="Enter Password" required>
+            <br>
+            <br>
+            <label for="cnpassword"><b>Confirm Password</b></label>
+            <br>
+            <br>
+            <input type="password" id="cnpassword" name="password" placeholder="Re-enter Password" required>
+            <br>
+            <br>
+            <input type="submit" value="Update Password" formaction="../HTML/home.html">
+        </form>
+    </div>
 
 </body>
 </html>

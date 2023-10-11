@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .absolute{
+            border: 5px solid orange;
+            height: 500px;
+            width: 600px;
+        }
+        .relative{
+            border: 5px solid orange;
+            height: 500px;
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Absolute path</h1>
+    <div class="absolute">
+        <div>
+            <img src="../images/Flag_of_India.svg.webp" alt="" height="100px" weight="100px">
+        </div>
+        <div style="position: absolute; top: 85px; left: 463px;">
+            <img src="../images/Flag_of_India.svg.webp" alt="" height="100px" weight="100px">
+        </div>
+        <div style="position: absolute; top: 250px; left: 250px;">
+            <img src="../images/Flag_of_India.svg.webp" alt="" height="100px" weight="100px">
+        </div>
+        <div style="position: absolute; top: 485px; bottom: 480px;">
+            <img src="../images/Flag_of_India.svg.webp" alt="" height="100px" weight="100px">
+        </div>
+        <div style="position: absolute; top: 485px; bottom: 450px; left: 463px;">
+            <img src="../images/Flag_of_India.svg.webp" alt="" height="100px" weight="100px">
+        </div>
+    </div>
+    <h1>Relative path</h1>
+    <div class="relative">
+        <div>
+            <img src="../images/Flag_of_India.svg.webp" alt="" height="100px" weight="100px">
+        </div>
+        <div style="position: relative; top: -105px; right: -450px;">
+            <img src="../images/Flag_of_India.svg.webp" alt="" height="100px" weight="100px">
+        </div>
+        <div style="position: relative; top: 30px; left: 200px;">
+            <img src="../images/Flag_of_India.svg.webp" alt="" height="100px" weight="100px">
+        </div>
+        <div style="position: relative; top: 87px; bottom: -100px;">
+            <img src="../images/Flag_of_India.svg.webp" alt="" height="100px" weight="100px">
+        </div>
+        <div style="position: relative; top: -18px; bottom: -90px; right: -450px;">
+            <img src="../images/Flag_of_India.svg.webp" alt="" height="100px" weight="100px">
+        </div>
+    </div>
+
+    <h1>sticky</h1>
+    <div> 
+        <img src="../images/Flag_of_India.svg.webp" alt=""  height="100px" width="100px" style="position: sticky;">
+    </div>
+
+    <div style="border: 2px solid rgb(30, 255, 0); height: 430px; width: 470px; display: flex;">
+        <div style="border: 2px solid orange; height: 400px; width: 100px; margin-top: 10px; margin-left: 10px;"></div>
+        <div style="border: 2px solid orange; height: 400px; width: 100px; margin-top: 10px; margin-left: 10px;"></div>
+        <div style="border: 2px solid orange; height: 400px; width: 100px; margin-top: 10px; margin-left: 10px;"></div>
+        <div style="border: 2px solid orange; height: 400px; width: 100px; margin-top: 10px; margin-left: 10px;"></div>
+    </div>
+    <div style="border: 2px solid rgb(166, 255, 0); height: 430px; width: 600px; display: flex; margin-top: 10px;">
+        <div style="border: 2px solid rgb(0, 225, 255); height: 400px; width: 100px; margin-top: 10px; margin-left: 10px;"></div>
+        <div style="border: 2px solid rgb(0, 225, 255); height: 400px; width: 100px; margin-top: 10px; margin-left: 10px;"></div>
+        <div style="border: 2px solid rgb(0, 225, 255); height: 400px; width: 100px; margin-top: 10px; margin-left: 10px;"></div>
+        <div style="border: 2px solid rgb(0, 225, 255); height: 400px; width: 100px; margin-top: 10px; margin-left: 10px;"></div>
+        <div style="border: 2px solid rgb(0, 225, 255); height: 400px; width: 100px; margin-top: 10px; margin-left: 10px;"></div>
+    </div>
+    <div style="border: 2px solid rgb(174, 0, 255); height: 430px; width: 700px; display: flex; margin-top: 10px;">
+        <div style="border: 2px solid rgb(255, 0, 0); height: 400px; width: 100px; margin-top: 10px; margin-left: 10px;"></div>
+        <div style="border: 2px solid rgb(255, 0, 0); height: 400px; width: 100px; margin-top: 10px; margin-left: 10px;"></div>
+        <div style="border: 2px solid rgb(255, 0, 0); height: 400px; width: 100px; margin-top: 10px; margin-left: 10px;"></div>
+        <div style="border: 2px solid rgb(255, 0, 0); height: 400px; width: 100px; margin-top: 10px; margin-left: 10px;"></div>
+        <div style="border: 2px solid rgb(255, 0, 0); height: 400px; width: 100px; margin-top: 10px; margin-left: 10px;"></div>
+        <div style="border: 2px solid rgb(255, 0, 0); height: 400px; width: 100px; margin-top: 10px; margin-left: 10px;"></div>
+    </div>
+    
+
+    </body>
+</html>

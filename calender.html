@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        .month{
+            width: 150px;
+            height: 100px;
+            font-size: 20px;
+        }
+        .calender{
+            display: flex;
+            justify-content: left;
+    
+        }
+        .months{
+            
+            border: 2px solid orange;
+            margin-top: 20px;
+            margin-right: 5px;
+            
+        }
+        
+        .days{
+            display: flex;
+            justify-content: left;
+            gap: 20px;   
+        }
+        .date{
+            display: flex;
+            justify-content: left;
+            gap: 20px;
+            flex-wrap: wrap;
+            
+        }
+        .dates{
+
+            border: 2px solid orange;
+            margin-top: 20px;
+            width: 700px;
+            height: 450px;
+        }
+        li{
+            background-color: orange;
+            width: 70px;
+            text-align: center;
+            height: 50px;
+        }
+        span{
+            display: block;
+            justify-content: left;
+
+        }
+        .adv{
+            width: 300px;
+            border: 2px solid orange;
+            margin-top: 20px;
+            margin-left: 5px;
+        }
+        h1{
+            text-align: center;
+        }
+        .adv{
+            background-color: orange;
+            background-image: linear-gradient(white,orange,lightblue);
+            font-size: 20px;
+
+        }
+        
+    </style>
+
+</head>
+<body>
+    <h1>Calender - 2023</h1>
+    <div class="calender">
+        <div class="months">
+            <dl type="none" class="month">
+                <dd>January</dd>
+                <dd>February</dd>
+                <dd>March</dd>
+                <dd>April</dd>
+                <dd>May</dd>
+                <dd>June</dd>
+                <dd>July</dd>
+                <dd>August</dd>
+                <dd>September</dd>
+                <dd>October</dd>
+                <dd>November</dd>
+                <dd>December</dd>
+            </ul>
+        </div>
+        <div class="dates">
+            <ul class="days" type="none">
+                
+                <li>MON</li>
+                <li>TUE</li>
+                <li>WED</li>
+                <li>THUR</li>
+                <li>FRI</li>
+                <li>SAT</li>
+                <li>SUN</li>
+            </ul>
+            <ul type="none" class="date">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+                <li>20</li>
+                <li>21</li>
+                <li>22</li>
+                <li>23</li>
+                <li>24</li>
+                <li>25</li>
+                <li>26</li>
+                <li>27</li>
+                <li>28</li>
+                <li>29</li>
+                <li>30</li>
+                <li>31</li>
+            </ul>
+        </div>
+        <div class="adv">
+            <h1>Holidays</h1>
+            <dl type="none">
+                <dd>01-jan - New Year</dd>
+                <dd>13-jan - Bhogi</dd>
+                <dd>14-jan - makara sankranthi</dd>
+                <dd>15-jan - Kanuma sankranthi</dd>
+                <dd>26-jan - Republic Day</dd>
+                <dd>14-Feb - Lovers day</dd>
+                <dd>22-Mar - Ugadi</dd>
+                <dd>07-Apr - good Friday</dd>
+                <dd>29-June -Bakrid</dd>
+                <dd>15-Aug - Independence day</dd>
+                <dd>30-Aug - Rakshabandhan</dd>
+                <dd>25-Dec - Christamas</dd>
+            </dl>
+
+        </div>
+    </div>
+</body>
+</html>

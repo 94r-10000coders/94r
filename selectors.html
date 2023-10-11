@@ -3,19 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet">
     <title>Document</title>
     <style>
-        h1{
+        /* h1{
             color: red;
             background-color: green;
+        }
+        .demo{
+            color: white;
+        }
+        #task{
+            color: yellow;
+        } */
+        /* *{
+            color:rgb(89, 0, 255);
+        } */
+        /* [title]{
+            background-color: red;
+        } */
+        [title="head1"]{
+            color:green;
+        }
+        [title|="head"]{
+            background-color: yellow;
+        }
+        [title~="flower"]{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        [title^="hea"]
+        {
+            text-align: center;
+        }
+        [title$="ad"]{
+            font-size: 100px;
+        }
+        [title*="hea"]{
+            border: 2px solid green;
+            padding:10px;
         }
     </style>
 </head>
 <body>
-    <h1>Heading</h1>
-    <h1>Heading</h1>
-    <h1>Heading</h1>
-    <h1>Heading</h1>
-    <h1>Heading</h1>
+    <h1 title="head">Heading</h1>
+    <h1 title="head-1">Heading</h1>
+    <h1 title="head-2 flower">Heading</h1>
+    <h1 title="head3">Heading</h1>
+    <h1 title="head4">Heading</h1>
 </body>
 </html>

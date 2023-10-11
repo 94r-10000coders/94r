@@ -1,0 +1,104 @@
+
+header{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+body{
+    position: relative;
+}
+a:hover{
+    text-decoration: underline;
+}
+.nav{
+    background-color: rgb(90, 88, 88);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    font-size: 20px;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    background-color: navajowhite;
+}
+
+.f1,.f2,.f3,.f4{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+
+}
+span{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.amazon-card{
+    margin-top: 5px;
+    margin-left: 3px;
+    box-shadow: 0px 0px 3px 5px rgb(218, 215, 215);
+    border:2px solid white;
+    padding: 20px;
+    background-color: white;
+    height: 48  0px;
+    width: 280px;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    margin-bottom: 20px;
+}
+
+.card-body{
+    display: grid;
+    grid-template-columns: 8fr 8fr;
+}
+.card{
+    margin-bottom: 10px;
+    margin-right: 40px;
+    margin: 10px 10px 10px 10px;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+}
+
+.cards{
+    background-color: white;
+    border: 2px solid white;
+    box-shadow: 0px 0px 3px 5px rgb(218, 215, 215);
+    margin-bottom: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.card-box{
+    display: flex;
+}
+.card-img{
+    margin-right: 40px;
+}
+.offers{
+    background-color: rgb(224, 13, 13);
+}
+.top-footer{
+    background-color:mediumslateblue;
+    height: 50px;
+    color: white;
+}
+h3{
+
+    text-align: center;
+
+}
+section{
+    margin-top: 40px;
+}
+marquee{
+    /* margin-top: 40px; */
+}
