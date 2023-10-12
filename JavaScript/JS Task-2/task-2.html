@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09-10-2023 JS Task</title>
+</head>
+<body>
+    <script>
+      alert("Even or odd");
+      var num =+prompt("Enter a number :");
+      if(num%2==0){
+        alert("Even");
+      }
+      else{
+        alert("Odd");
+      }
+
+      
+
+
+
+    alert("Find Leap Year");
+    var year =+prompt("Enter Year :");
+    if((year%4==0 && year%100 !=0) || year%400==0){
+        alert(year+" is a leap year");
+    }
+    else{
+        alert(year+"is not a leap year");
+    }
+
+
+
+    alert("Find Largest Number");
+    var a =+prompt("Enter a =");
+    var b =+prompt("Enter b =");
+    var c =+prompt("Enter c =");
+    if(a>=0 && b>=0 &&c>=0){
+
+    if (a>b && a>c){
+        alert("a is largest num");
+    }
+    else if (b>a && b>c){
+        alert("b is largest num");
+    }
+    else if (c>a && c>b){
+        alert("c is largest num");
+    }
+    else{
+        alert("both are equal");
+    }
+   }
+    else{
+    alert("input is negative");
+   }
+
+
+
+
+alert("Time of the Day");
+
+var time =+prompt("Enter Time :")
+if(time>=6 && time<=11){
+    alert("Good Morning")
+}
+else if(time>=12 && time<=17){
+    alert("Good Afternoon")
+}
+else if(time>=18 && time<=23){
+    alert("Good Evening");
+}
+else{
+    alert("Good Night");
+}
+
+
+
+
+alert("currency Converter");
+var usd =+prompt("Enter the amount :")
+var euro =  usd/0.92
+alert(usd + "USD ="+ euro + "EUR");
+
+
+
+alert("Traffic Light");
+var rules=prompt("Enter signal Color :");
+switch(rules){
+    case "green":
+        alert("GO");
+        break;
+    case "yellow":
+        alert("Slow down");
+        break;
+    case "red":
+        alert("Stop");
+    default:
+        alert("Invalid Input");
+}
+
+
+
+alert("seasons");
+var month = prompt("Enter Month Name :");
+switch(month){
+    case "december":
+        alert("Winter");
+        break;
+    case "january":
+        alert("Winter");
+        break;
+    case "february":
+        alert("Winter");
+        break;
+    case "march":
+        alert("summer");
+        break;
+    case "april":
+        alert("summer");
+        break;
+    case "may":
+        alert("summer");
+        break;
+    case "june":
+        alert("Rainy");
+        break;
+    case"july":
+        alert("Rainy");
+        break;
+    case "august":
+        alert("Rainy");
+        break;
+    case "september":
+        alert("Rainy");
+        break;
+    case "october":
+        alert("Autumn");
+        break;
+    case "november":
+        alert("Autumn");
+        break;
+    default:
+        alert("Invalid Input")
+}
+
+
+
+alert("Menu Selection");
+var opt=prompt("Select Option(1,2,3,4)=");
+switch(opt){
+    case "1":
+        alert("  option '1' Selected ");
+        break;
+    case "2":
+        alert("  option '2' Selected ");
+        break;
+    case "3":
+        alert("  option '3' Selected ");
+        break;
+    case "4":
+        alert("  option '4' Selected ");
+    default:
+        alert("Invalid Input");
+}
+
+
+
+    </script>
+</body>
+</html>

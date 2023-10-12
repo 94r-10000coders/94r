@@ -1,0 +1,73 @@
+
+
+.bord{
+ display: flex;
+ margin: 60px;
+}
+.box1,.box2{
+    border:1px groove black;
+    padding: 40px;
+}
+.box1:nth-child(2n+1){
+    background-color: black;
+}
+.box2:nth-child(2n){
+    background-color: black;
+}
+
+@keyframes rotation{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+.code{
+    animation-name:rotation;
+    animation-duration:.1s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+    position: relative;
+}
+.code:hover{
+    animation-name:rotation;
+    animation-duration:.0s;
+}
+
+.carb:hover{
+    margin-left:590px;
+    transition: margin-right 1s;
+}
+.carr:hover{
+    margin-left:520px;
+    transition: margin-left 4s;
+}
+@keyframes take{
+    0%{transform:translate(0px,190px);}
+    100%{
+        transform:translate(1900px,-290px);
+    }
+}
+.flight{
+    animation-name:take;
+    animation-duration:10s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+    position: relative;
+    margin-bottom: 200px;
+}
+@keyframes car{
+    from{
+        transform:rotateY(0deg);
+    }
+    to{
+        transform:rotateY(360deg);
+    }
+}
+.road{
+    animation-name:car;
+    animation-duration:2s;
+    animation-iteration-count:infinite;
+animation-delay:0s;}
+
