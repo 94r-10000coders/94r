@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//----------------------------------------
+document.write("<br><br>")
+
+document.write("Pattern 1<br>")
+function pattern(a){
+    for(i=1;i<=a;i++){
+        for(j=0;j<i;j++){
+            document.write("*")
+        }
+        document.write("<br>")
+    }
+}
+pattern(7)
+//---------------------------------------
+document.write("<br><br>")
+
+document.write("Pattern 2<br>")
+function patt2(b){
+    for(i=b;i>=1;i--){
+        for(j=0;j<i;j++){
+            document.write("*")
+        }
+        document.write("<br>")
+    }
+}
+patt2(7)
+//---------------------------------------
+document.write("<br><br>")
+
+document.write("Pattern 3<br>")
+function patt3(a){
+    for(i=1;i<=a;i++){
+        for(j=1;j<=i;j++){
+            document.writeln(j)
+        }
+        document.write("<br>")
+    }
+}
+patt3(7)
+//--------------------------------------
+document.write("<br><br>")
+
+document.write("Pattern 4<br>")
+function patt4(b){
+    for(i=b;i>=1;i--){
+        for(j=1;j<=i;j++){
+            document.writeln(j)
+        }
+        document.write("<br>")
+    }
+}
+patt4(7)
+//-------------------------------------
+document.write("<br><br>")
+
+document.write("Pattern 5<br>")
+function patt5(a){
+    for(i=1;i<=a;i++){
+        for(j=0;j<(a-i);j++){
+            document.write("&nbsp")
+        }
+        for(k=0;k<i;k++){
+            document.write("*")
+        }
+        document.write("<br>")
+    }
+}
+patt5(7)
+//------------------------------------
+document.write("<br><br>")
+
+document.write("Pattern 6<br>")
+function patt6(a){
+    for(i=1;i<=a;i++){
+        for(k=1;k<i;k++){
+            document.write("&nbsp")
+        }
+        for(j=0;j<(a-i);j++){
+            document.write("*")
+        }
+        document.write("<br>")
+    }
+}
+patt6(8)
+//--------------------------------------
+//checking string length without using .length
+document.write("<br><br>")
+
+document.write("<b>checking string length without using .length</b><br>")
+function len(a){
+    var c=0;
+    for(i=0;a[i];i++){
+        c++;
+    }
+    return a+" "+c;
+}
+document.write(len("susmitha avula"),"<br>")
+//---------------------------------------
+document.write("<br><br>")
+document.write("<b>Reverse a string</b><br>")
+function rev(a){
+    var b="";
+    for(i=0;a[i];i++){
+        b=a[i]+b;
+    }
+    return b
+}
+document.write(rev("susmitha"),"<br>")
+document.write(rev("madam"),"<br>")
+//--------------------------------------
+document.write("<br><br>")
+document.write("<b>Palindrome or not</b><br>")
+function rev1(a){
+    var b="";
+    for(i=0;a[i];i++){
+        b=a[i]+b;
+    }
+    if(a===b){
+        return a+"  True"
+    }
+    else{
+        return a+"  False"
+    }
+}
+document.write(rev1("susmitha"),"<br>")
+document.write(rev1("madam"),"<br>")
+document.write(rev1("121"),"<br>")
+document.write(rev1("javascript"),"<br>")
+
+    </script>
+</body>
+</html>
