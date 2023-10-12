@@ -1,0 +1,74 @@
+body{
+    border:solid 5px; 
+    border-color: brown;
+    width:900px;
+
+  }
+  .A01{
+    border:groove 4px;
+    border-radius: 2%;
+    border-color: blue;
+    background-color:lightcyan;
+    width:30%;
+    height:15%;
+    padding: 20px;
+    margin: 20px;
+  }
+  .A02{
+    color:red;
+  }
+  .A03{
+    color:green;
+  }
+  
+  #B02,#B01{
+    font-family:Calibri;
+    color:red
+  }
+  
+  .A04{
+    border:dashed 3px;
+    border-color:black;
+    background-color:lightgray;
+    border-radius: 2%;
+    padding: 20px;
+    width:30%;
+    height:15%;
+    margin: 20px;
+  }
+  .A05{
+    color:brown;
+  }
+  .A06{
+    color:blue;
+  }
+  
+  .A07{
+    border: dotted 4px;
+    border-color:deepskyblue;
+    border-radius: 3%;
+    width:15%;
+    height:35%;
+    color:yellowgreen;
+    padding:20px;
+    margin: 40px;
+    position: absolute;
+    top: 40px;
+    left:400px;
+    overflow: scroll;
+    background-image: url(https://img.freepik.com/free-vector/dark-hexagonal-background-with-gradient-color_79603-1409.jpg)
+  }
+  
+  #B03{
+    text-transform: capitalize;  
+  }
+  .name{
+    text-shadow: 2.5px 2px silver;
+    color:goldenrod;
+    display: inline;
+    border: double red 3px;
+    margin-left: 390px;
+    margin-bottom:50px;
+    
+  }
+  
