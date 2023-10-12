@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+            table,
+        th,
+        tr,
+        td    {
+        border: 1px solid black;
+        border-collapse: collapse;
+        }
+    </style>
+</head>
+<link rel="stylesheet" href="./style.css">
+<h1 style="color: chartreuse;text-align: left;">Form using CSS:</h1>
+<body>
+    <form action="/day 5/login .html">
+        <fieldset style="background-color: black;">
+        <legend><h1>Sign Up</h1></legend>
+                <label for="fname" class="hello">First Name</label>
+                <br><input type="text" id="fname" name="First Name">
+                <br><label for="mname" id="hi">Middle Name</label>
+                <br><input type="text" id="mname" name="Middle Name">
+                <br><label class="hello" style="color: chocolate;">Last Name</label>
+                <br><input type="Text" id="lname" name="Last Name">
+                <br>
+                <label style="color: deeppink;">Mobile Number</label>
+                <br>
+                <input type="tel" pattern="[0-9]{10}">
+                <br>
+                <br>
+                <label for="gender" style="color: yellow;">Gender</label>
+                <br><input type="radio" id="male" name="gender">male</input>
+                <br><input type="radio" id="female" name="gender">female</input>
+                <br>
+                <br>
+                <label>Email Id:</label>
+                <br><input type="mail">
+                <br><br>
+                <label style="color: blueviolet;">D.O.B</label>
+                <br><input type="date">
+                <br><br>
+                <label>Password</label>
+                <input type="password" placeholder="enter password">
+                <br><br>
+                <label style="color: crimson;">Reenter Password</label>
+                <input type="password" placeholder="Reenter password">
+                <br><br>
+                <input type="submit" value="Sign In">
+                <br><br>
+                <a href="/day 5/login .html">Already have an account</a>
+
+</fieldset>
+ </form>
+<br><br>
+<h1 style="color: crimson;text-align: left;" >Table using CSS:</h1>
+<br>          
+<table style="width: 600px;height: 500px;">
+ <tr>
+    <th class="hello">head1</th>
+    <th id="hi">head2</th>
+    <th style="color: blueviolet;background-color: blanchedalmond;">head3</th>
+    <th style="color:darkblue;background-color: chartreuse;">head4</th>
+    <th style="color:brown">head5</th>
+ </tr>
+ <tr>
+   <style>
+      *{
+         text-align: center;
+      }
+   </style>
+    <td class="hello" rowspan="4">cell1</td>
+    <td id="hi">cell2</td>
+    <td style="color: yellow;background-color: cornflowerblue;" colspan="3">cell3</td>
+    <!-- <td style="color: darkgreen;background-color: crimson;">cell4</td> -->
+    <!-- <td style="color: darkmagenta;background-color: darkgreen;">cell5</td> -->
+ </tr>
+ <tr>
+    <!-- <td style="color: chocolate;background-color: darkgoldenrod;">cell6</td> -->
+    <td style="color: darkcyan;background-color: chartreuse;">cell7</td>
+    <td style="color: deeppink;background-color: brown;">cell8</td>
+    <td style="color: limegreen;background-color: darkorange;">cell9</td>
+    <td style="color:blueviolet;background-color: cyan;">cell10</td>
+ </tr>
+ <tr>
+    <!-- <td style="color: indigo;background-color: brown;">cell11</td> -->
+    <td style="color:darkred;background-color: cornflowerblue;">cell12</td>
+    <td style="color: gold;background-color: cadetblue;"colspan="2" rowspan="2">cell13</td>
+    <!-- <td style="color: hotpink;background-color: greenyellow;">cell14</td> -->
+    <td style="color: tomato;background-color: violet;">cell15</td>
+ </tr>
+ <tr>
+   <!-- <td style="color: blue;background-color: darkviolet;">cell16</td> -->
+    <td style="color: black;background-color: aliceblue;">cell17</td>
+    <!-- <td style="color: chartreuse;background-color: blanchedalmond ;" colspan="2">cell18</td> -->
+    <!-- <td style="color: darkgreen;background-color: beige;">cell19</td> -->
+    <td style="color: darkmagenta;background-color: burlywood;">cell20</td>
+ </tr>
+ <tr>
+    <td style="color: cyan;background-color: brown;">cell21</td>
+    <td style="color: deeppink;background-color: darkblue;">cell22</td>
+    <td style="color: blue;background-color: crimson;">cell23</td>
+    <td style="color: deeppink;background-color: darkgrey;">cell24</td>
+    <td style="color: firebrick;background-color: blueviolet;">cell25</td>
+ </tr>
+</table>
+    
+</body>
+</html>

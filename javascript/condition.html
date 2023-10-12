@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //problem1
+        var x=+prompt("Enter an integer");
+        if(x%2==0){
+           alert("Even")
+        }
+        else{
+            alert("Odd")
+        }
+
+        // problem2
+        var x=+prompt("Enter a Year");
+        if(x%4==0&&x%400==0){
+            alert("Leap Year")
+        }
+        else{
+            alert("Not a Leap Year")
+        }
+
+
+        //problem3
+        var a=+prompt("Enter first number");
+        var b=+prompt("Enter second number");
+        var c=+prompt("Enter third number");
+        if(a>b&&a>c){
+            alert("Largest number is "+a+"")
+        }
+        else if(b>c&&b>a){
+            alert("Largest number is "+b+"")
+        }
+        else if(c>b&&c>a){
+            alert("Largest number is "+c+"")
+        }
+        else if(a=b=c){
+            alert("Equal")
+        }
+        else{
+            alert("Negative input")
+        }
+
+        //problem4
+        var x=+prompt("Enter Time in 24hr Format");
+        if(x>=6&&x<=11){
+            alert("Good Morning")
+        }
+        else if(x>=12&&x<=17){
+            alert("Good Afternnon")
+        }
+        else if(x>=18&&x<=23){
+            alert("Good Night")
+        }
+
+        //problem5
+        var x=+prompt("Enter amount in dollars")
+        var y;
+        if(y=x*83.32){
+            alert("Amount in Rupees "+y+"")
+        }
+
+        //problem6
+        var x=prompt("Enter traffic light color")
+        switch(x){
+            case "red": alert("Stop");
+            break;
+            case "yellow": alert("Slow down");
+            break;
+            case "green": alert("Go");
+        }
+        
+        //problem7
+        var x=prompt("Enter Month")
+        switch(x){
+            case "January": alert("Winter");
+            break;
+            case "Febrauary": alert("Winter");
+            break;
+            case "March": alert("Spring");
+            break;
+            case "April": alert("Spring");
+            break;
+            case "May": alert("Summer");
+            break;
+            case "June": alert("Summer");
+            break;
+            case "July": alert("Monsoon");
+            break;
+            case "August": alert("Monsoon");
+            break;
+            case "September": alert("Autumn");
+            break;
+            case "October": alert("Autumn");
+            break;
+            case "November": alert("Pre-Winter");
+            break;
+            case "December": alert("Pre-Winter");
+        }
+
+       //problem8
+        var x=+prompt("Enter Menu options 1-4")
+        switch(x){
+            case 1: alert("option 1 is selected");
+            break;
+            case 2: alert("option 2 is selected");
+            break;
+            case 3: alert("option 3 is selected");
+            break;
+            case 4: alert("option 4 is selected");
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+     .item1,.item2{
+        border: 1px solid black;
+        padding: 20px;
+        float: left;
+    width: 20px;
+    height: 20px;
+      font-size:30px;
+    text-align:center;
+    display: table-cell;
+    vertical-align:middle;
+     }
+     .box1{
+        display:flex;
+
+     }
+     .item1:nth-child(2n){
+        background-color: grey;
+     }
+     .item2:nth-child(2n+1){
+        background-color: #999;;
+     }
+     .img1:hover{
+        margin-left: 240px;
+        transition: margin-left 2s;
+        transition-timing-function: ease-in;
+     }
+     .img2:hover{
+        margin-left: 140px;
+        transition: margin-left 4s;
+        transition-timing-function: ease-in;
+     }
+     .img:hover{
+        margin-right: 140px;
+        transition: margin-right 4s;
+        transition-timing-function: ease-out;
+
+     }
+     .transform1,.transform2,.transform3{
+        border: solid black;
+        padding:20px;
+        width:400px;
+        height:50px
+     }
+     .transform1:nth-child(2n+1){
+        background-color: #ff9933 ;
+     }
+     .transform2:nth-child(2n){
+        background-color: white;
+     }
+     .transform3:nth-last-child(2n+1){
+        background-color: darkgreen;
+     }
+     .transform2{
+        text-align: center;
+        padding-bottom: 40px;
+     }
+     .img3:hover{
+        transform:rotate(360deg);
+        transition: 5s;
+     }
+     .img4:hover{
+        transform:skew(90deg);
+        transition: 3s;
+     }
+     .img5:hover{
+        transform:scaleY(2);
+        transition: 2s;
+     }
+     .img6:hover{
+        transform: matrix(0.586,0.8,-0.8,0.586,0,0);
+        transition:2s;
+     }
+     
+    </style>
+</head>
+<body class="main">
+    <h1><u>CHESS:</u></h1>
+    <div class="container">
+        <div class="box1">
+            <div class="item1">&#9820;</div>
+            <div class="item1">&#9822;</div>
+            <div class="item1">&#9821;</div>
+            <div class="item1">&#9819;</div>
+            <div class="item1">&#9818;</div>
+            <div class="item1">&#9821;</div>
+            <div class="item1">&#9822;</div>
+            <div class="item1">&#9820;</div>
+            
+        </div>
+        <div class="box1">
+            <div class="item2">&#9823;</div>
+            <div class="item2">&#9823;</div>
+            <div class="item2">&#9823;</div>
+            <div class="item2">&#9823;</div>
+            <div class="item2">&#9823;</div>
+            <div class="item2">&#9823;</div>
+            <div class="item2">&#9823;</div>
+            <div class="item2">&#9823;</div>
+            
+            
+        </div>
+        <div class="box1">
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            <div class="item1"></div>
+            
+        </div>
+        <div>
+            <div class="box1">
+                <div class="item2"></div>
+                <div class="item2"></div>
+                <div class="item2"></div>
+                <div class="item2"></div>
+                <div class="item2"></div>
+                <div class="item2"></div>
+                <div class="item2"></div>
+                <div class="item2"></div>
+            </div>
+            <div class="box1">
+                <div class="item1"></div>
+                <div class="item1"></div>
+                <div class="item1"></div>
+                <div class="item1"></div>
+                <div class="item1"></div>
+                <div class="item1"></div>
+                <div class="item1"></div>
+                <div class="item1"></div>
+            </div>
+            <div class="box1">
+                <div class="item2"></div>
+                <div class="item2"></div>
+                <div class="item2"></div>
+                <div class="item2"></div>
+                <div class="item2"></div>
+                <div class="item2"></div>
+                <div class="item2"></div>
+                <div class="item2"></div>
+            </div>
+            <div class="box1">
+                <div class="item1">&#9823;</div>
+                <div class="item1">&#9823;</div>
+                <div class="item1">&#9823;</div>
+                <div class="item1">&#9823;</div>
+                <div class="item1">&#9823;</div>
+                <div class="item1">&#9823;</div>
+                <div class="item1">&#9823;</div>
+                <div class="item1">&#9823;</div>
+            </div>
+            <div class="box1"> 
+                <div class="item2">&#9820;</div>
+                <div class="item2">&#9822;</div>
+                <div class="item2">&#9821;</div>
+                <div class="item2">&#9819;</div>
+                <div class="item2">&#9818;</div>
+                <div class="item2">&#9821;</div>
+                <div class="item2">&#9822;</div>
+                <div class="item2">&#9820;</div>
+            </div>
+        </div>
+    </div>
+    <h1><u>TRANSISTION:</u></h1>
+    <div class="img1">
+    <img src="https://media.istockphoto.com/id/1157655660/photo/generic-red-suv-on-a-white-background-side-view.jpg?s=612x612&w=0&k=20&c=ecrvXZhimUHnYES-kx7L5b-TDtRU5kAFPpNm0ZtAp1Y="width="200px" height="200px">
+    </div>
+    <div class="img2">
+    <img src="https://media.istockphoto.com/id/1157655660/photo/generic-red-suv-on-a-white-background-side-view.jpg?s=612x612&w=0&k=20&c=ecrvXZhimUHnYES-kx7L5b-TDtRU5kAFPpNm0ZtAp1Y="width="200px" height="200px">
+    </div>
+    <img class="img3" src="https://media.istockphoto.com/id/1157655660/photo/generic-red-suv-on-a-white-background-side-view.jpg?s=612x612&w=0&k=20&c=ecrvXZhimUHnYES-kx7L5b-TDtRU5kAFPpNm0ZtAp1Y="width="200px" height="200px">
+    <div>
+
+    </div>
+    <h1><u>TRANSFORM:</u></h1>
+    <div>
+        <div class="transform">
+            <div class="transform1"></div>
+            <div class="transform2">
+                
+                <img class="img3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Ashoka_Chakra.svg/1200px-Ashoka_Chakra.svg.png"width="70px"height="70px">
+            </div>
+            <div class="transform3"></div>
+            
+        </div>
+        <div>
+          <img class="img4" src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Blue_rectangle.png?20080428171434"width="200px"height="200px">
+        </div>
+        <div>
+            <img class="img5" src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Blue_rectangle.png?20080428171434"width="200px"height="200px">
+        </div>
+        <div>
+            <img class="img6" src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Blue_rectangle.png?20080428171434"width="200px"height="200px">
+        </div>
+    </div>
+</body>
+</html>

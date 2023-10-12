@@ -1,0 +1,16 @@
+form{
+    color: aqua;
+    background-color: black;
+    display: inline;
+}
+
+.hello{
+    color: red;
+}
+
+#hi{
+    color: green;
+}
+*{
+    text-align: center;
+}
