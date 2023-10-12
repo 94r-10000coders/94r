@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+     // even number
+       function even(){
+        for( var i=1;i<=20;i++){
+        if(i%2==0){
+          continue;
+        }
+        document.write(" "+i+" ")
+            document.write("<br>")
+      }
+
+    }
+
+    even();
+
+   
+        // multiplication
+     document.write("<br>")
+     function multiplication(){
+        for(var i=1;i<=10;i++){
+        var a=5;
+        document.write(a+"*"+i+"="+ 5)
+        document.write("<br>")
+     }
+    }
+     multiplication();
+
+
+         //   odd number
+     document.write("<br>")
+     function odd(){
+        var i=30;
+      while(i>=1){
+        if(i%2!==0){
+            document.write("" +i+"")
+            document.write("<br>")
+        }
+        i--;
+      } 
+     } 
+     odd();
+     
+
+     //sum of 10 digits 
+     function sum(){
+        document.write("<br>")
+    var sum=0; var i=1;
+    do{
+        sum=sum+
+        i++;
+    }while(i<=10);
+    document.write(sum)
+    
+     }
+     sum();
+
+</script>
+
+</body>
+</html>
