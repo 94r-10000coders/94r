@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-5</title>
+</head>
+<body>
+    <script>
+        //  1.reverse a string using function.
+        document.write("(1)Reverse a string using function..!"+"<br>")
+        var a="example";
+        var b="";
+        document.write("Existed string is: "+ a + "<br>")
+        function test(){
+            for(var i=(a.length-1);i>=0;i--){
+                b=b+a[i];
+            }
+            document.write("Reversed String is: " +b +"<br>");
+        }
+        test();
+
+        // 2.check string is palindrome or not using function.
+        document.write("(2)Check string is palindrome or not..!"+ "<br>")
+        var c="refer";
+        var d="";
+        document.write("Existed string is: "+ c + "<br>")
+        for(var i=(c.length-1);i>=0;i--){
+                d=d+c[i];
+            }
+            document.write("Reversed String is: " +d +"<br>");
+        if(d==c){
+            document.write("It is a palindrome."+"<br>");
+        }
+
+        document.write("(3)Check string is palindrome or not using function..!"+ "<br>")
+        var f="";
+        function test2(e){
+            var x=e;
+            document.write("Existed string is: "+ e + "<br>");
+            f="";
+            for(var i=(e.length-1);i>=0;i--){
+                 f=f+e[i];
+             }
+            document.write("Reversed String is: " +f +"<br>");
+            if(x==f){
+                document.write("It is a palindrome."+"<br>");
+            }
+            else{
+                document.write("It is not a palindrome."+"<br>");
+            }
+        }
+        test2("level");
+        test2("error");
+
+        // 3.find length of the string without using .length method.
+        document.write("(4)length of the string without using .length method..!"+"<br>");
+        var g="hello";
+        document.write("String is: "+g+"<br>");
+        var n=0;
+        while(g[n]!=undefined){
+            n=n+1;
+        }
+        document.write("Length of string is: "+n +"<br>");
+        
+        // 4.try to print the patterns using function.
+        document.write("(5)Pattern-1"+"<br>");
+        for(o=1;o<=5;o++){
+            for(p=1;p<=5;p++){
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+        
+        document.write("(6)Pattern-2"+"<br>");
+        var k=6;
+        for(o=1;o<=5;o++){
+            for(p=1;p<=o;p++){
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+
+
+        document.write("(6)Pattern-3"+"<br>");
+        var k=6;
+        for(o=1;o<=5;o++){
+            for(p=1;p<=(k-o);p++){
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+
+        document.write("(6)Pattern-4"+"<br>");
+        var k=6;
+        for(o=1;o<=5;o++){
+            for(p=1;p<=o;p++){
+                document.write(p);
+            }
+            document.write("<br>");
+        }
+
+    </script>
+</body>
+</html>
