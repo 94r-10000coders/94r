@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("Pattern 1");
+        document.write("<br>");
+        document.write("<br>");
+        function ptn(n){
+        for(i=0;i<=n;i++){
+            for(j=0;j<=i;j++){
+                document.write("*")
+            }
+            document.write("<br>");
+           
+    }
+}
+    ptn(5);
+    document.write("<br>");
+    document.write("Pattern 2");
+        document.write("<br>");
+        document.write("<br>");
+    function ptn1(n){
+        for(i=0;i<=n;i++){
+            for(j=0;j<=n-i;j++){
+                document.write("*")
+            }
+            document.write("<br>");
+           
+    }
+}
+    ptn1(5);
+    document.write("Pattern 3");
+        document.write("<br>");
+        document.write("<br>");
+        function ptn3(n){
+        for(i=1;i<=n;i++){
+            for(j=1;j<=i;j++){
+                document.write(j)
+            }
+            document.write("<br>");
+           
+    }
+}
+ptn3(5);
+    document.write("---------");
+    document.write("<br>");
+
+    
+    var a="hello";
+    
+    document.write(a);
+    document.write("<br>");
+    document.write("reverse of hello is:");
+     var c=a.length-1;
+     var b=" ";
+    for(i=0;i<=c;i++){
+        b+=a[c-i];
+        if(i==c){
+        document.write(b);
+     
+    }
+}
+document.write("<br>");
+document.write("---------");
+document.write("<br>");
+var str="daddy";
+document.write("Checking that the string "+str+" is palindrome or not");
+document.write("<br>");
+s=str.length-1;
+i=0;
+    if(str[i]==str[s-i]){
+        i++;
+        document.write(str+" is a palindrome");
+        
+}
+else{
+    document.write(str+" is not a palindrome")
+}
+document.write("<br>")
+document.write("<br>")
+document.write("---------");
+document.write("<br>")
+
+var str2="nana";
+i=0;
+while(str2[i]!=null){
+    i++;
+     
+}
+
+
+document.write("the length of string is:",i);
+
+
+    </script>
+</body>
+</html>
