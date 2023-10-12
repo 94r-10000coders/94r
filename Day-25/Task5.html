@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-5 JS</title>
+</head>
+<body>
+    <script>
+        //  Reverse of a string
+function reverse(str) {
+    var revStr = "";
+    for (var i = str.length - 1; i >= 0; i--) {
+        revStr += str[i];
+    }
+    document.write("string is :"+str +"<br>");
+    document.write("the reversed string is :"+revStr);
+}
+reverse('hello');
+document.write("<br>");
+// // check palindrome using functions 
+document.write("check string is a palindrome or not using functions:<br>");
+function check(str) {
+  var newStr="";
+  var oldStr="";
+  for (var i = str.length - 1; i >= 0; i--){
+    newStr+= str[i];
+    oldStr=str;
+  }
+    if(newStr==oldStr){
+      document.write("newstring:"+newStr+"<br>");
+      document.write("oldstring:"+oldStr+"<br>");
+      document.write("it is a palindrome" +"<br>");
+    }
+  
+    else{
+        document.write("newstring:"+newStr+"<br>");
+        document.write("oldstring:"+oldStr+"<br>");
+        document.write("it is not a palindrome"+"<br>");
+    }
+}
+check("12321");
+check("12352");
+// //without using functions
+document.write("check string is a palindrome or not without using functions:<br>")
+var str="mom"
+ var newStr="";
+  var oldStr="";
+  for (var i = str.length - 1; i >= 0; i--){
+    newStr+= str[i];
+    oldStr=str;
+  }
+    if(newStr==oldStr){
+        document.write("newstring:"+newStr+"<br>");
+        document.write("oldstring:"+oldStr+"<br>");
+        document.write("its a palindrome"+"<br>");
+    }
+  
+    else{
+        document.write("newstring:"+newStr +"<br>");
+        document.write("oldstring:"+oldStr +"<br>");
+        document.write("its not a palindrome"+"<br>");
+    }
+//     // str length without using length method
+document.write("string length without using length method:<br>")
+var str="helloro";
+var n=0;
+for(var i=0;str[i]!=undefined;i++){
+  n++;
+}
+document.write(n);
+document.write("<br>");
+//star pattern-1
+document.write("Pattern-1"+"<br>"); 
+for(i=1;i<=5;i++){
+    for(j=1;j<=5;j++){
+        document.write("*");
+    }
+    document.write("<br>");
+  }
+  //star pattern-2
+document.write("Pattern-2"+"<br>"); 
+for(i=1;i<=5;i++){
+    for(j=1;j<=i;j++){
+        document.write("*");
+    }
+    document.write("<br>");
+  }
+  //star pattern3
+document.write("Pattern-3"+"<br>"); 
+for(i=1;i<=5;i++){
+    for(j=1;j<=6-i;j++){
+        document.write("*");
+    }
+    document.write("<br>");
+  }
+  //number pattern-1
+document.write(" Number Pattern-1"+"<br>"); 
+
+for(i=1;i<=5;i++) {
+    for(j=1;j<=i;j++){
+        document.write(j);
+    }         
+    document.write("<br>");
+}
+//number pattern-2
+document.write(" Number Pattern-2"+"<br>"); 
+
+for(i=1;i<=5;i++) {
+    for(j=1;j<=i;j++){
+        document.write(i);
+    }         
+    document.write("<br>");
+}
+    </script>
+</body>
+</html>
