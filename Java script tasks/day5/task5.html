@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 5</title>
+</head>
+<body>
+    <script>
+    // print pattern stars * using functions and for loop
+  function pattern(n){
+    for(i=1;i<=n;i++){
+        for(j=1;j<=i;j++){
+          document.write(" * "+" ");
+        }
+        document.write("<br>");
+    }
+    for(i=1;i<=n-1;i++){
+        for(j=i;j<=n-1;j++){
+          document.write(" * "+" ");
+        }
+        document.write("<br>");
+    }
+  }
+  pattern(5);
+  document.write("<br>");
+  //reverse a string and assined to new variable using function and for 
+  function reverse(str1="helloworld",str=""){
+  for(i=str1.length-1;i>=0;i--){
+    str += str1[i];
+  }
+  document.write(str);
+  }
+  reverse();
+  document.write("<br><br>");
+  // Check given string is palindrome or not
+ var palindrome= function(x){
+    var y=""
+    for(i=x.length-1;i>=0;i--){
+        y+=x[i];
+    }
+    if(x==y){
+        document.write(x + " is a palindrome"+"<br><br>");
+    }
+    else{
+        document.write(x + " is not a palindrome"+"<br><br>");
+    }
+  }
+  palindrome("121");
+  palindrome("dad");
+  palindrome("hello");
+  document.write("<br><br>");
+  // find string lenght without using .lenght method
+  // method:1 usin while loop
+  (function(){
+    let message ="hai welcome";
+    let count=0;
+     while(message[count]!==undefined){
+      count++;
+     }
+     document.write(count);
+
+
+  }());
+  document.write("<br>");
+  // method:2 usin for loop
+  function strlength(message,count=0){
+     for(i=0;message[i];i++){
+      count++;
+     }
+     document.write(count);
+
+
+  }
+  strlength("Hai!,Welcome");
+
+
+  
+
+
+
+    </script>
+    
+</body>
+</html>
