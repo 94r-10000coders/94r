@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var i=prompt("enter an integer");
+                 if(i%2==0){
+                 alert(i+" is an even number");
+                 }
+                 else{
+                 alert(i+" is an odd number");
+                 }
+
+                 var i=prompt("enter a year");
+                 if(i%4==0){
+                 alert(i+" is a leap year");
+
+                 }
+                 else{
+                    alert(i+" is not a leap year");
+                 } 
+
+                  var i=+prompt("enter  i value");
+                  var j=+prompt("enter j number");
+                  var k=+prompt("enter k number");
+                   if(i>j && i>k){
+                   alert(" largest number among three number is "+i);
+                    }
+                 else if
+                   (j>k && j>i){
+                 alert(" largest number among three number is" +j);
+                 }
+                   else if(k>i && k>j){
+                  alert(" largest number among three number is "+k);
+                   }
+                  else if(i==k && k==j){
+                 alert("all are equal");
+
+                  }
+                  else{ alert("negative input")}
+
+                  var i=alert("24 hours format")
+                  var i=+prompt("Time of the day");
+                  if(i>=6 && i<=11){
+                  alert("Good Morning");
+
+                  }
+                  else if(i>=12 && i<=17){
+                  alert("Good Afternoon");
+
+                  }
+                  else if(i>=18 && i<=23){
+
+                  alert("Good Evening");
+                  }
+                  else{ alert("Good Night")
+                    }
+                 var c=+prompt("enter the amount");
+                 var a=prompt("enter the currency code:" + " USD EUR");
+                 var b=prompt("enter the currency code :"  + " EUR USD");
+                 if(a=="USD" && b=="EUR"){
+                 alert(c+ a+ " is equal to " +c*0.949 +" EUR")
+                 }
+                 else if(a=="EUR" && b=="USD"){
+                 alert(c+ a+" is equal to "+c*1.052 + " USD")
+                 }
+      
+                    
+            
+                
+
+                 var light=prompt("enter traffic color ")
+                 switch(light){
+                 case "red":alert("STOP");
+                 break;
+                 case "yellow":alert("SLOW DOWN");
+                 break;
+                 case "green":alert("GO");
+                 break;
+                 default:alert("invalid input");
+                 }
+
+                 var month=prompt("enter any season");
+                 switch(month){
+                 case "summer":alert("february,march,April,May");
+                 break;
+                 case "winter":alert("november,december,january,");
+                 break;
+                 case "Autumn":alert("august,september,october");
+                 break;
+                 case "Spring":alert("june,july");
+                 break;
+                 default:alert("invalid input");
+                 }
+
+                 var menu=+prompt("menu with options");
+                 switch(menu){
+                 case 1:alert("option 1 is selected");
+                 break;
+                 case 2:alert("option 2 is selected");
+                 break;
+                 case 3:alert("option 3 is selected");
+                 break;
+                 case 4:alert("option 4 is selected");
+                 break;
+                 default:alert("invalid input");
+                 }
+    </script>
+</body>
+</html>
