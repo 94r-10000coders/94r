@@ -1,0 +1,175 @@
+<html>
+    <head>
+        <title>13/10/23</title>
+    </head>
+    <body>
+        <h2>Java Script Strings</h2>
+        <script>
+            document.write("length Property:")
+            document.write("<br>")
+           var n="Coders";
+           var b=n.length;
+           document.write(b);
+           document.write("<br>")
+           document.write("<br>")
+           document.write("Slice Property:")
+            document.write("<br>")
+           var n="10000 Coders in kphb"
+           var b=n.slice(6,13);
+           document.write(b);
+           document.write("<br>")
+           document.write("<br>")
+        //    If you omit the second parameter, the method will slice out the rest of the string
+           document.write("Slice single  Property:")
+            document.write("<br>")
+           var n="10000 Coders in kphb"
+           var b=n.slice(16);
+           document.write(b);
+           document.write("<br>")
+           document.write("<br>")
+           document.write("Slice Negative Property:")
+           document.write("<br>")
+           var n="10000 Coders in kphb"
+           var b=n.slice(-15);
+           document.write(b);
+           document.write("<br>")
+           document.write("<br>")
+           document.write("substring Property:")
+           document.write("<br>")
+           var n="10000 Coders in kphb"
+           var b=n.substring(0,15);
+           document.write(b);
+           document.write("<br>")
+           document.write("<br>")
+        //    The difference is that the second parameter specifies the length of the extracted part.
+           document.write("substr Property:")
+           document.write("<br>")
+           var n="10000 Coders in kphb"
+           var b=n.substr(6,6);
+           document.write(b);
+           document.write("<br>")
+           document.write("<br>")
+           document.write("substr single Property:")
+           document.write("<br>")
+           var n="10000 Coders in kphb"
+           var b=n.substr(6);
+           document.write(b);
+           document.write("<br>")
+           document.write("<br>")
+           document.write("substr Negative Property:")
+           document.write("<br>")
+           var n="10000 Coders in kphb"
+           var b=n.substr(-4);
+           document.write(b);
+           document.write("<br>")
+           document.write("<br>")
+           document.write("toUppperCase property:")
+           document.write("<br>")
+           var n="hello 10000 coders"
+           var b=n.toUpperCase();
+           document.write(b);
+           document.write("<br>")
+           document.write("<br>")
+           document.write("toLowerCase property:")
+           document.write("<br>")
+           var n="HELLO 10000 CODERS"
+           var b=n.toLowerCase();
+           document.write(b);
+           document.write("<br>")
+           document.write("<br>")
+           document.write("Replace property:")
+           document.write("<br>")
+           var n="Hello World!"
+           var b=n.replace("World!","Sai!");
+           document.write(b);
+           document.write("<br>")
+           document.write("<br>")
+        //    /i is for casesenstive
+           document.write("Replace using /i property:")
+           document.write("<br>")
+           var n="Hello World!"
+           var b=n.replace(/WORLD/i,"Sai");
+           document.write(b);
+           document.write("<br>")
+           document.write("<br>")
+           document.write("ReplaceALL property:")
+           document.write("<br>")
+           var n="Hello world Hello world Hello world"
+           var b=n.replaceAll("Hello","Hi");
+           document.write(b);
+           document.write("<br>")
+           document.write("<br>")
+           document.write("concat Method:")
+           document.write("<br>")
+           var n="Hello"
+           var b="world!"
+           var c=n.concat(" ",b);
+           document.write(c)
+           document.write("<br>")
+           document.write("<br>")
+        //    The trim() method removes whitespace from both sides of a string
+           document.write("Trim Method:")
+           document.write("<br>")
+           var n="    Hello world     ;"
+           var b=n.trim(n);
+           document.write(b)
+           document.write("<br>")
+           document.write("<br>")
+        //    It pads a string with another string (multiple times) until it reaches a given length.
+           document.write("padStart Method:")
+           document.write("<br>")
+           var n="5"
+           var b=n.padStart(4,"s");
+           document.write(b)
+           document.write("<br>")
+           document.write("<br>")
+        //    It pads a string with another string (multiple times) until it reaches a given length.
+           document.write("padEnd Method:")
+           document.write("<br>")
+           var n="5"
+           var b=n.padEnd(4,"s");
+           document.write(b)
+           document.write("<br>")
+           document.write("<br>")
+        //    The charAt() method returns the character at a specified index (position) in a string.
+           document.write("charAt Method:")
+           document.write("<br>")
+            var n="Coders"
+            var b=n.charAt(5);
+            document.write(b)
+            document.write("<br>")
+           document.write("<br>")
+            // The charCodeAt() method returns the unicode of the character at a specified index in a string.
+            document.write("charCodeAt Method:")
+            document.write("<br>")
+            var n="Coders"
+            var b=n.charCodeAt(5);
+            document.write(b)
+            document.write("<br>")
+            document.write("<br>")
+            document.write("indexOf Method:")
+            document.write("<br>")
+            var n= "Hello, world!";
+            var b= n.indexOf("o");
+            document.write(b);
+            document.write("<br>")
+            document.write("<br>")
+            // JavaScript Program to illustrate split() function 
+            document.write("split Method:")
+            document.write("<br>")
+            var n= "Hello for world!";
+            var b= n.split("for");
+            document.write(b);
+
+
+
+	
+
+
+
+
+
+
+        </script>
+    </body>
+</html>
