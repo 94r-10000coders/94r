@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//--------------------------------------------
+document.write("<b> 1.Calculate length of string</b><br>")
+function len(a){
+    var c=0;
+    for(i=0;a[i];i++){
+        c++;
+    }
+    return c
+}
+document.write(len("JavaScript"),"<br>")
+document.write("<hr>")
+
+//--------------------------------------------
+document.write("<b>2.Find frequency of a character</b><br>")
+function freq(str,a){
+    var c=0;
+    for(i=0;str[i];i++){
+        if(str[i]===a){
+            c++;
+        }
+    }
+    return c;
+}
+document.write(freq("javascript","p"),"<br>")
+document.write("<hr>")
+//----------------------------------------
+document.write("<b>3.Find each number count</b><br>")
+function fre1(str){
+
+    for(i=0;str[i];i++){
+        var c=0
+        for(j=0;str[j];j++){
+            if(str[i]===str[j]){
+                c++
+                // str=str.replace(str[j],"")
+            }
+        }
+        document.write(str[i]+" "+c,"<br>")
+    }
+}
+fre1("javascript")
+document.write("<hr>")
+//-------------------------------------------
+document.write("<b>4.Count Vowels in a string</b><br>")
+function Vowel(str){
+    var v=0;
+    for(i=0;str[i];i++){
+        if(str[i]==="a" || str[i]==="e" || str[i]==="i" || str[i]==="o" || str[i]==="u" || str[i]==="A" || str[i]==="E" || str[i]==="I" || str[i]==="O" || str[i]==="U")
+        v++;
+    }
+    return v;
+}
+document.write(Vowel("javascript"),"<br>")
+document.write("<hr>")
+
+//-------------------------------------------
+document.write("<b>5.Print string after deleting vowels</b><br>")
+function del(str){
+    for(i=0;str[i];i++){
+        if(str[i]==="a" || str[i]==="e" || str[i]==="i" || str[i]==="o" || str[i]==="u" || str[i]==="A" || str[i]==="E" || str[i]==="I" || str[i]==="O" || str[i]==="U")
+        str=str.replace(str[i],"")
+    }
+    return str
+}
+document.write(del("javascript"),"<br>")
+document.write("<hr>")
+
+//-------------------------------------------
+document.write("<b>6.Count digits in a String</b><br>")
+function digits(str){
+    var c=0;
+    for(i=0;str[i];i++){
+        if(str.charCodeAt(i)>=48 && str.charCodeAt(i)<=57){
+            c++
+        }
+    }
+    return c;
+}
+document.write(digits("java123html34"),"<br>")
+document.write("<hr>")
+
+//--------------------------------------
+document.write("<b>7.Display each character with unicode value</b><br>")
+function uni(str){
+    for(i=0;str[i];i++){
+        document.write(str[i]+"-----"+str.charCodeAt(i),"<br>")
+    }
+}
+uni("JavaScript")
+document.write("<hr>")
+//------------------------------------
+document.write("<b>8.Count number of consonents</b><br>")
+function con(str){
+    var c=0;
+    for(i=0;str[i];i++){
+        if((str.charCodeAt(i)>=65 && str.charCodeAt(i)<=90) || (str.charCodeAt(i)>=97 && str.charCodeAt(i)<=122)){
+            if(!(str[i]==="a" || str[i]==="e" || str[i]==="i" || str[i]==="o" || str[i]==="u" || str[i]==="A" || str[i]==="E" || str[i]==="I" || str[i]==="O" || str[i]==="U")){
+                c++
+            }
+
+        }
+    }
+    return c;
+}
+document.write(con("JavaSript"),"<br>")
+document.write("<hr>")
+
+//-----------------------------------
+document.write("<b>9.count number of spaces in a string</b><br>")
+function space(str){
+    var c=0;
+    for(i=0;str[i];i++){
+        if(str.charCodeAt(i)===32){
+            c++
+        }
+    }
+    return c
+}
+document.write(space("hi hello how are You all"),"<br>")
+document.write("<hr>")
+
+//-----------------------------------------
+document.write("<b>10.Reverse a string</b><br>")
+function rev(str){
+    var str1="";
+    for(i=0;str[i];i++){
+        str1=str[i]+str1;
+    }
+    return str1;
+}
+document.write(rev("javascript"),"<br>")
+document.write("<hr>")
+//---------------------------------------
+document.write("<b>11.String is a palindrom or not</b><br>")
+function pal(str){
+    var str1="";
+    for(i=0;str[i];i++){
+        str1=str[i]+str1;
+    }
+    if(str===str1){
+        return "Palindrome"
+    }
+    else{
+        return "Not palindrome"
+    }
+}
+document.write(pal("madam"),"<br>")
+document.write(pal("java"))
+document.write("<hr>")
+//---------------------------------------
+document.write("<b>12.Find occurrences of character</b><br>")
+function occ(str,a){
+    for(i=0;str[i];i++){
+        if(str[i]===a){
+            return "character found"
+        }
+        else{
+            continue
+        }
+    }
+    return "Character not found"
+}
+document.write(occ("javascript","p"),"<br>")
+document.write(occ("javascript","l"),"<br>")
+document.write("<hr>")
+//-----------------------------------------
+document.write("<b>13.Sort characters in ascending order</b><br>")
+function sort(str){
+  var str1=str
+    for(i=0;str1[i];i++){
+        for(j=0;j<i;j++){
+            if(str1[i]<=str1[j]){
+                var k=str1[i]
+                var l=str1[j]
+                str1=str1.replace(str1[i],l)
+                str1=str1.replace(str1[j],k)
+            }
+        }
+    }
+    return str1;
+}
+document.write(sort("HTML"),"<br>")
+document.write("<hr>")
+//-------------------------------------------------
+document.write("<b>14.Sort characters in descending order</b><br>")
+function dec(str){
+  var str1=str
+    for(i=0;str1[i];i++){
+        for(j=0;j<i;j++){
+            if(str1[i]>str1[j]){
+                var k=str1[i]
+                var l=str1[j]
+                str1=str1.replace(str1[i],l)
+                str1=str1.replace(str1[j],k)
+            }
+        }
+    }
+    return str1;
+}
+document.write(dec("HTML"))
+document.write("<hr>")
+//----------------------------------------------------
+document.write("<b>15.Convert string into uppercase</b><br>")
+function upp(str){
+    str=str.toUpperCase()
+    return str
+}
+document.write(upp("javasript"))
+document.write("<hr>")
+//------------------------------------------------------
+document.write("<b>16.Convert string into lowercase</b><br>")
+function lo(str){
+    str=str.toLowerCase()
+    return str
+}
+document.write(lo("JAVASCRIPT"))
+document.write("<hr>")
+//--------------------------------------------------
+document.write("<b>17.Check two strings are equal or not</b><br>")
+function eq(str1,str2){
+    if(str1===str2){
+        return "Equal"
+    }
+    else{
+        return "Not equal"
+    }
+}
+document.write(eq("Hello","Hello"),"<br>")
+document.write(eq("Hi", "Hello"))
+document.write("<hr>")
+//----------------------------------------------
+document.write("<b>18.check special characters in string</b><br>")
+function spe(str){
+    var c=0;
+    for(i=0;str[i];i++){
+        if (!((str.charCodeAt(i)>=65 && str.charCodeAt(i)<=90) || (str.charCodeAt(i)>=97 && str.charCodeAt(i)<=122) || (str.charCodeAt(i)>=48 && str.charCodeAt(i)<=57) || str.charCodeAt(i)===32)){
+            c++;
+        }
+    }
+    return c;
+}
+document.write(spe("$@html%$234"))
+document.write("<hr>")
+//-----------------------------------------
+document.write("<b>19.Check if string contain only digits</b><br>")
+function digits1(str){
+    var c=0;
+    for(i=0;str[i];i++){
+        if(str.charCodeAt(i)>=48 && str.charCodeAt(i)<=57){
+            c++;
+        }
+    }
+    if(c==str.length){
+        return "True"
+    }
+    else{
+        return "False"
+    }
+}
+document.write(digits1("12345"),"<br>")
+document.write(digits1("1223e"))
+document.write("<hr>")
+//-----------------------------------------
+document.write("<b>20.Check if string contain only alphabets or not</b><br>")
+function alpha(str){
+    var c=0;
+    for(i=0;str[i];i++){
+        if((str.charCodeAt(i)>=65 && str.charCodeAt(i)<=90) || (str.charCodeAt(i)>=97 && str.charCodeAt(i)<=120)){
+            c++;
+        }
+    }
+    if(c==str.length){
+        return "True"
+    }
+    else{
+        return "False"
+    }
+}
+document.write(alpha("abcdAse"),"<br>")
+document.write(alpha("1223e"))
+document.write("<hr>")
+    </script>
+</body>
+</html>
