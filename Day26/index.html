@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //task1//
+        document.write("length of string")
+        var str="hello";
+        var str1=str.length;
+        document.write("<br>")
+        document.write("length of given string is: "+str1)
+        //task2//
+        document.write("<br>")
+        document.write("<br>")
+        document.write("string to covert into lowercase")
+        var str="Hii";
+        var str1=str.toLowerCase();
+        document.write("<br>")
+        document.write(str1)
+        document.write("<br>")
+        document.write("<br>")
+        document.write("Extract substring from a string");
+        document.write("<br>")
+        var str="hi,hello";
+        var str1=str.substring(3,8);
+        document.write(str1)
+        document.write("<br>")
+        document.write("<br>")
+        document.write("split string into an array of substrings");
+        var str="hi?hello";
+        var str1=str.split("? ")
+        document.write("<br>")
+        document.write(str1)
+        document.write("<br>")
+        document.write("<br>")
+        document.write("trim whitespace from begin to end");
+        var str="  hihello  ";
+        var str1=str.trim();
+        document.write("<br>")
+        document.write(str1);
+        document.write("<br>")
+        document.write("<br>")
+        document.write("To check if a string starts with specific substring")
+        var str="hihellowe";
+        var str1=str.startsWith("hi");
+        document.write("<br>")
+        document.write(str1);
+        document.write("<br>")
+        document.write("<br>")
+        document.write("To check if a string ends with a specific substring")
+        var str = "Hello, world!";
+        var endsWithWorld = str.endsWith("world!");
+        document.write("<br>")
+        document.write(endsWithWorld);
+        document.write("<br>")
+        document.write("<br>")
+        document.write("To count the occurrences of a specific character in a string:")
+        var str = "Hello, world!";
+        var count = str.split("o").length - 1;
+        document.write(count);
+        document.write("<br>")
+        document.write("<br>")
+        document.write("To check if a string is empty:")
+        var str = "";
+        var isEmpty = str.length === 0;
+        document.write(isEmpty);
+        document.write("<br>")
+        document.write("<br>")
+        document.write(" To replace all occurrences of a substring within a string:")
+        var str = "Jayavardhan";
+        var newStr = str.replaceAll("a", "o");
+        document.write(newStr);
+        document.write("<br>")
+        document.write("<br>")
+        document.write("To check if a string contains only numeric characters:")
+        var str = "12345";
+        var isNumeric = /^\d+$/.test(str);
+        document.write(isNumeric);
+        document.write("<br>")
+        document.write("<br>")
+        document.write("reverse a string: ")
+        var str = "Jayavardhan";
+        var reversedStr = str.split("").reverse().join("");
+        document.write(reversedStr);
+        document.write("<br>")
+        document.write("<br>")
+        document.write("concatenate of two strings: ")
+        var str="hi";
+        var str1="vardhan";
+        var str2=str+str1;
+        document.write(str2)
+        document.write("<br>")
+        document.write("<br>")
+        document.write("find index of specific character: ")
+        var str = "Hello, world!";
+        var index = str.indexOf("o");
+        document.write(index);
+        document.write("<br>")
+        document.write("<br>")
+        document.write("To check if a string contains a specific substring:")
+        var str = "Hello, world!";
+        var containsHello = str.includes("Hello");
+        document.write(containsHello);
+        document.write("<br>")
+        document.write("<br>")
+        document.write("string to convert into uppercase: ")
+        var str = "hello";
+        var uppercaseStr = str.toUpperCase();
+        document.write(uppercaseStr);
+        document.write("<br>")
+        document.write("<br>")
+        document.write("repeating string for n number of times: ")
+        var str = "vardhan";
+        var repeatedStr = str.repeat(3);
+        document.write(repeatedStr);
+        document.write("<br>")
+        document.write("<br>")
+        document.write("To replace the first occurrence of a substring within a string:")
+        var str = "Jayavardhan";
+        var newStr = str.replace("a", "s");
+        document.write(newStr);
+        document.write("<br>")
+        document.write("<br>")
+        document.write("checking palindrome or not: ")
+        var str = "racecar";
+        var reversedStr = str.split("").reverse().join("");
+        var isPalindrome = str === reversedStr;
+        document.write(isPalindrome);
+        document.write("<br>")
+        document.write("<br>")
+        document.write("slicing using negative index")
+        var str = "Jayavardhan";
+        var lastCharacters = str.slice(-7);
+        document.write(lastCharacters);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
