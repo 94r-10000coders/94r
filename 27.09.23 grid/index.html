@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .board{
+           display: grid;
+           grid-template-columns: repeat(8,40px);
+        }
+        .ro{
+            border: 1px solid;
+            width: 40px;
+            height: 40px;
+        
+        }
+        .w1:nth-child(even),.w3:nth-child(even),.w5:nth-child(even),.w7:nth-child(even) {
+            background-color:gray;
+        }
+        .w2:nth-child(odd),.w4:nth-child(odd),.w6:nth-child(odd),.w8:nth-child(odd) {
+            background-color:gray;
+        }
+        img{
+            width: 40px;
+        }
+        .w1,.w2{
+            rotate: 180deg;
+        }
+        .w8:hover{
+            border:hidden;
+            transform: scale(1.5);
+            transition: 1s;
+        }
+
+        .w7:hover{border:hidden;
+            transform: scale(1.5);
+            transition: 1s;
+
+        }
+    </style>
+</head>
+<body>  
+     </main>
+    <div class="board">
+            <div class="ro w1"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908519.png"/></div>
+            <div class="ro w1"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908527.png"/></div>
+            <div class="ro w1"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908503.png"/></div>
+            <div class="ro w1"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908484.png"/></div>
+            <div class="ro w1"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908481.png"/></div>
+            <div class="ro w1"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908503.png"/></div>
+            <div class="ro w1"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908527.png"/></div>
+            <div class="ro w1"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908519.png"/></div>
+    </div>
+    <div class="board">
+            <div class="ro w2"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908549.png" /></div>
+            <div class="ro w2"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908549.png" /></div>
+            <div class="ro w2"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908549.png" /></div>
+            <div class="ro w2"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908549.png" /></div>
+            <div class="ro w2"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908549.png" /></div>
+            <div class="ro w2"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908549.png" /></div>
+            <div class="ro w2"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908549.png" /></div>
+            <div class="ro w2"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908549.png" /></div>
+    </div>
+    <div class="board">
+        <div class="ro w3"></div>
+        <div class="ro w3"></div>
+        <div class="ro w3"></div>
+        <div class="ro w3"></div>
+        <div class="ro w3"></div>
+        <div class="ro w3"></div>
+        <div class="ro w3"></div>
+        <div class="ro w3"></div>
+    </div>
+    <div class="board">
+        <div class="ro w4"></div>
+        <div class="ro w4"></div>
+        <div class="ro w4"></div>
+        <div class="ro w4"></div>
+        <div class="ro w4"></div>
+        <div class="ro w4"></div>
+        <div class="ro w4"></div>
+        <div class="ro w4"></div>
+    </div>
+    <div class="board">
+        <div class="ro w5"></div>
+        <div class="ro w5"></div>
+        <div class="ro w5"></div>
+        <div class="ro w5"></div>
+        <div class="ro w5"></div>
+        <div class="ro w5"></div>
+        <div class="ro w5"></div>
+        <div class="ro w5"></div>
+    </div>
+    <div class="board">
+        <div class="ro w6"></div>
+        <div class="ro w6"></div>
+        <div class="ro w6"></div>
+        <div class="ro w6"></div>
+        <div class="ro w6"></div>
+        <div class="ro w6"></div>
+        <div class="ro w6"></div>
+        <div class="ro w6"></div>
+    </div>
+    <div class="board">
+        <div class="ro w7"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908549.png" /></div>
+        <div class="ro w7"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908549.png" /></div>
+        <div class="ro w7"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908549.png" /></div>
+        <div class="ro w7"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908549.png" /></div>
+        <div class="ro w7"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908549.png" /></div>
+        <div class="ro w7"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908549.png"/></div>
+        <div class="ro w7"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908549.png" /></div>
+        <div class="ro w7"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908549.png"/></div>
+    </div>
+    <div class="board">
+        <div class="ro w8"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908519.png"/></div>
+        <div class="ro w8"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908527.png"/></div>
+        <div class="ro w8"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908503.png"/></div>
+        <div class="ro w8"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908481.png"/></div>
+        <div class="ro w8"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908484.png"/></div>
+        <div class="ro w8"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908503.png"/></div>
+        <div class="ro w8"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908527.png"/></div>
+        <div class="ro w8"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908519.png"/></div>
+    </div>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .chessboard{
+            border: 1px solid;
+            display: grid;
+            grid-template-columns: repeat(8,80px);
+            grid-template-rows: repeat(8,80px);
+        }
+        .grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-gap: 20px;
+}
+
+.grid-item {
+  display: block;
+  width: 100%;
+  background-color: purple;
+  color: white;
+  text-align: center;
+  padding: 30px 5px;
+}
+    </style>
+</head>
+<body>
+    <div class="chessboard">
+
+    </div>
+    <div class="grid-container">
+        <div class="grid-item">Item</div>
+        <div class="grid-item">Item</div>
+        <div class="grid-item">Item</div>
+        <div class="grid-item">Item</div>
+        <div class="grid-item">Item</div>
+        <div class="grid-item">Item</div>
+        <div class="grid-item">Item</div>
+        <div class="grid-item">Item</div>
+        <div class="grid-item">Item</div>
+      </div>
+</body>
+</html> -->

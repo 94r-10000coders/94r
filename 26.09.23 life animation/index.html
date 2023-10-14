@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loader{display: flex;
+        gap: 5px;
+        margin: 30px;
+        }
+        .load1,.load2,.load3,.load4,.load5{
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+            box-shadow: 1px 1px rgb(111, 103, 103);
+            animation-name: loading ;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-direction:alternate;
+            animation-timing-function: ease-in-out;
+        }
+        .load2{animation-delay: 0.5s;}
+        .load3{animation-delay: 1s;}
+        .load4{animation-delay: 1.5s;}
+        .load5{animation-delay: 2s}
+        
+        @keyframes loading {
+            from{transform: scale(1);}
+            to{transform: scale(0.2);}
+            0%{background-color: blue}
+            35%{background-color: rgb(76, 204, 246)}
+            100%{background-color: lightgreen}
+        }
+
+        .x{background-color: orangered;
+            height: 70px;
+            width: 1.5px;
+        }
+        .y{background-color: orangered;
+            height: 1.5px;
+            width: 400px;
+            position: relative;top: -35px;
+        }
+        
+        .w{position:absolute;
+            left:0;
+            width:10%;
+            animation: translate 15s infinite linear;
+        }
+        .s{background-color: blue;
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            position: relative;top: -76px;left: 4px;
+            /* animation: sin 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear; */
+            animation: upDown 1.5s alternate infinite ease-in-out;
+        }
+        /* @keyframes sin {
+            0%{transform: translate(0px,0px);}
+            25%{transform: translate(17.5px,17.5px);}
+            50%{transform: translate(35px,35px);}
+            75%{transform: translate(43.75px,17.5px);}
+            100%{transform: translate(50px);}
+        } */
+
+        @keyframes upDown {
+         to { transform: translatey(70px);}
+        }
+        @keyframes translate{
+        to { transform: translatex(400px);}
+        }
+        .cycle{
+        width: 100px;
+        height:100px;
+        border: 1px solid;
+        border-radius: 50px;
+        position: relative;
+        background-image: url(https://th.bing.com/th/id/R.aee316e12cfc8b8c633f87f258a3c753?rik=rwD50XxVG0jaLg&riu=http%3a%2f%2fedplace.com%2fuserfiles%2fimage%2fbutterfly+life+cycle.jpg&ehk=XTUnwfD6Hplpp2ePhxXwQga8TxtaqSvSRjzZF2uDs9w%3d&risl=&pid=ImgRaw&r=0);
+        background-attachment: fixed;
+        background-size: 300px;
+        background-repeat: no-repeat;
+        background-position:10px 260px;
+        animation: life1;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        }
+        @keyframes life1{
+            0%{left: 0px;top: 0px;}
+            25%{left: 160px;top: -17px; width: 130px;height: 130px;border-radius: 80px ;content: "larva";}
+            50%{left: 193px;top: 137px; width: 120px;height: 120px;}
+            75%{left: 0px;top:114px;width: 150px;height: 150px;border-radius: 90px;}
+            100%{left:0px;top:0px}
+        }
+        .name{
+            animation: name1 ;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <div class="load1"></div>
+        <div class="load2"></div>
+        <div class="load3"></div>
+        <div class="load4"></div>
+        <div class="load5"></div>
+    </div><br><br>
+
+    <div class="">
+        <div class="x"></div>
+        <div class="y"></div>
+        <div class="w"><div class="s"></div></div>
+    </div><br><br>
+
+    <div class="life">
+        <div class="cycle"></div>
+    </div><br><br>
+
+<h1 style="color: blue;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 20px;">jay</h1>
+
+
+</body>
+</html>

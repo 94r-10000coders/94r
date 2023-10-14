@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{width:288px;
+            height:345px;
+            border: 1px solid ;
+            background-image: linear-gradient(rgb(70, 167, 199),rgb(57, 168, 205));
+            
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .a1{
+            width:80px;
+            height: 80px;
+            border :1px solid;
+            background-image: linear-gradient(to right, red,yellow,blue);
+            border: hidden;
+            border-end-end-radius: 10px;
+        }
+        .a2{
+            width:80px;
+            height: 80px;
+            border :1px solid;
+            position: relative; left:206px;top:-81px;
+            background-image: linear-gradient(to top right,orange,coral,green );
+            border-bottom-left-radius: 10px;
+        }
+        .a3{
+            width:80px;
+            height: 80px;
+            border :1px solid;
+            position: absolute; left:115px;top:150px;
+            background-image: radial-gradient(violet,aqua);
+            border-radius: 10px;
+        }
+        .a4{
+            width:80px;
+            height: 80px;
+            border :1px solid;
+            position: relative; left:-1px;top:102px;
+            background-image: linear-gradient(60deg,blue,burlywood,red);
+            border-top-right-radius: 10px;
+        }
+        .a5{
+            width:80px;
+            height: 80px;
+            border :1px solid;
+            /* position: absolute; left:216px;top:273px; */
+            background-image: conic-gradient(brown 20deg,orange 40deg,red,blue ,green);
+            border-top-left-radius: 10px;
+            color:mintcream ;
+            font-weight: 1000;
+            border: hidden;
+        }
+        .b{
+            width:100px;
+            height:100px;
+            border: 1px solid ;
+            background-image: linear-gradient(rgb(70, 167, 199),rgb(57, 168, 205));
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: end;
+            align-content: flex-end;
+            position: absolute;top:254px;left:198px;
+            z-index: 1;
+            border: hidden;
+        }
+        .c{
+            width:auto;
+            height:auto;
+            border:1px solid lightcoral;
+            margin-top: 20px;
+            display:flex;
+            flex-wrap: wrap;
+            
+            gap:10px;
+            padding: 30px;
+            background-color: rgb(233, 247, 251);
+        }
+        .col1{
+            max-width: 100px;
+            height:auto;
+            border:3px solid lightblue;
+            padding: 5px;
+            word-break: break-word;
+            
+            
+        }
+        img{max-width: 100px;}
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div class="a1"></div>
+        <div class="a2">relative position</div>
+        <div class="a3"></div>
+        <div class="a4">relative position</div>
+        
+    </div>
+    <div class="b">
+        <div class="a5">&nbsp;using flex by overlapping another div </div>
+    </div>
+    <div class="c">
+        <div class="col1"><img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Black_hole_lensing_web.gif"/>
+            <h3>&nbsp; black hole</h3>
+          A black hole is a region of spacetime where gravity is so strong that nothing, including light or other electromagnetic waves, has enough energy to escape it.[2] The theory of general relativity predicts that a sufficiently compact mass can deform spacetime to form a black hole.[3][4] The boundary of no escape is called the event horizon.</div>
+        <div class="col1"><img src="https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg"/>
+            Inception is a 2010 science fiction action film[4][5][6] written and directed by Christopher Nolan, who also produced the film with Emma Thomas, his wife. The film stars Leonardo DiCaprio as a professional thief who steals information by infiltrating the subconscious of his targets. He is offered a chance to have his criminal history erased, as payment for the implantation of another person's idea into a target's subconscious.
+        </div>
+        <div class="col1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Robert_Downey_Jr_2014_Comic_Con_%28cropped%29.jpg/330px-Robert_Downey_Jr_2014_Comic_Con_%28cropped%29.jpg"/>
+            Robert John Downey Jr. (born April 4, 1965)[1] is an American actor. His career has been characterized by critical success in his youth, followed by a period of substance abuse and legal troubles, and a surge in popular and commercial success later in his career. In 2008, Downey was named by Time magazine among the 100 most influential people in the world, and from 2013 to 2015, he was listed by Forbes as Hollywood's highest-paid actor.
+        </div>
+        <div class="col1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Mahesh_Babu_in_Spyder_%28cropped%29.jpg/330px-Mahesh_Babu_in_Spyder_%28cropped%29.jpg"/>
+            Ghattamaneni Mahesh Babu (born 9 August 1975) is an Indian actor, producer, media personality, and philanthropist who works mainly in Telugu cinema. He has appeared in more than 25 films, and won several accolades including, eight Nandi Awards, five Filmfare Telugu Awards, four SIIMA Awards, three CineMAA Awards, and one IIFA Utsavam Award. One of the highest-paid Telugu film actors,[3] he also owns the production house G. Mahesh Babu Entertainment.
+        </div>
+    </div>
+    <div class="c">
+        <div class="col1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/C60-rods.png/180px-C60-rods.png"/>
+            Buckminsterfullerene is a type of fullerene with the formula C60. It has a cage-like fused-ring structure (truncated icosahedron) made of twenty hexagons and twelve pentagons, and resembles a soccer ball. Each of its 60 carbon atoms is bonded to its three neighbors.
+            Buckminsterfullerene is a black solid that dissolves in hydrocarbon solvents to produce a violet solution. The compound was discovered in 1985 and has received intense study, although few real world applications have been found.</div>
+        <div class="col1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Nanokid.svg/196px-Nanokid.svg.png"/>
+            Nanokids belongs to a series of NanoPutians, a series of organic molecules whose structural formula resemble human forms. "NanoPutian" is a portmanteau of nano-, a unit prefix meaning one billionth, and lilliputian, a fictional race of humans in the novel Gulliver's Travels by Jonathan Swift.
+        </div>
+        <div class="col1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Racemic_methamphetamine.svg/330px-Racemic_methamphetamine.svg.png"/>
+            Methamphetamine (contracted from N-methylamphetamine) is a potent central nervous system (CNS) stimulant that is mainly used as a recreational drug and less commonly as a second-line treatment for attention deficit hyperactivity disorder and obesity.[22] Methamphetamine was discovered in 1893 and exists as two enantiomers: levo-methamphetamine and dextro-methamphetamine.
+        </div>
+        <div class="col1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Kokain_-_Cocaine.svg/330px-Kokain_-_Cocaine.svg.png"/>
+            Cocaine (from French: cocaïne, from Spanish: coca, ultimately from Quechua: kúka)[14] is a tropane alkaloid that acts as a central nervous system (CNS) stimulant. As an extract, it is mainly used recreationally, and often illegally for its euphoric and rewarding effects. It is also used in medicine by Indigenous South Americans for various purposes and rarely, but more formally as a local anaesthetic by medical practitioners in more developed countries. It is primarily obtained from the leaves of two Coca species native to South America; Erythroxylum coca and E. novogranatense.
+        </div>
+        <div class="col1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Theobromine.svg/203px-Theobromine.svg.png"/>
+            Theobromine, also known as xantheose, is the principal alkaloid of Theobroma cacao (cacao plant).[4] Theobromine is slightly water-soluble (330 mg/L) with a bitter taste.[5] In industry, theobromine is used as an additive and precursor to some cosmetics.[4] It is found in chocolate, as well as in a number of other foods, including the leaves of the tea plant, and the kola nut. It is a white or colourless solid, but commercial samples can appear yellowish
+        </div>
+    </div>
+    <div class="c">
+        <div class="col1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/180px-HTML5_logo_and_wordmark.svg.png"/>
+            The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
+            </div>
+        <div class="col1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/180px-CSS3_logo_and_wordmark.svg.png"/>
+            Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML).[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+        </div>
+        <div class="col1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/180px-Bootstrap_logo.svg.png"/>
+            Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.
+            As of May 2023, Bootstrap is the 17th most starred project (4th most starred library) on GitHub, with over 164,000 stars.[2] According to W3Techs, Bootstrap is used by 19.2% of all websites.
+        </div>
+        <div class="col1"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/182px-Java_programming_language_logo.svg.png"/>
+            Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA),[16] meaning that compiled Java code can run on all platforms that support Java without the need to recompile.[17] Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of the underlying computer architecture.
+        </div>
+        <div class="col1"><img src="https://th.bing.com/th/id/OIP.Oag0dh4MINdG_qxOzJMoiwHaIB?w=158&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"/>
+            JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2023, 98.7% of websites use JavaScript on the client side for webpage behavior,[10] often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code on users' devices.
+        </div>
+        <div class="col1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/180px-React-icon.svg.png"/>
+            React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library[3][4] for building user interfaces based on components. It is maintained by Meta (formerly Facebook) and a community of individual developers and companies.
+        </div>
+    </div>
+    
+</body>
+</html>

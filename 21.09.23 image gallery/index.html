@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fruits{ borde:1px solid;
+            width: 230px;
+            height: 200px;
+            display:flex;
+            margin: 20px;
+            gap: 20px;
+            overflow-x:scroll;white-space: nowrap;
+        }
+        .cars{display: flex;
+            margin: 20px;
+            gap: 20px;
+            overflow-x:scroll;white-space: nowrap;
+            width:230px;
+            position:absolute;left: 100px;
+        }
+        [title="mango"]{border-radius: 20px;
+                        border:2px solid aqua;
+        }
+        [title~="fruit"]{border-radius: 20px;
+            border:2px solid red;
+        }
+        [title|="miracle"]{border-radius: 20px;
+                        border:2px solid purple;
+                
+        }
+        [title^="ca"]{border-radius: 20px;
+                        border:2px solid blue;
+
+        }
+        [title$="720s"]{border-radius: 20px;
+                        border:2px solid yellowgreen;
+
+        }
+        [title*="g"]{border-radius: 20px;
+                        border:2px solid peru;
+        }
+        /* usage of combinatots */
+        div p {
+            position: relative;top: 200px;
+            color:   coral;
+        }
+        .a h2{
+            position: relative;top: 200px;
+        }
+        div>p{
+            font-style: italic;
+        }
+        div>h1{font-style: italic;
+        position: relative;top: 200px;
+        }
+        /* adjacent sibling */
+        section+h1{background-color: aquamarine;
+
+        }
+        /* general sibling selector */
+        section~h1{
+            display: inline;
+            margin-left:20px ;
+        }
+        fieldset{position: relative;top: 200px;}
+        [for="fname"]{
+            font-style: oblique;
+        }
+        [name$="name"]{
+            background-color: chocolate;
+            border-radius: 20px;
+        }
+        [id="dob"]{
+            font-family: 'Times New Roman', Times, serif;
+            border: hidden;
+        }
+        [type="tel"]{
+            font-weight: 800;
+            background-color: aqua;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        [name="state"]{
+            font-weight: 900;
+            
+        }
+        [for$="ss"]{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: bisque;
+        }
+        [type="submit"]{
+            background-color:  chartreuse;
+        }
+        [type="reset"]{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="fruits">
+        <img title="mango" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/MANGO249.JPG/375px-MANGO249.JPG" width="200" />
+        <img title="apricot fruit" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Apricot_and_cross_section.jpg/330px-Apricot_and_cross_section.jpg" width="200px" />
+        <img title="fruit honeydew" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Honeydew.jpg/330px-Honeydew.jpg" width="200px" />
+        <img title="miracle-fruit" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/MiracleBerry.jpg/330px-MiracleBerry.jpg" width="200px"/>
+    </div>
+    <div class="cars">
+        <img title="car-audi r8" src="https://manofmany.com/wp-content/uploads/2021/04/Top-15-Best-Sports-Cars-Power-Luxury-and-Design-Audi-R8.jpeg" width="200px" />
+        <img title="car,lamborghini huracan" src="https://manofmany.com/wp-content/uploads/2021/04/Top-15-Best-Sports-Cars-Power-Luxury-and-Design-Lamborghini-Huracan.jpeg" width="200px" />
+        <img title="mclaren 720s" src="https://manofmany.com/wp-content/uploads/2021/04/Top-15-Best-Sports-Cars-Power-Luxury-and-Design-McLaren-720S.jpeg" width="200px" />
+        <img title="bugatti-chiron" src="https://manofmany.com/wp-content/uploads/2021/04/Top-15-Best-Sports-Cars-Power-Luxury-and-Design-Chiron.jpeg" width="200px" />
+        <img title="ford gt" src="https://manofmany.com/wp-content/uploads/2021/04/Top-15-Best-Sports-Cars-Power-Luxury-and-Design-Ford-GT.jpeg" width="200px"/>
+    </div>
+    <div>
+        <p>this is use of descendant selector</p>
+        <p>this is usage of child selector </p>
+        <section>
+            <p>descendant</p>
+        </section>
+        <h1>descendant,adjacent sibling</h1>
+        <h1>general sibling</h1>
+    </div>
+    <div class="a">
+        <h2>descendant</h2>
+    </div>
+
+    <fieldset>
+        <legend>
+            <img src="./4k images/text.gif">
+        </legend>
+            <form action="Login.html" method="post">
+
+                
+                <h4>Sign UP</h4>
+                <label for="fname">first name :</label>
+                &nbsp; <input type="text"id="fname" name="first name" placeholder="enter first name"/>
+                <br><br>
+
+                <label for="sname">second name :</label>
+                <input type="text"id="sname"name="second name" placeholder="enter second name"/>
+                <br><br>
+
+                <label for="dob">date of birth :</label>
+                <input type="date" id="dob"name="date of birth"/>
+                <br><br>
+        
+                <label>gender</label><br>
+        
+                <input type="radio" id="male"name="gender" checked/><label>male</label><br>
+                <input type="radio" id="female"name="gender"/><label>female</label><br><br>
+                
+                <br><label for="phone">mobile number :</label>
+                <input type="tel" onkeypress="return /[0-9]/i.test(event.key)" id="phone"name="mobile number" required/><br>
+        
+                <br><label for="state">state</label><br>
+                <select name="state">
+                    <option id="telangana" value="telangana">telagana</option>
+                    <option id="andhra pradesh" value="andhra pradesh">andhra pradesh</option>
+                </select><br><br>
+        
+                <label for="email">email.id : </label>
+                <input type="email" id="email" name="email address"/><br><br>
+        
+                <label for="pass">enter pasword : </label>
+                <input type="password" id="pass" name="password"/><br><br>
+        
+                <label for="cpass">confirm password : </label>
+                <input type="password" id="cpass" name="password"/><br><br>
+        
+        
+                <br><input type="reset"/>
+                <input type="submit" value="sign up"/>
+        
+        
+            </form>
+    </fieldset>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .chess{margin: 50px;}
+        .cb{display: flex;border-left: 1px solid;border-right :1px solid;width: 320px;
+             
+        }
+        .row1,.row2,.row3,.row4,.row5,.row6,.row7,.row8{border: 1px solid;border: hidden;
+            width: 40px;
+            height: 40px;
+        }
+        .cb img{width: 40px;}
+        .row1{border-bottom: 1px solid;rotate: 180deg;}
+        .row2{rotate: 180deg;}
+        .row8{border-bottom: 1px solid;transition: 1s;}
+        .row8:hover{
+            border:hidden;
+            transform: scale(1.5);
+            transition: 1s;
+        }
+
+        .row7:hover{border:hidden;
+            width: 45px;
+            transform: scale(1.5);
+            transition: 1s;
+
+        }
+        
+        .row1:nth-child(2n){background-color: gray;}
+        .row2:nth-child(2n+1){background-color: gray;}
+        .row3:nth-child(2n){background-color: gray;}
+        .row4:nth-child(2n+1){background-color: gray;}
+        .row5:nth-child(2n){background-color: gray;}
+        .row6:nth-child(2n+1){background-color: gray;}
+        .row7:nth-child(2n){background-color: gray;}
+        .row8:nth-child(2n+1){background-color: gray;}
+    
+        .sec2{ display: flex;}
+        .tyre:hover{
+            transform:rotate(3600deg);
+            margin-left: 400px;
+            transition: transform margin-left  4s;
+            
+        }
+        .tyre{width: 250px;
+            transition: 4s;}
+        .checkbox{
+            border: 1px solid;
+            width: 200px;
+            height: 200px;
+            margin: 20px;  
+        }
+        .checkbox:active{
+            background-color: aqua;
+        }
+        input:hover{
+            margin-left: 170px;
+            margin-top: 100px;
+        }
+
+        input{margin: 10px;}
+
+
+        .flag{border: 1px solid;
+        width: 250px;
+        height: 50px;
+        }
+        .flag:first-child{background-color:rgb(253, 123, 57);}
+        .flag:last-child{background-color: green;}
+        .chakra{margin-left: 100px;
+        }
+        .chakra:hover{
+            transform: rotate(3600deg);
+            transition: transform  1s 1s;
+        }
+        .cars{
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .car:hover{
+            width: 500px;
+            transition: width 2s;
+        }
+        .car{
+            transition: 2s;
+        }
+        .roc{
+            rotate: 90deg;
+            margin: 20px;
+            transition: 4s;
+        }
+        .roc:hover{
+            margin-left: 700px;
+            transition: margin-left 9s;
+        }
+        .f:hover{transform: rotatey(180deg);
+            transition: transform 2s;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+    <div class="chess">
+        <div class="cb">
+            <div class="row1"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908519.png"/></div>
+            <div class="row1"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908527.png"/></div>
+            <div class="row1"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908503.png"/></div>
+            <div class="row1"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908484.png"/></div>
+            <div class="row1"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908481.png"/></div>
+            <div class="row1"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908503.png"/></div>
+            <div class="row1"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908527.png"/></div>
+            <div class="row1"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908519.png"/></div>
+        </div>
+        <div class="cb">
+            <div class="row2"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908549.png" /></div>
+            <div class="row2"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908549.png" /></div>
+            <div class="row2"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908549.png" /></div>
+            <div class="row2"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908549.png" /></div>
+            <div class="row2"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908549.png" /></div>
+            <div class="row2"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908549.png" /></div>
+            <div class="row2"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908549.png" /></div>
+            <div class="row2"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908549.png" /></div>
+        </div>
+        <div class="cb">
+            <div class="row3"></div>
+            <div class="row3"></div>
+            <div class="row3"></div>
+            <div class="row3"></div>
+            <div class="row3"></div>
+            <div class="row3"></div>
+            <div class="row3"></div>
+            <div class="row3"></div>
+        </div>
+        <div class="cb">
+            <div class="row4"></div>
+            <div class="row4"></div>
+            <div class="row4"></div>
+            <div class="row4"></div>
+            <div class="row4"></div>
+            <div class="row4"></div>
+            <div class="row4"></div>
+            <div class="row4"></div>
+        </div>
+        <div class="cb">
+            <div class="row5"></div>
+            <div class="row5"></div>
+            <div class="row5"></div>
+            <div class="row5"></div>
+            <div class="row5"></div>
+            <div class="row5"></div>
+            <div class="row5"></div>
+            <div class="row5"></div>
+        </div>
+        <div class="cb">
+            <div class="row6"></div>
+            <div class="row6"></div>
+            <div class="row6"></div>
+            <div class="row6"></div>
+            <div class="row6"></div>
+            <div class="row6"></div>
+            <div class="row6"></div>
+            <div class="row6"></div>
+        </div>
+        <div class="cb">
+            <div class="row7"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908549.png" /></div>
+            <div class="row7"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908549.png" /></div>
+            <div class="row7"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908549.png" /></div>
+            <div class="row7"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908549.png" /></div>
+            <div class="row7"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908549.png" /></div>
+            <div class="row7"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908549.png"/></div>
+            <div class="row7"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908549.png" /></div>
+            <div class="row7"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908549.png"/></div>
+        </div>
+        <div class="cb">
+            <div class="row8"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908519.png"/></div>
+            <div class="row8"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908527.png"/></div>
+            <div class="row8"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908503.png"/></div>
+            <div class="row8"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908481.png"/></div>
+            <div class="row8"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908484.png"/></div>
+            <div class="row8"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908503.png"/></div>
+            <div class="row8"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908527.png"/></div>
+            <div class="row8"><img src="https://cdn-icons-png.flaticon.com/128/6908/6908519.png"/></div>
+        </div>
+    </div>
+    </section>
+
+    <section class="sec2">
+    <img class="tyre" src="https://www.pngkey.com/png/full/6-69234_car-tires-png-clip-royalty-free-stock-pirelli.png" width="200px"/>
+    <div class="checkbox">
+        <p>check this box to show the image</p>
+        <input type="checkbox">
+    </div>
+    <div class="ind">
+        <div class="flag"></div>
+        <div class="flag"><img width="50px" class="chakra" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Ashoka_Chakra.svg/300px-Ashoka_Chakra.svg.png"/></div>
+        <div class="flag"></div>
+    </div>
+    </section>
+            <div class="cars">
+                <div>bugatti chiron<br><img class="car" width="100px" src="https://th.bing.com/th/id/R.8b340da3fad626fdb1b39a225818b25e?rik=0QIG3fsPgL2m6w&riu=http%3a%2f%2fdata.3dtuning.com%2ftun%2fIuD1vJLMh9.jpg&ehk=QBYJOr4XpgZ%2fBU%2bIrrRR9FNb%2b17suVYTWMGQ%2f2xIOgQ%3d&risl=&pid=ImgRaw&r=0"/></div>
+                <p>i'm ready to take off </p><img class="roc"  width="100px" src="https://www.bing.com/th/id/OGC.ac91bc23bf51dd0ae2f71bf117dfb740?pid=1.7&rurl=https%3a%2f%2fgiffiles.alphacoders.com%2f576%2f57635.gif&ehk=wR6Q0mpo7UgTJMkxw97XjZBx%2fUQ1v3xj3%2bsePhBcjrU%3d"/>
+                <img class="f" src="https://i.pinimg.com/originals/0c/fe/42/0cfe42b53ae0c76062c74676e8c799c8.jpg" width="200px"/>
+            </div>
+    <section>
+
+    </section>
+   
+</body>
+</html>
