@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("<b>1.Extract a some portion of a given string?</b>");
+        document.write("<br>");
+        let a = "I am learning forntend developer course";
+        let b = a.slice(14,32);
+        document.write(b);
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<b>2.Convert string into object?</b>");
+        document.write("<br>");
+        var d = "25";
+        var c = new String(d);
+        document.write(typeof c);
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<b>3.Reverse a string using charAt method?</b>");
+        document.write("<br>");
+        var d = "JAVASCRIPT";
+        var e =" ";
+        for(i=d.length-1;i>=0;i--){
+            e+=d.charAt(i);
+        }
+        document.write(e);
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<b>4.Calculate the Sum of Character Codes given string?</b>");
+        document.write("<br>");
+        var d = "JAVASCRIPT";
+        var sum =0;
+        for(i=0;i<d.length;i++){
+            sum+=d.charCodeAt(i);
+        }
+        document.write(sum);
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<b>5.Calculate the Sum of Character Codes given string?</b>");
+        document.write("<br>");
+        var d = "JAVASCRIPT";
+        var sum =0;
+        for(i=0;i<d.length;i++){
+            sum+=d.charCodeAt(i);
+        }
+        document.write(sum);
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<b>6.Take two strings as input and concatenates them into a single string using the concat method.</b>");
+        document.write("<br>");
+        var d = "JAVASCRIPT";
+        var f =" is a scripting language ";
+        var conc =d.concat(f);
+        document.write(conc);
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<b>7.Find the First Occurrence of an Element?</b>");
+        document.write("<br>");
+        var c = "javascript from javatpoint indexof";
+        var index =c.indexOf("from");
+        document.write(index);
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<b>8.Convert a String to Lowercase:</b>");
+        document.write("<br>");
+        var g = "JAVASCRIPT";
+        var lower =g.toLowerCase();
+        document.write(lower);
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<b>9.Write a function that takes a string as input and removes any leading and trailing whitespace using the trim method?</b>");
+        document.write("<br>");
+        function Trim(str){
+            let str2=str.trimEnd();
+            return str2;
+         }
+        document.write(Trim("    Hello world    ")); document.write("<br>");
+        document.write("<br>");
+        document.write("<b>10.Write a function that takes a string and a substring as input and returns the index of the first occurrence of the substring using the search method.</b>");
+        document.write("<br>");
+        function searchSubstring() {
+            let mainString = "This is a sample string for searching.";
+            let substring = "sample";
+            let index = mainString.search(substring);
+            if (index !== -1) {
+                document.write(`"${substring}" is found at index ${index} in "${mainString}".`);
+            } else {
+                document.write(`"${substring}" is not found in "${mainString}".`);
+            }
+        }
+        searchSubstring();
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<b>11.Convert a String to uppercase:</b>");
+        document.write("<br>");
+        var g = "javascript";
+        var lower =g.toUpperCase();
+        document.write(lower);
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<b>12.To find the last index of the last occurrence of a gien string</b>");
+        document.write("<br>");
+        var k = "Learn JavaScript at 10kcoders institute";  ;
+        var web =k.lastIndexOf("10k");
+        document.write(web);
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<b>13.Replace a string using function and replace method?</b>");
+        document.write("<br>");
+        function replace(main,old,new1){
+            var ori=main.replace(old,new1);
+            document.write(ori);
+            
+        }
+        replace("Please visit Hyderabad","Hyderabad","Delhi");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<b>14.Write a function that takes a number and pads it with leading zeros to a specified length.?</b>");
+        document.write("<br>");
+        function pad(){
+            var x = "7";
+            var y= x.padStart(4,"0");
+            document.write(y);
+        }
+        pad();
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<b>15.Write a function that takes a number and pads it with ending zeros to a specified length.?</b>");
+        document.write("<br>");
+        function pad2(){
+            var x = "5";
+            var y2= x.padEnd(5,"hell");
+            document.write(y2);
+        }
+        pad2();
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<b>16.Write a function that checks if an string contains a specific value using the includes method</b>");
+        document.write("<br>");
+        function inc(){
+            var str4 = "Hello world, welcome to the universe.";
+            var inclu= str4.includes("world");
+            document.write(inclu);
+        }
+        inc();
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<b>17. Write a function that checks if a given string starts with a specific </b>");
+        document.write("<br>");
+        function startswith(){
+            var str4 = "Hello world, welcome to the universe.";
+            var starts= str4.startsWith("world");
+            document.write(starts);
+        }
+        startswith();
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<b>18. Write a function that checks if a given string ends with a specific substring </b>");
+        document.write("<br>");
+        function startswith2(){
+            var str4 = "Hello world, welcome to the universe.";
+            var substring="universe.";
+            var starts2= str4.endsWith(substring);
+            document.write(starts2);
+        }
+        startswith2();
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<b>19.Extract a some portion of a given string using substr?\ </b>");
+        document.write("<br>");
+        var u="welcome to python youtube channer";
+        var v=u.substr(8,10);
+        document.write(v);
+        
+    </script>
+    
+</body>
+</html>
