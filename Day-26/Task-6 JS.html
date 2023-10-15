@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings practice</title>
+</head>
+<body>
+    <script>
+      
+        document.write("<b>Tasks:</b><br>");
+ 
+        //1
+        document.write("<b>1.Length of a given String..</b><br>");
+        var str="Hello , Welcome  to Worldcup \\2023\\ \"India\"";
+        document.write(str);
+        document.write("<br>");
+        document.write( "<b>Length of the string:</b>"+str.length);
+        document.write("<br><br>");
+        //2
+        document.write("<b>2.Extract a some portion of a given string?</b>");
+        document.write("<br>");
+        let a = "I am learning forntend developer course";
+        let b = a.slice(14,32);
+        document.write(b);
+        document.write("<br><br>");
+        //3
+        document.write("<b>3.Convert string into object?</b>");
+        document.write("<br>");
+        var d = "25";
+        var c = new String(d);
+        document.write(typeof c);
+        document.write("<br><br>");
+        //4
+        document.write("<b>4.Reverse a string using charAt method?</b>");
+        document.write("<br>");
+        var d = "INDIANWORLDCUP2023";
+        var e =" ";
+        for(i=d.length-1;i>=0;i--){
+            e+=d.charAt(i);
+        }
+        document.write(e);
+        document.write("<br><br>");
+        //5
+        document.write("<b>5.Calculate the Sum of Character Codes given string?</b>");
+        document.write("<br>");
+        var d = "INDIANWORLDCUP2023";
+        var sum =0;
+        for(i=0;i<d.length;i++){
+            sum+=d.charCodeAt(i);
+        }
+        document.write(sum);
+        document.write("<br><br>");
+        document.write("<b>6.Take two strings as input and concatenates them into a single string using the concat method.</b>");
+        document.write("<br>");
+        var d = "OCTOBER";
+        var f ="2023";
+        var conc =d.concat(" ",f);
+        document.write(conc);
+        document.write("<br><br>");
+        //7
+        document.write("<b>7.Convert a String to lowercase:</b>");
+        document.write("<br>");
+        var g = "HELLO HI! I AM PROGRAMMER, CODER, TESTER";
+        var lower =g.toLowerCase();
+        document.write(lower);
+        document.write("<br><br>");
+        //8
+        document.write("<b>8.Convert a String to UPPERCASE:</b><br>");
+        var g = "Hello, hi! I am programmer Coder, Tester";
+        var upper =g.toUpperCase();
+        document.write(upper);
+        document.write("<br><br>");
+        //9
+        document.write("<b>9.Write a function that takes a string as input and removes any leading and trailing whitespace using the trim method?</b><br>");
+        function Trim(str){
+            let str2=str.trimEnd();
+            return str2;
+         }
+        document.write(Trim("    Hello world    ")); 
+        document.write("<br><br>");
+        //10
+        document.write("<b>10.Replace a string using function and replace method?</b>");
+        document.write("<br>");
+        function replace(main,old,newer){
+            var rep=main.replace(old,newer);
+            document.write(rep);
+        }
+        replace("WorldCup Hosting Country:- England","England","INDIA");
+        document.write("<br><br>");
+        //11
+        document.write("<b>11.Use padStart method to pad with zeros of a given string</b>");
+        document.write("<br>");
+        strz="aihlo"
+        padding=strz.padStart(7,"0");
+        document.write(padding);
+        document.write("<br>");
+        //12
+        document.write("<b>12.Use padEnd method to pad with zeros of a given string</b>");
+        document.write("<br>");
+        strz="aihlo"
+        padd=strz.padEnd(9,"0");
+        document.write(padd);
+        document.write("<br><br>");
+        //13
+        document.write("<b>13.Find the First Occurrence of an Element?</b>");
+        document.write("<br>");
+        var f= "Frontend courses includes HTML,CSS, JAVASCRIPT";
+        document.write(f);
+        document.write("<br>");
+        var index =f.indexOf("includes");
+        document.write(index);
+        document.write("<br><br>");
+        //14
+        document.write("<b>14.Find the Last Occurrence of an Element?</b>");
+        document.write("<br>");
+        var l = "Frontend courses includes HTML,CSS, JAVASCRIPT, BOOTSTRAP is a Frontend Framework" ;
+        document.write(l);
+        document.write("<br>");
+        var end =l.lastIndexOf("Frontend");
+        document.write(end);
+        document.write("<br><br>");
+        //15
+        document.write("<b>15.Checks if any string contains a specific value using the includes method</b>");
+        document.write("<br>");
+        function include(){
+            var str4 = "India, England, NewZealand,SouthAfrica";
+            var i= str4.includes("India");
+            document.write(i);
+        }
+        include();
+        document.write("<br><br>");
+        //16
+        document.write("<b>16. Write a function that checks if a given string starts with a specific </b>");
+        document.write("<br>");
+        function starts(){
+            var str4 =  "India, England, NewZealand,SouthAfrica";
+            document.write(str4);
+            document.write("<br>");
+            var starts= str4.startsWith("India");
+            document.write(starts);
+        }
+        starts();
+        document.write("<br><br>");
+        //17
+        document.write("<b>17.Extract a some portion of a given string using substr?\ </b>");
+        document.write("<br>");
+        var n="Hello World, Welcome";
+        var v=n.substr(6);
+        document.write(v);
+        document.write("<br><br>");
+        //18
+        document.write("<b>18. Write a function that checks if a given string ends with a specific substring </b>");
+        document.write("<br>");
+        function Ends(){
+            var str4 = "HTML CSS Javascript";
+            var substring="JAvascript";
+            var starts2= str4.endsWith(substring);
+            document.write(starts2);
+        }
+        Ends();
+        document.write("<br><br>");
+        document.write("<b>19. Replace words which are repeated with another words in the given string </b>");
+        document.write("<br>");
+        strn="Hello, hi! I am programmer,programmer and programmer"
+        document.write(strn);
+        document.write("<br>");
+        stra=strn.replaceAll(/programmer/g,"Coder");
+        document.write(stra);
+        document.write("<br><br>");
+        document.write("<b>20. split a given string?</b>");
+        stry="abcde";
+        document.write("<br>");
+        document.write(stry);
+        arr=stry.split("");
+        document.write("<br>");
+        document.write(arr);
+        document.write("<br><br>");
+        document.write("<b>21. Find an email in given string?</b><br>");
+         var mail=" hello we are here to help you. @email.com and mail us here!";
+         document.write(mail);
+         document.write("<br>");
+         check=mail.match("@email.com");
+         document.write(check); 
+    </script>
+</body>
+</html>
