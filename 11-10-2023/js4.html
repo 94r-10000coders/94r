@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         document.write("Odd numbers from 1-25 using for loop and control statements:- <br>");
+        for(i=1;i<=25;i++){
+            if(i%2==0){
+                continue;  
+            }
+            document.write(i);
+            document.write("<br>");
+        }
+        document.write("Even numbers from 1-25 using for loop and control statements:- <br>");
+        for(i=1;i<=25;i++){
+            if(i%2==1){
+                continue;  
+            }
+            document.write(i);
+            document.write("<br>");
+        }
+        document.write("Odd numbers from 30-1 using functions <br>")
+        function odd(i){
+          if(i%2==1){
+            document.write(i+ " <br>");
+          }
+      }
+      for(i=50;i>0;i--){
+        odd(i);
+      }
+      document.write("Table 1 using functions<br>")
+          function mul(j,x){
+            document.write(j+"*"+x+"="+(j*x)+ "<br>");
+          }
+     if(j=1)
+      {
+        document.write("Table"+j+"<br>");
+        for(x=1;x<=10;x++){
+        mul(j,x);     
+    }
+    document.write("<br>");
+  }
+  //Sum of First 10 numbers
+    document.write("Sum of first 10 numbers using functions:<br>");
+      var add=0
+      function sum(i) {
+        add+=i;
+       
+      }
+      for(i=1;i<=10;i++){
+      sum(i);
+    }
+    document.write(add);
+    document.write("<br>")
+
+    document.write("Multiples of table 7 using functions <br>")
+          function tab(i){
+            document.write("7*"+i+"="+(7*i)+ "<br>");
+          }
+      for(i=1;i<=10;i++){
+
+              tab(i);     
+    }
+    document.write("<br>");
+
+    </script>
+</body>
+</html>
