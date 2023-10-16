@@ -7,24 +7,61 @@
 </head>
 <body>
    <script>
-   function even(){
-       for( i=1;i<=20;i++){
-
-
-       if(i%2==0){
+    //Pattern
+   for (i = 1; i <= 5; i++) { 
+ 
+            for (j = 1; j <= i; j++) { 
+                 document.write(j); 
+                 
               
-             continue;
-             
-            
-         }
-         document.write(" "+i+" ");
-             document.write("<br>");
-             
-
-      }
-    } 
-    even();
+            } 
+            document.write();
+            document.write("<br>")
+      
   
+}
+//reverse pattern
+document.write("<br>")
+for (i = 5; i >= 0; i--) { 
+ 
+ for (j = 0; j <= i; j++) { 
+      document.write("*"); 
+      
+   
+ } 
+ document.write();
+ document.write("<br>")
+
+
+}
+document.write("<br>")
+
+//Palindrome
+var a="madam";
+var rev="";
+for(i=a.length-1;i>=0;i--){
+    rev+=a[i];
+}
+if(rev==a){
+    document.write("palindrome");
+
+}
+else{
+   document.write("not a palindrome")
+}
+document.write("<br>")
+document.write("<br>")
+//length of string
+var a="javascript"
+var len="";
+for(var i=0;a[i]!=undefined;i++){
+    len++;
+}
+document.write(len);
+
+
+
+
    </script> 
 </body>
 </html>
