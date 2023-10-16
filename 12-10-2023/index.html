@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("Pattern1.<br>");
+        function pattern1(){
+        var num=6;
+        for( var i=1;i<=num;i++){
+            for(var j=1;j<=i;j++){
+                document.write("*");
+        }
+        document.write("<br>");
+        }
+    }
+    pattern1();
+        </script>
+        <br>
+        <script>
+            //pattern2
+            document.write("Pattern2.<br>");
+            var num=6;
+            for(var i=1;i<=num;i++){
+                for(var j=i;j<=num;j++){
+                    document.write("*");
+                }
+                document.write("<br>")
+            }
+        </script>
+        <br>
+        <script>
+            var num=6;
+            for(var i=1;i<=num;i++){
+                for(var j=1;j<=i;j++){
+                    document.write(j);
+                }
+                document.write("<br>");
+
+            }
+        </script>
+        <script>
+            function reversestring(x){
+                var str="";
+                for(i=0;x[i];i++){
+                    str=x[i]+str;
+                }
+                
+                return str;
+            }
+            document.write(reversestring("Mounika"));
+</script>
+<script>
+      var string="HELLO EVERYONE";
+      var length=string.length;
+      document.write(length);
+</script>
+<script>
+    //polindrome
+    function rev(a){
+    var b="";
+    for(i=0;a[i];i++){
+        b=a[i]+b;
+    }
+    if(a===b){
+        return a+=" True";
+}
+else{
+    return a+=" False"
+}
+}
+document.write(rev("madam"));
+document.write(rev("Hello"));
+document.write(rev("MOM"));
+document.write(rev("DAD"));
+</script>
+</body>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //even numbers between 1to 20
+        function even(){
+            for(i=1;i<=20;i++){
+            if(i%2==0){
+                console.log(i);
+            }
+        }
+    }
+    even();
+    </script>
+    <script>
+        function odd(){
+            for(i=1;i<=20;i++){
+             if(i%2!==0){
+                console.log(i);
+             }
+            }
+        }
+        odd();
+    </script>
+    <script>
+        for(i=1;i<=10;i++){
+            console.log("5*"+i+"="+(5*i)+"<br>");
+        }
+    </script>
+    <script>
+        //odd numbers in reverse order
+        function name(){
+    var sum=0;
+   var num=1;
+    do{
+        sum+=num;
+        num++;
+    }
+    while(num<=10);
+    console.log("sum is:"+sum);
+}
+name();
+        </script>
+    <script>
+        //check integer even or odd
+function name(){
+    var i=+prompt("enter a number")
+    if(i%2==0){
+        console.log("even")
+    }
+else{
+    console.log("odd");
+}
+}
+name();
+    </script>
+    <script>
+        function leapyearcheck(){
+    var i=+prompt("enter a year")
+if(i%4==0){
+    console.log("leap year");
+}
+else{
+    console.log("not a leap year")
+}
+}
+leapyearcheck();
+    </script>
+    <script>
+        //largest number among three numbers
+    function name(a=5,b=5,c=5){
+        var a,b,c;
+        if(a>b&&a>c){
+            console.log("a is larger")
+        }
+       else if (a==b&&b==c){
+           console.log("all are equal");
+       }
+       else{
+           console.log("c is larger");
+       }
+    }
+    name();
+    </script>
+    <script>
+        function daygreetings(){
+    //console.log("enter time according to your interest");
+    var i=prompt("Enter values for greetings of a day");
+    if(i>=6&&i<=11){
+    console.log("Good Morning");
+    }
+    else if(i>=12&&i<=18){
+        console.log("Good Afternoon");
+    }
+    else if(i>18&&i<=23){
+        console.log("Good Evening")
+    }
+    else{
+        console.log("no greetings");
+    }
+}
+daygreetings();
+    </script>
+        <script>
+            //traffic colors
+    function traffic(){
+        var colors=prompt("enter colors");
+        switch(colors){
+            case "red":console.log("STOP the vehicle");
+            break;
+            case "green":console.log("MOVE the vehicle");
+            break;
+            case "yellow":console.log("SLOW down the vehicle");
+            break;
+            default:console.log("invalid color");
+        }
+    }
+    traffic();
+        </script>
+        <script>
+            //months and its seasons
+function seasons(){
+    var months=prompt("Enter months of the year");
+    switch(months){
+        case "january":console.log("winter");
+         break;
+        case "february":console.log("winter");
+         break;
+        case "march":console.log("autumn");
+         break;
+        case "april":console.log("autumn");
+         break;
+        case "may":console.log("summer");
+         break;
+        case "june":console.log("summer");
+         break;
+        case "july":console.log("summer");
+         break;
+        case "august":console.log("spring");
+         break;
+        case "september":console.log("spring");
+         break;
+        case "october":console.log("spring");
+         break;
+        case "november":console.log("winter");
+         break;
+        case "december":console.log("winter");
+         break;
+        default:console.log("invalid month");
+    }
+    
+}
+seasons();
+        </script>
+        <script>
+            //menu selection
+function menuselection(){
+    var menu=prompt("Enter ice-cream flavours");
+    switch(menu){
+        case "mango":console.log("mango icecream");
+        break;
+        case "orange":console.log("orange icecream");
+        break;
+        case "vennela":console.log("vennela icecream");
+        break;
+        case "choclate":console.log("choclate icecream");
+        break;
+         case "strawberry":console.log("strawberry icecream");
+        break;
+        default:console.log("oh!sad,no ice cream");
+    }
+}
+menuselection();
+        </script>
+        <script>
+            //Hello Alice
+function name(){
+    var x=prompt("enter x value");
+    alert("Hello,"+x+" welcome to our website");
+}
+name();
+        </script>
+        <script>
+            //calculations
+            function name(){
+    var a=5;
+    var b=6;
+    console.log("sum is:"+(a+b));
+    console.log("sub is:"+(a-b));
+    console.log("mul is:"+(a*b));
+    console.log("sub is:"+(a/b));
+    console.log("sub is:"+(a%b));
+}
+name();
+        </script>
+        <script>
+            //voting
+function agetovote(){
+    var age=prompt("Enter age value");
+    if (age>=18){
+        console.log("Eligible to vote");
+    }
+    else{
+        console.log("too young to vote");
+    }
+}
+agetovote();
+        </script>
+        <script>
+            function temparature(){
+    var c=+prompt("enter temp values in celcius");
+    var F=(c*9/5)+32;
+    alert("35c is equal to "+F)
+}
+temparature();
+        </script>
+        <script>
+            //even or odd using ternary condition
+function oddoreven(){
+var num=+prompt("Enter the num values");
+num%2=="0"?console.log("even numbers"):console.log("not a even numbers");
+}
+oddoreven();
+        </script>
+        <script>
+            // password checker
+function password(){
+    var pswd=prompt("enter a pswd");
+    pswd==="12345"?console.log("access granted"):console.log("access not granted");
+}
+password();
+
+        </script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //string length
+        document.write("1.Length of string.<br>")
+    let str="Lakshmi MOunika";
+    document.write(str.length);    
+    document.write("<br>")                
+    </script>
+    <hr>
+    <script>                                                                                                      
+document.write("2.String concatenation.<br>")
+let x="Hello";
+let y="7";
+let z=x.concat(y);
+document.write(z);
+document.write("<br>")
+    </script>
+    <hr>
+    <script>
+        //indexof
+        document.write("3.indexof<br>");
+        let str1="India is a democratic country India India";
+        let str2=str1.indexOf("India",7);
+        let str3=str1.indexOf("developed");
+document.write(str2,"<br>");
+document.write(str3,"<br>");
+    </script>
+    <hr>
+    <script>
+        document.write(" 4.Using substring.<br>")
+        let a="javascript is a scripting language."
+      let b=a.substring(3,9);
+       let c=a.substring(-6, 10)
+       document.write(b,"<br>");
+        document.write(c,"<br>");
+    </script>
+    <hr>
+    <script>
+        //touppercase 
+      document.write("5.uppercase.<br>");
+      let first="javascript is a scripting language.";
+      let second=first.toUpperCase();
+      document.write(second+"<br>" );
+      </script>
+      <hr>
+      <script>
+        //toLower Case
+        document.write("6.Lowercase.<br>");
+let third="JAVASCRIPT IS A SCRIPTING LANGUAGE.";
+let four=third.toLowerCase();
+document.write(four);      
+    </script>
+    <hr>
+    <script>
+        document.write("7.charAt.<br>")
+        let text="Hi I am Mounika,Hello Mounika";
+document.write(text.charAt(6)+"<br>");
+document.write(text.charAt(8));
+    </script>
+    <hr>
+    <script>
+        document.write("8.charCodeAt.<br>");
+        let can1="I am frontend developer";
+        document.write(can1.charCodeAt(5));
+    </script>
+    <hr>
+    <script>
+        document.write("9.trimStart method:<br>");
+let container1="       Hello mounika   hi    ";
+let container2=container1.trimStart();
+document.write(container2);
+    </script>
+    <hr>
+    <script>
+        document.write("10.trimEnd method:<br>");
+        let mouni1="hello everyone       ";
+        let mouni2=mouni1.trimEnd();
+document.write(mouni2);
+    </script>
+    <hr>
+    <script>
+        document.write("11.padStart method:<br>");
+        let m="M";
+let n=m.padStart(5,"%");
+document.write(n+"<br>")
+    </script>
+    <hr>
+    <script>
+         document.write("12.padEnd method:<br>");
+        let p="L";
+let q=m.padEnd(8,"%");
+document.write(q);
+    </script>
+    <hr>
+    <script>
+        document.write("13.replace:<br>")
+        let word1="good things are used make good results:<br>";
+        let word2=word1.replace("good","super");
+        document.write(word2);
+    </script>
+    <hr>
+    <script>
+        document.write("14.use of/g:<br>");
+        let g1="html is easy but html is hard html used more.";
+    let g2=g1.replace(/html/g,"css");
+    document.write(g2);
+    </script>
+    <hr>
+    <script>
+        document.write("15.Use of/i:<br>");
+        let h1="html is easy but html is hard html used more.";
+        let h2=h1.replace(/HTML/i,"react");
+        document.write(h2);
+    </script>
+    <hr>
+    <script>
+        document.write("16.replaceAll:<br>");
+        let k1="kushi movie makes people kushi.so be kushi ";
+        let k2=k1.replaceAll("kushi","happy");
+        document.write(k2);
+    </script>
+    <hr>
+    <script>
+        document.write("17.Use of substr.<br>");
+        let t1="java is an programming language";
+        let t2=t1.substr(4,8);
+        document.write(t2);
+    </script>
+    <hr>
+    <script>
+        document.write("18.use of slice.<br>");
+        let p1="java is an programming language";
+        let p2=p1.slice(3,9);
+        document.write(p2);
+    </script>
+    <hr>
+    <script>
+        document.write("19.print matter in between double quotes:<br>");
+        let s1="java is an programming language";
+        let s2="java is an\"programming\" language";
+        document.write(s2);
+    </script>
+    <hr>
+    <script>
+        document.write("20.printing matter in between \\<br>") ;
+        let x1="java is an programming language";
+        let x2="java is an \\programming\\ language";
+        document.write(x2);
+
+    </script>
+
+
+    
+</body>
+</html>
