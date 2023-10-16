@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Task-7</title>
+</head>
+<body>
+    <script>
+    // console.log(is_array('w3resource'));
+    // console.log(is_array([1, 2, 4, 0]));
+    document.write("<b>1. Whether the given input is an array or not?</b>");
+    document.write("<br>");
+    var arr=[1,2,4,0];
+    document.write("Given Input:"+`[${arr}]`);
+    document.write("<br>");
+    arr1=Array.isArray(arr);
+    document.write(arr1);
+    document.write("<br>");
+    var arry=("'Test'");
+    document.write("Given Input:"+`(${arry})`+"<br>");
+    arr2=Array.isArray(arry);
+    document.write(arr2);
+    document.write("<br>");
+
+    //array cloning
+    // document.write("<b>2. Array Cloning</b>");
+    // document.write("<br>");
+    // var array_Clone = function(arra1) {
+    // return arra1.slice(0);
+    // };
+    // document.write("Given array:"+ array_Clone(`[${[1, 2, 4, 0]}]`));
+    // document.write("<br>");
+    // document.write(array_Clone("cloned array: "+`[${[1, 2, `[${[4, 0]}]`]}]`));
+    // var a=5;
+    var arr3=[1,2,3,4,5,6,7];
+    document.write("<b>2. First n elements of array using function? <br> </b>");
+    document.write("Given String"+`[${arr3}]`+"<br>");
+    function firstele(n) {
+        document.write("First n elements:(here n=5):");
+        // document.write(" first n elememts are:")
+        for(i=0;i<n;i++){
+            document.write(arr3[i]+","); 
+        }
+    }
+    firstele(5);
+    document.write("<br>")
+    
+    
+// var arr3=[3,7,9,8,0,6];
+// document.write(arr3);
+
+var c=[];
+var m=3;
+    function lastele() {
+        document.write("<b>3.Last n elements in reverse order:?</b> <br> (here n=3)<br>");
+        document.write("Given array:"+`[${arr3}]`+"<br>");
+        document.write("Last n elements element wise:");
+        for(i=(arr3.length-1);i>(((arr3.length)-1)-m);i--){
+            document.write(arr3[i]+","); 
+        }
+    }
+lastele();
+document.write("<br>");
+// var arr9=[1,2,3,4,5,6,7];
+// var l=[];
+// var k=4;
+//         document.write("<br>");
+//         function last(){
+//         document.write("<b>4.Last n elements in the array:?</b> <br> (here n=3)<br>");
+//         document.write(`[${arr9}]`+"<br>");
+//         document.write("last n elements in the array order:")
+//         for(i=(arr9.length-1);i>(((arr9.length)-1)-k);i--){
+//             // console.log(arr9[i]+","); 
+//             l.push(arr9[i]);
+            
+//         }
+//         document.write(l.reverse());
+        
+//         for(j=0;j<l.length;j++){
+//             document.write.log(l[j]);
+//         }
+//     }
+//   last();
+document.write("<b>4.JavaScript program to join all elements of the following array into a string?</b><br>");
+var color=["Red", "Green", "White", "Black"];
+document.write("Given array:"+`[${color}]`+"<br>");
+document.write(color.toString());
+document.write("<br>")
+document.write("<b>5. JavaScript program that accepts a number as input and inserts dashes (-) between each even number?</b><br>")
+var arr=[0,2,5,4,6,8,9];
+document.write("Given array:"+`[${arr}]`+"<br>");
+document.write("Resultant array:");
+for(i=0;i<arr.length;i++){
+  if(arr[i]%2==0){
+    document.write(arr[i]+"-");
+  }
+  else{
+    document.write(arr[i]);
+  }
+}
+document.write("<br>");
+document.write("<b>6. In given array sort the elements in the ascending order?</b><br>")
+var points = [-3, 8, 7, 6, 5, -4, 3, 2, 1];
+document.write("Given array:"+`[${points}]`+"<br>");
+points.sort(function(a, b){return a - b});
+document.write("sorted array"+`[${points}]`+"<br>");
+document.write("<b>7. In given array sort the elements in the descending order?</b><br>")
+var points = [-3, 8, 7, 6, 5, -4, 3, 2, 1];
+document.write("Given array:"+`[${points}]`+"<br>");
+points.sort(function(a, b){return b -a});
+document.write("sorted array"+`[${points}]`+"<br>");
+document.write("<b>8.In a given array compute the sum and product of an array of integers?</b><br>")
+var arr1=[1,2,3,4,5,9];
+document.write("The given array is:"+ `[${arr1}]`+"<br>");
+var sum=0;
+var product=1;
+for(i=0;i<arr1.length;i++){
+  sum+=arr1[i];
+  product*=arr1[i];
+}
+document.write("the sum of all elements in the given array is:"+sum+"<br>");
+document.write("the product of all elements in the given array is:"+product+"<br>");
+var arr=[];
+document.write("<b>9.In a given range of years show the leap years?</b><br>");
+document.write("Given range:2000-2024<br>")
+function test(first, last){
+  for(i=first;i<=last;i++){
+    arr.push(i);
+  }
+  for(i=0;i<arr.length;i++){
+    if(((arr[i]%100==0)&&(arr[i]%400==0))||((arr[i]%4==0)&&(arr[i]%100!==0))){
+      document.write(arr[i]+",");
+    }
+  }
+}
+test(2000,2024);
+    
+
+    </script>
+</body>
+</html>
