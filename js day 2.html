@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2</title>
+</head>
+<body>
+    <script>
+        //problem 1
+        var a=prompt("give your name");
+        alert("Hello" + a + " Welcome to Our Website");
+
+
+        //problem2
+        var a=+prompt("enter first value");
+        var b=+prompt("enter second value");
+        var c=prompt("select operator");
+        var d=   c=="+"?a+b   :c=="-"?a-b   :c=="*"?a*b   :c=="/"?a/b    : "false";
+        alert(a+""+c+""+b+"="+d);
+
+        
+        //problem3
+        var a=prompt("enter your age"); 
+        var res=a>17?"you're eligible to vote":"you're not eligible to vote"; 
+        console.log(res);
+        alert(res);
+
+
+        // //problem4
+        var a=prompt("enter the tempurature in Celsius");
+        var F = (a*9/5) + 32 ;
+        alert(a+ "°C Is Equals to " +F+ "°F.");
+
+
+        //problem5
+        var a=prompt("enter a value");
+        var res=a%2==0?"it is a even number":"it is an odd number";
+        console.log(res);
+        alert(res);
+
+
+        //problem6
+        var a=prompt("enter your password");
+        var res=a==12345?"access granted":"access denied";
+        console.log(res);
+        alert(res);
+
+    </script>
+</body>
+</html>
