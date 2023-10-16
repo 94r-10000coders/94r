@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_TASK7</title>
+</head>
+<body>
+    <script>
+    
+    // Array can store any type of values like strings,arrays,numbers,boolean etc.
+    // We can Create an array in 2 methods:-
+    // 1.array literal notation [].
+    // 2.the array() constructor function.
+    // i.e.(1)const arr=[1."hello",true];
+    // (2)const arr=new Array(1,"hello",3);
+    document.write("1. Write a JavaScript function to check whether an input is an array or not.<br>");
+    const arr=[1,"test",3,4];
+    document.write(`Given array is: [${arr}] <br>`);
+    document.write(Array.isArray(arr)+"<br>");
+    document.write("<hr>");
+    
+    document.write("2. Write a JavaScript function to get the first element of an array. Passing the parameter 'n' will return the first 'n' elements of the array.<br>");
+    var a=4;
+    const arr2=[1,2,'[1]',3,4,5,6];
+    document.write(`Given array is: [${arr2}] <br>`);
+    document.write(`The first "${a}" elements in an array are:<br>`)
+    function test2(){
+        for(var i=0;i<a;i++){
+        document.write(arr2[i]+" ");
+    }
+    }
+    test2();
+    document.write("<br><hr>");
+    
+
+    document.write("3. Write a JavaScript function to get the last element of an array. Passing the parameter 'n' will return the last 'n' elements of the array.<br>")
+    var b=3;
+    const c=[];
+    const arr3=[1,2,'hello',3,4,5,6];
+    document.write(`Given array is: [${arr3}] <br>`);
+    document.write(`The last "${b}" elements in an array are(from reverse order):<br>`);
+    function test3(){
+        for(var j=((arr3.length)-1);j>((arr3.length-1)-b);j--){
+        document.write(arr3[j]+" ");
+    }
+    document.write(`<br>The last "${b}" elements in an array are:<br>`);
+    for(var j=((arr3.length)-1);j>((arr3.length-1)-b);j--){
+        c.push(arr3[j]);
+    }
+    // document.write(c.reverse());
+    for(var ini2=((c.length-1));ini2>=0;ini2--){
+        document.write(c[ini2]+" ");
+    }
+    }
+    test3();
+    document.write("<br><hr>");
+
+
+    document.write("4. Write a simple JavaScript program to join all elements of the following array into a string.<br>")
+    const arr4=["hello",1,2,3,4,8,true];
+    document.write(`Given array is: [${arr4}] <br>`);
+    var str=arr4.toString();
+    document.write("Output: "+str+"<br>");
+    document.write("And Datatype here is of "+typeof(str)+".");
+    document.write("<br><hr>");
+
+    document.write("5.Write a JavaScript program that accepts a number as input and inserts dashes (-) between each even number. For example if you accept 025468 the output should be 0-254-6-8.<br>")
+    const ex=[9,2,5,4,6,8];
+    document.write(`Given array data is: [${ex}]<br>`);
+    for(var k=0;k<ex.length;k++){
+        if(ex[k]%2==0){
+            ex.splice(k+1,0,"-");
+        }
+    }
+    var str1=ex.toString();
+    // document.write(str1+"<br>");
+    for(var m=0;m<str1.length;m++){
+        if(str1[m]==","){
+            continue;
+        }
+        else{
+            document.write(str1[m]+" ");
+        }
+        
+    }
+    document.write("<br><hr>");
+
+
+    document.write("6. Write a JavaScript program to compute the sum and product of an array of integers.<br>");
+    var ex3=[1,4,5,6,7,9];
+    var sum=0;
+    var pro=1;
+    for(var x=0;x<ex3.length;x++){
+        sum=sum+ex3[x];
+    }
+    for(var x=0;x<ex3.length;x++){
+        pro=pro*ex3[x];
+    }
+    document.write("The sum of elements in array is: "+sum+"<br>");
+    document.write("The product of elements in array is: "+pro+"<br>");
+    document.write("<br><hr>");
+
+
+    document.write("7. Write a JavaScript program to add items to a blank array and display them.<br>");
+    var ex4=[];
+    ex4.push("hello","yash",1,2,3,4);
+    for(var y=0;y<ex4.length;y++){
+        document.write("Element-"+y+"="+ex4[y]+"<br>");
+    }
+    document.write("<br><hr>");
+
+
+    document.write("8. There are two arrays with individual values. Write a JavaScript program to compute the sum of each individual index value in the given array.<br>");
+    const ex5=[1,0,2,3,4];
+    const ex6=[3,5,6,7,8,13];
+    document.write(`Array1: [${ex5}] <br>`);
+    document.write(`Array2: [${ex6}] <br>`);
+    var ex7=0;
+    var te1=ex5.length;
+    var te2=ex6.length;
+    if(te2>te1){
+        for(var ini=0;ini<ex5.length;ini++){
+            ex7+=(ex5[ini]+ex6[ini]);  
+        }
+        for(var ini2=ex5.length;ini2<ex6.length;ini2++){
+            ex7+=ex6[ini2];
+        }
+        document.write(ex7);
+    }
+    else{
+        for(var ini=0;ini<ex6.length;ini++){
+            ex7+=(ex5[ini]+ex6[ini]);  
+        }
+        for(var ini2=ex6.length;ini2<ex5.length;ini2++){
+            ex7+=ex5[ini2];
+        }
+        document.write(ex7);
+    }
+    document.write("<br><hr>");
+
+    
+    document.write("9.	Create a function that takes an array of 10 numbers (between 0 and 9) and returns a string of those numbers formatted as a phone number (e.g. (555) 555-5555).<br>");
+        function test10(arr){
+            document.write(`Given array is: [${arr}]<br>`);
+            const [it1,it2,it3,it4,it5,it6,it7,it8,it9,it10]=arr;
+            // for(ini=0;ini<arr.length;ini++){
+            //     for(j=1;j<=arr.length;j++){
+            //         const itj=arr[ini];
+            //     }
+            // }
+            var it11=`(${it1}${it2}${it3}) ${it4}${it5}${it6}-${it7}${it8}${it9}${it10}.`;
+            document.write(it11);
+        }
+        const it12=[9,6,4,2,1,3,2,2,2,0];
+        test10(it12);
+
+
+    </script>
+</body>
+</html>
