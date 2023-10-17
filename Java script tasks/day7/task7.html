@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task7</title>
+</head>
+<body>
+    <script>
+        document.write("<b>1.Write a JavaScript function to check whether an `input` is an array or not.</b>");
+        document.write("<br>");
+         function checkarr(arr) {
+            return Array.isArray(arr);
+        }
+        document.write(checkarr([1, 2, 3]));
+        document.write("<br><br>");
+        document.write("<b>2.Write a JavaScript function to clone an array.</b>");
+        document.write("<br>");
+         function clone(arr1) {
+            let newarr= Array.from(arr1);
+            document.write("Clone of the said array:");
+            document.write(`[${newarr}]`);
+        }
+        clone([1, 2, 3, 4, 5]);
+        document.write("<br>");
+        document.write("<b>3. Write a JavaScript function to get the first element of an array. Passing the parameter 'n' will return the first 'n' elements of the array.</b>");
+        document.write("<br>");
+         function findelement(arr3,n) {
+            if(n == undefined){
+                return arr3[0];
+            }
+            else if(arr == undefined){
+                return [];
+            }
+            else{
+                return arr3.slice(0,n);
+            }
+        }
+        document.write(findelement([1,2,3,4,5])+"<br>");
+        document.write(findelement([1,2,3,4,5]),3);
+        document.write("<br>");
+        document.write("<b>4. Write a JavaScript function to get the last element of an array. Passing the parameter 'n' will return the last 'n' elements of the array.</b>");
+        document.write("<br>");
+        var last =  function(array, n) {
+            if (array == undefined){
+            return void 0;
+            }
+            if (n == undefined) {
+            return array[array.length - 1];
+            }
+        };
+        document.write(`last element of the array is: ${last([7, 9, 0, -2])}`);
+        document.write("<br>");
+        document.write("<b>5. Write a simple JavaScript program to join all elements of the following array into a string.</b>")
+        document.write("<br>");
+        const arr4=["hai welcome",1,2,3,4,8,true];
+        document.write(`Given array is = [${arr4}] <br>`);
+        var str=arr4.toString();
+        document.write(`conversion of string = ${str}<br>`);
+        document.write("And Datatype here is of "+typeof(str)+".");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<b>6. Write a JavaScript program that accepts a number as input and inserts dashes (-) between each even number. For example if you accept 025468 the output should be 0-254-6-8.</b>")
+        document.write("<br>");
+        // let dashstr=[0,2,5,4,6,8];
+        // let str4= dashstr.toString();
+        // let result= [str4[0]];
+        // for(let x=1; x<str4.length; x++)
+        // {
+        //     if((str4[x-1]%2 === 0)&&(str4[x]%2 === 0))
+        //     {
+        //         result.push('-', str4[x]);
+        //     }
+        //     else
+        //     {
+        //         result.push(str4[x]);
+        //     }
+        // }
+        // document.write(result.join(''));
+        const ex=[0,2,5,4,6,8];
+    document.write(`Given array data is: [${ex}]<br>`);
+    for(var k=0;k<ex.length;k++){
+        if(ex[k]%2==0){
+            ex.splice(k+1,0,"-");
+        }
+    }
+    var str1=ex.toString();
+    // document.write(str1+"<br>");
+    for(var m=0;m<str1.length;m++){
+        if(str1[m]==","){
+            continue;
+        }
+        else{
+            document.write(str1[m]+" ");
+        }
+        
+    }
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<b>7.Write a JavaScript program to sort the items of an array.</b>")
+        document.write("<br>");
+        const arr2=[ -3, 8, 7, 6, 5, -4, 3, 2, 1];
+        function srtarr(arr2){
+            arr2.sort(function(a,b){
+            return a-b;
+        })
+        return arr2;
+
+        }
+        document.write(`Given array is = [${arr2}] <br>`);
+        document.write(`sort array is [${arr2}]`);
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<b>8.Write a JavaScript program to sort the items of an array.Write a JavaScript program to compute the sum and product of an array of integers.</b>")
+        document.write("<br>");
+        var arr =[1,2,3,4,5,6,7,];
+        var sum=0;
+        var product=1;
+        for(i=0;i<arr.length;i++){
+            sum+=arr[i];
+        }
+        for(j=0;j<arr.length;j++){
+            product*=arr[j];
+        }
+        document.write(`sum of elements in array is : ${sum}<br>`);
+        document.write(`product of elements in array is : ${product}`);
+        document.write("<br>");
+        document.write("<b>9.Write a JavaScript program to add items to a blank array and display them.</b>")
+        document.write("<br>");
+        var arr1=[];
+        arr1.push("banana","ornage","apple");
+        for(var i=0;i<arr1.length;i++){
+        document.write(`Element ${i}=${arr1[i]}<br>`);
+    }
+    document.write("<br>");
+        document.write("<b>10.Write a program to print  even numbers and odd numbers separately given array</b>")
+        document.write("<br>");
+        var arr3=[1,2,3,4,5,6,7];
+        var even=[];
+        var odd=[];
+        for(i=0;i<arr3.length;i++){
+            if(arr3[i]%2==0){
+                even.push(arr[i]);
+            }
+            else{
+                odd.push(arr[i]);
+            }
+        }
+        document.write(`Even numbers is : ${even}<br>`);
+        document.write(`odd numbers is : ${odd}`);
+
+</script>
+    
+</body>
+</html>
