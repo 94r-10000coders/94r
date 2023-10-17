@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    //    Increase order
+
+    
+        var a="Increase order"
+        document.write(a)
+        document.write("<br>")
+              
+        var i,j;
+        for(i=1;i<=9;i++)
+        {
+            for(j=1;j<=i;j++) 
+            {
+                document.write("*")
+              
+            }
+            document.write("<br>")
+        }
+
+        // Decrease order
+
+        var b="Decrease order"
+        document.write(b)
+        document.write("<br>")
+         var i,j;
+         for(i=9;i>0;i--) 
+         {
+         for(j=1;j<=i;j++){
+            document.write("*")
+         }
+         document.write("<br>")
+         }
+
+    
+    //    Number order
+
+         var c="Number order"
+        document.write(c)
+        document.write("<br>")
+         var i,j;
+         for(i=1;i<=6;i++){
+            for(j=1;j<i;j++)
+            {
+                document.write(j)
+            }
+            document.write("<br>")
+         }
+         
+         
+
+
+    document.write("<br>")
+ var a="venkat";
+var rev="";
+for(i=a.length-1;i>=0;i--){
+    rev+=a[i];
+}
+if(rev==a){
+    document.write("palindrome");
+
+}
+else{
+   document.write("not a palindrome")
+}
+document.write("<br>")
+document.write("<br>")
+var a="javascript"
+var len="";
+for(var i=0;a[i]!=undefined;i++){
+    len++;
+}
+document.write(len);
+
+
+
+    </script>
+</body>
+</html>
