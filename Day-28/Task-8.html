@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-8 JS</title>
+</head>
+<body>
+    <script>
+        document.write("<b>1.JavaScript program to list the properties of a JavaScript object?</b><br>")
+var itc = {
+    sport:"Cricket",
+    captain:"Rohitsharma",
+    age: 36 };
+    // console.log(itc);
+    document.write(`itc={sport:"Cricket",captain:"Rohitsharma",age:36}`+"<br>")
+    var Obj=Object.keys(itc);
+    document.write(Obj);
+    document.write("<br>");
+    document.write("<hr>");
+    document.write("<b>2.JavaScript program to delete the rollno property from the following object. Also print the object before or after deleting the property?</b> <br>")
+    var student = {
+name : "David Rayy",
+sclass : "VI",
+rollno : 12 };
+document.write("Object before deleting the property: ");
+var o=Object.entries(student);
+document.write(o);
+delete student.rollno;
+document.write("<br>");
+document.write("Object after deleting the property: ");
+var obj=Object.entries(student);
+document.write(obj);
+document.write("<hr>");
+document.write("<b>3.JavaScript program to get the length of a JavaScript object?</b><br>");
+var student = {
+name : "David Rayy",
+sclass : "VI",
+rollno : 12 };
+var ob=Object.entries(student);
+// for(i=0;i<ob.length;i++){
+   
+// }
+document.write(ob.length);
+document.write("<br>");
+document.write("<hr>");
+document.write("<b>4. JavaScript program to display the reading status (i.e. display book name, author name and reading status) of the following books.?</B><br>");
+    var library = [ 
+   {
+       author: 'Bill Gates',
+       title: 'The Road Ahead',
+       readingStatus: true
+   },
+   {
+       author: 'Steve Jobs',
+       title: 'Walter Isaacson',
+       readingStatus: true
+   },
+   {
+       author: 'Suzanne Collins',
+       title:  'Mockingjay: The Final Book of The Hunger Games', 
+       readingStatus: false
+   }];
+//    var k=Object.entries(library);
+//    document.write(k[2]);
+document.write("<b>Title of the book:</b>"+`${library[0].title},"<b>Author of the book:</b>"${library[0].author},"<b>Reading status:</b>"${library[0].readingStatus}`+"<br>");
+document.write("<b>Title of the book:</b>"+`${library[1].title},"<b>Author of the book:</b>"${library[1].author},"<b>Reading status:</b>"${library[1].readingStatus}<br>`);
+document.write("<b>Title of the book:</b>"+`${library[2].title},"<b>Author of the book:</b>"${library[2].author},"<b>Reading status:</b>"${library[2].readingStatus}<br>`);
+document.write("<hr>");
+
+document.write("<b>5.JavaScript function to convert an object into a list of `[key, value]` pairs?</b><br>");
+var student = {
+name : "David Rayy",
+sclass : "VI",
+rollno : 12 };
+document.write("<b>Given Object </b>"+ `student = {name:"David Rayy",sclass: "VI",rollno:12}` +"<br>");
+var o=Object.entries(student);
+document.write(o[0]+"<br>");
+document.write(o[1]+"<br>");
+document.write(o[2]+"<br>");
+document.write("<hr>");
+
+document.write("<b>6.JavaScript function to check whether an object contains a given property</b><br>")
+        var student = {
+        name : "David Rayy",
+        sclass : "VI",
+        rollno : 12 
+        };
+        document.write(`student = {name:"David Rayy",sclass: "VI",rollno:12}`+"<br>");
+        var n="rollno";
+        document.write("Checking property:"+n+"<br>");
+        var m=Object.keys(student);
+         for(i=0;i<m.length;i++){
+            if(m[i]==n){
+                var test="exists";
+                document.write("exists");
+            }
+        }
+        if(test!=="exists"){
+            document.write("doesn't exists");
+        }
+    </script>
+
+
+
+</body>
+</html>
