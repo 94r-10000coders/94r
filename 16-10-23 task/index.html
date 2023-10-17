@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+document.write("1. access the first and last elements of an array<br>")
+const arr=[1,2,3,4,5,6]
+document.write(`First element is: ${arr[0]}<br>`)
+document.write(`Last element is: ${arr[arr.length-1]}<br>`)
+document.write("<hr>")
+document.write("2. How do you loop through an array in JavaScript<br>")
+const arr1=[1,2,3,4,5,6,7,8,9,10]
+for(i=0;i<arr1.length;i++){
+    document.write(`Element at index ${i} is ${arr1[i]}<br>`)
+}
+document.write("<hr>")
+document.write("3. Display all even numbers in array<br>")
+const arr2=[1,2,3,4,5,6,7,8,9,10]
+for(i=0;i<arr2.length;i++){
+    if(arr2[i]%2==0){
+        document.write(`${arr2[i]} is an even number<br>`)
+    }
+}
+document.write("<hr>")
+document.write("4. Display all odd numbers in array<br>")
+const arr3=[1,2,3,4,5,6,7,8,9,10]
+for(i=0;i<arr3.length;i++){
+    if(arr3[i]%2==1){
+        document.write(`${arr3[i]} is an odd number<br>`)
+    }
+}
+document.write("<hr>")
+document.write("5. Display all prime numbers in array<br>")
+flag=0
+const arr4=[1,2,3,4,5,6,7,8,9,10]
+for(i=0;i<arr4.length;i++){
+    c=0;
+    for(j=1;j<=arr4[i];j++){
+        if(arr4[i]%j==0){
+            c++
+        }
+    }
+    if(c==2){
+        document.write(`${arr4[i]} is a prime number<br>`)
+        flag=1
+    }
+}
+if(flag==0){
+    document.write("There is no prime numbers in array")
+}
+document.write("<hr>")
+document.write("6. Sort the array in ascending order without using predefined methods<br>")
+const arr5=[12,43,23,54,32,3,14,65]
+for(i=0;i<arr5.length;i++){
+    for(j=0;j<i;j++){
+        if(arr5[i]<arr5[j]){
+            var temp=arr5[i]
+            arr5[i]=arr5[j]
+            arr5[j]=temp
+        }
+    }
+}
+document.write(arr5)
+document.write("<hr>")
+document.write("7. Sort the array in ascending order without using predefined methods<br>")
+const arr6=[12,43,23,54,32,3,14,65]
+for(i=0;i<arr6.length;i++){
+    for(j=0;j<i;j++){
+        if(arr6[i]>arr6[j]){
+            var temp=arr6[i]
+            arr6[i]=arr6[j]
+            arr6[j]=temp
+        }
+    }
+}
+document.write(arr6)
+document.write("<hr>")
+document.write("8. Check an element is existing in an array or not<br>")
+const arr7=[12,43,23,54,32,3,14,65]
+function found(arr7,n){
+    var flag1=0
+    for(i=0;i<arr7.length;i++){
+        if(arr7[i]===n){
+            document.write(`element found at index ${i}<br>`)
+            flag1=1
+            break
+        }
+    }
+    if(flag1==0){
+        document.write("Element not found<br>")
+    }
+}
+found(arr7,23)
+found(arr7,7)
+document.write("<hr>")
+document.write("9.remove an element from an array at a specific index<br>")
+const arr8=[12,43,23,54,32,3,14,65]
+function rem(arr8,ind){
+    if(ind<arr8.length){
+        arr8.splice(ind,1)
+        return arr8
+    }
+    else{
+        document.write("Index out of the range")
+    }
+}
+document.write(rem(arr8,3),"<br>")
+document.write(rem(arr8,11),"<br>")
+document.write("<hr>")
+document.write("10. Swap Every two elements in an array<br>")
+const arr9=[12,43,23,54,32,3,14,65]
+for(i=0;i<arr9.length;i+=2){
+    var temp1=arr9[i]
+    arr9[i]=arr9[i+1]
+    arr9[i+1]=temp1
+}
+document.write(arr9)
+    </script>
+</body>
+</html>
