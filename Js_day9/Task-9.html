@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_Task9</title>
+</head>
+<body>
+    <script>
+        // split,join
+        console.log(`(1)split method:- `);
+        var a="Hi welcome to console,This is Yash";
+        var b=a.split(" ");
+        var c=a.split("");
+        var d=a.split(",");
+        console.log(b);
+        console.log(c);
+        console.log(d);
+
+        console.log(`(2)join method:- `);
+        var e=[11,23,34,4,60];
+        var f=e.join(" or ");
+        console.log(f);
+
+        // for in and for of loops
+        var str="Yashwanth";
+        console.log(`"for in" loop in strings:-  `);
+        console.log(`(3)Given string is:-${str} `);
+        for (x in str){
+            // console.log(x);
+            console.log(str[x]);
+        }
+        const arr=[12,23,45,67,64];
+        console.log(`"for in" loop in arrays:- `);
+        console.log(`(4)Given array is:- ${arr}`);
+        for(x in arr){
+            // console.log(x);
+            console.log(arr[x]);
+        }
+
+        var str1="Ramesh";
+        console.log(`"for of" loop in strings:-  `);
+        console.log(`(3)Given string is:-${str1} `);
+        for (y of str1){
+            console.log(y);
+        }
+        const arr1=[12,23,45,67,64];
+        console.log(`"for of" loop in arrays:- `);
+        console.log(`(4)Given array is:- ${arr1}`);
+        for(y of arr1){
+            console.log(y);
+        }
+
+        // arrow function
+        console.log(`(5)arrow function:- `);
+        var fun1 = (itm1) =>{
+            console.log(`Hello ${itm1}`);
+        }
+        fun1("Yash");
+
+        // call back functions
+        console.log(`(6)call back functions:- `);
+        function fun2(itm2){
+            console.log(`Hello Welcome! ${itm2}`);
+        }
+        function fun3(itm3){
+            // console.log(`This is ${itm3}.`);
+            return `This is ${itm3}`;
+        }
+        fun2(fun3("Yash"));
+
+        // map method:-
+        // map() creates a new array from calling a function for every array element.
+
+        // map() does not execute the function for empty elements.
+
+        // map() does not change the original array.
+        var arr2=["hello",45,67,89,"hi"];
+        var arr3=arr2.map(fun4);
+        function fun4(i){
+            return i+"hi";
+        }
+        console.log(arr3);
+
+        var arr4=[1,2,3,4];
+        var arr5=arr4.map(fun5);
+        function fun5(ji){
+            return ji*2;
+        }
+        console.log(arr5);
+
+
+
+
+
+
+    </script>
+</body>
+</html>
