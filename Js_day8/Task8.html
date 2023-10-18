@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_TASK8</title>
+</head>
+<body>
+    <script>
+        document.write("1. Write a JavaScript program to list the properties of a JavaScript object.<br>");
+        const obj1={
+            name:"Yashwanth",
+            age:22,
+            id:12345,
+            gender:"male"
+        };
+        document.write(`obj1={
+            name:"Yashwanth",
+            age:22,
+            id:12345,
+            gender:"male"
+        };<br>`);
+        console.log(`(1)Given object is:-`);
+        console.log(obj1);
+        document.write("Output:- ");
+        var itm1=Object.keys(obj1);
+        document.write(itm1);
+        console.log(`(1)${itm1}`);
+        document.write("<br><hr>");
+
+
+        document.write("2. Write a JavaScript program to delete the rollno property from the following object. Also print the object before or after deleting the property.<br>");
+        var student = {
+        name : "David Rayy",
+        sclass : "VI",
+        rollno : 12 
+        };
+        console.log("(2)Before deletion of property:- ");
+        console.log(student);
+        var itm2=Object.entries(student);
+        document.write("Given object entries are:- ");
+        document.write(itm2);
+        document.write("<br>After removing rollno property from object:-<br>");
+        delete student.rollno;
+        var itm3=Object.entries(student);
+        document.write(itm3);
+        console.log("(2)After:- ");
+        console.log(student);
+        document.write("<br><hr>");
+
+
+        document.write("3. Write a JavaScript program to get the length of a JavaScript object.<br>");
+        const obj2={
+            name:"Yash",
+            age:22,
+            gender:"male"
+        };
+        document.write("Entries in given object are:- ");
+        console.log("(3)Given object is:- ");
+        console.log(obj2);
+        var itm4=Object.entries(obj2);
+        document.write(itm4);
+        // document.write("<br>"+typeof(itm4));
+        document.write(`<br>The length of object is ${itm4.length}`);
+        console.log(`(3)It's length is ${itm4.length}`);
+        document.write("<br><hr>");
+
+
+        document.write("4. Write a JavaScript program to display the reading status (i.e. display book name, author name and reading status) of the following books.<br>");
+        document.write(`library = [ 
+        {
+            author: 'Bill Gates',
+            title: 'The Road Ahead',
+            readingStatus: true
+        },
+        {
+            author: 'Steve Jobs',
+            title: 'Walter Isaacson',
+            readingStatus: true
+        },
+        {
+            author: 'Suzanne Collins',
+            title:  'Mockingjay: The Final Book of The Hunger Games', 
+            readingStatus: false
+        }];`)
+        var library = [ 
+        {
+            author: 'Bill Gates',
+            title: 'The Road Ahead',
+            readingStatus: true
+        },
+        {
+            author: 'Steve Jobs',
+            title: 'Walter Isaacson',
+            readingStatus: true
+        },
+        {
+            author: 'Suzanne Collins',
+            title:  'Mockingjay: The Final Book of The Hunger Games', 
+            readingStatus: false
+        }];
+        document.write("<br>")
+        document.write("Output:- <br>");
+        document.write(`${library[0].title},${library[0].author},${library[0].readingStatus}<br>`);
+        document.write(`${library[1].title},${library[1].author},${library[1].readingStatus}<br>`);
+        document.write(`${library[2].title},${library[2].author},${library[2].readingStatus}`);
+        document.write("<br><hr>");
+
+
+        document.write("5. Write a JavaScript program to convert an object into a list of `[key, value]` pairs.<br>");
+        const obj5={
+            name:"Yash",
+            age:22,
+            gender:"male"
+        };
+        document.write(`obj5={
+            name:"Yash",
+            age:22,
+            gender:"male"
+        }<br>`);
+        document.write("Output:- ");
+        var itm5=Object.entries(obj5);
+        document.write(itm5);
+        // here in console we are getting as a list
+        console.log(`(5)Output list:- `);
+        console.log(itm5);
+        document.write("<br><hr>");
+
+
+        document.write("6.  Write a JavaScript program to check whether an object contains a given property.<br>");
+        var student = {
+        name : "David Rayy",
+        sclass : "VI",
+        rollno : 12 
+        };
+        document.write("Given object:- ");
+        document.write(`student = {
+        name : "David Rayy",
+        sclass : "VI",
+        rollno : 12 
+        }<br>`)
+        var n="rollno";
+        var m=Object.keys(student);
+        document.write(`"${n}" property `);
+         for(i=0;i<m.length;i++){
+            if(m[i]==n){
+                var test="exists.";
+                document.write(test);
+            }
+            // else{
+            //      continue;
+            // }
+        }
+        if(test!=="exists."){
+            document.write("doesn't exists.");
+        }
+
+
+        // document.write("6. Write a JavaScript function to get a copy of the object where the keys become the values and the values are the keys.<br>");
+        // const obj6={
+        //     name:"Ramesh",
+        //     age:20,
+        //     gender:"male"
+        // };
+        // document.write("Given object is:-<br>");
+        // document.write(`obj6={
+        //     name:"Ramesh",
+        //     age:20,
+        //     gender:"male"
+        // }<br>`);
+        // document.write("Output:-<br>");
+        // var obj7={};
+        // var itm7=Object.values(obj6);
+        // var itm8=Object.keys(obj6);
+        // document.write(itm7[0]);
+        // console.log(itm7);
+        // i.e.here these are displayed as a list
+        // for(i=0;i<itm7.length;i++){
+        //     if((typeof(itm7[i]))!==string){
+        //         var b=itm7[i].toString();
+        //         obj7.b=`"${itm8[i]}"`;
+        //     }
+        //     else{
+        //         obj7.itm7[i]=`"${itm8[i]}"`;
+        //     }
+            
+        // }
+        // document.write(obj7);
+        // console.log(obj7);
+
+
+        // document.write("6.	Create a function that takes an array of items, removes all duplicate items and returns a new array in the same sequential order as the old array (minus duplicates).<br>");
+        // var ele=[];
+        // function fun(arr){
+        //     const [el1,el2,el3,el4,el5,el6,el7,el8,el9]=arr;
+        //     ele.push(el1,el2,el3,el4,el5,el6,el7,el8,el9);
+        //     document.write(`Given array is:-[${ele}]<br>`);
+        //     for(i=0;i<(ele.length);i++){
+        //         for(j=1;j<((ele.length)-1);j++){
+        //             if(ele[i]==ele[j]){
+        //                 ele.splice(1,1);
+        //         }
+        //         }   
+        //     }
+        //     document.write(ele);
+        // }
+        // var it9=[1,3,5,1,7,1,2,8,2];
+        // fun(it9);
+
+
+
+
+
+
+
+
+
+        
+
+
+    </script>
+</body>
+</html>
