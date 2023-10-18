@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("1.access the first and last element of array <br>");
+        const arr=[1,2,3,4,5,6];
+        const n=arr.length;
+        document.write(arr[0] +"<br>");
+        document.write(arr[n-1] +"<br>");
+        document.write("<br>")
+        document.write("2. How do you loop through an array in JavaScript<br>")
+        
+        const arr1=[1,2,3,4,5,6,7,8,9,10];
+for(i=0;i<=9;i++){
+    document.write(arr1[i] +"<br>")
+}
+document.write("<br>")
+document.write("3. Display all even numbers in array<br>")
+const arr2=[1,2,3,4,5,6,7,8,9,10];
+for(i=0;i<10;i++){
+    if(arr2[i]%2==0){
+        document.write(arr2[i] +"<br>")
+    }
+}
+document.write("<br>")
+document.write("4. Display all odd numbers in array<br>")
+const arr3=[1,2,3,4,5,6,7,8,9,10];
+for(i=0;i<10;i++){
+    if(arr3[i]%2!=0){
+        document.write(arr2[i] +"<br>")
+    }
+}
+document.write("<br>")
+document.write("5. Swap Every two elements in an array<br>")
+
+const arr5=[12,43,23,54,32,3,14,65]
+for(i=0;i<8;i+=2){
+    var temp1=arr5[i]
+    arr5[i]=arr5[i+1]
+    arr5[i+1]=temp1
+}
+document.write(arr5 +"<br>")
+document.write("<br>")
+document.write("6.JavaScript program to join all elements of the following array into a string?<br>");
+var color=["Red", "Green", "White", "Black"];
+document.write("Given array:"+`[${color}]`+"<br>");
+document.write(color.toString());
+document.write("<br>")
+
+
+
+
+
+
+
+        
+
+    </script>
+</body>
+</html>
