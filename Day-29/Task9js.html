@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task9JS</title>
+</head>
+<body>
+    <script>
+        // split method
+        var str="hi hello, world";
+        new1=str.split(" ");
+        new2=str.split("");
+        new3=str.split(",");
+        new4=str.split();
+        console.log(new1);
+        console.log(new2);
+        console.log(new3);
+        console.log(new4);
+        
+        var arr=[1,2,3,4,5];
+        new1=arr.join("");
+        new2=arr.join(" ");
+        new3=arr.join(",");
+        new4=arr.join();
+        console.log(new1);
+        console.log(new2);
+        console.log(new3);
+        console.log(new4);
+        
+        //for-in strings
+        const u="hihello";
+        console.log("for-in loop in strings");
+        console.log(`given string:${u}`);
+        for (x in u){
+            console.log(u[x]);
+        }
+        //for-in arrays
+        console.log("for-in loop in arrays");
+        console.log(`given array:[${arr}]`);   
+        var arr=[1,2,34,68,90,112];
+        for (x in arr){
+            console.log(arr[x]);
+        }
+        //for-of strings
+        const k="hihello";
+        console.log("for-of loop in strings");
+        console.log(`given string:${u}`);
+        for (x in u){
+            console.log(x);
+        }
+          //for-of arrays
+          console.log("for-of loop in arrays");
+        console.log(`given array:[${arr}]`);   
+        var arr=[1,2,34,68,90,112];
+        for (x in arr){
+            console.log(x);
+        }
+        // Arrow function
+        var fun =(hi) => {
+            console.log(hi);
+        }
+        fun("Tharun");
+        // callback
+    function fun1(test1){
+        console.log(`hi ${test1}`);
+    }
+
+    function fun2(res){
+       return `Hlo ${res}`;
+    }
+    fun1(fun2("test"));
+    //Map function
+    let arr1=[1,2,3,4,5];
+    let z=arr1.map(func);
+    console.log(z);
+    function func(y){
+        return y*y;
+    }
+    var arr3=[1, "JAVA"]
+    var y=arr3.map(fu1);
+    console.log(y);
+    function fu1(l){S
+        return l+"script";
+    }
+
+    </script>
+</body>
+</html>
