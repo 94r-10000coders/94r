@@ -25,6 +25,19 @@
   }
   pattern(5);
   document.write("<br>");
+   // print pattern numbers 1 to 5 using functions and for loop
+   function numpat(){
+    var n=5;
+    for(i=1;i<=n;i++){
+      for(j=1;j<=i;j++){
+        document.write(j + " ");
+      }
+      document.write("<br>");
+    }
+   }
+   numpat();
+   document.write("<br>");
+   
   //reverse a string and assined to new variable using function and for 
   function reverse(str1="helloworld",str=""){
   for(i=str1.length-1;i>=0;i--){

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task8</title>
+</head>
+<body>
+    <script>
+        document.write("<b>1. Write a JavaScript program to list the properties of a JavaScript object.</b><br>");
+        const employinfo={
+            id:424367,
+            name:"Subrahmanyam",
+            role:"Graphicdesigner"};
+        const details=Object.keys(employinfo);
+        document.write(details);
+        document.write("<br>");
+        document.write("<b>2. Write a JavaScript program to delete the rollno property from the following object. Also print the object before or after deleting the property.</b><br>");
+        const playerstats={
+            name:"MSDhoni",
+            matchesplayed:500,
+            runs:13000,
+            format:"odi"
+        };
+        document.write(playerstats);
+        delete playerstats.format;
+        document.write(playerstats);
+        document.write("<br><br>");
+        document.write("<b>3.Write a JavaScript program to get the length of a JavaScript object.</b><br>");
+        var playerinfo={
+            name:"MSDhoni",
+            matchesplayed:500,
+            runs:13000,
+            format:"odi"
+        };
+        var length=Object.keys(playerinfo).length;
+        document.write(`Given object is ${playerinfo}<br>`);
+        document.write(`Lenght of the object is: ${length}`);
+        document.write("<br><br>");
+        document.write("<b>4.Write a JavaScript program to display the reading status (i.e. display book name, author name and reading status) of the following books.</b><br>");
+        var library = [ 
+   {
+       author: 'Bill Gates',
+       title: 'The Road Ahead',
+       readingStatus: true
+   },
+   {
+       author: 'Steve Jobs',
+       title: 'Walter Isaacson',
+       readingStatus: true
+   },
+   {
+       author: 'Suzanne Collins',
+       title:  'Mockingjay: The Final Book of The Hunger Games', 
+       readingStatus: false
+   }];
+   for(i=0;i<library.length;i++){
+    if(library[i].readingStatus==true){
+        document.write(`${library[i].title} by ${library[i].author} is already read<br>`);
+    }
+    else{
+        document.write(`${library[i].title} by ${library[i].author} is not yet <br>`);
+    }
+   }
+   document.write("<br><br>");
+   document.write("<b>5.Write a JavaScript program to convert an object into a list of `[key, value]` pairs.</b><br>");
+    function list(obj){
+        return Object.entries(obj);
+    }
+    let myobj = {a:1, b:2, c:3};
+    document.write(list(myobj));
+    console.log(list(myobj));
+    document.write("<br><br>");
+   document.write("<b>6.Write a JavaScript program to check whether an object contains a given property.</b><br>");
+   function checkobj(obj, pname){
+    return pname in obj;
+
+   }
+   var obj =
+   {
+       title:  'The Road Ahead',
+       author: 'Bill Gates',
+       libraryID: 1254
+   };
+   var pname = "title";
+   if(checkobj(obj, pname)){
+    document.write(`Object contains the property "${pname}"`);
+   }
+   else{document.write(`Object does not contains the property "${pname}"`);}
+
+
+
+
+</script>
+    
+</body>
+</html>
