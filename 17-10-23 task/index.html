@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<script>
+console.log("1. Define objects using literals and constructor")
+const obj1={"name":"balu","age":16,"Qualification":"10th"}
+const obj2=new Object()
+obj2.name="ramu";
+obj2.age=16;
+obj2.qualification="10th";
+console.log(obj1)
+console.log(obj2)
+console.log("2. Write a JavaScript program to list the properties of a JavaScript object.")
+obj3={"name":"balu","age":16,"Qualification":"10th"}
+console.log(Object.keys(obj3))
+console.log("3. Write a JavaScript program to list the entries of a JavaScript object.")
+const obj4={"name":"balu","age":16,"Qualification":"10th"}
+var x=Object.entries(obj4)
+console.log(x)
+console.log("4. Write a JavaScript program to list the values of a JavaScript object.")
+const obj5={"name":"balu","age":16,"Qualification":"10th"}
+console.log(Object.values(obj5))
+console.log("5. Assign function as value to property in objects")
+const obj6={"name":"ravi",age:"32","com":"TechM","sal":function(){
+  return "Salary Based on company norms";
+}}
+console.log(obj6)
+console.log(obj6.sal())
+console.log("6. Write a get method inside the object")
+const obj7={
+  "name":"ramu",
+  "age":32,
+  "color":"White",
+  "height":5.5,
+  get col(){
+    return this.color;
+  }
+}
+console.log(obj7)
+console.log(obj7.col)
+console.log("7. Write a get method inside the object")
+const obj8={
+  "name":"ramu",
+  "age":32,
+  "color":"white",
+  "height":5.5,
+  set colo(col){
+     this.color=col;
+  }
+}
+obj8.colo="Lemon Yellow"
+console.log(obj8)
+console.log("8. Iterate object using for in Loop")
+const obj9={"name":"ramu","age":32,"color":"white","height":5.5,"weight":"56"}
+for(x in obj9){
+  console.log(`${x} : ${obj9[x]}`)
+}
+console.log("9. Write a JavaScript program to delete the rollno property from the following object. Also print the object before or after deleting the property.")
+const obj10={"name":"ramu","age":32,"color":"white","height":5.5,"weight":"56"}
+console.log(obj10)
+delete obj10.weight;
+console.log(obj10)
+console.log("10. Write a JavaScript program to get the length of a JavaScript object.")
+const obj11={"name":"ramu","age":32,"color":"white","height":5.5,"weight":"56"}
+console.log(obj11)
+var c=0;
+for(x in obj11){
+  c++
+}
+console.log(`length of obj11 is ${c}`)
+console.log("11. Write a JavaScript program to display the reading status (i.e. display book name, author name and reading status) of the following books.")
+const obj12=[ 
+   {
+       author: 'Bill Gates',
+       title: 'The Road Ahead',
+       readingStatus: true
+   },
+   {
+       author: 'Steve Jobs',
+       title: 'Walter Isaacson',
+       readingStatus: true
+   },
+   {
+       author: 'Suzanne Collins',
+       title:  'Mockingjay: The Final Book of The Hunger Games', 
+       readingStatus: false
+   }];
+console.log(obj12)
+for(i=0;i<obj12.length;i++){
+  console.log(obj12[i].readingStatus)
+}
+console.log("")
+</script>
+</body>
+</html>
