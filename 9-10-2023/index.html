@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<body>
+    <script>
+    //even or odd
+   var x=+prompt("enter number");
+    if(x%2==0){
+        console.log("given number is even")
+    }
+    else{
+        console.log("given number is odd")
+    }
+    </script>
+    <script>
+        //leap year or not
+var leap=+prompt("enter a year");
+if(leap%4==0){
+    console.log("Yes,it is leap year");
+}
+else{
+    console.log("This is not a leap year")
+}
+    </script>
+    <script>
+        //largest among 3 numbers
+        var a=prompt("enter first number");
+        var b=prompt("enter second number");
+        var c=("enter third number");
+        if(a<b){
+            alert("b is larger"+b);
+        }
+        else if((a>b)&&(a>c)){
+            alert("c is larger"+c);
+        }
+        else{
+            alert("a is greater");
+        }  
+    </script>
+    <script>
+        //day greetings
+    var time=+prompt("enter timings");
+    if(time>=6&&time<=11){
+        alert("good morning");
+    }
+   else if(time>=12&&time<=17){
+        alert("good afternoon");
+    }
+else if(time>=18&&time<=23){
+alert('good night')
+}
+else{
+    alert("nothing")
+}
+    </script>
+    <script>
+        //traffic light
+        var colors=prompt("enter colors");
+        switch(colors){
+            case "yellow":alert("slowdown the vehicle");
+            break;
+            case "green":alert("We can go");
+            break;
+            case "red":alert("stop the vehicle");
+            break;
+            default:alert("not found")
+        }
+    </script>
+    <script>
+        //months using switch
+        var months=prompt("enter months");
+        switch(months){
+          case "January":alert("winter monthh");
+            break;
+            case "february":alert("winter monthh");
+            break;
+            case "march":alert("autumn");
+            break;
+            case "april":alert("autumn");
+            break;
+            case "may":alert("autumn");
+            break;
+            case "June":alert("spring monthh");
+            break;
+            case "July":alert("spring");
+            break;
+            case "august":alert("autumn");
+            break;
+            case "september":alert("autumn");
+            break;
+            case "october":alert("rainy");
+            break;
+            case "november":alert("rainy");
+            break;
+            case "December":alert("winter monthh");
+            break;
+            default:alert("wrong input");
+        }
+    </script>
+    <script>
+        var menu=prompt("students interested games");
+        switch(menu){
+            case "kabadi":alert("It is our state game");
+            break;
+            case "kho-kho":alert("It is girls game");
+            break;
+            case "chess":alert("It is mental game");
+            break;
+            case "table tennis":alert("It is indoor game");
+            break;
+            case "cricket":alert("Most popular game in the world");
+            break;
+            case "hockey":alert("It is our National game");
+            break;
+            default:alert("invalid games");
+        }
+    </script>
+    </head>
+</body>
+</html>

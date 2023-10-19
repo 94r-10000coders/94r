@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("1.Accessing properties.<br>")
+        var employ={
+            name:"raju",
+            age:"30",
+            salary:10000,
+            place:"hyderabad",
+        }
+        let details=Object.keys(employ);
+        document.write(details);
+    </script>
+    <hr>
+    <script>
+        document.write("2.accessing entries.<br>");
+         var employ={
+        name:"raju",
+        age:"30",
+        Rollno:"202",
+        salary:10000,
+     place:"hyderabad",
+        }
+        let det=Object.entries(employ);
+        document.write(det);
+    </script>
+    <hr>
+    <script>
+       document.write("3.length of object<br>")
+        var myobj={color:"",width:"",height:""};
+var lengthofobject=Object.keys(myobj).length;
+document.write(myobj);
+document.write(lengthofobject);
+    </script>
+    <hr>
+    <script>
+        document.write("4.Reading status of book.<br>")
+        var library = [ 
+    {
+        title: 'Bill Gates',
+        author: 'The Road Ahead',
+        readingStatus: true
+    },
+    {
+        title: 'Steve Jobs',
+        author: 'Walter Isaacson',
+        readingStatus: true
+    },
+    {
+        title: 'Mockingjay: The Final Book of The Hunger Games',
+        author: 'Suzanne Collins',
+        readingStatus: false
+    }];
+
+for (var i = 0; i < library.length; i++) 
+   {
+    var book = "" + library[i].title + "'" + ' by ' + library[i].author + ".";
+    if (library[i].readingStatus) {
+      document.write("Already read " + book);
+    } else
+    {
+     document.write("You still need to read " + book);
+    }
+   }
+    </script>
+    <script>
+        docuent.write(5.);
+    </script>
+    <hr>
+    <script>
+        var student={
+            name:"david",
+            class:"VI",
+            rollno:12
+        };
+        document.write("5.Before deletion:-<br>");
+        document.write(student);
+        var student1=Object.entries(student);
+        document.write(student1);
+        document.write("<br>");
+        document.write("after deletion:-<br>")
+        delete student.rollno;
+        var student2=Object.entries(student);
+        document.write(student2);
+    </script>
+</body>
+</html>
