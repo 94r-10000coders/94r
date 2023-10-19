@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>17/10/23</title>
+    </head>
+    <body>
+        <script>
+        document.write("Slice operator")
+        document.write("<br>")
+        const n=[7, 9, 0, -2];
+        const b=n.slice(0,1);
+        document.write(b)
+        document.write("<br>")
+        document.write("<br>")
+
+        document.write("Length method")
+        document.write("<br>")
+        const n1=[7, 9, 0, -2];
+        const b1=n.length-1;
+        document.write(b1)
+        document.write("<br>")
+        document.write("<br>")
+
+        document.write("Join operator")
+        document.write("<br>")
+        const n2=[7,9,0,-2];
+        document.write(n2.join("|"))
+        document.write("<br>")
+        document.write("<br>")
+
+        document.write("Sort operator")
+        document.write("<br>")
+        const n3=[7,9,0,-2];
+        n3.sort()
+        document.write(n3)
+        document.write("<br>")
+        document.write("<br>")
+
+        document.write("Printing elements operator")
+        document.write("<br>")
+        var n5= [1, 2, 3, 4, 5];
+        for (i=0;i<=n.length;i++){
+        document.write(n5[i]);
+        document.write("<br>")
+        document.write("<br>")
+        }
+        document.write("Printing last elements operator")
+        document.write("<br>")
+        const arr1 = ['a', 'b', 'c', 'd', 'e'];
+        const last1 = arr1.slice(-1); 
+        document.write(last1);
+        document.write("<br>")
+        const last2 = arr1.slice(-2);
+        document.write(last2);
+        document.write("<br>")
+        document.write("<br>")
+        document.write("Removing Duplicate values ")
+        document.write("<br>")
+        let arr2 = ["apple", "mango", "apple", 
+		            "orange", "mango", "mango"]; 
+        function remove(arr2) { 
+	    return ([...new Set(arr2)]); 
+        // ...Set=used to convert the string into an array
+        // new Set means passing the array to new Set()
+        } 
+        document.write(remove(arr2));
+
+        
+        </script>
+    </body>
+</html>
