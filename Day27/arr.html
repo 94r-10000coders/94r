@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("Function to check whether an input is array or not")
+        document.write("<br>")
+        function arr(a){
+            if(toString.call(a)==="[object Array]"){
+                return true;
+            
+            }
+            else{
+                return false;
+            }
+        }
+
+        document.write(arr("hi"));
+        document.write("<br>")
+        document.write(arr([1,2,3,4,5]));
+        document.write("<br>")
+        document.write("<br>")
+       
+        function ar(l,n){
+            document.write("To get n elements of given array")
+            document.write("<br>")
+            a=l.slice(n);
+            return a;
+        }
+        document.write(ar([2,3,4,5],(2)));
+        document.write("<br>")
+        document.write("<br>")
+        document.write("To join all elements in array into a string");
+        li=["hi","jay","welcome"]
+        document.write("<br>")
+        document.write(li.join(" & "))
+        document.write("<br>")
+        document.write("<br>")
+        document.write("Accepts a number as input and inserts dashes (-) between each even number")
+        const num=1346798235;
+        const str=num.toString();
+        const result=[str[0]];
+        for(let x=0; x<str.length-1; x++)
+  {
+    if((str[x-1]%2 === 0)&&(str[x]%2 === 0))
+     {
+      result.push('-', str[x]);
+     }
+    else
+     {
+      result.push(str[x]);
+     }
+  }
+  document.write("<br>")
+  document.write(result.join(''))
+  document.write("<br>")
+  document.write("<br>")
+  document.write("sorting an array")
+  let n=["20","29","25","52","45"]
+  document.write("<br>")
+  document.write(n.sort())
+  var arr1=[3, 4, 4, 4, 2, 3, 4, 3, 2, 2, 4, 9, 3];
+var mf = 1;
+count = 0;
+var item;
+for (var i=0; i<arr1.length; i++)
+{
+        for (var j=i; j<arr1.length; j++)
+        {
+                if (arr1[i] == arr1[j])
+                 count++;
+                if (mf<count)
+                {
+                  mf=count; 
+                  item = arr1[i];
+                }
+        }
+        count=0;
+}
+document.write("<br>")
+document.write("<br>")
+document.write("To print most frequent item in array: ")
+document.write(item+" ( " +mf +" times ) ") ;
+document.write("<br>")
+document.write("<br>")
+var a = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]];
+document.write("To print all the elements in array in certain format ") 
+document.write("<br>")
+for (var i in a) 
+{  
+   document.write("row " + i);
+   document.write("<br>")
+   for (var j in a[i]) 
+     {
+      document.write(" " + a[i][j]);
+      document.write("<br>")
+      
+     }
+     
+}
+document.write("<br>")
+document.write("To compute the sum and product of an array of integers")
+var array = [1, 2, 3, 4, 5, 6];
+  var  s = 0;
+   var p = 1;
+   var i;
+for (i = 0; i < array.length; i += 1) 
+   {
+    s += array[i];
+    p *= array[i];
+    }
+    document.write("<br>")   
+document.write('Sum : '+s + ' Product :  ' +p); 
+
+
+
+
+
+    </script>
+</body>
+</html>
