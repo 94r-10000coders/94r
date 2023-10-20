@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>17/10/23</title>
+    </head>
+    <body>
+        <script>
+           console.log("Define objects using literals and constructor")
+            const obj={"Name":"Sai","Gender":"Male","AGE":21}
+            const obj1=new Object()
+            obj1.Name="Jaya";
+            obj1.Gender="Male";
+            obj1.AGE=16;
+            console.log(obj)
+            console.log(obj1)
+
+            console.log("Write a JavaScript program to list the values of a JavaScript object")
+            const obj2={"Name":"Sai","Gender":"Male","AGE":21}
+            console.log(Object.values(obj2))
+
+            console.log("Write a JavaScript program to list the properties of a JavaScript object")
+            const obj3={"Name":"Sai","Gender":"Male","AGE":21}
+            console.log(Object.keys(obj3))
+            console.log("Write a JavaScript program to list the entries of a JavaScript object")
+            const obj4={"Name":"Sai","Gender":"Male","AGE":21}
+            var x=Object.entries(obj4)
+            console.log(x)
+
+            console.log("Write a get method inside the object")
+            const obj5={
+            "name":"ramu",
+            "age":32,
+            "color":"white",
+            "height":5.5,
+            set colors(col){
+                this.color=col;
+            }
+            }
+            console.log(obj5)
+
+            console.log("Length of the Object")
+            var obj6 = {
+            Name: "Sai",
+            Gender:"Male",
+            age: 15 
+            };
+
+            var length = Object.keys(obj6).length;
+            console.log(length);
+
+            console.log("Iterate object using for in Loop")
+            const obj7={"Name":"Sai","Age":22,"Gender":"Male"}
+            for(x in obj7){
+            console.log(obj7[x])
+            }
+            console.log("Iterate object using for of Loop")
+            const obj8 = ['a', 'b', 'c'];
+            for (x of obj8) {
+            console.log(x);
+            }
+
+
+
+            console.log("Write a JavaScript program to display the author nof the following books.")
+            const obj9=[ 
+            {
+                author: 'Bill Gates',
+                title: 'The Road Ahead',
+                readingStatus: true
+            },
+            {
+                author: 'Steve Jobs',
+                title: 'Walter Isaacson',
+                readingStatus: true
+            },
+            {
+                author: 'Suzanne Collins',
+                title:  'Mockingjay: The Final Book of The Hunger Games', 
+                readingStatus: false
+            }];
+            console.log(obj9)
+            for(i=0;i<obj9.length;i++){
+            console.log(obj9[i].author)
+            }
+            console.log("")
+
+
+        </script>
+    </body>
+</html>
