@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("filter method")
+        const a1 = ["mouni","mm",2,4,6,7];
+let a2=a1.filter((x)=>{
+    return x>2;
+});
+console.log(a2);
+    </script>
+    <script>
+        console.log("forEach()");
+        //Foreach
+let num=[2,6,8,97,6];
+num.forEach((n,i,num)=>{
+    console.log(n,i,num);
+});
+//squaring
+let num1=[6,2,3,7,8];
+num1.forEach((x)=>{
+    console.log(x*x);
+});
+    </script>
+    <script>
+        //reduce method in javascript
+        console.log("reduce()");
+        const arr=[2,3,5,7,9,12,6];
+let reducearray=arr.reduce((accu,ele,ind,arr)=>{
+    return accu+ele;
+},1200)
+console.log(reducearray);
+    </script>
+    <script>
+        console.log("find method()");
+        const numbers=[26,3,4,6,8,56,34,9];
+        const evennumbers=numbers.find(numbers=>numbers%2==0);
+        console.log(evennumbers);
+    </script>
+    <script>
+        console.log("some method()");
+        const number=[26,3,4,6,8,56,34,9];
+        const evennumber=number.some(number=>number%2==0);
+        console.log(evennumbers);
+    </script>
+    <script>
+        console.log("Math object methods");
+        //Area of circle
+        const radius=5;
+        const area=Math.PI*Math.pow(radius,2);
+        console.log(`area of circle is: ${area}`);
+    </script>
+    <script>
+        //Rounding a number
+        const r1=7.8;
+        const r2=Math.round(r1);
+        console.log(`rounded number"${r2}`);
+    </script>
+    <script>
+    const c1=5.2;
+    const c2=Math.ceil(c1);
+    console.log(`ceil number${c2}`);
+    </script>
+     <script>
+        const f1=5.2;
+        const f2=Math.floor(f1);
+        console.log(`floor number:${f2}`);
+        </script>
+        <script>
+            const t1=-5.2;
+            const t2=Math.trunc(t1);
+            console.log(`trunc number:${t2}`);
+            </script>
+             <script>
+                const s1=-5.2;
+                const s2=Math.sign(s1);
+                console.log(`sign number:${s2}`);
+                </script>
+                <script>
+                var squart1=81;
+                var squart2=Math.sqrt(squart1);
+                console.log(`squart number:${squart2}`);
+                </script>
+                <script>
+                    var y1=-2.6;
+                    var y2=Math.abs(y1);
+                    console.log(`abs value is:${y2}`);
+                </script>
+      <script>
+console.log(Math.max(3,5,6,9,10));
+console.log(Math.min(3,5,6,9,10));
+  </script>
+</body>
+</html>
