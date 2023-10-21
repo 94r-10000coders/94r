@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//-----------------------------------------------------
+document.write("<b>1. Split</b> <br>")
+var str="Hi Hello How Are You"
+var arr=str.split(" ")
+document.write(str,"<br>")
+document.write(arr,"<br>")
+var str1="hi%hello%How%Are%YOu"
+var arr1=str1.split("%")
+document.write(str1,"<br>")
+document.write(arr1)
+document.write("<hr>")
+//-----------------------------------------------------
+document.write("<b>2. Join</b><br>")
+var arr=[1,2,3,4,5,6,7]
+var str=arr.join()
+document.write(arr,"<br>")
+document.write(str,"<br>")
+var str=arr.join(" ")
+document.write(str,"<br>")
+var str=arr.join("@")
+document.write(str)
+document.write("<hr>")
+//------------------------------------------------------------
+document.write("<b>3. Using for in loop check the prime numbers in an array<br></b>")
+var arr=[1,2,3,4,5,6,7,8,9,10]
+for(i in arr){
+    c=0
+    for(j=1;j<=arr[i];j++){
+        if(arr[i]%j==0){
+            c++
+        }
+    }
+    if(c==2){
+        document.write(`${arr[i]} is a prime number<br>`)
+    }
+}
+document.write("<hr>")
+//-----------------------------------------------
+document.write("<b>4. using for in loop print all vowels in a string</b><br>")
+var str="Hi Hello How are you"
+for(i in str){
+    if(str[i]==="a" || str[i]==="e" || str[i]==="i" || str[i]==="o" || str[i]==="u" || str[i]==="A" || str[i]==="E" || str[i]==="I" || str[i]==="O" || str[i]==="U"){
+        document.write(`${str[i]} is an vowel<br>`)
+    }
+}
+document.write("<hr>")
+//----------------------------------------------------
+document.write("<b>5. traverse through an object using for in loop</b><br>")
+var obj={name:"ramu", age:"16",qualification:"10th",hobbies:["palying","reading"]}
+for(i in obj){
+    document.write(`${i} : ${obj[i]}<br>`)
+}
+document.write("<hr>")
+//-------------------------------------------------------
+document.write("<b>6. double the every value in array using for of loop</b><br>")
+var arr=[1,2,3,4,5,6,7,8,9,10]
+for(x of arr){
+    document.writeln(x*x)
+}
+document.write("<hr>")
+//-----------------------------------------------------
+document.write("<b>7. Write a program to check the charcter found in a string or not using for of loop<br></b>")
+var str="HelloWorld"
+ch="o"
+f=0;
+for(x of str){
+    if(x===ch){
+        document.write("Character found")
+        f=1
+        break
+    }
+}
+if(f==0){
+    document.write("Not found")
+}
+document.write("<hr>")
+//---------------------------------------------------------
+document.write("<b>8.double the value of elements inside the array using arrow function<br></b>")
+var arr=[2,3,4,5,6,7]
+newarr=[]
+doub=(x)=>  x*2;
+for(i in arr){
+    newarr[i]=doub(arr[i])
+}
+document.write(newarr)
+document.write("<hr>")
+//------------------------------------------------------
+document.write("<b>9. find all the prime numbers in an array<br></b>")
+function prime(x){
+    c=0
+    for(i=1;i<=x;i++){
+        if(x%i==0){
+            c++
+        }
+    }
+    if(c==2){
+        return true
+    }
+    else{
+        return false
+    }
+}
+function isprime(arr,prime){
+    for(x of arr){
+        if(prime(x))
+        document.write(`${x} is a prime number<br>`)
+        else
+        document.write(`${x} is not a prime number<br>`)
+    }
+}
+var arr=[1,2,3,4,5,6,7,8,9,10]
+isprime(arr,prime)
+document.write("<hr>")
+document.write("<b>10. problem using map function<br></b>")
+var arr=[1,2,3,4,5,8,6,7]
+function vowel(x){
+    if(x%2==0){
+        return true
+    }
+    else{
+        return false
+    }
+}
+const newarr1=arr.map(vowel)
+document.write(newarr1)
+    </script>
+</body>
+</html>
