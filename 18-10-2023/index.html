@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("1.split method in javascript:-<br>");
+        //By default split method converts string into array.
+    const str="My name is mounika ";
+const str1=str.split();
+console.log(str1);
+//here we dont give any space in parantheses.
+("no space between double quotes in split().<br>")
+const str2=str.split("");
+console.log(str2);
+//space between double quotes
+console.log("space between double quotes in javascript");
+const str3=str.split(" ");
+console.log(str3);
+</script>
+<script>
+    console.log("2.join")
+    let a1=["mounika",12,"rohi","satish"];
+let a2=a1.join();
+console.log(a2);
+let a3=a1.join("and");
+(a3);
+</script>
+<script>
+    //for in loop
+    console.log("3.for in loop")
+    var obj1={
+    firstname:"mounika",
+    lastname:"daggumati",
+    batch:"94r",
+    strength:50
+};
+
+console.log("property names:");
+for(x in obj1){
+    console.log(x);
+   console.log(obj1[x]);
+}
+</script>
+<script>
+    //for of loop
+    console.log("4.for of loop")
+    const arr1=["mounika","daggumati","94r",50];
+for(x of arr1){
+    console.log(x) ;  
+    console.log(arr1[x]);
+}
+</script>
+<script>
+    //arrow functions in javascript
+    let sum=((a,b)=>{
+console.log(a*b);
+})
+sum(4,8);1
+let c=((x)=>{
+    console.log("Hello");
+})
+c();
+</script>
+<script>
+    console.table("map() in javascrip");
+    var birthyears=[2000,2002,2004,2005,2007,2009];
+    var age=birthyears.map(function(ele,ind,array){
+        let age=2023-ele;
+        return age;
+    })
+    console.table(birthyears);
+    console.table(age);
+    console.log(ele);
+</script>
+<script>
+    function add(a,b){
+    return a+b;
+}
+function divide(a,b){
+    return a/b;
+}
+function calculate(x,y,operation){
+    return operation(x,y);
+}
+console.log(calculate(2,2,add));
+console.log(calculate(2,2,divide));
+</script>
+</body>
+</html>
