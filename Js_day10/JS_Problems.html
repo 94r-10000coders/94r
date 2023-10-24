@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_Problems</title>
+</head>
+<body>
+    <script>
+        document.write("1. Create a function that takes two numbers as arguments and returns their sum.<br>");
+        var sum=0;
+        function test(a,b){
+            sum=a+b;
+            // document.write(sum);
+            // return sum;
+        }
+        test(5,3);
+        document.write(`Sum is ${sum}.`);
+        document.write("<br><hr>");
+
+
+        
+        document.write("2.	Write a function that takes an integer minutes and converts it to seconds.<br>");
+        var min;
+        var sec;
+        function test2(min){
+            sec=min*60;
+            document.write(`${min} minutes in seconds is: ${sec} `);
+        }
+        test2(50);
+        document.write("<br><hr>");
+
+
+
+        document.write("3.	Create a function that takes a number as an argument, increments the number by +1 and returns the result.<br>");
+        function test3(num){
+            num+=1;
+            document.write(`Incremented number is: ${num}`);
+        }
+        test3(3);
+        document.write("<br><hr>");
+
+
+
+        document.write("4.	Create a function that takes the age in years and returns the age in days.<br>");
+        var days=0;
+        function test4(age){
+            days=age*356;
+            document.write(`Age is ${age} and the same in days is ${days}.`)
+        }
+        test4(22);
+        document.write("<br><hr>");
+
+
+
+        document.write("5. Create a function that takes voltage and current and returns the calculated power.<br>");
+        function test5(vol,cur){
+            var power=vol*cur;
+            document.write("Power="+power);
+        }
+        test5(20,5);
+        document.write("<br><hr>");
+
+
+
+        document.write(`6.	Write a function that returns the string "something" joined with a space " " and the given argument a.<br>`);
+        // var x;
+        function test6(x){
+            var y="something"+" "+x;
+            document.write(y);
+        }
+        test6("is fine");
+        document.write("<br><hr>");
+
+
+
+        document.write(`7.	Create a function that takes two arguments. Both arguments are integers, a and b. Return true if one of them is 10 or if their sum is 10.<br>`);
+        function test7(itm1,itm2){
+            if(itm1==10||itm2==10){
+                document.write(true);
+            }
+            else if(itm1+itm2==10){
+                document.write(true);
+            }
+        }
+        test7(10,5);
+        document.write("<br><hr>");
+
+
+
+        document.write(`8.	Create a function that takes two strings as arguments and returns either true or false depending on whether the total number of characters in the first string is equal to the total number of characters in the second string.<br>`);
+        function test8(itm3,itm4){
+            if(itm3.length==itm4.length){
+                document.write(true);
+            }
+            else{
+                document.write(false);
+            }
+        }
+        test8("hello","fine");
+        document.write("<br><hr>");
+
+
+
+        document.write(`9.	Create a function that takes a name and returns a greeting in the form of a string. Don't use a normal function, use an arrow function.<br>`);
+        // arrow function
+        var itm6="Hello Mr.";
+        var itm7="Good Morning!";
+        const test9=(itm5)=>{
+            return itm6+itm5+itm7;
+        }
+        document.write(test9("Yash"));
+        document.write("<br><hr>");
+
+
+
+        document.write("10.	Create a function that takes an array of 10 numbers (between 0 and 9) and returns a string of those numbers formatted as a phone number (e.g. (555) 555-5555).<br>");
+        function test10(arr){
+            const [it1,it2,it3,it4,it5,it6,it7,it8,it9,it10]=arr;
+            // for(ini=0;ini<arr.length;ini++){
+            //     for(j=1;j<=arr.length;j++){
+            //         const itj=arr[ini];
+            //     }
+            // }
+            var it11=`(${it1}${it2}${it3}) ${it4}${it5}${it6}-${it7}${it8}${it9}${it10}.`;
+            document.write(it11);
+        }
+        const it12=[9,6,4,2,1,3,2,2,2,0];
+        test10(it12);
+        document.write("<br><hr>");
+
+
+
+        document.write("11.	Create a function that returns an array of strings sorted by length in ascending order.<br>");
+        const arr1=["hi","hello","welcome","a","ac"];
+        const arr2=[];
+        const arr4=[];
+        var ye=0;
+        console.log(`Given array is: -`);
+        console.log(arr1);
+        document.write(`Given array is: - ${arr1} <br>`);
+        function test11(a){
+            for(ar=0;ar<a.length;ar++){
+                var ar1=a[ar].length;
+                arr2.push(ar1);
+            }
+            // now sorting the array
+            var arr3=arr2.sort((a,b)=>{return a-b;});
+            var arr5=[];
+            for(ar6=0;ar6<a.length;ar6++){
+                var ar7=a[ar6].length;
+                arr5.push(ar7);
+            }
+            for(ar2=0;ar2<arr3.length;ar2++){
+                var ar3=arr3[ar2];
+                var ar4=arr5.indexOf(ar3);
+                var ar5=arr5.lastIndexOf(ar3);
+                if(ar4==ar5){
+                    arr4.push(a[ar4]);
+                }
+                else{
+                    if(ye==0){
+                      arr4.push(a[ar4]);
+                      ye++;
+                    }
+                    else if(ye!==0){
+                      arr4.push(a[ar5]);
+                    }
+                }
+            }
+            console.log(`Output array in ascending order of their string length is: -`);
+            console.log(arr4); 
+            document.write(`Output array in ascending order of their string length is: - ${arr4}`); 
+        }
+        test11(arr1);
+        document.write("<br><hr>");
+
+
+
+        document.write("12.	Create a function that takes an array of arrays with numbers. Return a new (single) array with the largest numbers of each.<br>");
+        const arr11=[[1,5,7,19],[23,45,67,100],[21,34,55,98]];
+        document.write(`Given array i.e. input to the created function is: - ${arr11} <br>`);
+        console.log(`Given array i.e. input to the created function is: -`);
+        console.log(arr11);
+        var high1=[];
+        function high(a){
+            for(hi=0;hi<a.length;hi++){
+                var hig=a[hi];
+                hig.sort((a,b)=>{return a-b;});
+                high1.push(hig[hig.length-1]);
+            }
+            document.write(`Output array is: - ${high1}`);
+            console.log(`Output array is: -`);
+            console.log(high1);
+        }
+        high(arr11);
+        document.write("<br><hr>");
+
+
+
+        document.write("13.	Create a function that takes an array of numbers and returns the second largest number.<br>");
+        const arr12=[54,65,78,100];
+        document.write(`Given array i.e. input to the created function is: - ${arr12} <br>`);
+        console.log(`Given array i.e. input to the created function is: -`);
+        console.log(arr12);
+        function se(a){
+           arr12.sort((a,b)=>{return a-b;});
+           document.write(`Output second largest number is:- ${arr12[arr12.length-2]}`);
+           console.log(`Output second largest number is: - ${arr12[arr12.length-2]}`);
+        }
+        se(arr12);
+        document.write("<br><hr>");
+
+ 
+
+        document.write("14.	Create a function that takes an array of items, removes all duplicate items and returns a new array in the same sequential order as the old array (minus duplicates).<br>");
+        var arr13=[];
+        function removeDups(a){
+            document.write(`Given array with duplicates is :-${a} <br>`);
+            console.log(`Given array with duplicates is :-`);
+            console.log(a);
+            for(re=0;re<a.length;re++){
+                if((arr13.indexOf(a[re])==-1)){
+                    arr13.push(a[re]);
+                }
+            }
+            document.write(`Output array without duplicates is :-${arr13} <br>`);
+            console.log(`Output array without duplicates is :-`);
+            console.log(arr13);
+        }
+        removeDups([1,56,3,1,23,1,45,1]);
+        document.write("<br><hr>");
+
+
+
+        document.write("15.	Create a function that takes an array of integers as an argument and returns a unique number from that array. All numbers except unique ones have the same number of occurrences in the array.<br>");
+        var arr14=[];
+        var arr15=[];
+        function uni(a){
+            document.write(`Given array with duplicates is :-${a} <br>`);
+            console.log(`Given array with duplicates is :-`);
+            console.log(a);
+            for(un=0;un<a.length;un++){
+                if((arr14.indexOf(a[un])==-1)){
+                    arr14.push(a[un]);
+                }
+            }
+            for(un1=0;un1<arr14.length;un1++){
+                if((a.indexOf(arr14[un1]))==(a.lastIndexOf(arr14[un1]))){
+                    arr15.push(arr14[un1]);
+                }
+            }
+            document.write(`Output array with single character in the given array is :- ${arr15} <br>`);
+            console.log(`Output array with single character in the given array is :- `);
+            console.log(arr15);
+        }
+        uni([2, 2, 2, 3, 4, 4, 4,5,5]);
+        document.write("<br><hr>");
+
+
+
+        document.write("16.	Create a function that takes two strings as arguments and returns the number of times the first string (the single character) is found in the second string.<br>");
+        function nu(a,b){
+            document.write(`Given input 2 strings are:- ${a}, ${b} <br>`);
+            console.log(`Given input 2 strings are:-`);
+            console.log(a+","+b);
+            if(b.indexOf(a)!=-1){
+              var f=1;
+            }
+            else{
+              var f=0;
+            }
+            var e=b.replace(a,"");
+            while(e.indexOf(a)!=-1){
+            var e=e.replace(a,"");
+            f++;
+            }
+            // console.log(e);
+            console.log(`The number of times the first string is found in second string is:- ${f}`);
+            document.write(`The number of times the first string is found in second string is:- ${f}`);
+        }
+        nu("and","appleandorangeandgrape");
+        document.write("<br><hr>");
+
+
+
+        document.write("17.	Create a function that takes a string and returns the number (count) of vowels contained within it.<br>");
+        var vowel=0;
+        function vow(a){
+            document.write(`Given string is:- ${a} <br>`);
+            for(vo=0;vo<a.length;vo++){
+                if(a[vo]=="a"||a[vo]=="e"||a[vo]=="i"||a[vo]=="o"||a[vo]=="u"||a[vo]=="A"||a[vo]=="E"||a[vo]=="I"||a[vo]=="O"||a[vo]=="U"){
+                    vowel++;
+                }
+            }
+            document.write(`The no.of vowels in the string is:- ${vowel}`);
+        }
+        vow("Celebration");
+        document.write("<br><hr>");
+        
+        
+
+        document.write("18.	Given a string, create a function to reverse the case. All lower-cased letters should be upper-cased, and vice versa. <br>");
+        var em="";
+        function cas(a){
+            document.write(`Given string is:- ${a} <br>`);
+            for(ca=0;ca<a.length;ca++){
+                  var ca1=a[ca];
+                  if(ca1==ca1.toUpperCase()){
+                    var ca2=ca1.toLowerCase();
+                    em=em+ca2;
+                  }
+                  else{
+                    var ca2=ca1.toUpperCase();
+                    em=em+ca2;
+                  }
+            }
+            document.write(`The output string after reversing the case letters:- ${em}`);
+        }
+  
+        cas("Happy Birthday");
+        document.write("<br><hr>");
+
+
+
+        document.write("19.	  Take one integer n, loop till n and pass each value to a function, create a function that takes one integer parameter, and multiply with 2 in every integer.<br>");
+        function loo(a){
+            document.write(`Given integer is:- ${a} <br>`);
+            document.write(`Output:- `);
+            for(lo=1;lo<=5;lo++){
+                document.write(+lo*2+" ");
+            }
+        }
+        loo(5);
+        document.write("<br><hr>");
+
+
+
+        document.write("20. Create Function that will take one parameter and return type of the data.<br>");
+        function ty(a){
+            document.write(`Given data is:- ${a}<br>`);
+            document.write(`Output:- ${typeof(a)}`);
+        }
+        ty("hi");
+        document.write("<br><hr>");
+
+
+
+        document.write("21. Program to find greatest of three numbers(using ternery operator).<br>");
+        function great(a,b,c){
+                document.write(`Given numbers are:- ${a},${b},${c}.<br>`);
+                ((a>b)&&(a>c))?document.write(`${a} is greater.`):((b>a)&&(b>c))?document.write(`${b} is greater.`):((c>a)&&(c>b))?document.write(`${c} is greater.`):((a==b)&&(a==c))?document.write(`All are equal`):document.write(`ivalid input`);
+        }
+        great(6,6,7);
+        document.write("<br><hr>");
+
+
+
+        document.write("22 . Program to find factorial of number.<br>");
+        var fact=1;
+        function fa(a){
+            for(fac=1;fac<=a;fac++){
+                fact=fact*fac;
+            }
+            document.write(`Factorial of a given number ${a} is ${fact}.`);
+        }
+        fa(5);
+        document.write("<br><hr>");
+
+
+
+        document.write("23. Program to arrange numbers in ascending order.<br>");
+        var asce=0;
+        var array1=[];
+        var array2=[];
+        function asc(a){
+            document.write(`Given array is:- ${a}<br>`);
+            while(a.length>0){
+                for(asc=0;asc<a.length;asc++){
+                    for(asc1=0;asc1<a.length;asc1++){
+                        if(a[asc]>=a[asc1]){
+                            asce=asce+1;
+                        }
+                    }
+                    // console.log(asce);
+                    if(asce==((a.length))){
+                        array1.push(a[asc]);
+                        // console.log(array1);
+                        a.splice(asc,1);
+                        // console.log(a);
+                    }
+                    asce=0;
+                }    // console.log(asce);
+                }
+                // console.log(array1);
+                document.write("Descending order:- ",array1+"<br>");
+                for(asc2=((array1.length)-1);asc2>=0;asc2--){
+                        array2.push(array1[asc2]);
+                }
+                document.write("Ascending order:- ",array2);
+        }
+        asc([20,3,1,5,4]);
+        document.write("<br><hr>");
+
+
+
+        document.write("24. Print Patter using loop.<br>");
+        for(i=1;i<=5;i++){
+            for(j=1;j<=i;j++){
+                document.write(j);
+            }
+            document.write("<br>");
+        }
+        document.write("<br><hr>");
+
+
+
+        document.write(" 25. Program to Calculate the Power of a Number(using loop only).<br>");
+        var power=1;
+        function pow(n,p){
+            for(po=1;po<=p;po++){
+                power=n*po;
+            }
+            document.write(`The power of a number,given n=${n} and p=${p} is:- ${power}.`);
+        }
+        pow(5,3);
+        document.write("<br><hr>");
+
+
+
+        document.write("26. Program to Check Whether a Number is Prime or Not<br>");
+        var pr=0;
+        function prime(a){
+            for(i=1;i<=a;i++){
+                if(a%i==0){
+                    pr++;
+                }
+            }
+            if(pr>2){
+                document.write(`${a} is not a prime.`);
+            }
+            else{
+                document.write(`${a} is a prime.`);
+            }
+        }
+        prime(9);
+        document.write("<br><hr>");
+
+
+
+        document.write(" 27. Program to find LCM of two numbers using while loop.<br>");
+        var lcm=[];
+        var lcm1=1;
+        function lcm_1(a,b){
+            document.write(`The lcm of ${a} and ${b} is:-`);
+            if(b>a){
+                for(i=1;i<=a;i++){
+                    if((a%i==0)&&(b%i==0)){
+                        lcm.push(i);
+                        var a=a/i;
+                        var b=b/i;
+                    }
+                }
+            }
+            else{
+                for(i=1;i<=b;i++){
+                    if((a%i==0)&&(b%i==0)){
+                        lcm.push(i);
+                        var a=a/i;
+                        var b=b/i;
+                    }
+                }
+            }
+            for(i=0;i<lcm.length;i++){
+                lcm1=lcm1*lcm[i];
+            }
+            document.write(`"${lcm1}"`);
+            
+        }
+        lcm_1(15,30);
+        document.write("<br><hr>");
+
+
+
+        document.write(" 28. Program to Display Characters from A to Z Using Loop with count.<br>");
+        var array11=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+        for(i=0;i<array11.length;i++){
+            document.write(`${array11[i]+(i+1)} `);
+        }
+        document.write("<br><hr>");
+
+
+
+        document.write(`29. Program to find a missing number.<br>Given Example:<br>Input:  n=5(length of array), arr= [5,3,1,4] <br>
+        Output: 2 is missing./// <br>`);
+        var miss1=[];
+        function miss(a,b){
+            document.write(`Given n=${a} and array=${b}<br>`);
+            for(i=1;i<=a;i++){
+                miss1.push(i);
+            }
+            console.log(miss1);
+            if(b.length==a){
+                document.write(`No missing number in the array ${b}.`);
+            }
+            else{
+              for(i=0;i<miss1.length;i++){
+                  if((b.indexOf(miss1[i])==-1)){
+                        document.write(`Missing number in the array is: ${miss1[i]}`);
+                  }
+              }
+               
+            }
+            
+        }
+        miss(7,[5,3,1,4,2,7]);
+        document.write("<br><hr>");
+
+
+
+        document.write("30. Program to count vowels and consonants in a given String.<br>");
+        var vowel_1=0;
+        function vowel_no(a){
+            document.write(`Given string is:- ${a} <br>`);
+            var string1=a.replaceAll(" ","");
+            for(vo=0;vo<string1.length;vo++){
+                if(a[vo]=="a"||a[vo]=="e"||a[vo]=="i"||a[vo]=="o"||a[vo]=="u"||a[vo]=="A"||a[vo]=="E"||a[vo]=="I"||a[vo]=="O"||a[vo]=="U"){
+                    vowel_1++;
+                }
+            }
+            document.write(`The no.of vowels in a given string is: ${vowel_1}<br>`);
+            document.write(`The no.of consonants in a given string is: ${(string1.length)-vowel_1}`);
+        }
+        vowel_no("i am ram");
+        document.write("<br><hr>");
+
+        
+
+        document.write("31. program to insert  the elements of an array for specific index.<br>");
+        var ins_1=[];
+        function ins(a,b){
+            document.write(`Given array is: ${a} and index number to insert in the array is: ${b} <br>`);
+            for(i=0;i<b;i++){
+                ins_1.push(a[i]);
+            }
+            for(i=0;i<1;i++){
+                ins_1.push(b+1);
+            }
+            for(i=b;i<a.length;i++){
+                ins_1.push(a[i]);
+            }
+            document.write(`Inserted array is: ${ins_1}`);
+        }
+        ins([1,2,3,4,5,7,8,9,10],5);
+        document.write("<br><hr>");
+
+
+
+        document.write("32. Reverse a number using while Loop.<br>");
+        var rev3="";
+        function rev(a){
+            var rev2=a.toString();
+            var rev1=rev2.length-1;
+            while(rev1>=0){
+                rev3+=(rev2[rev1]);
+                rev1--;
+            }
+            var rev4=Number(rev3);
+            document.write(rev4);
+        }
+        rev(324);
+        document.write("<br><hr>");
+
+
+
+        document.write("33. Count occurrence of number in a given array.<br>");
+        var occu=0;
+        function occ(a,b){
+            document.write(`Given array is: ${a} and find occurance of a number ${b} in a given array.<br>`);
+            var occ1=(a.indexOf(b));
+            var occ2=(a.lastIndexOf(b));
+            while(occ1!=occ2){
+                a.splice(occ1,1);
+                occu++;
+                occ1=(a.indexOf(b));
+                occ2=(a.lastIndexOf(b));
+            }
+            document.write(`Occurance of ${b} is ${occu+1} times.`);
+        }
+        occ([1,6,3,1,5,9,7,2,1,9,3,7,8,9,10],7);
+
+
+
+        
+
+
+
+    </script>
+</body>
+</html>
