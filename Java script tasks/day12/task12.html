@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task12</title>
+</head>
+<body>
+    <script>
+        console.log(" 1.Create a `BankAccount` class with encapsulated properties (`accountNumber`, `balance`). Implement methods `getAccountNumber()`, `getBalance()`, `deposit(amount)`, and `withdraw(amount)` ensuring encapsulation.");
+        class Bank_Account_Details{
+            constructor(a,b){
+                this.accountNumber=a,
+                this.balance=b
+            }
+            getAccountNumber(){
+                return this.accountNumber;
+            }
+            getbalance(){
+                return this.balance;
+            }
+            setdeposit(depamount){
+             this.balance+=depamount;
+             return `Deposited ${depamount} in your Account ${account.getAccountNumber()},new balance is ${this.balance}`;
+            }
+            setwithdrawl(withamount){
+                this.balance -= withamount;
+            return `Withdrawl ${withamount} in your Account ${account.getAccountNumber()},new balance is ${this.balance}`
+            }
+        }
+        let account=new Bank_Account_Details("030100103880", 4000);
+        console.log(account);
+        console.log(`Account number is :${account.getAccountNumber()}`);
+        console.log(`Initial balance amount is:${account.getbalance()}`);
+        console.log(account.setdeposit(1000));
+        console.log(account.setwithdrawl(2000));
+        console.log("2. Implement a class `TemperatureConverter` with a private property `celsius`. Implement methods `setCelsius(value)`, `getCelsius()`, `convertToFahrenheit()`, and `convertToKelvin()` ensuring private access to the `celsius` property.");
+        class Temperature_Converter{
+            constructor(num){
+                this.celsius=num;
+            }
+            setCelsiusValue(value){
+                this.celsius=value;
+                console.log(this.celsius);
+            }
+            getCelsiusValue(){
+                console.log(this.celsius);
+            }
+            convertToFahrenheit(){
+                return this.celsius*(9/5)+32;
+            }
+            convertToKelvin(){
+                return this.celsius+273.15;
+            }
+        }
+        let obj=new Temperature_Converter(0);
+        console.log(obj);
+        obj.setCelsiusValue(25);
+        obj.getCelsiusValue();
+        console.log(`Farenheit = ${obj. convertToFahrenheit()}`);
+        console.log(`Kelvin = ${obj.convertToKelvin()}`);
+        console.log("3.Create a `MathOperations` class with a static method `square(number)`. Create a child class `AdvancedMathOperations` that extends `MathOperations`. Implement a static method `cube(number)` in `AdvancedMathOperations`.");
+        class Mathop{
+            constructor(){
+            }
+            static square(N){
+                console.log(N*N);
+            }
+        }
+        class Adv_Mathop extends Mathop{
+            constructor(){super();}
+
+            static cube(N){
+                console.log(N*N*N);
+            }
+        }
+        let Obj =new Adv_Mathop()
+        Adv_Mathop.cube(5);
+        Mathop.square(5);
+        console.log("4. Create a class `Shape` with methods `calculateArea()` and `calculatePerimeter()`. Create child classes `Circle` and `Square` that inherit from `Shape`. Override the `calculateArea()` method in both child classes.");
+        class shape{
+            constructor(){
+            }
+            calculateArea(){
+                console.log("calculatearea override method");
+            }
+            calculatePerimeter(){
+                console.log("calculate perimeter override method");
+            }
+        }
+        class circle extends shape{
+            constructor(radius){
+                super();
+                this.radius=radius;
+
+            }
+            calculateArea(){
+                console.log(`area of circle = ${Math.PI*this.radius*this.radius}`);
+            }
+            calculatePerimeter(){
+                console.log(`perimeter of circle = ${2*Math.PI*this.radius}`);
+            }
+        }
+        class square extends shape{
+            constructor(side){
+                super();
+                this.s=side;
+            }
+            calculateArea(){
+                console.log(`area of square = ${this.s*this.s}`)
+            }
+            calculatePerimeter(){
+                console.log(`perimeter of square = ${4*this.s}`);
+            }
+        }
+        let obj2= new circle(6);
+        obj2.calculateArea();
+        obj2.calculatePerimeter();
+        let obj3= new square(4);
+        obj3.calculateArea();
+        obj3.calculatePerimeter();
+    </script>
+</body>
+</html>
