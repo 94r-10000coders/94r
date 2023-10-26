@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//---------------------------------------------------------------
+document.write("1.Encapsulation with getters and setters;<br>")
+class BankAccount{
+    constructor(accountNumber,balance){
+        this.accountNumber=accountNumber;
+        this.balance=balance;
+    }
+    getAccountNumber(){
+        document.write(this.accountNumber);
+    }
+    getBalance(){
+        document.write(this.balance);
+    }
+    setDeposite(val){
+        this.balance=this.balance+val;
+        document.write(this.balance);
+    }
+    setWithdraw(val2){
+        this.balance=this.balance-val2;
+        document.write(this.balance);
+    }
+}
+const obj1= new BankAccount(1234,20000);
+obj1.getAccountNumber();
+document.write("<br>")
+obj1.getBalance();
+document.write("<br>")
+obj1.setDeposite(1000);
+document.write("<br>")
+obj1.setWithdraw(5000);
+document.write("<br>")
+document.write("<hr>")
+//------------------------------------------------------------------------
+document.write("2. Private property<br>")
+class TemparatureConverter{
+    #celcius;
+    #fa;
+    #ke;
+    // constructor(celcius){
+    //     this.#celcius=celcius;
+    // }
+    setCelcius(val1){
+        this.#celcius=val1;
+    }
+    getCelcius(){
+        document.write(this.#celcius);
+    }
+    
+    convertToFahrenhit(){
+        this.#fa=(this.#celcius*(9/5))+32;
+        document.write(this.#fa)
+    }
+    convertToKelvin(){
+        this.#ke=this.#celcius+273.15;
+
+        document.write(this.#ke);
+    }
+}
+let obj2=new TemparatureConverter(30);
+obj2.setCelcius(40)
+obj2.getCelcius()
+document.write("<br>")
+obj2.convertToFahrenhit()
+document.write("<br>")
+obj2.setCelcius(40)
+obj2.convertToKelvin();
+document.write("<br>")
+document.write("<hr>")
+document.write("3. Static Method and Inheritance<br>")
+class MathOperations{
+    constructor(num){
+        this.number=num;
+    }
+    static square(x){
+        document.write(x.number*x.number);
+    }
+}
+class AdvancedMathOperations extends MathOperations{
+    static cube(x){
+        document.write(x.number*x.number*x.number);
+    }
+}
+let obj3 = new AdvancedMathOperations(2)
+AdvancedMathOperations.square(obj3);
+document.write("<br>")
+let obj4 = new AdvancedMathOperations(2)
+AdvancedMathOperations.cube(obj4)
+document.write("<br>")
+document.write("<hr>")
+document.write("4. Inheritance and Method Overriding:")
+class shape{
+    area(){
+        document.write("This is area method<br>")
+    }
+    perimeter(){
+        document.write("This is perimeter method<br>")
+    }
+}
+class circle1 extends shape{
+    constructor(r){
+        super();
+        this.radius=r;
+    }
+    area(){
+        document.write((3.14)*this.radius);
+    }
+    perimeter(){
+        document.write(2*(3.14)*this.radius);
+    }
+}
+class square1 extends shape{
+    constructor(a){
+        super();
+        this.side=a;
+    }
+    area(){
+        document.write(this.side*this.side);
+    }
+    perimeter(){
+        document.write(4*this.side);
+    }
+}
+let obj5=new circle1(5);
+document.write("<br>")
+obj5.area()
+document.write("<br>")
+obj5.perimeter();
+document.write("<br>")
+let obj6=new square1(5)
+document.write("<br>")
+obj6.area()
+document.write("<br>")
+obj6.perimeter()
+document.write("<hr>")
+
+    </script>
+</body>
+</html>
