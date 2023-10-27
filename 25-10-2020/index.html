@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //based on encpsulation
+        document.write("Encapsulation practise<br>")
+    class person1{
+        constructor(){
+            this.name="raj";
+            this.age=23;
+            this.place="hyderabad";
+        }
+        person2(){
+            document.write(this.age);
+        }
+    }
+    const persons=new person1();
+    persons.person2();
+    </script>
+    <hr>
+    <script>
+    class Bankaccount{
+        constructor(){
+            var account;
+            var balance;
+        }
+        getAccount(){
+            return this.account;
+        }
+        setAccount(account){
+            this.account=account;
+        }
+        getBalance(){
+            return this.balance;
+        }
+        setBalance(balance){
+            this.balance=balance;
+        }
+        getDeposit(){
+            return this.deposit;
+        }
+        setDeposit(deposit){
+            this.deposit=deposit;
+        }
+    };
+    const myaccounts=new Bankaccount();
+    myaccounts.setBalance(2000);
+    myaccounts.setDeposit(24000);
+    
+    console.log(myaccounts.getBalance());
+    console.log(myaccounts.getDeposit());
+</script>
+
+    <script>
+        class student{
+    constructor(){
+        var name;
+        var marks;
+    }
+    getName()
+    {
+        return this.name;
+    }
+    setName(name)
+    {
+    this.name=name;
+    }
+}
+var stud=new student();
+stud.setName("mouni");
+document.write(stud.getName());
+    </script>
+    <hr>
+  <script>
+    document.write("encapsulation<br>")
+      class BankAccount{
+            constructor(accountnumber,balance){
+            }
+            getAccountnumber(){
+               return this.accountnumber;
+            }
+            setAccountnumber(accountnumber){
+                this.accountnumber=accountnumber;
+            }
+            getBalance(){
+                return this.balance;
+            }
+            setBalance(){
+                 this.balance=balance;
+            }
+            getDeposit(){
+                return this.deposit;
+            }
+            setDeposit(amount){
+                this.balance=this.balance+amount;
+                document.write(this.balance);
+            }
+            }
+            const myaccount=new Bankaccount(1000,23);
+            myaccount.setBalance(5000);
+            myaccount.setDeposit(555);
+            document.write(myaccount.getBalance());
+            document.write("<br>");
+            document.write(myaccount.getDeposit())
+            document.write(myaccount.accountnumber());
+    </script>
+    <hr>
+    <script>
+        document.write("TEmparature converter<br>")
+        class Temparatureconverter{
+            #celcius;
+            constructor(){
+                this.#celcius=0;
+            }
+            setCelcius(celcius){
+                this.#celcius=celcius;
+            }
+            getCelcius(){
+               return this.#celcius;
+            }
+            convertToFahrenheit(){
+                return (this.#celcius*9/5)+32;
+    
+            }
+            convertToKelvin(){
+                return this.#celcius+273.15;
+        }
+    }
+    const converter=new Temparatureconverter();
+    converter.setCelcius(45);
+    document.write(`celcius:${converter.getCelcius()}<br>`)
+    document.write(`Fahrenheit:${converter.convertToFahrenheit()}<br>`)
+    document.write(`kelvin:${converter.convertToKelvin()}`)
+    </script>
+    <hr>
+    <script>
+        document.write("using static method<br>");
+        class MathOperations{
+            static square(number){
+                return number*number;
+            }
+        }
+        class AdvancedMathoperations extends MathOperations{
+            static cube(number){
+                return number*number*number;
+            }
+        }
+        const num=5;
+        document.write(`square of ${num}:${MathOperations.square(num)}<br>`);
+        document.write(`cube of ${num}:${AdvancedMathoperations.cube(num)}`);
+    </script>
+    <hr>
+    <script>
+        class Shape{
+            constructor(){
+                this.type='unknown';
+            }
+            calculateArea(){
+                return 'area calculation not implemented'+this.type;
+            }
+            calculatePerimeter(){
+                return 'perimeter calculation not implemented'+this.type;
+            }
+        }
+        class Square extends Shape{
+            constructor(side){
+                super();
+                this.type='square';
+                this.side=side;
+            }
+            calculateArea(){
+                return this.side*this.side;
+            }
+            calculatePerimeter(){
+                return 4*this.side;
+            }
+        }
+        class Circle extends Shape{
+            constructor(radius){
+                super();
+                this.type='circle';
+                this.radius=radius;
+            }
+            calculateArea(){
+                return Math.PI*this.radius*this.radius;
+            }
+            calculatePerimeter(){
+                return 2*Math.PI*this.radius;
+            }
+        }
+        const square=new Square(5);
+        const circle=new Circle(3);
+document.write(`Area of the ${square.type}:${square.calculateArea()}<br>`);
+document.write(`perimeter of the ${square.type}:${square.calculatePerimeter()}<br>`);
+document.write(`Area of the ${circle.type}:${circle.calculateArea()}<br>`);
+document.write(`perimeter of the ${circle.type}:${circle.calculatePerimeter()}<br>`);
+   </script>
+
+</body>
+</html>
