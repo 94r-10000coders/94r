@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("Hi Iam MOunika"+"<br>");
+setTimeout(()=>{
+    document.write("How is the day?");
+},5000)
+document.write("Super"+"<br>");
+</script>
+<hr>
+    </script>
+    <hr>
+    <script>
+        let count=0;
+        let exam=setInterval(()=>{
+            document.write(count+++"<br>");
+            if(count===21){
+              clearInterval(exam)  
+            }
+        },2000)
+       </script>
+       <script>
+       //clearintrval
+       function countup(){
+        document.write("val");
+        count++;
+    }
+    let val=1;
+    intervalId=setInterval(countup,1000);
+    setTimeout(()=>{
+        clearInterval(intervalId);
+    },5000)
+    </script>
+    <script>
+        document.write("currying:<br>")
+        function multiply(x){
+    return function(y){
+        return x*y;
+    };
+}
+const double=multiply(3);
+const triple=multiply(4);
+document.write(double(8));
+document.write(triple(8))
+    </script>
+</body>
+</html>
