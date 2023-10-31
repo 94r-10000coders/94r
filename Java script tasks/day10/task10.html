@@ -101,7 +101,7 @@
         }
         arr_sort(["a", "ccc", "dddd", "bb"]);
         document.write(`<b>12.Create a function that takes an array of arrays with numbers. Return a new (single) array with the largest numbers of each.
-            Example:
+d            Example:
             findLargestNums([[4, 2, 7, 1], [20, 70, 40, 90], [1, 2, 0]]) ➞ [7, 90, 2]</b><br>`);
             function arr_of_arr(arr5){
                 var largest=[];
@@ -114,10 +114,136 @@
                     }
                     largest.push(max);
                 }
-                document.write(largest);
+                document.write(`${largest}<br>`);
             }
             let arr5=[[4, 2, 7, 1], [20, 70, 40, 90], [1, 2, 0]];
             arr_of_arr(arr5);
+            document.write(`<b>13.Create a function that takes an array of numbers and returns the second largest number.
+                Example:
+                secondLargest([10, 40, 30, 20, 50]) ➞ 40
+                </b><br>`);
+                function secondlargest(arr6){
+                    arr6.sort((a,b)=>a-b);
+                    document.write(`Secondlargest number is : ${arr6[arr6.length-2]}<br>`);
+                }
+                let arr6=[10, 40, 30, 20, 50];
+                secondlargest(arr6);
+            document.write(`14.Create a function that takes an array of items, removes all duplicate items and returns a new array in the same sequential order as the old array (minus duplicates).<br>`);
+            let arr7=[1,2,3,3,5,7,2,1];
+            let arr8=[];
+
+            function remove_dup(arr7){
+                for(i=0;i<arr7.length;i++){
+                    if(arr8.indexOf(arr7[i])==-1){
+                        arr8.push(arr7[i]);
+                    }
+                }
+                document.write(`${arr8}<br>`);
+
+            
+            }
+            remove_dup(arr7);
+            document.write(`15.Create a function that takes an array of integers as an argument and returns a unique number from that array. All numbers except unique ones have the same number of occurrences in the array.
+            Examp findSingleNumber([2, 2, 2, 3, 4, 4, 4]) ➞ 3<br>`);
+            let arr9= [2,2,2,3,4,4,4];
+            arr9.sort((a,b)=>a-b);
+            function uniq(arr9){
+                for(i=0;i<arr9.length;i++){
+                  let count=0;
+                  for(j=0;j<arr9.length;j++){
+                     if(arr9[i]==arr9[j]){
+                        count++;
+                    }
+                  }
+                  if(count==1){
+                    console.log(arr9[i]);
+                  }
+                }
+
+            }
+            uniq(arr9)
+            document.write("<br>");
+            document.write(`<b>16.Create a function that takes two strings as arguments and returns the number of times the first string (the single character) is found in the second string</b><br>`);
+            function found(str1,str2){
+                var count1=0
+                for(i=0;i<str2.length;i++){
+                    if(str2[i]==str1){
+                        count1++
+                    }
+                }
+                return count1;
+            }
+            document.write(found("c","Chamber of secrets"));
+            document.write("<br>");
+            document.write(`<b>17.Create a function that takes a string and returns the number (count) of vowels contained within it.</b><br>`)
+            let vowel_count=0;
+            function count_Vowels(stri){
+                for(i=0;i<stri.length;i++){
+                    if(stri[i]==="a" ||stri[i]==="e"||stri[i]==="i"||stri[i]==="o"||stri[i]==="u"||stri[i]==="A"||stri[i]==="E"||stri[i]==="I"||stri[i]==="O"||stri[i]==="U"){
+                        vowel_count++;
+                    }
+                }
+                document.write(vowel_count);
+            }
+            count_Vowels("Celebration");
+            document.write("<br>");
+            document.write(`<b>18.	Given a string, create a function to reverse the case. All lower-cased letters should be upper-cased, and vice versa.</b><br>`)
+            var strnew="";
+        function reveerse(a){
+            for(i=0;i<a.length;i++){
+                  var str2=a[i];
+                  if(str2==str2.toUpperCase()){
+                    var newstr=str2.toLowerCase();
+                    strnew+=newstr;
+                  }
+                  else{
+                    var newstr=str2.toUpperCase();
+                    strnew+=newstr;
+                  }
+            }
+            document.write(strnew);
+        }
+  
+        reveerse("Happy Birthday");
+        document.write("<br>");
+        document.write(`<b>Take one integer n, loop till n and pass each value to a function, create a function that takes one integer parameter, and multiply with 2 in every integer</b><br>`);
+        function square(n){
+            for(i=1;i<=n;i++){
+                document.write(`${i*2} `);
+            }
+        }
+        square(5);
+        document.write("<br>");
+        document.write(`<b>20.Create Function that will take one parameter and return type of the data.</b><br>`);
+        function str(a){
+            document.write(typeof a);
+        }
+        str("hello");
+        document.write("<br>");
+        document.write(`<b>21.Program to find greatest of three numbers(using ternery operator)</b><br>`);
+        var d =5;
+        var e =7;
+        var f= 8;
+        function find_Large(x,y,z){
+            ((x>y)&& (x>z))?document.write(`${x} is maximu number`):((y>x) && y>z)?document.write(`${y} is maximu number`):document.write(`${z} is maximu number`);
+        }
+        find_Large(d,e,f)
+        document.write("<br>");
+        document.write(`<b>22.C Program to find factorial of number</b><br>`);
+        function factorial(v){
+            let product =1;
+            for(i=v;i>=1;i--){
+                product*=i;
+            }
+            document.write(product);
+
+        }
+        factorial(5);
+
+
+
+
+            
         
     </script>
 </body>

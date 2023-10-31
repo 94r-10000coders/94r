@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task13</title>
+</head>
+<body>
+    <script>
+        // console.log("Hai welcome");
+        // setTimeout(()=>{console.log("YOU WON")},2000);
+        // console.log("Congrats!");
+        // let count =0;
+        // let interval =setInterval(()=>{ 
+        //     console.log(count++);
+        //     if(count===6){ 
+        //         clearInterval(interval)
+        //     }
+        // },1000); 
+        function outer(){
+            var x=10;
+            function inner(){
+                document.write(`${x}<br>`);
+                var y= 20;
+                function inner2(){
+                    document.write(y);
+                }
+                return inner2();
+            }
+            return inner();
+        }outer();
+        let patt= /[@.com]/i;
+        let res= patt.test("welcome@gmail.com");
+        document.write(res);
+    </script>
+</body>
+</html>
