@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+document.write(`<h3>SetTimeout</h3>`)
+id=setTimeout(function() 
+    {
+        console.log("Hi Hello")
+    }, 10);
+console.log("Welcome")
+
+document.write(`<h3>ClearTimeout</h3>`)
+id=setTimeout(function() 
+    {
+        console.log("Hi Hello")
+    }, 1000);
+clearTimeout(id)
+console.log("Welcome")
+document.write(`<h3>SetInterval and ClearInterval</h3>`)
+count=0
+id=setInterval(function(){
+  console.log(++count);
+  if(count==10){
+    clearInterval(id)
+  }
+},100,count);
+document.write(`<h3>Closures</h3>`)
+function add(){
+  x=10
+  function add1(){
+    y=20;
+    console.log(x+y)
+  }
+  return add1()
+}
+add()
+
+document.write(`<h3>Currying</h3>`)
+
+function add2(x){
+  return function(y){
+    return function(z){
+      return x+y+z
+    }
+  }
+}
+console.log(add2(1)(2)(3))
+
+</script>
+</body>
+</html>
