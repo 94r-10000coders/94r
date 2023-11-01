@@ -235,10 +235,96 @@ d            Example:
             for(i=v;i>=1;i--){
                 product*=i;
             }
-            document.write(product);
+            document.write(product+"<br>");
 
         }
         factorial(5);
+        document.write(`<b>23.C Program to arrange numbers in ascending order</b><br>`);
+        function asc(arr){
+            for(i=0;i<arr.length;i++){
+                for(j=0;j<i;j++){
+                    if(arr[i]<arr[j]){
+                        var temp=arr[i]
+                        arr[i]=arr[j]
+                        arr[j]=temp
+                    }
+                }
+            }
+            return "["+arr+"]";
+        }
+        document.write(asc([5,3,2,4,1]))
+        document.write("<br>");
+        document.write(`<b>24.C Program to find factorial of number</b><br>`);
+        function pattern(n){
+            for(i=1;i<=n;i++){
+                for(j=1;j<=i;j++){
+                    document.write(j + " ");
+                }document.write("<br>")
+            }
+        }pattern(3)
+        document.write("<br>");
+        document.write(`<b>25.Program to Calculate the Power of a Number(using loop only).</b><br>`);
+        let power=1;
+        function power_cal(n,p){
+            for(i=1;i<=p;i++){
+                power*=n;
+            }
+            document.write(`${n} power of ${p} is: ${power}`);
+        }
+        power_cal(5,4);
+        document.write("<br>");
+        document.write(`<b>26.Program to Check Whether a Number is Prime or Not</b><br>`);
+        let countofprime=0;
+        function prime(P){
+            for(i=0;i<P;i++){
+                if(P%i==0){
+                    countofprime++;
+                }
+            }
+            if(countofprime==0){
+                document.write(`Given number ${P} is prime number`);
+            }
+            else{ document.write(`Given number ${P} is not a prime number`);}
+        }prime(9);
+        document.write("<br>");
+        document.write(`<b>27.Program to find LCM of two numbers using while loop</b><br>`);
+        function lcm(x,y){
+            for(i=0;i<=x&&i<=y;i++){
+                if(x%i==0 && y%i==0){
+                    divisible=i;
+                }
+            }
+             LCM=(x*y)/divisible;
+            document.write(`l.c.m of ${x} and ${y} is ${LCM}`);
+        }
+        lcm(8,6);
+        document.write("<br>");
+        document.write(`<b>28.Program to Display Characters from A to Z Using Loop with count</b><br>`);
+        function alphabet(va){
+            for(i=0;i<va.length;i++){
+                document.writeln(`${va[i]}-${i+1}`);
+            }
+        }
+        alphabet(['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']);
+        document.write("<br>");
+        document.write(`<b>29.PProgram to find a missing number</b><br>`);
+        document.write("<br>");
+        document.write(`<b>30.Program to count vowels and consonants in a given String</b><br>`);
+        var v=0;
+        var c=0;
+        function count(str1){
+            var str2=str1.replaceAll(" ","");
+            for(vo=0;vo<str2.length;vo++){
+                if(str1[vo]=="a"||str1[vo]=="e"||str1[vo]=="i"||str1[vo]=="o"||str1[vo]=="u"||str1[vo]=="A"||str1[vo]=="E"||str1[vo]=="I"||str1[vo]=="O"||str1[vo]=="U"){
+                    v++;
+                }
+                else{c++;}
+            }
+            document.write(`number of vowels is ${v}<br> number of constants is ${c}`);
+        }
+        count("i am ram");
+
+
 
 
 

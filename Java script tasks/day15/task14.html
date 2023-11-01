@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume_task15</title>
+    <style>
+        #firstdiv{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            font-size: smaller;
+        }
+    </style>
+</head> 
+<body>
+    <div id="parent">
+        <div class="first">
+            <h1>NAGA SUBRAHMANYAM PAPPU</h2>
+            <h4>&#9993;naga9701095763@gmail.com</h4>
+            <h4>&#9742;9701095763</h4>
+            <h4><address>D.no.72-22-4/1, Workers Colony,
+                Lalacheruvu, Rajahmundry, east Godavari
+                dist, Andhrapradesh - 533101</address></h4>
+        </div>
+        <hr>
+        <div>
+            <h2>OBJECTIVE</h2>
+            <p>To work in a professional environment where I can contribute myself and enrich my
+                skills according to the latest technologies and to work towards achieving my goal.</p>
+        </div>
+        <hr>
+        <div>
+            <h2>EDUCATION</h2>
+            <ul>
+                <li><h3>Bachelor degree(B.sc)</h3><p>Dr. Br. Ambedkar open University</p>
+                <p>7.8GPA</p>
+                <p>2018-2022</p></li>
+                <li><h3>Intermediate(mpc)</h3><p>Mega junior college</p>
+                    <p>9.3GPA</p>
+                    <p>2015-2017</p></li>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <h2>TECHNICAL SKILLS</h2>
+            <ul>
+                <li>ADOBE PHOTOSHOP,ADOBE ILLUSTRATOR</li>
+                <li>MS EXCEL</li>
+                <li>c</li>
+                <li>html</li>
+                <li>css</li>
+                <li>javascript</li>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <h2>PERSONAL STRENGTHS</h2>
+            <ul>
+                <li>Positive Attitude</li>
+                <li>Good Communication skills</li>
+                <li>Hard Working</li>
+                <li>Quick Learner</li>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <h2>INTERESTS</h2>
+            <ul>
+                <li>Sports, Travelling, New innovative technologies.</li>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <h2>LANGUAGES</h2>
+            <ul>
+                <li>Telug,English</li>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <h2>DECLARATION</h2>
+            <p>I hereby declare that all the above information is true and correct to the
+                best of my knowledge and belief.</p>
+        </div>
+
+    </div>
+    <script>
+        var maindiv= document.getElementById("parent");
+        maindiv.style.width = "75%";
+        maindiv.style.height = "100%";
+        maindiv.style.margin="0 50px 0 50px";
+        
+        var firstdiv= document.getElementsByClassName("first");
+        firstdiv[0].style.backgroundColor= "darkblue";
+        firstdiv[0].style.padding ="5px"
+        firstdiv[0].setAttribute("id","firstdiv");
+
+        var heading=document.getElementsByTagName("h2");
+        for(i=0;i<heading.length;i++){
+            heading[i].style.color="darkblue";
+        }
+    </script>
+</body>
+</html>
