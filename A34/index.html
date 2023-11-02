@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom operations</title>
+    <style>
+        /* #add{
+            color: orange;
+        }
+        #one{
+            background-color: red;
+        }
+        .two{
+            padding: 30px; 
+        }
+        .three{
+            font-family: cursive; 
+        }
+        .four{
+            border-radius: 50px;
+        } */
+        #tot{
+            display: flex;
+            justify-content: space-evenly;
+            background-color:darkgrey;
+        }
+        #first{
+            background-color:darkcyan;
+            justify-content: space-evenly;
+            width: 450px;
+
+        }
+        .barder{
+            border:2px solid black;
+        }
+       
+       
+    </style>
+</head>
+<body>
+    <div class="x">
+    <h1 class="fullname">Jaya sai kumar</h1>
+    
+    
+    <div id="total">
+    <div>
+    <h2>Educational Qualifications </h2>
+    <h3>Graduation</h3>
+    <h4>B.TECH</h4>
+    <h4>CGPA:7.98</h4>
+    <h3>INTERMEDIATE</h3>
+    <h4>MPC</h4>
+    <h4>CGPA:7.5</h4>
+    <h3>SSC</h3>
+    <h4>CGPA9.2</h4>
+    </div>
+    <div id="for">
+    <div>
+    <h2>Skills</h2>
+    <h4>HTML</h4>
+    <h4>CSS</h4>
+    <h4>JAVASCRIPT</h4>
+    <h4>BOOTSTRAP</h4>
+    </div>
+    <div>
+    <h2>Languages Known</h2>
+    <h4>English</h4>
+    <h4>Hindi</h4>
+    <h4>Telugu</h4>
+    </div>
+
+    <div>
+    <h2>Hobbies</h2>
+    <h4>Watching News</h4>
+    <h4>PLaying Pubg</h4>
+    <h4>Help for Poor Peoples</h4>
+    </div>
+    </div>
+    </div>
+</div>
+ <script>
+    
+    
+    
+
+    var b=document.getElementsByClassName("fullname")
+    b[0].style.textAlign="center"
+
+    let c=document.getElementById("total")
+    c.setAttribute("id","tot")
+
+    let z=document.getElementById("for")
+    z.setAttribute("id","first")
+    var v= document.getElementsByClassName("x")
+    v[0].setAttribute("class","barder");
+
+    
+
+
+</script>
+</body>
+
+</html>
