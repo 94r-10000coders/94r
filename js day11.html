@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js day 11</title>
+</head>
+<body>
+    <script text="type/javascript">
+        class studentInfo{
+            constructor(name,age,qualification,bloodgroup,job,gender){
+                this.name=name;
+                this.age=age;
+                this.qualifcation=qualification;
+                this.bloodgroup=bloodgroup;
+                this.job=job;
+                this.gender=gender;
+            }
+         
+        }
+        const prakash=new studentInfo("prakash","21","B.tech","o+ve","jobseker","male");
+        const krishna=new studentInfo("krishna","22","B.tech","A+ve","jobseker","male");
+        const ramu=new studentInfo("ramu","21","B.tech","o+ve","jr.software engineer","male");
+        const sai=new studentInfo("prakash","23","B.com","0-ve","youtuber","male");
+        const Madhu=new studentInfo("Madhu","22","B.tech","B+ve","frontend developer","male");
+        const Venkat=new studentInfo("Venkat","23","B.tech","AB+ve","Sr.backend developer","male");
+        const Harsha=new studentInfo("Harsha","24","B.tech","B+ve","shuntMan","male");
+        const Darling=new studentInfo("Darling","21","B.formcy","AB-ve","TOURIST gide","male");        
+        const Prabhas=new studentInfo("Prabhas","29","B.tech","B+ve","Hero","male");
+        const Raja=new studentInfo("Raja","21","B.tech","B+ve","youtuber","male");
+        document.write( JSON.stringify (prakash));
+        document.write( JSON.stringify (krishna));
+        document.write( JSON.stringify (ramu));
+        document.write( JSON.stringify (sai));
+        document.write( JSON.stringify (Madhu));
+        document.write( JSON.stringify (Venkat));
+        document.write( JSON.stringify (Harsha));
+        document.write( JSON.stringify (Darling));
+        document.write( JSON.stringify (Prabhas));
+        document.write( JSON.stringify (Raja));
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js day 10</title>
+</head>
+<body>
+    <script type="text/javascript">
+        
+        document.write("map method<br>")
+    const array=[1,2,3,4,5,6,7,8];
+    let maparray=array.map((x)=>{//in map if condition is true it gives bollen values;
+        return x>4;
+    })
+    document.write(maparray);
+    document.write("<hr>");
+    
+    document.write("filter method<br>")
+    const array1=[1,2,3,4,5,6,7,8];
+    let filterarray1=array1.filter((x)=>{//in map if condition is true it gives numerical values;
+        return x>4;
+    })
+    document.write((filterarray1),"<br>");
+    document.write("<hr>");
+
+    document.write("for each method<br>")
+const array2=[2,4,5,6,7,8];
+array2.forEach((x)=>{
+document.write((x+2),"<br><br>");
+})
+document.write("<hr>");
+document.write("reduce method<br>")
+const array3=[3,4,5,6,7];
+let reducearray=array3.reduce((accu,ele,ind,arr)=>{
+    return ele+accu
+},15)
+document.write((reducearray),"<br>");
+const array4=[3,4,5,6,7];
+let newarray=array4.reduce((accu,ele,ind,arr)=>{
+    return Math.max(ele,accu)
+},5)
+document.write(newarray);
+document.write("<hr>");
+document.write("find method<br>")
+const ages=[12,55,34,67,12,18];
+let findarray=ages.find((age)=>{
+    return age>18;
+});
+document.write(findarray);
+document.write("<hr>");
+
+document.write("MATH OBJECT FUNCTIONS<br><br>")
+        document.write("some predefined values<br>");
+        document.write(Math.PI,"<br>");
+        document.write(Math.E,"<br>");
+         document.write(Math.SQRT1_2,"<br>");
+         document.write(Math.SQRT2,"<br>");
+         document.write("<hr>");
+         document.write(" Math round - takes near round figure values<br>")
+         document.write(Math.round(4.3),"<br>");
+         document.write(Math.round(4.6),"<br>");
+         document.write("<hr>");
+         document.write(" Math ceil- takes higher round figure values<br>")
+         document.write(Math.ceil(4.3),"<br>");
+         document.write(Math.ceil(4.6),"<br>");
+         document.write("<hr>");
+         document.write(" Math floor- takes lower round figure values<br>")
+         document.write(Math.floor(4.3),"<br>");
+         document.write(Math.floor(4.6),"<br>");
+         document.write("<hr>");
+         document.write(" Math trunc - it removes decimals<br>")
+        document.write(Math.trunc(4.2),"<br>")
+        document.write(Math.trunc(-4.6),"<br>")
+        ocument.write("<hr>");
+        document.write(" Math pow - gives square values in arguments 1st one is number 2nd one is square<br>")
+        document.write(Math.pow(4,2),"<br>")
+        document.write(Math.pow(7,3),"<br>")
+        ocument.write("<hr>");
+        document.write(" Math sqrt - gives square root values of an given numbers<br>")
+        document.write(Math.sqrt(64),"<br>")
+        document.write(Math.sqrt(625),"<br>")
+        document.write("<hr>");
+</script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js Day9</title>
+</head>
+<body>
+    <script type="text/javascript">
+//for in loop is used to write the index value(for in is applycable in objects and arrays);
+const a={
+    name:"krish",
+    age:24,
+    gender:"male",
+    hobbiess:"Roming",
+    qualities:"not defined",
+}
+for(x in a){
+    document.write(x +" " ,"<br>");
+    document.write(a[x]+" " ,"<br>");
+}
+document.write("<hr>");
+
+//for of loop is used only for arrays;
+const b=[1,2,3,4,5];
+for(x of b){
+    document.write(x+" " ,"<br>");
+    document.write(b[x]+" " ,"<br>");
+}
+document.write("<hr>");
+//split:it is used to convert string into array:
+const c="welcome to horse race";
+var d=c.split(" ");
+document.write(d);
+document.write("<hr>");
+//join is used to convert array into string:
+const arr =[1,2,3,4,5];
+var e=arr.join("man");
+document.write(e);
+document.write("<hr>");
+//for x loop and call by function.
+function rock(arr){
+    let result=[];
+    for(x of arr){
+    result.push(x*x);
+}
+return result;
+}
+let arra=[1,2,3,4,5,6];
+document.write(rock(arr));
+document.write("<hr>");
+//using call back function.
+function raa(array,square){
+    let result=[];
+    for(x of array){
+        result.push(square(x));
+    }
+    return result;
+}
+let array=[12,23,34,45,56];
+function square(x){
+return x*x;
+}
+document.write(raa(array,square));
+document.write("<hr>");
+
+//for x of and call back function using in multiplication.
+
+function na(ra) { //take as inputArray it is keyword in VS
+    let result1 = [];
+    let result2 = [];
+    let result3 = [];
+
+    for (x of ra) {
+        result1.push(x * 5);
+        result2.push(x * 7);
+        result3.push(x * 9);
+    }
+
+    return [result1, result2, result3];
+}
+
+let ra = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+document.write(JSON.stringify(na(ra)));//FOR JSON.string for exicute the all the output.
+//call back Function.
+// function ra(inputArray) {
+//   let result1 = [];
+//   let result2 = [];
+//   let result3 = [];
+  
+//   for (let x of inputArray) {
+//     const [res1, res2, res3] = mu(x);
+//     result1.push(res1);
+//     result2.push(res2);
+//     result3.push(res3);
+//   }
+  
+//   return [result1, result2, result3];
+// }
+
+// function mu(x) {
+//   return [x * 5, x * 7, x * 9];
+// }
+
+// let ja = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// document.write(JSON.stringify(ra(ja)));
+
+    </script>
+</body>
+</html>l>

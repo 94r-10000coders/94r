@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js day6</title>
+</head>
+<body>
+    <script text="type/javascript">
+        document.write("1.take a string hello hyderabad welcome print only hyderabad as upper case");
+        document.write("<br>");
+        var a="hello hyderabad welcome";
+        var b=a.slice(6,15);
+         var c=b.toUpperCase();
+        document.write(c);
+        document.write("<br>");
+
+
+
+        document.write("2.take a string there is a god is converted into there is a devil");
+        document.write("<br>");
+        var a="there is a god";
+        var b=a.replace("god", "devil");
+        document.write(b);
+        document.write("<br>");
+
+
+document.write("3.find the length of given string ten thousand coders");
+        document.write("<br>");
+        var a="ten thousand coders";
+        var b=a.length;
+        document.write(b);
+        document.write("<br>");
+
+        document.write("4.add two strings without using + operator");
+        document.write("<br>");
+        var a="krishna";
+        var b="siriesh"
+        var c=a.concat(" ",b);
+        document.write(c);
+        document.write("<br>");
+
+
+        document.write("5.reverse a string user interface");
+        document.write("<br>");
+        var a="user interface";
+        var b=a.length-1;
+       for(var i=b;i>=0;i--){
+        document.write(a[i]);
+
+}
+        document.write("<br>");
+
+
+        document.write("6.remove the side spaces and converted it into lowercase");
+        document.write("<br>");
+        var a="          FRONT_END DEVELOPER     ";
+        var b=a.trim();
+        var c=b.toLowerCase();
+        document.write(c);
+        document.write("<br>");
+
+
+
+        document.write("7.count how many spaces in the string siriesh gadu  thopu villu aetha  appu");
+        document.write("<br>");
+        var a="siriesh gadu  thopu villu aetha  appu";
+        var count=1;
+        var b=a.length;
+        for(var i=0;i<=b;i++){
+            if(a[i]==" ")
+            count++;
+
+        }
+        document.write(count);
+        document.write("<br>");
+
+
+        document.write("8.count how many 0 s in the number 50098007600");
+        document.write("<br>");
+        var a=50098007600;
+        var b=a.toString();
+        var count=0;
+        var c=b.length-1;
+        for(var i=0;i<=c;i++){
+  if(b[i]==0)
+  count++;      
+    }
+    document.write(count);
+    document.write("<br>");
+
+
+document.write("9.convert number 2002,3003,4004 in to string");
+        document.write("<br>");
+        var a=20030045867;
+        var b=a.toString();
+        document.write(b);
+        document.write("<br>");
+
+        document.write("10.find the vowel count in a string happy brithday to you");
+        document.write("<br>");
+        var a="happy brithday to you";
+        var b=a.length-1;
+        var count=0;
+        for(var i=0;i<=b;i++){
+            if(a[i]=="a"||a[i]=="e"||a[i]=="i"||a[i]=="o"||a[i]=="u")
+            count++;
+        }
+        document.write(count);
+        document.write("<br>");
+
+
+        document.write("11.find the uni codes string krishna");
+        document.write("<br>");
+        var a="krishna";
+        var c=a.length-1;
+        for(i=0;i<=c;i++){
+            var b=a.charCodeAt(i);
+            document.write(b,"<br>");
+        } 
+        
+     
+        document.write("12.convert a string in to array");
+        document.write("<br>");
+     var a="krishna";
+     var b=a.split("");
+     document.write(b);
+     document.write("<br>");
+
+
+     document.write("13.find the index of string");
+        document.write("<br>");
+        var a="virat kohili is king of crickter kohili"
+        var b=a.indexOf("kohili");
+        document.write(b);
+        document.write("<br>");
+
+
+        document.write("14.find the ain in the word of the rain in SPAIN stays mainly in the plain");
+        document.write("<br>");
+        var a="the rain in SPAIN stays mainly in the plain";
+        var ka=a.match(/ain/gi);
+        document.write(ka.length,ka);
+        document.write("<br>");
+
+        document.write("15. given the string is palindrome or not");
+        document.write("<br>");
+        var a="radar";
+        var b="";
+        var c=a.length-1;
+        for(i=c;i>=1;i--){
+            b=b+a[i];
+            // document.write(b);
+        }
+        if(a[i]==b[i]){
+        document.write("palindrome");
+        }
+    else{
+    document.write("not a palindrome");
+    }
+
+    </script>
+</body>
+</html>

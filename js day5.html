@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js day5</title>
+</head>
+<body>
+    <script type="text/javascript">
+document .write("write a program to print triangle:");
+document.write("<br>");
+var i,j,n=5;
+for(i=1;i<=n;i++){
+    for(j=1;j<=i;j++){
+        document.write('*');
+    }
+document.write("<br>");
+}
+
+document .write("write a program to print reverse triangle:");
+document.write("<br>");
+var i,j,n=5;
+for(i=5;i>=1;i--){
+    for(j=1;j<=i;j++){
+        document.write('*');
+    }
+document.write("<br>");
+}
+
+
+document .write("write a program to print patterns:");
+document.write("<br>");
+var i,j,n=5;
+for(i=1;i<=n;i++){
+    for(j=1;j<=i;j++){
+        document.write(j);
+    }
+    document.write("<br>");
+}
+
+
+document .write("write a program to print triangle using functions:");
+document.write("<br>");
+function triangle(n){
+    for(var i=1;i<=n;i++){
+        for(var j=1;j<=i;j++){
+            document.write('*');
+        }
+document.write("<br>");
+    }
+}
+triangle(5);
+
+document .write("write a program to print  reverse triangle using functions:");
+document.write("<br>");
+function triangle(n){
+    for(var i=n;i>=1;i--){
+        for(var j=1;j<=i;j++){
+            document.write('*');
+        }
+document.write("<br>");
+    }
+}
+triangle(5);
+
+document.write("write a program to print patterns using functions");
+document.write("<br>");
+function patterns(n){
+    for(var i=1;i<=n;i++){
+        for(var j=1;j<=i;j++){
+            document.write(j);
+        }
+        document.write("<br>");
+    }
+}
+patterns(5);
+
+
+document.write("write a program to print reverse the string");
+document.write("<br>");
+var a="krishna";
+var b='';
+var n=a.length-1;
+for(i=n;i>=0;i++){
+    b=b+a[i];
+}
+document.write(b);
+
+
+document.write("write a program to print palindrome");
+document.write("<br>");
+var a="malayalam";
+var i=0,j=0;
+while(a[j]!=undefined){
+    j++;
+}
+j=j-1;
+while(i<j){
+    if(a[i]!=a[j])
+    break;
+    i++;
+    j--;
+}
+if(i>=j){
+document.write("it is palindrome");
+}
+else{
+document.write("it is not a palindrome");
+}
+document.write("write a program to find length of string with out using str.length");
+document.write("<br>");
+var a="krishna";
+var j=0;
+while(a[j]!=undefined){
+    j++;
+}
+//j=j-1;
+document.write("the length of the string is:",j);
+
+        </script>
+
+
+</body>
+</html>

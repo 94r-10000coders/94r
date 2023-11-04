@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js day 8</title>
+</head>
+<body>
+    <script text="type/javascript">
+      document.write("1.write a js program to find no of keys in a list <br> ");
+      const bike={
+rx100:"yamaha",
+classic350:"Royal Enfield",
+ZMR:"hero",
+duke390:"ktm",
+      }
+let obj=Object.keys(bike);
+document.write(obj );
+document.write("<hr>" );
+//problem2
+document.write("2.Write a JavaScript program to delete the rollno property from the following object. Also print the object before or after deleting the property.<br>")
+        const object2={
+            name:"krishna",
+            class:"B.tech",
+            rollnumber:"496",
+        }
+        delete object2.rollnumber;
+        document.write(JSON.stringify(object2));
+        document.write("<hr>" );
+         //problem3
+         document.write("3.find the length of an object<br>")
+         let object3={
+         rx100:"yamaha",
+         classic350:"Royal Enfield",
+         ZMR:"hero",
+        duke390:"ktm",
+        name:"krishna",
+        class:"B.tech",
+        rollnumber:"496",
+         }
+         let objj=Object.keys(object3);
+         document.write(objj.length);
+         document.write("<hr>" );
+         //problem4
+         //problem4
+        document.write("4.iterate an object using for in loop and find lenght<br>")
+        let object4={
+         rx100:"yamaha",
+         classic350:"Royal Enfield",
+         ZMR:"hero",
+        // duke390:"ktm",
+        // name:"krishna",
+        // class:"B.tech",
+        // rollnumber:"496",
+        
+        }
+        for(x in object4){
+            document.write(x," ")
+            document.write(object4[x]," ")
+        }
+        document.write("<br>")
+        document.write("length--- ",x.length-1,"<br><br>")
+
+         //problem5
+         
+         document.write("5.list the values of an object<br>")
+         let object5={
+            rx100:"yamaha",
+         classic350:"Royal Enfield",
+         ZMR:"hero",
+        duke390:"ktm",
+        name:"krishna",
+        class:"B.tech",
+        rollnumber:"496",
+         }
+let obc=Object.values(object5);
+document.write(JSON.stringify(object5))
+document.write("<hr>" );
+     //problem6
+     document.write("assigning functions to the objects<br>")
+       const jack={
+        name:"kali",
+        action:"fire",
+        get:"superpower",
+        class:"B.tech",
+        rollnumber:"496",
+        brand:function (){
+        return "KING";
+       }
+    }
+    document.write(jack.brand());
+    document.write("<hr>" );
+    //problem7
+    document.write("7.create an object using this operator<br>")
+    let object6={
+            rx100:"yamaha",
+         classic350:"Royal Enfield",
+         ZMR:"Hero",
+        duke390:"ktm",
+        name:"krishna",
+        class:"B.tech",
+        rollnumber:"496",
+         demo:function(){
+            return this. classic350+" " +this. ZMR;
+         }
+         }
+         document.write(object6.demo());
+         document.write("<hr>" );
+         //problem8
+           
+        document.write("8.get NAME of person by get method<br>")
+    let object7={
+            rx100:"yamaha",
+         classic350:"Royal Enfield",
+         ZMR:"Hero",
+        duke390:"ktm",
+        name:"krishna",
+        class:"B.tech",
+        rollnumber:"496",
+         get Demo(){
+            return this. name;
+         }
+         }
+         document.write(object7.Demo);
+         document.write("<hr>" );
+         //problem9
+         document.write("9.get NAME of person by get method<br>")
+         let object8={
+         name:"",
+        class:"",
+        rollnumber:"",
+        branch:"",
+        
+         set name1(x){
+        this.name=x;
+         },
+         set class1(y){
+        this.class=y;
+         },
+         set rollnumber1(z){
+        this.rollnumber=z;
+         },
+         set branch1(a){
+        this.branch=a;
+         }
+        }
+        object8.name1="krishna";
+        object8.class1="B.tech";
+        object8.rollnumber=496;
+        object8.branch="ECE";
+        document.write(object8.name)
+        document.write("<hr>" );
+        //problem 10
+        document.write("10.make operation on nested objects<br>")
+        let object9={
+            name:"raja",
+            age:21,
+            gender:"male",
+    
+        other:{
+            motive:"achive job",
+            purpose:"as everly as possible",
+            confidence:"achiev to do",
+        }
+    }
+        document.write(object9.other.confidence);
+        document.write("<hr>" );
+
+    </script>
+    
+</body>
+</html>

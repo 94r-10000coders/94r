@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js Day 12 </title>
+</head>
+<body>
+    <script text="type/javascript">
+ class bankaccount{
+    constructor(accountNumber,blance){
+        this.accountNumber=accountNumber;
+        this.blance=blance;
+
+    }
+    getAccountNumber(){
+       return this.accountNumber;
+    }
+    getBlance(){
+        return this.blance;
+    }
+    setDeposit(amount){
+        this.deposite=amount;
+        document.write(this.deposite);
+        document.write("<br>");
+    }
+    setWithdraw(amount){
+        this.withdraw=amount;
+        document.write(this.withdraw);
+    }
+ }
+ const obj1=new bankaccount(4532,950000);
+ document.write(obj1.getAccountNumber());
+document.write("<br>")
+document.write(obj1.getBlance());
+document.write("<br>")
+obj1.setDeposit("10000")
+// document.write(JSON.stringify(obj1));
+obj1.setWithdraw("5000")
+// document.write(JSON.stringify(obj1));
+document.write("<hr>")
+
+//2.Private property:
+class temperatureConveter{
+    #celsius;
+    constructor(value){
+this.#celsius=value;
+    }
+    setCelsius(newvalue){
+        this.#celsius=newvalue;
+    }
+    getCelsius(){
+       return this.#celsius;
+    }
+    convertToFahrenheit() {
+    return (this.#celsius * 9/5) + 32;
+  }
+
+  convertToKelvin() {
+    return this.#celsius + 273.15;
+  }
+}
+const obj2=new temperatureConveter(30);
+obj2. setCelsius(40);
+document.write(obj2.getCelsius());
+document.write("<br>")
+document.write(obj2.convertToFahrenheit());
+document.write("<br>")
+document.write(obj2.convertToKelvin());
+document.write("<hr>")
+
+//3.Static Method and Inheritance
+class MathOperations{
+    constructor(number){
+        this.number=number;
+    }
+    static square(number){
+        return number*number;
+    }
+}
+class AdvancedMathOperations extends MathOperations{
+    static cube(number){
+        return number*number*number;
+    }
+}
+let obj3=new MathOperations(5);
+document.write( MathOperations.square(obj3.number));
+document.write("<br>")
+ let obj4=new AdvancedMathOperations(5);
+ document.write(AdvancedMathOperations.cube(obj4.number)); 
+ document.write("<hr>")
+//4.Inheritences and metod overriding;
+class Shape{
+constructor(){
+    document.write("measure the Area and Perameter give shape.");
+  }
+}
+class Cricle extends Shape {
+constructor(radius){
+    super();
+    this.radius=radius;
+  }
+  calculateArea(){
+    return Math.PI*this.radius*this.radius;
+  }
+  calculatePerameter(){
+    return 2*Math.PI*this.radius;
+  }
+}
+class Square extends Shape{
+constructor(side){
+    super();
+    this.side=side;
+  }
+  calculateArea(){
+    return this.side*this.side;
+  }
+  calculatePerameter(){
+    return 4*this.side;
+  }
+}
+let obj5=new  Cricle(4);
+document.write(obj5.calculateArea());
+document.write("<br>")
+document.write(obj5.calculatePerameter());
+document.write("<br>")
+let obj6= new Square(8);
+document.write(obj6.calculateArea());
+document.write("<br>")
+document.write(obj6.calculatePerameter());
+document.write("<br>")
+
+
+
+</script>
+</body>
+</html>

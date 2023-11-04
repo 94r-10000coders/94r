@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script text="type/javascript">
+     document.write("find first and last element of an array");
+     document.write("<br>") ; 
+    let ai= [1,2,3,4,5,6];
+    document.write("frist element is:"+ai[0]);
+    document.write("<br>")
+    document.write("last  element is:"+ai[5]);
+    document.write("<br>")
+    document.write("<hr>")
+    document.write("take an array find index what array elements is stored");
+    document.write("<br>")
+    var box=["a","b","c","d","e","f","g","h","i","j","k","l"];
+    var n=box.length-1;
+    for(var i=0;i<=n;i++){
+        document.write("Element at index ["+i+"] is:" +box[i]);
+        document.write("<br>")
+    }
+    document.write("<hr>")
+   
+    document.write("display Even and odd numbers");
+    document.write("<br>")
+    var a=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+    var n=a.length-1;
+    for(var i=0;i<=n;i++){
+        if(i%2==0){
+        document.write("["+i+"] Is An Even Number");
+        document.write("<br>");
+        }
+        else{
+            document.write("["+i+"] Is An Odd Number");
+        document.write("<br>");  
+        }
+    }
+    document.write("<hr>")
+    document.write("display All Prime numbers");
+    document.write("<br>")
+    for(var n=2;n<=30;n++){
+        for(var i=2;i<=n/2;i++){
+            if(n%i==0)
+            break;
+        }
+        if(i>n/2)
+        document.write(" "+n+" number is Prime");
+        document.write("<br>")
+    }
+    document.write("<hr>")
+
+    document.write("sort the array in asscending order without using predefined method");
+    document.write("<br>");
+    var b=[12,34,56,78,9,3,0,54,73];
+    var n=b.length-1;
+    var temp;
+    for(var i=0;i<=n;i++){
+        for(var j=0;j<n;j++){
+            if(b[i]<b[j]){
+            temp=b[i];
+            b[i]=b[j];
+            b[j]=temp;
+            }
+        }
+      
+    }
+    document.write(b);
+        document.write("<br>");
+        document.write("<hr>")
+
+        document.write("sort the array in decending order without using predefined method");
+    document.write("<br>");
+    var b=[12,34,56,78,9,3,0,54,73];
+    var n=b.length-1;
+    var temp;
+    for(var i=0;i<=n;i++){
+        for(var j=0;j<n;j++){
+            if(b[i]>b[j]){
+            temp=b[i];
+            b[i]=b[j];
+            b[j]=temp;
+            }
+        }
+      
+    }
+    document.write(b);
+        document.write("<br>");
+        document.write("<hr>")
+
+    document.write("swap the numbers in array");
+    document.write("<br>");
+    var a=[1,2,3,4,5,6];
+    var n=a.length-1;
+    for(i=0;i<=n;i=i+2){
+  var temp=a[i];
+  a[i]=a[i+1];
+  a[i+1]=temp;
+    }
+    document.write(a);
+    document.write("<hr>")
+
+    document.write("check the element is exsting in an array");
+    document.write("<br>");
+    var a=[1,2,3,4,5];
+    var b=a.includes(0);
+    document.write(b);
+    document.write("<hr>")
+    
+  </script>  
+</body>
+</html>

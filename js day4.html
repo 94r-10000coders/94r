@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js day4</title>
+</head>
+<body>
+    <script type="text/javascript">
+//         //W.A.P print 1 to 20 even number using continue.
+        var n=20,i;
+        document.write("W.A.P to print even numbers but we using Continue Statement to print odd number in place of even number:")
+        document.write("<br>");
+        for(i=1;i<=n;i++){
+            if(i%2==0)
+             continue;
+            document.write(+i);
+            document.write("<br>");
+        }
+    
+ //W.A.P print 1 to 20 even number using break.
+ var n=20,i;
+ document.write("print even numbers using break:")
+ document.write("<br>");
+        for(i=1;i<=n;i++){
+            if(i%2==0){
+               
+            document.write(+i);
+            document.write("<br>");
+            }
+            if(i==10)
+            break;
+        }
+    //w.a.p if the number is  even or odd:
+    function da(a){
+    if(a%2==0){
+        document.write("number is even");
+    return;
+    }
+    else{
+        document.write("number is odd");
+        return;
+    }
+}
+da(9);
+
+//w.a.p to print 1 to 20 even numbers using functions;
+function ra(){
+for(i=1;i<=10;i++){
+    if(i%2==0){
+        document.write(i);
+        document.write("<br>");
+    }
+}
+
+}
+ra();
+//w.a.p to print 30 to 1 odd numbers using functions;
+function ka(){
+    var n=30;
+    while(n>=1){
+        if(n%2!==0){
+            document.write(n);
+            document.write("<br>");
+           
+    }
+    n--;
+}
+}
+ka();
+
+// swap two varaibles using functions;
+//W.A.P to print swap the numbers;
+function swap(){
+var a=2;
+var b=3;
+var c;
+c=b;
+b=a;
+a=c;
+document.write("Swap the two variables:" +a ,+b);
+return swap;
+}
+// swap();
+
+
+    </script>
+</body>
+</html>
