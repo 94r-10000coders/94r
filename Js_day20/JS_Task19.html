@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_task19</title>
+</head>
+<body> 
+    <h1 style="text-align: center;">REGISTRATION FORM</h1>
+    <form style="padding: 50px;border: 1px solid black;background-color:khaki;">
+        <label>User Name:</label>
+        <input type="text" placeholder="Username" style="margin-left: 30px;"> <br> <br>
+        <label>Mobile Number:</label>
+        <input type="number" placeholder="mobile number"> <br> <br>
+        <label>Email:</label>
+        <input type="email" placeholder="email" style="margin-left: 63px;"> <br> <br>
+        <label>Password:</label>
+        <input type="password" placeholder="password" style="margin-left: 40px;"> <br> <br>
+        <label>Confirm Password:</label>
+        <input type="password" placeholder="confirm password"> <br> <br>
+        <input type="submit" value="submit" id="test" style="margin-left: 60px;">
+    </form>
+
+    <script>
+        let form_getting=document.getElementsByTagName("form");
+        // or we can also use form_getting=document.forms;
+        // console.log(form_getting[0]);
+
+        // var arr1=[];
+        var arr1=JSON.parse(localStorage.getItem("details")) || [];
+        form_getting[0].addEventListener("submit",(e)=>{
+            // console.log(e);
+            // Here "e" in the call back function is the event of the form action.
+            e.preventDefault();
+            // here when we given input details in the form, by default it stores and shows but it refreshes suddenly.So to prevent this refresh we use preventdefault() method.
+            // when we console.log(e) we can see the tags which where in the form are present in "target" and values which user enters will store in the "value".
+            // var User_name=e["target"][0]["value"];
+            // var Mobile=e["target"][1]["value"];
+            // var Email=e["target"][2]["value"];
+            // var Pass=e["target"][3]["value"];
+            // console.log(input1);
+            // console.log(input2);
+            // console.log(input3);
+            // console.log(input4);
+            var obj={
+                User_name:e["target"][0]["value"],
+                Mobile:e["target"][1]["value"],
+                Email:e["target"][2]["value"],
+                Pass:e["target"][3]["value"],
+                Confirm_pass:e["target"][4]["value"]
+            };
+            // console.log(obj);
+            if((obj["User_name"]).match((/^[A-Z]/))){
+                // Here our username should starts with uppercase letter.
+                // console.log(obj);
+               if((obj["Mobile"].length)==10){
+                    // console.log(obj);
+                    if((obj["Email"]).match((/.com$/))){
+                        // console.log(obj);
+                        if((obj["Pass"]).match((/[A-z]+/))&&(obj["Pass"]).match((/[0-9]+/))&&(obj["Pass"]).match((/[~!@#$%^&*`<>?:-]+/))){
+                            // console.log(obj);
+                            if((obj["Pass"])==(obj["Confirm_pass"])){
+                                arr1.push(obj);
+                                // console.log(arr1);
+                                localStorage.setItem("details",JSON.stringify(arr1));
+                                window.location.assign("./login.html");
+                            }
+                            else{
+                                alert("Please check password again.")
+                            }
+                          
+                        }
+                        else{
+                            alert("Please enter valid password.");
+                        }
+                    }
+                    else{
+                        alert("Please enter valid email address.");
+                    }
+               } 
+               else{
+                    alert("Please enter valid 10 digit number.");
+               }
+            }
+            else{
+                alert("invalid. Please enter Uppercase letter at the begining");
+            }
+
+        });
+        
+        
+    </script>
+</body>
+</html>
