@@ -408,9 +408,11 @@
             // var arr=[] || JSON.parse(localStorage.getItem("Add_to_Cart"));
             arr.push(val);
             localStorage.setItem("Add_to_Cart",JSON.stringify(arr));
+            // Here generally in localstorage method data is stored as string,but in the above array data we have an object,so it wont convert into string,so with the help of json we convert array of object into string.
             window.location.assign("./Addtocart.html");
         }
         button_create1.addEventListener("click",()=>{test2();});
+        // or we can directly mention above function statements in the call back function without using function defination.
     });
     });
 
