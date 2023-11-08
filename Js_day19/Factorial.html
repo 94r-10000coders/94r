@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body style="background-color: aquamarine;display: flex;justify-content: center;padding: 200px;">
+    <div id="div1" style="border: 1px solid black;height:300px;width:500px;background-color: white;">
+        <h1 style="text-align: center;">Calculate Factorial</h1>
+        <input type="number" style="margin-left: 160px;margin-top: 10px;">
+        <div style="display: flex;justify-content: center;margin-top: 20px;">
+            <button id="btn">Get Factorial</button>
+        </div>
+        <br>
+        <div id="div2" style="border: 1px solid black;margin-left: 230px;width:45px;height:20px;background-color: cyan;text-align: center;"></div>
+    </div>
+    <script>
+        var btn_getting=document.getElementById("btn");
+        btn_getting.addEventListener("click",()=>{
+            var temp=input_getting[0].value;
+            test(temp);
+        });
+        function test(temp){
+            if(temp>=0){
+                var fact=1;
+            for(i=1;i<=temp;i++){
+                fact=fact*i;
+            }
+            div_getting=document.getElementById("div2");
+            div_getting.innerText=fact;
+            }
+            else{
+                div_getting=document.getElementById("div2");
+                div_getting.innerText="invalid"; 
+            }
+            
+        };
+        var input_getting=document.getElementsByTagName("input");
+        
+    </script>
+</body>
+</html>
