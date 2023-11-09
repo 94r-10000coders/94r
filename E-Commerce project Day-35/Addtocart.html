@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart_page</title>
+</head>
+<body>
+    <h1 style="text-align: center;color: darkred;">Cart Items</h1>
+    <!-- <div id="test"></div> -->
+
+    <script>
+        let data1=JSON.parse(localStorage.getItem("Add_to_Cart"));
+        // Here this JSON.parse converts back from string to object.
+        console.log(data1); 
+        
+        
+        for(i=0;i<data1.length;i++){
+            // creating seperate div for every item that we added to cart dynamically:-
+                var div_create=document.createElement("div");
+                div_create.style.padding="20px";
+                div_create.style.border="1px solid black";
+                div_create.style.marginTop="100px";
+                div_create.style.marginLeft="500px";
+                div_create.style.width="500px";
+                div_create.style.height="400px";
+                div_create.style.backgroundColor="darkseagreen";
+                // appending div to body
+                document.body.appendChild(div_create);
+                // or we can also get the body tag by tag name and body_get[0].appenChild(div_create).
+
+
+            //I tried to append the above div to another main div instead of body, so that i can style and give display flex. 
+
+                // var div_getting1=document.getElementById("test");
+                // div_getting1.style.width="1200px";
+                // div_getting1.style.display="flex";
+                // div_getting1.appendChild(div_create);
+                
+        // for(i=0;i<data1.length;i++){
+
+        
+                // image: -
+                var img_create=document.createElement("img");
+                img_create.setAttribute("src",data1[i]["image"]);
+                div_create.appendChild(img_create);
+                img_create.style.width="100px";
+                img_create.style.height="100px";
+
+
+
+                // Now i am trying to print all the required fields as lists,So
+                // (1)id name: -
+                var list_create=document.createElement("ul");
+                div_create.appendChild(list_create);
+                var li_create1=document.createElement("li");
+                list_create.appendChild(li_create1);
+                li_create1.innerText=`ID:  ${data1[i]["id"]}`;
+
+                // (2)title: -
+                var li_create2=document.createElement("li");
+                list_create.appendChild(li_create2);
+                li_create2.innerText=`Title:  ${data1[i]["title"]}`;
+
+                // (3)price: -
+                var li_create3=document.createElement("li");
+                list_create.appendChild(li_create3);
+                li_create3.innerText=`Price:  ${data1[i]["price"]}`;
+
+                // (4)description: -
+                var li_create4=document.createElement("li");
+                list_create.appendChild(li_create4);
+                li_create4.innerText=`Description:  ${data1[i]["description"]}`;
+
+                // (5)category: -
+                var li_create5=document.createElement("li");
+                list_create.appendChild(li_create5);
+                li_create5.innerText=`Category:  ${data1[i]["category"]}`;
+
+                // (6)rating["rate"]: -
+                var li_create6=document.createElement("li");
+                list_create.appendChild(li_create6);
+                li_create6.innerText=`Rate:  ${data1[i]["rating"]["rate"]}`;
+
+                // (7)rating["count"]: -
+                var li_create7=document.createElement("li");
+                list_create.appendChild(li_create7);
+                li_create7.innerText=`Count:  ${data1[i]["rating"]["count"]}`;
+
+
+
+                // .....
+                // creating remove button: -
+                var remove_btn=document.createElement("button");
+                remove_btn.innerText="Remove";
+                div_create.appendChild(remove_btn);
+                // function fun(i){
+                // data1.splice(i,1);
+                // div_create.remove();
+                // localStorage.setItem("Add_to_Cart",JSON.stringify(data1));
+                
+
+                // }
+                // remove_btn.addEventListener("click",fun);
+
+
+                 remove_btn.addEventListener("click", ((index) =>{
+                    return ()=>{    
+                        data1.splice(index, 1);
+                        // div_create.remove();
+                        clear();
+                        // here in my cart the deleted item div is clearing but the boarder is appering till we refreh the browser page.
+                        // So i use bom method to refreh the browser dynamically.
+                        window.location.reload();
+                        localStorage.setItem("Add_to_Cart", JSON.stringify(data1));
+                    }
+                 })(i));
+
+                
+
+    }
+    function clear(){
+        div_create.innerText="";
+    }
+
+
+    </script>
+</body>
+</html>
