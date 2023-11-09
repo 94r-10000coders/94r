@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+        <h1 style="text-align: center;">Login</h1>
+        <form >
+            <fieldset style="background-color: cadetblue;">
+            <label>Username:</label>
+            <br>
+            <input type="text" placeholder="enter username">
+            <br>
+            <br>
+            <label>Password:</label>
+            <br>
+            <input type="password" placeholder="enter password">
+            <br>
+            <br>
+            <input type="submit" value="login" style="margin-left: 50px;">
+            </fieldset>
+        </form>
+        <script>
+            var a=JSON.parse(localStorage.getItem("info2"));
+            console.log(a);
+            let form=document.forms;
+            console.log(form[0]);
+            form[0].addEventListener("submit",(e)=>{
+            e.preventDefault();
+            // console.log(e.target[1].value);
+           
+            let obj1={
+                name:e["target"][1]["value"],
+                passw:e["target"][2]["value"]
+            }
+            var temp=0;
+            for(i=0;i<a.length;i++){
+                if((obj1["name"]==(a[i]["user"])&&(obj1["passw"]==a[i]["pass"]))){
+                    temp++;
+            window.location.assign("./Taskjs17.html");
+           }
+           
+            }
+           if(temp==0){
+            alert("please enter proper credentials");
+           }
+        });
+        </script>
+</body>
+</html>

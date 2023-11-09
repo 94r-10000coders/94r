@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taks18js</title>
+</head>
+<body>
+    <h1 style="text-align: center;">REGISTRSATION FORM</h1>
+    <form>
+        <fieldset style="background-color: antiquewhite;">
+        <label>Username:</label>
+        <input type="text" id="one" placeholder="enter username" style="margin-left:116px">
+        <br>
+        <br>
+        <label>Password:</label>
+        <input type="password" placeholder="enter password" style="margin-left:118px">
+        <br>
+        <br>
+        <label>Confirm Password:</label>
+        <input type="password" placeholder="re-enter password" style="margin-left:60px">
+        <br>
+        <br>
+        <label>Email:</label>
+        <input type="email" placeholder="enter email" style="margin-left:140px">
+        <br>
+        <br>
+        <label>Mobile Number:</label>
+        <input type="number" placeholder="enter mobile number"style="margin-left:75px">
+        <br>
+        <br>
+        <input type="submit" value="submit"id="button" style="margin-left: 115px;">
+    </fieldset>
+    </form>
+    <script>
+        let form=document.forms;
+        console.log(form[0]);
+        // var form_get=document.getElementsByTagName("form");
+        // console.log(form_get[0]);
+        // var arr=[];
+        var arr=JSON.parse(localStorage.getItem("info2"))||[];
+        form[0].addEventListener("submit",(e)=>{
+            e.preventDefault();
+            // console.log(e.target[1].value);
+            // let username=e.target[1].value;
+            // let password=e.target[2].value;
+            // let confirm=e.target[3].value
+            // let email=e.target[4].value;
+            // let mobile_number=e.target[5].value;
+            let obj={
+
+                user:e["target"][1]["value"],
+                pass:e["target"][2]["value"],
+                reenter:e["target"][3]["value"],
+                mail:e["target"][4]["value"],
+                mobile:e["target"][5]["value"]
+                
+            }
+            // var pattern=/[0-9]/
+            if(obj["user"].match(/^[A-Z]/)){
+                if(obj["pass"].match(/^[A-z]/)&&(obj["pass"].match(/[0-9]/))&&(obj["pass"].match(/[~!@#$%^&*]/))){
+                    if(obj["reenter"]==obj["pass"]){
+                    if(obj["mail"].match(/.com$/)){
+                        if((obj["mobile"].match(/[0-9]/))&&(obj["mobile"].length==10)){
+                            // console.log(obj);
+                            // localStorage.setItem("info",JSON.stringify(obj));   
+                            // window.location.assign("./Login.html");
+                            
+                            arr.push(obj);
+                            localStorage.setItem("info2",JSON.stringify(arr));   
+                            // console.log(arr); 
+                            window.location.assign("./Login.html");
+                        }
+                        else{
+                            
+                            alert("enter valid phone number:which has 10 characters");
+                        }
+                    }
+                    else{
+                        alert("enter valid mail");
+                    }
+                }else{
+                    alert("password not matched");
+                }}
+                else{
+                    alert("enter valid password should contain 8 characters i.e imclude(letters,numbers & special characters)");
+                }
+            }
+            else{
+                 alert("enter valid name should start with capital letter");   
+                }
+                
+           
+            // console.log(e.target[2].value);
+            // console.log(e.target[3].value);
+            // console.log(e.target[4].value);
+            // var inp1=document.getElementById("one");
+            // console.log( inp1.value);
+            
+            //prevent default here  used to prevent the sudden refresh of the page when we submit the details which were not stored and get lost.
+            //here "e" in the call back function is the event of the form action.
+        })
+      
+    </script>
+</body>
+</html>
