@@ -12,12 +12,13 @@
     </style>
 </head>
 <body>
+    <h1 style="color:brown;">Home Page</h1>
   <button>All</button>  
   <button>Mens</button>  
   <button>Womens</button> 
   <button>Jewellery</button> 
   <button>Electronics</button> 
-  
+ 
   <div>
   <table></table>
 </div>
@@ -320,6 +321,7 @@ getbtn[0].addEventListener("click", ()=>{
 
     }
     buttoncreating.addEventListener("click",()=>{checking1();});
+   
     //add more
     var tdcreating5=document.createElement("td");
     var buttoncreating1=document.createElement("button");
@@ -327,10 +329,19 @@ getbtn[0].addEventListener("click", ()=>{
     tdcreating5.appendChild(buttoncreating1);
     trcreating.appendChild(tdcreating5);
     table[0].appendChild(trcreating);
-    buttoncreating1.addEventListener("click",()=>{  
-    localStorage.setItem("Add to Cart",JSON.stringify(val))
-    window.location.assign("./Addtocart.html");
-    })
+    //
+    var arr=JSON.parse(localStorage.getItem("Add_to_cart"));
+    function checking2(){
+        arr.push(val);
+        localStorage.setItem("Add_to_cart",JSON.stringify(arr));
+        window.location.assign("./Addtocart.html");
+
+    }
+    buttoncreating1.addEventListener("click",()=>{checking2();});
+    // buttoncreating1.addEventListener("click",()=>{  
+    // localStorage.setItem("Add to Cart",JSON.stringify(val))
+    // window.location.assign("./Addtocart.html");
+    // })
     
     })
     
@@ -339,7 +350,7 @@ getbtn[0].addEventListener("click", ()=>{
 
 //creating function
 function display(x){
-    clear()
+    clear();
     a.filter((val,ind)=>{
         if(a[ind]["category"]==x){
     var trcreating=document.createElement("tr");
@@ -385,23 +396,41 @@ function display(x){
 
     }
     buttoncreating.addEventListener("click",()=>{checking1();});
-}})
+    
+    
+    var tdcreating5=document.createElement("td");
+    var buttoncreating1=document.createElement("button");
+    buttoncreating1.innerText="Add to Cart";
+    tdcreating5.appendChild(buttoncreating1);
+    trcreating.appendChild(tdcreating5);
+    table[0].appendChild(trcreating);
+    //pushing an items corresponding to the button we pressed according to caregory
+    var arr=JSON.parse(localStorage.getItem("Add_to_cart"));
+   
+    buttoncreating1.addEventListener("click",()=>{
+        arr.push(val);
+        localStorage.setItem("Add_to_cart",JSON.stringify(arr))
+        window.location.assign("./Addtocart.html");
+    });
+}});
+
 }
-getbtn[1].addEventListener("click", ()=>{
-    display("men's clothing");
-})
-getbtn[2].addEventListener("click", ()=>{
-    display("women's clothing");
-})
-getbtn[3].addEventListener("click", ()=>{
-    display("jewelery");
-})
-getbtn[4].addEventListener("click", ()=>{
-    display("electronics");
-})
 function clear(){
         table[0].innerText="";
 }
+getbtn[1].addEventListener("click", ()=>{
+    display("men's clothing");
+});
+getbtn[2].addEventListener("click", ()=>{
+    display("women's clothing");
+});
+getbtn[3].addEventListener("click", ()=>{
+    display("jewelery");
+});
+getbtn[4].addEventListener("click", ()=>{
+    display("electronics");
+});
+
     </script>
 </body>
 </html>

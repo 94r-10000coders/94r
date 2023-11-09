@@ -6,9 +6,94 @@
     <title>Add to cart</title>
 </head>
 <body>
+    <h1 style="text-align: center;color:blue;">Cart Items</h1>
     <script>
-        var data1=JSON.parse(localStorage.getItem("Add to Cart"));
+        var data1=JSON.parse(localStorage.getItem("Add_to_cart"));
         console.log(data1);
+        for(i=0;i<data1.length;i++){
+            var divcreating=document.createElement("div");
+            divcreating.style.padding="20px";
+            divcreating.style.border="1px solid black";
+            divcreating.style.marginTop="100px";
+            divcreating.style.marginLeft="500px";
+            divcreating.style.width="500px";
+            divcreating.style.height="400px";
+            divcreating.style.backgroundColor="brown";
+            //appending div to body
+            document.body.appendChild(divcreating);
+              // image: -
+              var img_create=document.createElement("img");
+                img_create.setAttribute("src",data1[i]["image"]);
+                divcreating.appendChild(img_create);
+                img_create.style.width="100px";
+                img_create.style.height="100px";
+
+
+
+                // Now i am trying to print all the required fields as lists,So
+                // (1)id name: -
+                var list_create=document.createElement("ul");
+                divcreating.appendChild(list_create);
+                var li_create1=document.createElement("li");
+                list_create.appendChild(li_create1);
+                li_create1.innerText=`ID:  ${data1[i]["id"]}`;
+
+                // (2)title: -
+                var li_create2=document.createElement("li");
+                list_create.appendChild(li_create2);
+                li_create2.innerText=`Title:  ${data1[i]["title"]}`;
+
+                // (3)price: -
+                var li_create3=document.createElement("li");
+                list_create.appendChild(li_create3);
+                li_create3.innerText=`Price:  ${data1[i]["price"]}`;
+
+                // (4)description: -
+                var li_create4=document.createElement("li");
+                list_create.appendChild(li_create4);
+                li_create4.innerText=`Description:  ${data1[i]["description"]}`;
+
+                // (5)category: -
+                var li_create5=document.createElement("li");
+                list_create.appendChild(li_create5);
+                li_create5.innerText=`Category:  ${data1[i]["category"]}`;
+
+                // (6)rating["rate"]: -
+                var li_create6=document.createElement("li");
+                list_create.appendChild(li_create6);
+                li_create6.innerText=`Rate:  ${data1[i]["rating"]["rate"]}`;
+
+                // (7)rating["count"]: -
+                var li_create7=document.createElement("li");
+                list_create.appendChild(li_create7);
+                li_create7.innerText=`Count:  ${data1[i]["rating"]["count"]}`;
+
+
+
+                // .....
+                // creating remove button: -
+                var remove_btn=document.createElement("button");
+                remove_btn.innerText="Remove";
+                divcreating.appendChild(remove_btn);
+                // function fun(i){
+                // data1.splice(i,1);
+                // div_create.remove();
+                // localStorage.setItem("Add_to_Cart",JSON.stringify(data1));
+                
+
+                // }
+                // remove_btn.addEventListener("click",fun);
+
+                remove_btn.addEventListener("click", (function(index) {
+                    return function() {
+                        data1.splice(index, 1);
+                        divcreating.remove();
+                        localStorage.setItem("Add_to_cart",JSON.stringify(data1));
+                        // Refresh the page or update the display to reflect the removed item
+                    };
+                 })(i));
+            
+        }
     </script>
 </body>
 </html>
