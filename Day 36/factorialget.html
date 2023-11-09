@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+    <body style="background-color:cadetblue;padding: 150px;display: flex;justify-content: center;align-items: center;">
+        <div>
+        <h1 style="margin-left: 100px;color:darkgreen;">Calculate Factorial</h1> 
+    <div style="border: 1px solid black; width:600px;height:350px;background-color: white;"> 
+        <div style="display: flex;justify-content:center;padding-top: 100px;"> 
+        <!-- <button id="btn" style="background-color: coral; padding: 10px;">Generate OTP</button>   -->
+        <input type="number"></div> 
+        <br>
+          <button id="btn" style="background-color: coral; padding: 10px;margin-left: 250px;">Get Factorial</button> 
+          <br> <br>
+          <div id="num" style="border:1px solid blue; width:60px; height:30px; margin-left: 260px; text-align: center; padding:10px;"></div>
+    <br>
+    <div id="otp1" style="margin-left: 250px;">
+    </div>
+        </div>
+    </div>
+    <script>
+        var button1=document.getElementById("btn");
+        var inputgetting=document.getElementsByTagName("input");
+       
+        button1.addEventListener("click",()=>{
+            var storing= inputgetting[0].value;
+            fact(storing);
+        })
+        function fact(n){
+            var k=1;
+            if(n>=0){
+                for(i=1;i<=n;i++){
+                    k=k*i;
+                }
+            var divgetting1=document.getElementById("num");
+            divgetting1.innerText=k;
+            }
+            else{
+                var divgetting1=document.getElementById("num");
+            divgetting1.innerText="invalid"; 
+            }
+           
+        }
+    </script>
+</body>
+</html>

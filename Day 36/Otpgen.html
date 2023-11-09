@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTPgen</title>
+</head>
+<body style="background-color: aqua;padding: 150px;display: flex;justify-content: center;align-items: center;">
+    <div>
+    <h1>Generating OTP using HTML,CSS,Javascript</h1> 
+<div style="border: 1px solid black; width:600px;height:350px;background-color: white;"> 
+    <div style="display: flex;justify-content:center;padding-top: 100px;"> 
+    <button id="btn" style="background-color: coral; padding: 10px;">Generate OTP</button>  
+</div> 
+<br>
+<div id="otp1" style="margin-left: 250px;">
+
+</div>
+    </div>
+</div>
+    <script>
+        let button1=document.getElementById("btn");
+        button1.addEventListener("click",()=>{
+            generate();
+        })
+        function generate(){
+            var a=Math.random()*100000;
+            var b=Math.floor(a);
+            if((b>10000)&&(b<99999)){
+                var divgetting=document.getElementById("otp1");
+            divgetting.innerText="Your otp is: "+b;  
+            }
+            else{
+                generate();
+            }
+        }
+    </script>
+</body>
+</html>
