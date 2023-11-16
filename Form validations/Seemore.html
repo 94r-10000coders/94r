@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seemore_page</title>
+</head>
+<body>
+    <div id="hi" style="padding:20px;border:1px solid black;margin-top: 100px;margin-left: 500px;width:500px;height:400px;background-color: darkseagreen;"></div>
+    
+
+    <script>
+        let data=JSON.parse(localStorage.getItem("seemore"));
+        // Here this JSON.parse converts back from string to object.
+        // var a=document.createElement("div");
+        // a.innerText=data;
+        var div_getting=document.getElementById("hi");
+        
+
+        // image: -
+        var img_create=document.createElement("img");
+        img_create.setAttribute("src",data["image"]);
+        div_getting.appendChild(img_create);
+        img_create.style.width="100px";
+        img_create.style.height="100px";
+
+
+        // Now i am trying to print all the required fields as lists,So
+        // (1)id name: -
+        var list_create=document.createElement("ul");
+        div_getting.appendChild(list_create);
+        var li_create1=document.createElement("li");
+        list_create.appendChild(li_create1);
+        li_create1.innerText=`ID:  ${data["id"]}`;
+
+        // (2)title: -
+        var li_create2=document.createElement("li");
+        list_create.appendChild(li_create2);
+        li_create2.innerText=`Title:  ${data["title"]}`;
+
+        // (3)price: -
+        var li_create3=document.createElement("li");
+        list_create.appendChild(li_create3);
+        li_create3.innerText=`Price:  ${data["price"]}`;
+
+        // (4)description: -
+        var li_create4=document.createElement("li");
+        list_create.appendChild(li_create4);
+        li_create4.innerText=`Description:  ${data["description"]}`;
+
+        // (5)category: -
+        var li_create5=document.createElement("li");
+        list_create.appendChild(li_create5);
+        li_create5.innerText=`Category:  ${data["category"]}`;
+
+        // (6)rating["rate"]: -
+        var li_create6=document.createElement("li");
+        list_create.appendChild(li_create6);
+        li_create6.innerText=`Rate:  ${data["rating"]["rate"]}`;
+
+        // (7)rating["count"]: -
+        var li_create7=document.createElement("li");
+        list_create.appendChild(li_create7);
+        li_create7.innerText=`Count:  ${data["rating"]["count"]}`;
+
+
+        var back_btn=document.createElement("button");
+        back_btn.innerText="Back";
+        div_getting.appendChild(back_btn);
+        back_btn.addEventListener("click",()=>{
+            window.location.assign("./JS-Task18.html");
+            
+        })
+
+    </script>
+</body>
+</html>

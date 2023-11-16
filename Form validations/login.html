@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login_page</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Login Form</h1>
+    <form style="border: 1px solid black;background-color:gainsboro;padding: 50px;">
+        <label>User Name:</label>
+        <input type="text"> <br> <br>
+        <label>Password:</label>
+        <input type="password" style="margin-left: 12px;">
+        <br><br>
+        <input type="submit" style="margin-left: 70px;">
+    </form>
+
+    <script>
+        var a=JSON.parse(localStorage.getItem("details"));
+        console.log(a);
+        var form_getting1=document.forms;
+        form_getting1[0].addEventListener("submit",(e)=>{
+            e.preventDefault();
+            var obj1={
+                name:e["target"][0]["value"],
+                pass:e["target"][1]["value"]
+            };
+            // console.log(obj1);
+            // if((obj1["name"])==(a["User_name"]) && (obj1["pass"])==(a["Pass"])){
+            //     window.location.assign("./JS-Task18.html");
+            // }
+            // else{
+            //     alert("Please enter proper credentials");
+            // }
+
+            // Now using the above condition dynamically for every set of values we stored in the registration form.
+            var temp=0;
+            for(i=0;i<a.length;i++){
+                if((obj1["name"])==(a[i]["User_name"]) && (obj1["pass"])==(a[i]["Pass"])){
+                    temp++;
+                    window.location.assign("./JS-Task18.html");
+                }
+                
+            }
+            if(temp==0){
+                alert("Please enter proper credentials");
+            }
+            
+        });
+
+
+
+    </script>
+</body>
+</html>
