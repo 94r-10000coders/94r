@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            display: flex;
+            margin-top: 50px;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+
+        }
+        /* #display{
+            width: 25px;
+            height: 25px;
+            border: 3px solid black;
+        } */
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <button>+</button>
+        <div id="display">0</div>
+        <button>-</button>
+    </div>
+
+
+    <script>
+        let get_button=document.getElementsByTagName("button");
+        let display=document.getElementById("display");
+        var value=0;
+        get_button[0].addEventListener("click", ()=>{
+            display.innerText=value++;
+            if(value>0){
+                display.style.color="green";
+            }
+        });
+
+        get_button[1].addEventListener("click", ()=>{
+            display.innerText=value--;
+            if(value<0){
+                display.style.color="red";
+            }
+        });
+        
+
+
+
+    </script>
+</body>
+</html>

@@ -1,28 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>task17</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task18</title>
     <style>
-        table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
+        .div{
+            border: 2px solid lightgray;
+            border-radius: 25px;
+            width: 20%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            column-gap: 10px;
+            justify-content: space-around;
+            background-color: white;
+        }
+        #BODY{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 10px;
+            word-break: break-all;
+            margin-top: 100px;
+        }
+        body{
+            background-color:khaki;
+            background-image: url(./ecarn.png);
+            /* background-image: url(../cart.jpg); */
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        button{
+            margin: 5px;
+            padding: 10px;
+            background-color: darkblue;
+            border: 2px solid transparent;
+            border-radius: 5%;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            box-shadow: 2px 0px 10px white;
+        }
+        #btn{
+            position: fixed;
         }
     </style>
-  </head> 
-  <body>
+</head>
+<body >
+   <div id="btn">
     <button>ALL</button>
     <button>MENS</button>
     <button>WOMENS</button>
     <button>JEWELERY</button>
     <button>ELECTRONICS</button>
+   </div>
     <br><br>
-    <table>
-    </table>
+
+    
+    <div id="BODY"></div>
+
+
+
     
     <script>
-    var api=[
+         var api=[
     {
 "id":1,
 "title":"Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
@@ -264,86 +308,115 @@
 }
 }
 ];
-    let gettable=document.getElementsByTagName("table");
-    var getbutton=document.getElementsByTagName("button");
-    for(i=0;i<=4;i++){
-      getbutton[i].style.backgroundColor="blue";
-      getbutton[i].style.padding="5px";
-      getbutton[i].style.color="white"
-    }
-    getbutton[0].addEventListener("click",()=>{
-      api.filter((val,i,arr)=>{
-        let creat_row=document.createElement("tr");
-    gettable[0].appendChild(creat_row);
-    let creat_td=document.createElement("td");
-    creat_td.innerText=val["id"];
-    creat_row.appendChild(creat_td);
-    let creat_td1=document.createElement("td");
-    creat_td1.innerText=val["title"];
-    creat_row.appendChild(creat_td1);
-    let creat_td2=document.createElement("td");
-    creat_td2.innerText=val["price"];
-    creat_row.appendChild(creat_td2);
-    let creat_td3=document.createElement("td");
-    creat_td3.innerText=val["category"];
-    creat_row.appendChild(creat_td3);
-    let creat_td4=document.createElement("td");
-    creat_row.appendChild(creat_td4);
-    let creatimg=document.createElement("img")
-    creatimg.setAttribute("src", val["image"]);
-    creat_td4.appendChild(creatimg);
-    creatimg.style.width="100px";
-    creFFatimg.style.height="100px";
-    creat_row.style.backgroundColor="lightblue"
+let get_div=document.getElementById("BODY");
+
+let get_but1=document.getElementsByTagName("button");
+get_but1[0].addEventListener("click",()=>{
+    clear();
+    api.filter((val,ind,arr)=>{
+    let creat_div=document.createElement("div");
+    get_div.appendChild(creat_div)
+    creat_div.setAttribute("class", "div");
+    let creat_img=document.createElement("img");
+    creat_img.setAttribute("src",val["image"]);
+    creat_div.appendChild(creat_img);
+    creat_img.style.width="250px";
+    creat_img.style.height="250px";
+    let creat_h2=document.createElement("h2");
+    creat_h2.innerHTML=`<b>${val["title"]}</b>`
+    creat_div.appendChild(creat_h2); 
+    let creat_button=document.createElement("button");
+    creat_button.innerText="SEE MORE";
+    creat_div.appendChild(creat_button);
+    creat_button.addEventListener("click",()=>{
+        window.location.assign("./SEEMORE.html");
+        localStorage.setItem("seemore",JSON.stringify(val))
+        console.log("seemore")
     });
+    let button1=document.createElement("button");
+    let button2=document.createElement("button");
+    button1.innerText="forward";
+    creat_div.appendChild(button1);
+    button1.addEventListener("click",()=>{ 
+        window.history.forward();
+        })
+    button2.innerText="add to cart";
+    creat_div.appendChild(button2);
+    var b=JSON.parse(localStorage.getItem("cart"))
+    button2.addEventListener("click",()=>{
+        b.push(val);
+        console.log(b)
+        localStorage.setItem("cart",JSON.stringify(b));
+        window.location.assign("./addtocart.html")
     });
-     
-    function display(item){
-      clear();
-      api.filter((val,ind)=>{
-        if(val["category"]==item){
-          let creat_row=document.createElement("tr");
-    gettable[0].appendChild(creat_row);
-    let creat_td=document.createElement("td");
-    creat_td.innerText=val["id"];
-    creat_row.appendChild(creat_td);
-    let creat_td1=document.createElement("td");
-    creat_td1.innerText=val["title"];
-    creat_row.appendChild(creat_td1);
-    let creat_td2=document.createElement("td");
-    creat_td2.innerText=val["price"];
-    creat_row.appendChild(creat_td2);
-    let creat_td3=document.createElement("td");
-    creat_td3.innerText=val["category"];
-    creat_row.appendChild(creat_td3);
-    let creat_td4=document.createElement("td");
-    creat_row.appendChild(creat_td4);
-    let creatimg=document.createElement("img")
-    creatimg.setAttribute("src", val["image"]);
-    creat_td4.appendChild(creatimg);
-    creatimg.style.width="100px";
-    creatimg.style.height="100px";
-    creat_row.style.backgroundColor="lightblue"
+
+    });
+
+
+})
+
+    function display(category) { 
+        clear();
+        api.filter((val,i)=>{
+            if(val["category"]==category){
+                let creat_div=document.createElement("div");
+                get_div.appendChild(creat_div);
+                creat_div.setAttribute("class", "div");
+                let creat_img=document.createElement("img");
+                creat_img.setAttribute("src",val["image"]);
+                creat_div.appendChild(creat_img);
+                creat_img.style.width="250px";
+                creat_img.style.height="250px";
+                let creat_h2=document.createElement("h2");
+                creat_h2.innerHTML=`<b>${val["title"]}</b>`
+                creat_div.appendChild(creat_h2); 
+                let creat_button=document.createElement("button");
+                creat_button.innerText="SEE MORE";
+                creat_div.appendChild(creat_button);
+                creat_button.addEventListener("click",()=>{
+                    window.location.assign("./SEEMORE.html");
+                    localStorage.setItem("seemore",JSON.stringify(val));
+                    console.log("seemore")
+                });
+                let button1=document.createElement("button");
+                let button2=document.createElement("button");
+                button1.innerText="forward";
+                creat_div.appendChild(button1);
+                button1.addEventListener("click",()=>{ 
+                    window.history.forward();
+                });
+                button2.innerText="add to cart";
+                creat_div.appendChild(button2);
+                var b=JSON.parse(localStorage.getItem("cart"))||[];
+                button2.addEventListener("click",()=>{
+                    b.push(val);
+                    console.log(b)
+                    localStorage.setItem("cart",JSON.stringify(b));
+                    window.open("./addtocart.html")
+                })
+                }
+            })       
         }
-      })
-    }
+        function clear(){
+             get_div.innerHTML="";
+        }
 
-    function clear(){
-      gettable[0].innerText="";
-    }
 
-    getbutton[1].addEventListener("click",()=>{
-      display("men's clothing");
-    });
-    getbutton[2].addEventListener("click",()=>{
-      display("women's clothing");
-    });
-    getbutton[3].addEventListener("click",()=>{
-      display("jewelery");
-    });
-    getbutton[4].addEventListener("click",()=>{
-      display("electronics");
-    })
-    </script>
-  </body>
+        get_but1[1].addEventListener("click",()=>{
+            display("men's clothing");
+        });
+
+        get_but1[2].addEventListener("click",()=>{
+            display("women's clothing");
+        });
+
+        get_but1[3].addEventListener("click",()=>{
+            display("jewelery");
+        });
+
+        get_but1[4].addEventListener("click",()=>{
+            display("electronics");
+        });
+</script>
+</body>
 </html>

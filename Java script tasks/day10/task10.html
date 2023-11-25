@@ -32,9 +32,9 @@
         document.write(`${inc(3)}<br><hr>`);
         document.write("<b>4.Create a function that takes the age in years and returns the age in days</b><br>");
         function age_to_day(){
-            years=25;
-            days=years*25;
-            document.write(`Your age is ${years} years,then your age in days is ${days} days. <br><hr>`);
+            age=25;
+            days=age*365;
+            document.write(`Your age is ${age} years,then your age in days is ${days} days. <br><hr>`);
         }
         age_to_day();
         document.write("<b>5.sniCreate a function that takes voltage and current and returns the calculated power.</b><br>");
@@ -92,12 +92,12 @@
             }
             return `(${fir3} ${sec3}-${last4})`;
         }
-        let arr=[0,1,2,3,4,5,6,7,8,9];
+        let arr=[0,1,2,3,4,5,6,7,8,9];///////////////////////////////////////////////////////////////
         document.write(`${Number_format(arr)}<br><hr>`);
         document.write(`<b>11.Create a function that returns an array of strings sorted by length in ascending order.</b><br>`);
         function arr_sort(arr2){
-            let arr3=arr2.sort((a,b)=>{return a.length-b.length});
-            document.write(`${arr3}<br><hr>`);
+            let arr3=arr2.sort((a,b)=>{return b.length-a.length});
+            document.write(`${arr3}<br><hr>`); 
         }
         arr_sort(["a", "ccc", "dddd", "bb"]);
         document.write(`<b>12.Create a function that takes an array of arrays with numbers. Return a new (single) array with the largest numbers of each.
@@ -241,17 +241,19 @@ d            Example:
         factorial(5);
         document.write(`<b>23.C Program to arrange numbers in ascending order</b><br>`);
         function asc(arr){
-            for(i=0;i<arr.length;i++){
-                for(j=0;j<i;j++){
-                    if(arr[i]<arr[j]){
-                        var temp=arr[i]
-                        arr[i]=arr[j]
-                        arr[j]=temp
-                    }
-                }
+            var len = arr.length;
+            for (var i = 0; i < len - 1; i++) {
+                for (var j = 0; j < len - 1 - i; j++) {
+            // Swap if the element found is greater than the next element
+            if (arr[j] > arr[j + 1]) {
+                var temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
             }
-            return "["+arr+"]";
         }
+    }
+    return arr;
+}
         document.write(asc([5,3,2,4,1]))
         document.write("<br>");
         document.write(`<b>24.C Program to find factorial of number</b><br>`);
@@ -274,40 +276,55 @@ d            Example:
         power_cal(5,4);
         document.write("<br>");
         document.write(`<b>26.Program to Check Whether a Number is Prime or Not</b><br>`);
+        debugger
         let countofprime=0;
         function prime(P){
-            for(i=0;i<P;i++){
+            for(i=2;i<P/2;i++){
                 if(P%i==0){
                     countofprime++;
+                    break;
                 }
             }
             if(countofprime==0){
-                document.write(`Given number ${P} is prime number`);
+                console.log(`Given number ${P} is prime number`);
             }
-            else{ document.write(`Given number ${P} is not a prime number`);}
+            else{ console.log(`Given number ${P} is not a prime number`);}
         }prime(9);
         document.write("<br>");
         document.write(`<b>27.Program to find LCM of two numbers using while loop</b><br>`);
         function lcm(x,y){
-            for(i=0;i<=x&&i<=y;i++){
+            for(i=1;i<=x&&i<=y;i++){
                 if(x%i==0 && y%i==0){
                     divisible=i;
                 }
             }
              LCM=(x*y)/divisible;
-            document.write(`l.c.m of ${x} and ${y} is ${LCM}`);
+            console.log(`l.c.m of ${x} and ${y} is ${LCM}`);
         }
         lcm(8,6);
         document.write("<br>");
         document.write(`<b>28.Program to Display Characters from A to Z Using Loop with count</b><br>`);
         function alphabet(va){
             for(i=0;i<va.length;i++){
-                document.writeln(`${va[i]}-${i+1}`);
+                document.write(`${va[i]}-${i+1}`);
             }
         }
         alphabet(['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']);
         document.write("<br>");
         document.write(`<b>29.PProgram to find a missing number</b><br>`);
+        function missing(n){
+            arr=[6,3,1,4,2];
+            sum=0;
+            total=0;
+            for(i=0;i<n-1;i++){
+                sum=sum+arr[i];
+        }
+            // n++;
+            total=n*(n+1)/2;
+            var miss=total-sum
+            document.write(`missing number is: ${miss}`);
+        }
+        missing(6);
         document.write("<br>");
         document.write(`<b>30.Program to count vowels and consonants in a given String</b><br>`);
         var v=0;
@@ -323,13 +340,37 @@ d            Example:
             document.write(`number of vowels is ${v}<br> number of constants is ${c}`);
         }
         count("i am ram");
-
-
-
-
-
-
-            
+        document.write("<br>");
+        document.write(`<b>31.program to insert  the elements of an array for specific index.</b><br>`);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+        function inser(arr){
+            arr.splice(5, 2, 6, 78 );
+            document.write(arr);
+        }
+        inser([1,2,3,4,5,7,8,9,10] );
+        document.write("<br>");
+        document.write(`<b>32.Reverse a number using while Loop.</b><br>`);
+        function revers(n){
+            var sum=0; remainder=0;
+            while(n>0){
+                remainder=n%10;
+                sum=sum*10+remainder;
+                n=Math.floor(n/10);
+            }
+            document.write(sum);
+        }
+        revers(534);
+        document.write("<br>");
+        document.write(`<b>33.Count occurrence of number.</b><br>`);
+        function countnum(x,y){
+            count=0;
+            for(i=0;i<x.length;i++){
+                if(x[i]==y){
+                    count++;
+                }
+            }
+            document.write(`${y} presents ${count} times`);
+        }
+        countnum([1,6,3,1,5,9,7,2,1,9,3,7,8,9,10],7)      
         
     </script>
 </body>

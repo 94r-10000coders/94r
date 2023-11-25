@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seemore</title>
+    <style>
+        #div{
+            width: 40%;
+            border: 2px dotted darkblue;
+            border-radius: 10px;
+            position: absolute;
+            left: 30%;
+            padding: 20px;
+        }
+        img[src]{
+            position: relative;
+            left:30%;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <script>
+        let get_div=document.getElementsByTagName("div");
+        get_div[0].setAttribute("id","div");
+        let a =JSON.parse(localStorage.getItem("seemore"));
+        console.log(a);
+
+        let creat_img=document.createElement("img");
+        creat_img.setAttribute("src",a["image"]);
+        get_div[0].appendChild(creat_img);
+        creat_img.style.width="200px";
+        creat_img.style.height="200px";
+
+        let create_h1=document.createElement("h4");
+        create_h1.innerText=`ID: ${a["id"]}`;
+        get_div[0].appendChild( create_h1);
+
+        let create_h2=document.createElement("h4");
+        create_h2.innerText=`title: ${a["title"]}`;
+        get_div[0].appendChild(create_h2);
+
+        let create_h3=document.createElement("h4");
+        create_h3.innerText=`price: ${a["price"]}`;
+        get_div[0].appendChild(create_h3);
+
+        let create_h4=document.createElement("h4");
+        create_h4.innerText=`description: ${a["description"]}`;
+        get_div[0].appendChild(create_h4);
+
+        let create_h5=document.createElement("h4");
+        create_h5.innerText=`rating: ${a["rating"]["rate"]}`;
+        get_div[0].appendChild(create_h5);
+
+        let button1=document.createElement("button");
+        button1.innerText="backward";
+        get_div[0].appendChild(button1);
+        button1.addEventListener("click",()=>{
+            window.history.back();
+        });
+
+        
+
+    </script>
+</body>
+</html>

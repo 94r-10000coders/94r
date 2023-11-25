@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem solving</title>
+</head>
+<body>
+    <script>
+        // document.write(`1.Write a function that converts an object into an array, where each element represents a key-value pair in the form of an array.<br><br>`);
+
+        // function obj_arr(){
+        //     let obj={a: 1, b: 2};
+        //     var res=[];
+        //     // return Object.entries(obj);
+        //     for(var x in obj){
+        //         if(obj.hasOwnProperty(x)){
+        //             res.push([x, obj[x]]);
+        //         }
+        //     }
+        //     return res;
+        // }
+        // console.log(obj_arr())
+
+        // document.write(`<br><br>2.Create a function that takes two numbers as arguments (num, length) and returns an array of multiples of num until the array length reaches length.<br><br>`);
+        // let arr=[];
+        // function multi(n,l){
+        //     for(i=1;i<=5;i++){
+        //         let mul=arr.push(n*i);
+                
+        //     }
+        //     return arr;
+        // }
+        // console.log(multi(7,5));
+        
+        // document.write(`<br><br>3.Create the function that takes an array with objects and returns the sum of people's budgets.<br><br>`);
+        // var getBudgets=[
+        // { name: "John", age: 21, budget: 23000 },
+        // { name: "Steve",  age: 32, budget: 40000 },
+        // { name: "Martin",  age: 16, budget: 2700 }
+        // ];
+        // function sum(a){
+        //     var sum=0;
+        //     for(i=0;i<a.length;i++){
+        //         sum+=a[i]["budget"]
+        //     }
+        //     return sum;
+        // }
+        // console.log(sum(getBudgets));
+        // document.write(`<br><br>4.Create a function that takes an array of objects like { name: "John", notes: [3, 5, 4]} and returns an array of objects like { name: "John", avgNote: 4 }. If a student has no notes (an empty array) then let's assume avgNote: 0.<br><br>`);
+        // function avg(ar){
+        //     let res=[];
+        //     for(i=0;i<ar.length;i++){
+        //         let n=ar[i].name;
+        //         let note=ar[i].notes;
+
+        //         var avgnotes=0;
+        //         if(note.length>0){
+        //             let sum=0;
+        //             for(j=0;j<note.length;j++){
+        //                 sum+=note[j];
+        //             }
+        //         avgnotes=sum/note.length;
+        //         }
+        //         res.push({"name":n, "avgnotes":avgnotes})
+        //     }
+        //     return res;
+
+        // }
+        // let student=[
+        //     { name: "John", notes: [3, 5, 4]}
+        // ];
+        // console.log(avg(student));
+        // document.write(`<br><br>5.Create a function that moves all capital letters to the front of a word<br><br>`);
+        // function cap(va){
+        //     let str1="";
+        //     let str2="";
+        //     for(i=0;i<va.length;i++){
+        //         if(va[i]==va[i].toUpperCase()){
+        //             str1+=va[i];
+        //         }
+        //         else str2+=va[i]
+        //     }
+        //     var str3=str1+str2
+        //     console.log(str3);
+        // };
+        // let a="hApPy" 
+        // cap(a);
+        // document.write(`<br><br>6.Count each occurrence of number(can not use predefined function)<br><br>`);
+        // let ar = [1, 6, 3, 1, 5, 9, 7, 2, 1, 9, 3, 7, 8, 9, 10];
+
+        //     let arr2 = ar.slice().sort((a, b) => a - b); // Use slice to create a copy before sorting
+        //     console.log(arr2);
+
+        //     let arr3 = [];
+        //     let count = 0;
+
+        //     for (let i = 0; i < arr2.length; i++) {
+        //         if (arr3.indexOf(arr2[i]) === -1) {
+        //             arr3.push(arr2[i]);
+        //             count = 1; // Initialize count for each unique element
+        //             for (let j = i + 1; j < arr2.length; j++) {
+        //                 if (arr2[i] === arr2[j]) {
+        //                     count++;
+        //                 }
+        //             }
+        //             console.log(`${arr2[i]} represents ${count} times`);
+        //         }
+        //     }
+
+
+
+
+            var a="Ch_it_nyak_mar";
+let b="";
+for(i=0;i<a.length;i++){
+  if(a[i]=="_" && a[i+1]==a[i+1].toLowerCase()){
+    b[i+1]+=a[i+1].toUpperCase();
+  }
+}
+console.log(b)
+
+    </script>
+</body>
+</html>

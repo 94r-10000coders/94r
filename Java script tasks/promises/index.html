@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+<body>
+
+
+
+
+    <script>
+        let p=new Promise((re,rej)=>{
+           let number =8;
+           if(number%2==0){
+            re("Given number is even number")
+           }else rej("Given number is not a even number");
+        });
+        // console.log(p);
+        p.then((val)=>{console.log(val)}).catch((val)=>{console.log(val);});
+
+        check(p);
+
+
+        async function check(z){
+            let aw = await z;
+            console.log(aw);    
+        }
+        console.log("hello");
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEARCH BAR</title>
+    <style>
+        .in{
+
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <div class="in" style="padding: 25px;">
+        <input type="text" placeholder="Enter name" style="border: 1px solid;border-radius: 5px;padding: 5px;">
+        <button style="background-color: limegreen;border: 1px solid transparent;border-radius: 5px;padding: 5px;">SEARCH</button>
+    </div><br>
+    <div id="names" >
+        <ul></ul>
+    </div>
+    <script>
+        let get_div=document.getElementById("names");
+        get_div.style.display="none";
+        let get_ul=document.getElementsByTagName("ul")
+        let a=["chaitanya","vasanta","mani","harish","rakesh"];
+        for(i=0;i<a.length;i++){
+            let create_li=document.createElement("li");
+            get_ul[0].appendChild(create_li);
+            create_li.innerText=a[i];
+        }
+        let get_button=document.getElementsByTagName("button");
+        let get_input=document.getElementsByTagName("input");
+        get_button[0].addEventListener("click",()=>{
+            let c=get_input[0].value;
+            localStorage.setItem("name",JSON.stringify(c));
+            if(a.indexOf(JSON.parse(localStorage.getItem("name")))!=-1){
+                    clear();
+                    get_div.style.display="inline";
+                    var create_ul=document.createElement("ul");
+                    var crea_li=document.createElement("li");
+                    get_div.appendChild(create_ul);
+                    create_ul.appendChild(crea_li);
+                    crea_li.innerText=JSON.parse(localStorage.getItem("name"));
+                    
+                }else{
+                    clear();
+                    window.location.reload();
+                    alert(`Sorry, but nothing found for " ${c} " .`);
+                }
+        });
+        function clear(){
+            get_div.innerHTML="";
+            
+        };
+
+
+
+        function doSomething() {
+  console.log(this);
+}
+   
+doSomething();
+var c = "Deepak";
+var b = "eedapk";
+
+
+function isAnagram(one, two) {
+  //Change both words to lowercase for case insensitivity..
+  var a = one.toLowerCase();
+  var b = two.toLowerCase();
+
+  // Sort the strings, then combine the array to a string. Examine the outcomes.
+  a = a.split("").sort().join("");
+  b = b.split("").sort().join("");
+  return b
+
+}
+console.log(isAnagram(c,b));
+
+    </script>
+</body>
+</html>

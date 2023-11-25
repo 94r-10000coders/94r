@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 19</title>
+    <style>
+        input[type]{
+            display: flex;
+            gap: 20px;
+        }
+        form{
+            margin: 20px 50px 20px 50px;
+            padding: 20px;
+            width: 200px;
+            background-color: lightgreen;
+            box-shadow: 5px 5px 10px lightcoral;
+        }
+        fieldset{
+            width: 200px;
+            margin-left: 100px;
+            background-color: lightblue;
+            border: 2px solid transparent;
+            border-radius: 5px;
+        }
+        body{
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body>
+<fieldset>
+    <legend><h2 style="color: red;">Registration form</h2></legend>
+    <form action="">
+        <label for="name">USER NAME:</label>
+        <input type="text" name="name" placeholder="username" id="name"><br>
+        <label for="mail">EMAIL:</label>
+        <input type="email" name="mail" placeholder="email"><br>
+        <label for="phone">MOBILE NUMBER:</label>
+        <input type="tel" name="phone" placeholder="moblie number" pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}"><br>
+        <label for="password">PASSWORD:</label>
+        <input type="password" name="password" placeholder="password" ><br>
+        <label for="confirm password">Confirm Password:</label>
+        <input type="password" placeholder="confirm password"> <br> 
+        <input type="submit">
+   </form>
+</fieldset>
+<script>
+    let form=document.forms;
+    // console.log(form[0]);
+    let arr=JSON.parse(localStorage.getItem("login"))||[];
+    form[0].addEventListener("submit",(e)=>{
+        e.preventDefault();
+        let username=e.target[0].value;
+        let email=e.target[1].value;
+        let number=e.target[2].value;
+        let pwd1=e.target[3].value;
+        let confirmpwd=e.target[4].value;
+
+       
+        if(username.match(/^[A-Z]/)){
+            if(email.match(/.com$/)){
+                if(number.match(/[0-9]/)){
+                    if(pwd1.match(/^(?=.*\d)(?=.*[a-zA-Z])[a-zA-Z0-9]{3,}$/)){
+                        //password 5Aa1234
+                        if(pwd1==confirmpwd){
+                            let obj={
+                                user:username,
+                                mail:email,
+                                mobile:number,
+                                password:pwd1,
+                                confirmpwd:confirmpwd
+                            };
+                            arr.push(obj);
+                            // console.log(arr);
+                            localStorage.setItem("login",JSON.stringify(arr));
+                            window.open("./login.html");
+                        }else alert("enter wrong passwors");
+                    }else alert("password is not strong");
+
+                }else alert("enter 10 digits");
+
+            }else alert("Enter valid email id");
+
+
+        }else alert("Invalid, name shoud be start with uppercase characters");
+    });
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
