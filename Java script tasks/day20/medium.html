@@ -103,11 +103,30 @@
         //             for (let j = i + 1; j < arr2.length; j++) {
         //                 if (arr2[i] === arr2[j]) {
         //                     count++;
-        //                 }
+        //                 } 
         //             }
         //             console.log(`${arr2[i]} represents ${count} times`);
         //         }
         //     }
+
+        //7.  Given a string s, return the longest 
+let s = ['nik', 'mikhil', 'Cow', 'Elephant'];
+let longest = "";
+let max = 0;
+
+for (let i = 0; i < s.length; i++) {
+  let count = 0;  // Initialize count for each string
+  for (let j = 0; j < s[i].length; j++) {
+    count += 1;  // Update count for each character in the string
+  }
+
+  if (count > max) {
+    max = count;
+    longest = s[i];
+  }
+}
+
+console.log(longest);
 
 
 
