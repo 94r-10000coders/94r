@@ -6,44 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
     <style>
-         input[type]{
-            display: flex;
-            gap: 20px;
+     input[type] {
+            display: block;
+            width: calc(100% - 20px); /* Adjusted width to fit properly */
+            margin-bottom: 10px;
         }
-        form{
-            margin: 20px 50px 20px 50px;
+        form {
+            max-width: 300px; /* Adjusted max-width for better responsiveness */
+            margin: 20px auto; /* Centering the form */
             padding: 20px;
-            width: 200px;
             background-color: lightgreen;
-            box-shadow: 5px 5px 20px white;
+            box-shadow: 5px 5px 10px lightcoral;
+            border-radius: 10px; /* Added border radius for a better look */
         }
-        fieldset{
-            width: 200px;
-            margin-left: 100px;
-            background-color: lightseagreen;
+        fieldset {
+            background-color: lightblue;
             border: 2px solid transparent;
             border-radius: 5px;
+            padding: 10px;
         }
-        body{
+        body {
             background-color: lightgoldenrodyellow;
+            font-family: Arial, sans-serif; /* Changed font for better readability */
+            margin: 0;
+            padding: 0;
         }
-        
+        h2 {
+            color: red;
+            text-align: center; /* Centering the heading */
+        }
+        legend {
+            font-size: 1.2em;
+            color: darkblue;
+            text-align: center; /* Centering the legend */
+        }
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: darkgreen;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
-    <fieldset>
-        <legend><h2 style="color: darkblue;">LOGIN</h2></legend>
-        <form action="">
-            <label for="username">USER NAME:</label>
-            <input type="text"  placeholder="username"><br>
-            <label for="password">PASSWORD:</label>
-            <input type="Password"  placeholder="Password" ><br>
-            <input type="submit">
-       </form>
+    <fieldset style="margin-top: 10px;">
+        <legend>Login</legend>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" name="username" placeholder="Username" required>
+            <label for="password">Password:</label>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button> <!-- Changed input type to button -->
+        </form>
+    </fieldset>
 </body>
 <script>
     var l= JSON.parse(localStorage.getItem("login"));
-    console.log(l);
+    console.log(l);///////////
     let form=document.forms;
     form[0].addEventListener("submit",(e)=>{
         e.preventDefault();
@@ -62,7 +84,7 @@
             for(i=0;i<l.length;i++){
                 if((obj1["user"])==(l[i]["user"]) && (obj1["pwd"])==(l[i]["password"])){
                     temp++;
-                    window.location.assign("./index.html");
+                    window.location.assign("https://subrahmanyam4243.github.io/JAVASCRIPT1/");
                 }
                 
             }
