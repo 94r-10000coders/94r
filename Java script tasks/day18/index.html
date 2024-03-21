@@ -333,13 +333,13 @@ get_but1[0].addEventListener("click",()=>{
         localStorage.setItem("seemore",JSON.stringify(val))
         console.log("seemore")
     });
-    let button1=document.createElement("button");
+    // let button1=document.createElement("button");
     let button2=document.createElement("button");
-    button1.innerText="forward";
-    creat_div.appendChild(button1);
-    button1.addEventListener("click",()=>{ 
-        window.history.forward();
-        })
+    // button1.innerText="forward";
+    // creat_div.appendChild(button1);
+    // button1.addEventListener("click",()=>{ 
+    //     window.history.forward();
+    //     })
     button2.innerText="add to cart";
     creat_div.appendChild(button2);
     var b=JSON.parse(localStorage.getItem("cart"))
@@ -392,7 +392,7 @@ get_but1[0].addEventListener("click",()=>{
                     b.push(val);
                     console.log(b)
                     localStorage.setItem("cart",JSON.stringify(b));
-                    window.open("./addtocart.html")
+                    window.location.href="./addtocart.html"
                 })
                 }
             })       

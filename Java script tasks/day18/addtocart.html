@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add to Cart_page</title>
     <style>
-        #body{
+        #body {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
             gap: 10px;
             word-break: break-all;
         }
-        div{
+        div {
             border: 2px solid lightgray;
             border-radius: 25px;
             width: 20%;
@@ -23,62 +23,60 @@
             justify-content: space-around;
             background-color: lightgoldenrodyellow;
         }
-
     </style>
 </head>
 <body id="body">
-
     <script>
-        let data=JSON.parse(localStorage.getItem("cart"));
-        data.map((val,i)=>{
-            let get_div=document.createElement("div");
+        let data = JSON.parse(localStorage.getItem("cart"));
+        data.map((val, i) => {
+            let get_div = document.createElement("div");
             document.body.appendChild(get_div);
 
-            let creat_img=document.createElement("img");
-            creat_img.setAttribute("src",data[i]["image"]);
+            let creat_img = document.createElement("img");
+            creat_img.setAttribute("src", val["image"]);
             get_div.appendChild(creat_img);
-            creat_img.style.width="200px";
-            creat_img.style.height="200px";
+            creat_img.style.width = "200px";
+            creat_img.style.height = "200px";
 
-            let create_h1=document.createElement("h4");
-            create_h1.innerText=`ID: ${data[i]["id"]}`;
-            get_div.appendChild( create_h1);
+            let create_h1 = document.createElement("h4");
+            create_h1.innerText = `ID: ${val["id"]}`;
+            get_div.appendChild(create_h1);
 
-            let create_h2=document.createElement("h4");
-            create_h2.innerText=`title: ${data[i]["title"]}`;
+            let create_h2 = document.createElement("h4");
+            create_h2.innerText = `title: ${val["title"]}`;
             get_div.appendChild(create_h2);
 
-            let create_h3=document.createElement("h4");
-            create_h3.innerText=`price: ${data[i]["price"]}`;
+            let create_h3 = document.createElement("h4");
+            create_h3.innerText = `price: ${val["price"]}`;
             get_div.appendChild(create_h3);
 
-            let create_h4=document.createElement("h4");
-            create_h4.innerText=`description: ${data[i]["description"]}`;
+            let create_h4 = document.createElement("h4");
+            create_h4.innerText = `description: ${val["description"]}`;
             get_div.appendChild(create_h4);
 
-            let create_h5=document.createElement("h4");
-            create_h5.innerText=`rating: ${data[i]["rating"]["rate"]}`;
+            let create_h5 = document.createElement("h4");
+            create_h5.innerText = `rating: ${val["rating"]["rate"]}`;
             get_div.appendChild(create_h5);
 
-            let but=document.createElement("button");
-            but.innerText='REMOVE'
+            let but = document.createElement("button");
+            but.innerText = "REMOVE";
             get_div.appendChild(but);
-        
-            but.addEventListener("click",((i)=>{
-                return ()=>{
-                    data.splice(i,1);
+
+            but.addEventListener("click", (event) => {
+                const indexToRemove = data.findIndex(item => item.id === val.id);
+                if (indexToRemove !== -1) {
+                    data.splice(indexToRemove, 1);
                     clear();
+                    localStorage.setItem("cart", JSON.stringify(data));
                     window.location.reload();
-                    localStorage.setItem("cart",JSON.stringify(data));
                 }
-            })(i));
+            });
         });
-        function clear(){
-                get_div.innerText="";
-                
-            }
-
-
+      
+        function clear() {
+            document.body.innerHTML = ""; // Clear all contents
+        }
     </script>
 </body>
 </html>
+
